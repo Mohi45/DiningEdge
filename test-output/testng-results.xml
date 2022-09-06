@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:12:508] Test data read.]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:12:523] Exiting before data.]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:550] Test data read.]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:554] Exiting before data.]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:555] Inside Dataprovider. Creating the Object Array to store test data inputs.]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:555] 1 Accounts and Columns are: 10]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:559] Test Cases captured in the Object Array. Exiting dataprovider.]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[***** STARTING TEST STEP:- exportFileFlow *****]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:609] Resturant Name =Polo Club - Food]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:610] Test Case test #1]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:32:621] Polo Club - Food for purveryor Sysco is Active !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:37:994] User Enters the user name -> louispoulias@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:38:254] User clicks to the Next Button !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:43:583] User enters the user Email --> louispoulias@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:43:739] User enters the user Password --> Olympia01$]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:43:940] User click on the Login Button !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:50:106] No Alert found on page !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:53:645] No Alert found on page !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:24:58:359] no list drop down found on the page]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:01:849] No Alert found on page !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:13:443] failed to logout]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:18:464] Connecting to the Gmail ...]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:24:821] Exiting test method]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:24:821] Pass]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:24:827] Running Excel write method!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:25:443] Closing the resources ....]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:25:443] Closing file output stream object!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:26:041] Connecting to the Gmail ...]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:26:045] Illegal address]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:26:045] Technical issue in sending reporting]]>
+    </line>
+    <line>
+      <![CDATA[[2022-09-06] [15:25:26:046] Email Sent with Attachment]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-09-06T15:24:11 IST" name="Sysco_Suite" finished-at="2022-09-06T15:25:25 IST" duration-ms="73966">
+    <groups>
+    </groups>
+    <test started-at="2022-09-06T15:24:11 IST" name="SyscoTest" finished-at="2022-09-06T15:25:25 IST" duration-ms="73966">
+      <class name="com.diningedge.Regression.SyscoShopFlow">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:10 IST" name="setUp" finished-at="2022-09-06T15:24:11 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setExtentReporting()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:11 IST" name="setExtentReporting" finished-at="2022-09-06T15:24:11 IST" depends-on-methods="com.diningedge.resources.BaseTest.setUp" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReporting -->
+        <test-method is-config="true" signature="readData()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:11 IST" name="readData" finished-at="2022-09-06T15:24:12 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:12:508] Test data read.]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:12:523] Exiting before data.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:12 IST" name="setup" finished-at="2022-09-06T15:24:32 IST" duration-ms="19892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:32 IST" name="testMethodName" finished-at="2022-09-06T15:24:32 IST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.diningedge.Regression.SyscoShopFlow.exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[***** STARTING TEST STEP:- exportFileFlow *****]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodName -->
+        <test-method signature="exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:32 IST" name="exportFileFlow" data-provider="userData" finished-at="2022-09-06T15:25:24 IST" duration-ms="52220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PoloClubFood_Sysco]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sysco]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Polo Club - Food]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[louispoulias@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Olympia01$]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Weekly]]>
+              </value>
+            </param>
+            <param index="7">
+              <value is-null="true"/>
+            </param>
+            <param index="8">
+              <value is-null="true"/>
+            </param>
+            <param index="9">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:32:609] Resturant Name =Polo Club - Food]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:32:610] Test Case test #1]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:32:621] Polo Club - Food for purveryor Sysco is Active !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:37:994] User Enters the user name -> louispoulias@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:38:254] User clicks to the Next Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:43:583] User enters the user Email --> louispoulias@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:43:739] User enters the user Password --> Olympia01$]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:43:940] User click on the Login Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:50:106] No Alert found on page !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:53:645] No Alert found on page !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:24:58:359] no list drop down found on the page]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:01:849] No Alert found on page !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:13:443] failed to logout]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:18:464] Connecting to the Gmail ...]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:24:821] Exiting test method]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:24:821] Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exportFileFlow -->
+        <test-method is-config="true" signature="writeExcelData()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:24 IST" name="writeExcelData" finished-at="2022-09-06T15:25:25 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:24:827] Running Excel write method!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeExcelData -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="take_screenshot_on_failure" finished-at="2022-09-06T15:25:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=exportFileFlow status=SUCCESS method=SyscoShopFlow.exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff] output=[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- take_screenshot_on_failure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="tearDown" finished-at="2022-09-06T15:25:25 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeAllResources()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="closeAllResources" finished-at="2022-09-06T15:25:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:25:443] Closing the resources ....]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:25:443] Closing file output stream object!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeAllResources -->
+        <test-method is-config="true" signature="sendMailToTheUser()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="sendMailToTheUser" finished-at="2022-09-06T15:25:26 IST" duration-ms="571" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:26:041] Connecting to the Gmail ...]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:26:045] Illegal address]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:26:045] Technical issue in sending reporting]]>
+            </line>
+            <line>
+              <![CDATA[[2022-09-06] [15:25:26:046] Email Sent with Attachment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendMailToTheUser -->
+      </class> <!-- com.diningedge.Regression.SyscoShopFlow -->
+    </test> <!-- SyscoTest -->
+  </suite> <!-- Sysco_Suite -->
+</testng-results>

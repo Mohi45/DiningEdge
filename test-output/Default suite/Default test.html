@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 06 15:05:06 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>615 seconds (615042 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.diningedge.Regression.SyscoShopFlow.exportFileFlow()'><b>exportFileFlow</b><br>Test class: com.diningedge.Regression.SyscoShopFlow<br>Parameters: Yes, PoloClubFood_Sysco, Sysco, Polo Club - Food, louispoulias@gmail.com, Olympia01$, Weekly, null, null, null<br/>
+<a href="#Output-1500820019" onClick='toggleBox("Output-1500820019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1500820019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1500820019">
+[2022-09-06] [15:05:26:901] Inside OG Export : Started exporting OG for different accounts<br/>
+[2022-09-06] [15:05:26:901] Resturant Name =Polo Club - Food<br/>
+[2022-09-06] [15:05:26:902] Test Case test #1<br/>
+[2022-09-06] [15:05:26:922] Polo Club - Food for purveryor Sysco is Active !!<br/>
+[2022-09-06] [15:05:32:288] User Enters the user name -> louispoulias@gmail.com<br/>
+[2022-09-06] [15:05:32:516] User clicks to the Next Button !!!<br/>
+[2022-09-06] [15:05:37:804] User enters the user Email --> louispoulias@gmail.com<br/>
+[2022-09-06] [15:05:37:914] User enters the user Password --> Olympia01$<br/>
+[2022-09-06] [15:05:38:092] User click on the Login Button !!!<br/>
+[2022-09-06] [15:05:44:476] No Alert found on page !!!<br/>
+[2022-09-06] [15:05:48:217] No Alert found on page !!!<br/>
+[2022-09-06] [15:06:16:611] no list drop down found on the page<br/>
+[2022-09-06] [15:06:20:782] No Alert found on page !!!<br/>
+[2022-09-06] [15:06:38:972] Connecting to the Gmail ...<br/>
+[2022-09-06] [15:06:45:487] Exiting test method<br/>
+[2022-09-06] [15:06:45:488] Pass<br/>
+</div>
+</td>
+<td></td>
+<td>78</td>
+<td>com.diningedge.Regression.SyscoShopFlow@2e8c1c9b</td></tr>
+</table><p>
+</body>
+</html>
