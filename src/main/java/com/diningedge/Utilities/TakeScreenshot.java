@@ -38,7 +38,7 @@ public class TakeScreenshot {
 		this.testname = testname;
 	}
 
-	public void takeScreenshot() {
+	public String takeScreenshot() {
 		screenshotPath = (getProperty("screenshot-path") != null) ? getProperty("screenshot-path") : screenshotPath;
 		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss_ms");
 		Date date = new Date();
@@ -74,7 +74,7 @@ public class TakeScreenshot {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-
+		return saveImgFile;
 	}
 	/*
 	 * public void takeScreenShotOfCompleteScreen() { Robot robotClassObject = null;

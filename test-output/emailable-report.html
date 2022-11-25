@@ -8,11 +8,47 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Sysco_Suite</th></tr>
-<tr><td><a href="#t0">SyscoTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">73,966</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,319</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sysco_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SyscoTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.diningedge.Regression.SyscoShopFlow</td><td><a href="#m0">exportFileFlow</a></td><td rowspan="1">1662458072601</td><td rowspan="1">52220</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.diningedge.Regression.DiningEdgeLoginTest</td><td><a href="#m0">Test003_VerifyOrdersGuidePage</a></td><td rowspan="1">1669408231557</td><td rowspan="1">491</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.diningedge.Regression.DiningEdgeLoginTest</td><td><a href="#m1">Test001_VerifyLoginPage</a></td><td rowspan="1">1669408227466</td><td rowspan="1">427</td></tr><tr class="passedeven"><td><a href="#m2">Test002_VerifyDashboardPage</a></td><td rowspan="1">1669408227903</td><td rowspan="1">3649</td></tr></tbody>
 </table>
-<h2>SyscoTest</h2><h3 id="m0">com.diningedge.Regression.SyscoShopFlow#exportFileFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Yes</td><td>PoloClubFood_Sysco</td><td>Sysco</td><td>Polo Club - Food</td><td>louispoulias@gmail.com</td><td>Olympia01$</td><td>Weekly</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="10">Messages</th></tr><tr><td colspan="10"><div class="messages">[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts<br/>[2022-09-06] [15:24:32:609] Resturant Name =Polo Club - Food<br/>[2022-09-06] [15:24:32:610] Test Case test #1<br/>[2022-09-06] [15:24:32:621] Polo Club - Food for purveryor Sysco is Active !!<br/>[2022-09-06] [15:24:37:994] User Enters the user name -> louispoulias@gmail.com<br/>[2022-09-06] [15:24:38:254] User clicks to the Next Button !!!<br/>[2022-09-06] [15:24:43:583] User enters the user Email --> louispoulias@gmail.com<br/>[2022-09-06] [15:24:43:739] User enters the user Password --> Olympia01$<br/>[2022-09-06] [15:24:43:940] User click on the Login Button !!!<br/>[2022-09-06] [15:24:50:106] No Alert found on page !!!<br/>[2022-09-06] [15:24:53:645] No Alert found on page !!!<br/>[2022-09-06] [15:24:58:359] no list drop down found on the page<br/>[2022-09-06] [15:25:01:849] No Alert found on page !!!<br/>[2022-09-06] [15:25:13:443] failed to logout<br/>[2022-09-06] [15:25:18:464] Connecting to the Gmail ...<br/>[2022-09-06] [15:25:24:821] Exiting test method<br/>[2022-09-06] [15:25:24:821] Pass</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.diningedge.Regression.DiningEdgeLoginTest#Test003_VerifyOrdersGuidePage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2022-11-26] [02:00:31:997] User clicks on select Order Edge Button !!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Assertion Failed: Actual Value :Order Edge is not same as expected that is : Order  Edge expected [Order  Edge] but found [Order Edge]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.diningedge.PageActions.DashboardPage.verifyOrderEdgePage(DashboardPage.java:112)
+	at com.diningedge.Regression.DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage(DiningEdgeLoginTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.diningedge.Regression.DiningEdgeLoginTest#Test001_VerifyLoginPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2022-11-26] [02:00:27:710] User enters Name= ocrtestonly<br/>[2022-11-26] [02:00:27:809] User enters Password =123456<br/>[2022-11-26] [02:00:27:893] User clicks on the Login Button !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.diningedge.Regression.DiningEdgeLoginTest#Test002_VerifyDashboardPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2022-11-26] [02:00:31:496] Assertion Passed: DiningEdge is present on the HomePage<br/>[2022-11-26] [02:00:31:552] Assertion Passed: Dashboard is present on the HomePage</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

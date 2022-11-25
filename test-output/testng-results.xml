@@ -1,141 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[2022-09-06] [15:24:12:508] Test data read.]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:12:523] Exiting before data.]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:32:550] Test data read.]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:32:554] Exiting before data.]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:32:555] Inside Dataprovider. Creating the Object Array to store test data inputs.]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:32:555] 1 Accounts and Columns are: 10]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:32:559] Test Cases captured in the Object Array. Exiting dataprovider.]]>
+      <![CDATA[***** STARTING TEST STEP:- Test001_VerifyLoginPage *****]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- exportFileFlow *****]]>
+      <![CDATA[[2022-11-26] [02:00:27:710] User enters Name= ocrtestonly]]>
+    </line>
+    <line>
+      <![CDATA[[2022-11-26] [02:00:27:809] User enters Password =123456]]>
+    </line>
+    <line>
+      <![CDATA[[2022-11-26] [02:00:27:893] User clicks on the Login Button !!!]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]>
+      <![CDATA[***** STARTING TEST STEP:- Test002_VerifyDashboardPage *****]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:32:609] Resturant Name =Polo Club - Food]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:32:610] Test Case test #1]]>
+      <![CDATA[[2022-11-26] [02:00:31:496] Assertion Passed: DiningEdge is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:32:621] Polo Club - Food for purveryor Sysco is Active !!]]>
+      <![CDATA[[2022-11-26] [02:00:31:552] Assertion Passed: Dashboard is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:37:994] User Enters the user name -> louispoulias@gmail.com]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:38:254] User clicks to the Next Button !!!]]>
+      <![CDATA[***** STARTING TEST STEP:- Test003_VerifyOrdersGuidePage *****]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:43:583] User enters the user Email --> louispoulias@gmail.com]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:43:739] User enters the user Password --> Olympia01$]]>
+      <![CDATA[[2022-11-26] [02:00:31:997] User clicks on select Order Edge Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:43:940] User click on the Login Button !!!]]>
+      <![CDATA[Save Image File Path : C:\Users\Joyti Singh\Desktop\DiningEdgeByMohit\DiningEdge\./target/screenshots/\DiningEdgeLoginTest\2022_11_26_02_00_32_032\screenshot.png]]>
     </line>
     <line>
-      <![CDATA[[2022-09-06] [15:24:50:106] No Alert found on page !!!]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:53:645] No Alert found on page !!!]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:24:58:359] no list drop down found on the page]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:01:849] No Alert found on page !!!]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:13:443] failed to logout]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:18:464] Connecting to the Gmail ...]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:24:821] Exiting test method]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:24:821] Pass]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:24:827] Running Excel write method!]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:25:443] Closing the resources ....]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:25:443] Closing file output stream object!]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:26:041] Connecting to the Gmail ...]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:26:045] Illegal address]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:26:045] Technical issue in sending reporting]]>
-    </line>
-    <line>
-      <![CDATA[[2022-09-06] [15:25:26:046] Email Sent with Attachment]]>
+      <![CDATA[Save Image File Path : C:\Users\Joyti Singh\Desktop\DiningEdgeByMohit\DiningEdge\./target/screenshots/\DiningEdgeLoginTest\2022_11_26_02_00_33_033\screenshot.png]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-09-06T15:24:11 IST" name="Sysco_Suite" finished-at="2022-09-06T15:25:25 IST" duration-ms="73966">
+  <suite started-at="2022-11-26T02:00:17 IST" name="Default suite" finished-at="2022-11-26T02:00:36 IST" duration-ms="19319">
     <groups>
     </groups>
-    <test started-at="2022-09-06T15:24:11 IST" name="SyscoTest" finished-at="2022-09-06T15:25:25 IST" duration-ms="73966">
-      <class name="com.diningedge.Regression.SyscoShopFlow">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:10 IST" name="setUp" finished-at="2022-09-06T15:24:11 IST" duration-ms="876" status="PASS">
+    <test started-at="2022-11-26T02:00:17 IST" name="Default test" finished-at="2022-11-26T02:00:36 IST" duration-ms="19319">
+      <class name="com.diningedge.Regression.DiningEdgeLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:17 IST" name="setUp" finished-at="2022-11-26T02:00:17 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setExtentReporting()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:11 IST" name="setExtentReporting" finished-at="2022-09-06T15:24:11 IST" depends-on-methods="com.diningedge.resources.BaseTest.setUp" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:17 IST" name="setExtent" finished-at="2022-11-26T02:00:17 IST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setExtentReporting -->
-        <test-method is-config="true" signature="readData()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:11 IST" name="readData" finished-at="2022-09-06T15:24:12 IST" duration-ms="1042" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:12:508] Test data read.]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:12:523] Exiting before data.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- readData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:12 IST" name="setup" finished-at="2022-09-06T15:24:32 IST" duration-ms="19892" status="PASS">
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:17 IST" name="setup" finished-at="2022-11-26T02:00:27 IST" duration-ms="9663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:32 IST" name="testMethodName" finished-at="2022-09-06T15:24:32 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:27 IST" name="testMethodName" finished-at="2022-11-26T02:00:27 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.diningedge.Regression.SyscoShopFlow.exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test001_VerifyLoginPage()]]>
               </value>
             </param>
           </params>
@@ -144,163 +83,173 @@
               <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- exportFileFlow *****]]>
+              <![CDATA[***** STARTING TEST STEP:- Test001_VerifyLoginPage *****]]>
             </line>
             <line>
               <![CDATA[ ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method signature="exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:24:32 IST" name="exportFileFlow" data-provider="userData" finished-at="2022-09-06T15:25:24 IST" duration-ms="52220" status="PASS">
+        <test-method signature="Test001_VerifyLoginPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:27 IST" name="Test001_VerifyLoginPage" finished-at="2022-11-26T02:00:27 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:27:710] User enters Name= ocrtestonly]]>
+            </line>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:27:809] User enters Password =123456]]>
+            </line>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:27:893] User clicks on the Login Button !!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test001_VerifyLoginPage -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:27 IST" name="take_screenshot_on_failure" finished-at="2022-11-26T02:00:27 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PoloClubFood_Sysco]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sysco]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Polo Club - Food]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[louispoulias@gmail.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Olympia01$]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Weekly]]>
-              </value>
-            </param>
-            <param index="7">
-              <value is-null="true"/>
-            </param>
-            <param index="8">
-              <value is-null="true"/>
-            </param>
-            <param index="9">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:32:609] Resturant Name =Polo Club - Food]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:32:610] Test Case test #1]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:32:621] Polo Club - Food for purveryor Sysco is Active !!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:37:994] User Enters the user name -> louispoulias@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:38:254] User clicks to the Next Button !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:43:583] User enters the user Email --> louispoulias@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:43:739] User enters the user Password --> Olympia01$]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:43:940] User click on the Login Button !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:50:106] No Alert found on page !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:53:645] No Alert found on page !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:24:58:359] no list drop down found on the page]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:01:849] No Alert found on page !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:13:443] failed to logout]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:18:464] Connecting to the Gmail ...]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:24:821] Exiting test method]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:24:821] Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- exportFileFlow -->
-        <test-method is-config="true" signature="writeExcelData()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:24 IST" name="writeExcelData" finished-at="2022-09-06T15:25:25 IST" duration-ms="347" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:24:827] Running Excel write method!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeExcelData -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="take_screenshot_on_failure" finished-at="2022-09-06T15:25:25 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=exportFileFlow status=SUCCESS method=SyscoShopFlow.exportFileFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff] output=[2022-09-06] [15:24:32:608] Inside OG Export : Started exporting OG for different accounts]]]>
+                <![CDATA[[TestResult name=Test001_VerifyLoginPage status=SUCCESS method=DiningEdgeLoginTest.Test001_VerifyLoginPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe] output=[2022-11-26] [02:00:27:710] User enters Name= ocrtestonly]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="tearDown" finished-at="2022-09-06T15:25:25 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:27 IST" name="testMethodName" finished-at="2022-11-26T02:00:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test002_VerifyDashboardPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[***** STARTING TEST STEP:- Test002_VerifyDashboardPage *****]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodName -->
+        <test-method signature="Test002_VerifyDashboardPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:27 IST" name="Test002_VerifyDashboardPage" finished-at="2022-11-26T02:00:31 IST" depends-on-methods="com.diningedge.Regression.DiningEdgeLoginTest.Test001_VerifyLoginPage" duration-ms="3649" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:31:496] Assertion Passed: DiningEdge is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:31:552] Assertion Passed: Dashboard is present on the HomePage]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test002_VerifyDashboardPage -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:31 IST" name="take_screenshot_on_failure" finished-at="2022-11-26T02:00:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test002_VerifyDashboardPage status=SUCCESS method=DiningEdgeLoginTest.Test002_VerifyDashboardPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe] output=[2022-11-26] [02:00:31:496] Assertion Passed: DiningEdge is present on the HomePage]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- take_screenshot_on_failure -->
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:31 IST" name="testMethodName" finished-at="2022-11-26T02:00:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[***** STARTING TEST STEP:- Test003_VerifyOrdersGuidePage *****]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodName -->
+        <test-method signature="Test003_VerifyOrdersGuidePage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:31 IST" name="Test003_VerifyOrdersGuidePage" finished-at="2022-11-26T02:00:32 IST" depends-on-methods="com.diningedge.Regression.DiningEdgeLoginTest.Test002_VerifyDashboardPage" duration-ms="491" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion Failed: Actual Value :Order Edge is not same as expected that is : Order  Edge expected [Order  Edge] but found [Order Edge]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion Failed: Actual Value :Order Edge is not same as expected that is : Order  Edge expected [Order  Edge] but found [Order Edge]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.diningedge.PageActions.DashboardPage.verifyOrderEdgePage(DashboardPage.java:112)
+at com.diningedge.Regression.DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage(DiningEdgeLoginTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[[2022-11-26] [02:00:31:997] User clicks on select Order Edge Button !!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test003_VerifyOrdersGuidePage -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:32 IST" name="take_screenshot_on_failure" finished-at="2022-11-26T02:00:36 IST" duration-ms="4309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test003_VerifyOrdersGuidePage status=FAILURE method=DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe] output=[2022-11-26] [02:00:31:997] User clicks on select Order Edge Button !!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Save Image File Path : C:\Users\Joyti Singh\Desktop\DiningEdgeByMohit\DiningEdge\./target/screenshots/\DiningEdgeLoginTest\2022_11_26_02_00_32_032\screenshot.png]]>
+            </line>
+            <line>
+              <![CDATA[Save Image File Path : C:\Users\Joyti Singh\Desktop\DiningEdgeByMohit\DiningEdge\./target/screenshots/\DiningEdgeLoginTest\2022_11_26_02_00_33_033\screenshot.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- take_screenshot_on_failure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:36 IST" name="tearDown" finished-at="2022-11-26T02:00:36 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeAllResources()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="closeAllResources" finished-at="2022-09-06T15:25:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@1d2adfbe]" started-at="2022-11-26T02:00:36 IST" name="endReport" finished-at="2022-11-26T02:00:36 IST" duration-ms="418" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:25:443] Closing the resources ....]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:25:443] Closing file output stream object!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- closeAllResources -->
-        <test-method is-config="true" signature="sendMailToTheUser()[pri:0, instance:com.diningedge.Regression.SyscoShopFlow@53fe15ff]" started-at="2022-09-06T15:25:25 IST" name="sendMailToTheUser" finished-at="2022-09-06T15:25:26 IST" duration-ms="571" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:26:041] Connecting to the Gmail ...]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:26:045] Illegal address]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:26:045] Technical issue in sending reporting]]>
-            </line>
-            <line>
-              <![CDATA[[2022-09-06] [15:25:26:046] Email Sent with Attachment]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sendMailToTheUser -->
-      </class> <!-- com.diningedge.Regression.SyscoShopFlow -->
-    </test> <!-- SyscoTest -->
-  </suite> <!-- Sysco_Suite -->
+        </test-method> <!-- endReport -->
+      </class> <!-- com.diningedge.Regression.DiningEdgeLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
