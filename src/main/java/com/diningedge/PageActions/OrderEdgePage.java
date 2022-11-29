@@ -10,7 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
+import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
 public class OrderEdgePage extends BaseUi {
@@ -26,8 +28,8 @@ public class OrderEdgePage extends BaseUi {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 
-	protected WebElement waitForElementToClickable(By locator) {
-		return wait.until(ExpectedConditions.elementToBeClickable(locator));
+	protected WebElement waitForElementToClickable(WebElement element) {
+		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	protected WebElement waitForElementToBePresent(By locator) {
@@ -43,11 +45,24 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	/*---------------------DiningEdge Locators-------------------*/
+	private String Comparabls = "//div//h3[contains(.,'$')]/../..//a//button//span//*[local-name()='svg' and @role='presentation']";
+
+	private String beforeafter = "//button[@aria-label='$']";
+
 	@FindBy(xpath = "//div//button[@title='Cart']")
 	private WebElement addToCart;
-	
-	@FindBy(xpath = "//div//span[text()='Checkout']")
-	private WebElement checkout;
+
+	@FindBy(xpath = "//div//p[text()='Best price & quality']/..//span//input/..")
+	private WebElement bestPriceToggel;
+
+	@FindBy(xpath = "//p[text()='Product']//button//span")
+	private WebElement addProduct;
+
+	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
+	private WebElement popupHeader;
+
+	/*-------------------------Dynamic Locators------------------*/
+	private String checkout = "//div//span[text()='$']";
 
 	/*----------------------DiningEdge Methods---------------------------*/
 	public OrderEdgePage(WebDriver driver) {
@@ -56,26 +71,129 @@ public class OrderEdgePage extends BaseUi {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(120, 1));
 	}
 
+	public WebElement dynamicElements(String locator, String value) {
+		return driver.findElement(By.xpath(locator.replace("$", value)));
+	}
+
 	public void enterUnits(String units, String productName, String vendor, String unitType) {
+
+		CommonMethods.scrollIntoView(driver,
+				driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
+						+ "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='" + vendor
+						+ "']/../../../../following::div//div//p[contains(text(),'" + unitType
+						+ "')]/../../..//input")));
+
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'"
 				+ productName + "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='"
-				+ vendor + "']/../../../../following::div//div//p[contains(text(),'" + unitType + "')]/../../..//input"))));
-		
+				+ vendor + "']/../../../../following::div//div//p[contains(text(),'" + unitType
+				+ "')]/../../..//input"))));
+
 		driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
 				+ "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='" + vendor
 				+ "']/../../../../following::div//div//p[contains(text(),'" + unitType + "')]/../../..//input"))
 				.sendKeys(units);
 		logMessage("User added number of units = " + units);
 	}
-	
-	public void clickOnAddToCartButton() {
+
+	public void enterUnitsAfterBestPrices(String units, String productName, String vendor, String unitType) {
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'"
+				+ productName + "')]/../..//parent::div/../../../../following-sibling::div//h3[contains(text(),'"
+				+ unitType + "')]/../ ::div//h3[contains(text(),'" + vendor
+				+ "')]/../../following-sibling::div[2]//div/div/div/input"))));
+
+		driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
+				+ "')]/../..//parent::div/../../../../following-sibling::div//h3[contains(text(),'" + unitType
+				+ "')]/../following-sibling::div//h3[contains(text(),'" + vendor
+				+ "')]/../../following-sibling::div[2]//div/div/div/input")).sendKeys(units);
+
+		logMessage("User added number of units = " + units);
+	}
+
+	public void clickOnAddToCartButton(String value) {
 		wait.until(ExpectedConditions.visibilityOf(addToCart));
+		waitForElementToClickable(addToCart);
 		addToCart.click();
 		logMessage("User clicks on the Add Cart Button !!");
-		wait.until(ExpectedConditions.visibilityOf(checkout));
-		checkout.click();
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(checkout, value)));
+		CommonMethods.hardwait(2000);
+		dynamicElements(checkout, "Checkout").click();
 		logMessage("User clicks on the Checkout Button !!");
 	}
-	
-	
+
+	public void clickOnBesrPriceToggelButton() {
+		waitForElementToClickable(bestPriceToggel);
+		bestPriceToggel.click();
+		logMessage("User clicks on the Best price & quality Button !!");
+	}
+
+	public void clickOnAddProduct() {
+		waitForElementToClickable(addProduct);
+		addProduct.click();
+		logMessage("User clicks on the add Product Button !!");
+	}
+
+	public void varifyPopupForCreateProduct(String expected) {
+		wait.until(ExpectedConditions.visibilityOf(popupHeader));
+		String actual = popupHeader.getText();
+		Assert.assertEquals(actual, expected,
+				"Assertion Failed: Actual Value :" + actual + " is not same as expected that is : " + expected);
+		logMessage("Assertion Passed: " + expected + " is present on the popup");
+
+	}
+
+	public void enterDetailsOnCreateProduct(String label, String value) {
+		varifyPopupForCreateProduct("Create product");
+		driver.findElement(By.xpath("//form//label[text()='" + label + "']//following-sibling::div//input"))
+				.sendKeys(value);
+		logMessage("User enters the value " + value + " in " + label);
+	}
+
+	public void clickOnDropdown(String label) {
+		driver.findElement(By.xpath("//form//label[contains(text(),'" + label + "')]/..//div//div")).click();
+		logMessage("User enters the value " + label + " Dropdown !!");
+	}
+
+	public void selcetValueFromDropDown(String label, String value) {
+		clickOnDropdown(label);
+		WebElement element = driver.findElement(By.xpath("//div//ul//li[text()='" + value + "']"));
+		CommonMethods.scrollIntoView(driver, element);
+		element.click();
+		logMessage("User selects the value " + value + " From the Dropdown !!");
+	}
+
+	public void addNewItemInDropDownList(String label, String value) {
+		clickOnDropdown(label);
+		driver.findElement(By.xpath("//div//ul//li//p[contains(text(),'" + label + "')]")).click();
+		driver.findElement(By.xpath("//label[contains(text(),'" + label + "')]/..//div//input")).sendKeys(value);
+		logMessage("User enters the value " + value + " in " + label);
+		clickOnSaveIconForCategory(label);
+	}
+
+	public void clickOnSaveIconForCategory(String label) {
+		driver.findElement(By.xpath("//label[contains(text(),'" + label + "')]/../following-sibling::button[1]"))
+				.click();
+		logMessage("User clicks on the save icon for " + label);
+	}
+
+	public void clickOnCheckBoxes(String label) {
+		driver.findElement(By.xpath("//span[contains(text(),'" + label + "')]")).click();
+		logMessage("User click on the " + label + " checkbox");
+	}
+
+	public void clickOnSaveAndCancel(String value) {
+		driver.findElement(By.xpath("//div//button//span[text()='" + value + "']/..")).click();
+		logMessage("User click on the " + value + " button");
+	}
+
+	public void clickOnComparabls(String value) {
+		waitForElementToClickable(dynamicElements(Comparabls, value));
+		dynamicElements(Comparabls, value).click();
+		logMessage("User clicks on the Open Manage Comparabls Button !!");
+	}
+
+	public void clickOnPreviousAfterButton(String value) {
+		waitForElementToClickable(dynamicElements(beforeafter, value));
+		dynamicElements(beforeafter, value).click();
+		logMessage("User clicks on the " + value + " Button !!");
+	}
 }

@@ -18,6 +18,7 @@ import org.testng.Assert;
 import org.testng.annotations.Factory;
 
 import com.diningedge.Utilities.CustomFunctions;
+import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
 public class DashboardPage extends BaseUi {
@@ -32,7 +33,7 @@ public class DashboardPage extends BaseUi {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 
-	protected WebElement waitForElementToClickable(By locator) {
+	protected WebElement waitForElementToClickable(WebElement locator) {
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 
@@ -66,6 +67,9 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//div[@id='root']//div/div/header/div/h3")
 	private WebElement verifyOrderEdge;
+
+	@FindBy(xpath = "//div//a[@href='/settings']")
+	private WebElement settingBtn;
 
 	/*----------------------DiningEdge Methods---------------------------*/
 	public DashboardPage(WebDriver driver) {
@@ -115,6 +119,13 @@ public class DashboardPage extends BaseUi {
 	}
 
 	public void clickOnHeader() {
+		CommonMethods.hardwait(2000);
 		verifyOrderEdge.click();
+	}
+
+	public void clickOnSettingButton() {
+		waitForElementToClickable(settingBtn);
+		settingBtn.click();
+		logMessage("User clicks on the Setting Button !!!");
 	}
 }

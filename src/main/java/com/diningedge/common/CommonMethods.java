@@ -8,6 +8,9 @@ import java.util.Date;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.Utilities.ExcleReader;
@@ -135,6 +138,24 @@ public class CommonMethods extends BaseUi {
 			if (!file.isDirectory() && file.getName().contains(extension))
 				file.delete();
 		System.out.println("All files deleted from folder :-" + path);
+	}
+
+	public static void scrollIntoView(WebDriver driver, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+
+	public static void hardwait(int timeOut) {
+		try {
+			Thread.sleep(timeOut);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static boolean verifyChecboxIsSelected(WebElement element) {
+		return element.isSelected();
 	}
 
 }

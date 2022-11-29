@@ -59,16 +59,7 @@ public class TakeScreenshot {
 		try {
 			Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
 					.takeScreenshot(driver);
-			ImageIO.write(screenshot.getImage(), "PNG", new File(saveImgFile)); // This
-																				// takes
-																				// screen-shot
-																				// of
-																				// the
-																				// full
-																				// web
-																				// page
-																				// producing
-																				// error.
+			ImageIO.write(screenshot.getImage(), "PNG", new File(saveImgFile)); // This is use to take screenshot
 			Reporter.log("Save Image File Path : " + saveImgFile, true);
 			// FileUtils.copyFile(scrFile, new File(saveImgFile));
 		} catch (IOException e1) {
@@ -98,18 +89,18 @@ public class TakeScreenshot {
 	 */
 
 	public void takeScreenShotOnException(ITestResult result) {
-			String takeScreenshot = getProperty("take-screenshot");
-			if (result.getStatus() == ITestResult.FAILURE) {
-				if (takeScreenshot.equalsIgnoreCase("true") || takeScreenshot.equalsIgnoreCase("yes")) {
-					try {
-						if (driver != null) {
-							takeScreenshot();
-						}
-					} catch (Exception ex) {
-						Reporter.log("Driver is null while taking screen shot", true);
+		String takeScreenshot = getProperty("take-screenshot");
+		if (result.getStatus() == ITestResult.FAILURE) {
+			if (takeScreenshot.equalsIgnoreCase("true") || takeScreenshot.equalsIgnoreCase("yes")) {
+				try {
+					if (driver != null) {
+						takeScreenshot();
 					}
+				} catch (Exception ex) {
+					Reporter.log("Driver is null while taking screen shot", true);
 				}
 			}
+		}
 	}
 
 	public void hardWait(int seconds) {

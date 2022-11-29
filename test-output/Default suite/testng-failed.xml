@@ -12,7 +12,6 @@
           <include name="setUp"/>
           <include name="setExtent"/>
           <include name="testMethodName"/>
-          <include name="tearDown"/>
           <include name="setup"/>
           <include name="endReport"/>
         </methods>
