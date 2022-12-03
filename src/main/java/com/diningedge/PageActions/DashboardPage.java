@@ -62,8 +62,7 @@ public class DashboardPage extends BaseUi {
 	@FindBy(id = "select-location")
 	private WebElement location;
 
-	@FindBy(xpath = "//span[text()='Order Edge']")
-	private WebElement orderEdge;
+	private String listItems = "//span[text()='$']";
 
 	@FindBy(xpath = "//div[@id='root']//div/div/header/div/h3")
 	private WebElement verifyOrderEdge;
@@ -76,6 +75,10 @@ public class DashboardPage extends BaseUi {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(120, 1));
+	}
+
+	public WebElement dynamicElements(String locator, String value) {
+		return driver.findElement(By.xpath(locator.replace("$", value)));
 	}
 
 	public void getDiningEdgeText(String diningText) {
@@ -104,10 +107,10 @@ public class DashboardPage extends BaseUi {
 		logMessage("User clicks on select Location dropDown !!");
 	}
 
-	public void clickOnTheOrderEdge() {
-		wait.until(ExpectedConditions.visibilityOf(orderEdge));
-		orderEdge.click();
-		logMessage("User clicks on select Order Edge Button !!");
+	public void clickOnTheOrderEdge(String value) {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(listItems, value)));
+		dynamicElements(listItems, value).click();
+		logMessage("User clicks on " + value + " Button !!");
 	}
 
 	public void verifyOrderEdgePage(String expected) {

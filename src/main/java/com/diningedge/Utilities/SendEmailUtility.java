@@ -32,21 +32,18 @@ public class SendEmailUtility extends BaseUi {
 
 	public static Session createConnection() throws MessagingException {
 		logMsg("Connecting to the Gmail ...");
-
-		Properties props = System.getProperties();
-		String host = "smtp.gmail.com";
-		props.put("mail.smtp.starttls.enable", "true");
-		props.put("mail.smtp.host", host);
-		props.put("mail.smtp.user", getProperty("email"));
-		props.put("mail.smtp.password", getProperty("password"));
-		props.put("mail.smtp.port", "587");
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-		props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+		Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.socketFactory.port", "465");
+        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(getProperty("email"), getProperty("password"));// Specify the Username
+				return new PasswordAuthentication(getProperty("email"), getProperty("gmailPassword"));// Specify the Username
 																									// and the PassWord
 			}
 		});

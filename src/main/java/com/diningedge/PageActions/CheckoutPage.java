@@ -47,6 +47,8 @@ public class CheckoutPage extends BaseUi {
 
 	private String selecctYesNo = "//button//span[text()='$']";
 
+	private String orderDetails = "//div//span[text()='$']/..//p";
+
 	@FindBy(xpath = "//table//th//span[text()='Product']/../..//th[1]")
 	private WebElement productCheckBox;
 
@@ -83,9 +85,16 @@ public class CheckoutPage extends BaseUi {
 		logMessage("User clicks on delete icon !!");
 	}
 
-	public void selecctYesNo(String value) {
+	public void selecctSumbitAll(String value) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selecctYesNo, value)));
 		dynamicElements(selecctYesNo, value).click();
 		logMessage("User clicks on the " + value + " Button !!");
+	}
+
+	public String getOrderDetails(String value) {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(orderDetails, value)));
+		String getOrderDetails = dynamicElements(orderDetails, value).getText();
+		System.out.println("Order Details = "+getOrderDetails);
+		return getOrderDetails;
 	}
 }

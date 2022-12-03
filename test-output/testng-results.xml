@@ -1,205 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- Test001_VerifyLoginPage *****]]>
+      <![CDATA[***** STARTING TEST STEP:- sendOrderGuideFromOrderEdge *****]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:46:56:342] User enters Name= manhattan]]>
+      <![CDATA[[2022-12-04] [01:07:57:510] User enters Name= manhattan]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:46:56:447] User enters Password =123456]]>
+      <![CDATA[[2022-12-04] [01:07:57:624] User enters Password =123456]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:46:56:521] User clicks on the Login Button !!!]]>
+      <![CDATA[[2022-12-04] [01:07:57:697] User clicks on the Login Button !!!]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[[2022-12-04] [01:08:01:377] Assertion Passed: DiningEdge is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- Test002_VerifyDashboardPage *****]]>
+      <![CDATA[[2022-12-04] [01:08:01:430] Assertion Passed: Dashboard is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[[2022-12-04] [01:08:01:856] User clicks on Order Edge Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:47:00:357] Assertion Passed: DiningEdge is present on the HomePage]]>
+      <![CDATA[[2022-12-04] [01:08:02:168] User clicks on the Setting Button !!!]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:47:00:411] Assertion Passed: Dashboard is present on the HomePage]]>
+      <![CDATA[[2022-12-04] [01:08:03:660] User enters Cheney search bar !!]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[[2022-12-04] [01:08:03:967] User clicks on the Cheney List item !!]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- Test003_VerifyOrdersGuidePage *****]]>
+      <![CDATA[[2022-12-04] [01:08:05:181] User clicks on the EDI Settings Setting item !!]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[[2022-12-04] [01:08:05:315] User clicks the select Type DropDown]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:47:00:801] User clicks on select Order Edge Button !!]]>
+      <![CDATA[[2022-12-04] [01:08:05:464] User clicks the Email DropDown]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:47:00:859] Assertion Passed: Order Edge is present on the HomePage]]>
+      <![CDATA[[2022-12-04] [01:08:05:882] User remove the email :: diningedgetest@gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2022-11-30] [01:47:10:474] User clicks on the Next Page Button !!]]>
+      <![CDATA[[2022-12-04] [01:08:06:209] User enter the following email ::diningedgetest@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:06:391] User clicks on the Save button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:10:247] User clicks on the Snack Bar cross button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:10:584] User clicks on Order Edge Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:20:551] User added number of units = 2]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:24:904] User clicks on the Add Cart Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:27:173] User clicks on the Checkout Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:28:390] User clicks on the Submit All Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:30:709] User clicks on the Snack Bar cross button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:35:943] Connecting to gmail...]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:38:309] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:39:174] Subject is :-New order : Manhattan Deli (Manhattan Deli)]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:40:971] orderId #: 557]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:40:971] Order Date : 12/03/2022]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:40:972] Resturant Name : Manhattan Deli]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-04] [01:08:41:629] New order : Manhattan Deli (Manhattan Deli) :: email deleted successfully !!]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-30T01:46:43 IST" name="Default suite" finished-at="2022-11-30T01:47:10 IST" duration-ms="27344">
+  <suite started-at="2022-12-04T01:07:43 IST" name="Default suite" finished-at="2022-12-04T01:08:42 IST" duration-ms="59581">
     <groups>
     </groups>
-    <test started-at="2022-11-30T01:46:43 IST" name="Default test" finished-at="2022-11-30T01:47:10 IST" duration-ms="27344">
+    <test started-at="2022-12-04T01:07:43 IST" name="Default test" finished-at="2022-12-04T01:08:42 IST" duration-ms="59581">
       <class name="com.diningedge.Regression.DiningEdgeLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:43 IST" name="setUp" finished-at="2022-11-30T01:46:43 IST" duration-ms="577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:43 IST" name="setExtent" finished-at="2022-11-30T01:46:43 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:07:43 IST" name="setExtent" finished-at="2022-12-04T01:07:43 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:43 IST" name="setup" finished-at="2022-11-30T01:46:56 IST" duration-ms="12318" status="PASS">
+        <test-method is-config="true" signature="dataSetUp()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:07:43 IST" name="dataSetUp" finished-at="2022-12-04T01:07:43 IST" depends-on-methods="com.diningedge.resources.BaseTest.setExtent" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataSetUp -->
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:07:43 IST" name="testMethodName" finished-at="2022-12-04T01:07:43 IST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[***** STARTING TEST STEP:- sendOrderGuideFromOrderEdge *****]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodName -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:07:43 IST" name="setup" finished-at="2022-12-04T01:07:57 IST" duration-ms="13365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:56 IST" name="testMethodName" finished-at="2022-11-30T01:46:56 IST" duration-ms="8" status="PASS">
+        <test-method signature="sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:07:57 IST" name="sendOrderGuideFromOrderEdge" data-provider="testData" finished-at="2022-12-04T01:08:42 IST" duration-ms="45064" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test001_VerifyLoginPage()]]>
+                <![CDATA[Cheney]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation Testing Cheney]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Automation Testing]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[ ]]>
+              <![CDATA[[2022-12-04] [01:07:57:510] User enters Name= manhattan]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- Test001_VerifyLoginPage *****]]>
+              <![CDATA[[2022-12-04] [01:07:57:624] User enters Password =123456]]>
             </line>
             <line>
-              <![CDATA[ ]]>
+              <![CDATA[[2022-12-04] [01:07:57:697] User clicks on the Login Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:01:377] Assertion Passed: DiningEdge is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:01:430] Assertion Passed: Dashboard is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:01:856] User clicks on Order Edge Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:02:168] User clicks on the Setting Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:03:660] User enters Cheney search bar !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:03:967] User clicks on the Cheney List item !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:05:181] User clicks on the EDI Settings Setting item !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:05:315] User clicks the select Type DropDown]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:05:464] User clicks the Email DropDown]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:05:882] User remove the email :: diningedgetest@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:06:209] User enter the following email ::diningedgetest@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:06:391] User clicks on the Save button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:10:247] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:10:584] User clicks on Order Edge Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:20:551] User added number of units = 2]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:24:904] User clicks on the Add Cart Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:27:173] User clicks on the Checkout Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:28:390] User clicks on the Submit All Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:30:709] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:35:943] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:38:309] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:39:174] Subject is :-New order : Manhattan Deli (Manhattan Deli)]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:40:971] orderId #: 557]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:40:971] Order Date : 12/03/2022]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:40:972] Resturant Name : Manhattan Deli]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-04] [01:08:41:629] New order : Manhattan Deli (Manhattan Deli) :: email deleted successfully !!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testMethodName -->
-        <test-method signature="Test001_VerifyLoginPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:56 IST" name="Test001_VerifyLoginPage" finished-at="2022-11-30T01:46:56 IST" duration-ms="395" status="PASS">
+        </test-method> <!-- sendOrderGuideFromOrderEdge -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:08:42 IST" name="tearDown" finished-at="2022-12-04T01:08:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[[2022-11-30] [01:46:56:342] User enters Name= manhattan]]>
-            </line>
-            <line>
-              <![CDATA[[2022-11-30] [01:46:56:447] User enters Password =123456]]>
-            </line>
-            <line>
-              <![CDATA[[2022-11-30] [01:46:56:521] User clicks on the Login Button !!!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Test001_VerifyLoginPage -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:56 IST" name="take_screenshot_on_failure" finished-at="2022-11-30T01:46:56 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:08:42 IST" name="take_screenshot_on_failure" finished-at="2022-12-04T01:08:42 IST" duration-ms="258" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test001_VerifyLoginPage status=SUCCESS method=DiningEdgeLoginTest.Test001_VerifyLoginPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8] output=[2022-11-30] [01:46:56:342] User enters Name= manhattan]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:56 IST" name="testMethodName" finished-at="2022-11-30T01:46:56 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test002_VerifyDashboardPage()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-            <line>
-              <![CDATA[***** STARTING TEST STEP:- Test002_VerifyDashboardPage *****]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testMethodName -->
-        <test-method signature="Test002_VerifyDashboardPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:46:56 IST" name="Test002_VerifyDashboardPage" finished-at="2022-11-30T01:47:00 IST" depends-on-methods="com.diningedge.Regression.DiningEdgeLoginTest.Test001_VerifyLoginPage" duration-ms="3881" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-11-30] [01:47:00:357] Assertion Passed: DiningEdge is present on the HomePage]]>
-            </line>
-            <line>
-              <![CDATA[[2022-11-30] [01:47:00:411] Assertion Passed: Dashboard is present on the HomePage]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Test002_VerifyDashboardPage -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:47:00 IST" name="take_screenshot_on_failure" finished-at="2022-11-30T01:47:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Test002_VerifyDashboardPage status=SUCCESS method=DiningEdgeLoginTest.Test002_VerifyDashboardPage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8] output=[2022-11-30] [01:47:00:357] Assertion Passed: DiningEdge is present on the HomePage]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:47:00 IST" name="testMethodName" finished-at="2022-11-30T01:47:00 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.diningedge.Regression.DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-            <line>
-              <![CDATA[***** STARTING TEST STEP:- Test003_VerifyOrdersGuidePage *****]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testMethodName -->
-        <test-method signature="Test003_VerifyOrdersGuidePage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:47:00 IST" name="Test003_VerifyOrdersGuidePage" finished-at="2022-11-30T01:47:10 IST" depends-on-methods="com.diningedge.Regression.DiningEdgeLoginTest.Test002_VerifyDashboardPage" duration-ms="10058" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[[2022-11-30] [01:47:00:801] User clicks on select Order Edge Button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2022-11-30] [01:47:00:859] Assertion Passed: Order Edge is present on the HomePage]]>
-            </line>
-            <line>
-              <![CDATA[[2022-11-30] [01:47:10:474] User clicks on the Next Page Button !!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Test003_VerifyOrdersGuidePage -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:47:10 IST" name="take_screenshot_on_failure" finished-at="2022-11-30T01:47:10 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Test003_VerifyOrdersGuidePage status=SUCCESS method=DiningEdgeLoginTest.Test003_VerifyOrdersGuidePage()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8] output=[2022-11-30] [01:47:00:801] User clicks on select Order Edge Button !!]]]>
+                <![CDATA[[TestResult name=sendOrderGuideFromOrderEdge status=SUCCESS method=DiningEdgeLoginTest.sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf] output=[2022-12-04] [01:07:57:510] User enters Name= manhattan]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@49ec71f8]" started-at="2022-11-30T01:47:10 IST" name="endReport" finished-at="2022-11-30T01:47:10 IST" duration-ms="495" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.DiningEdgeLoginTest@2f9f7dcf]" started-at="2022-12-04T01:08:42 IST" name="endReport" finished-at="2022-12-04T01:08:42 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

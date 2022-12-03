@@ -16,6 +16,7 @@ import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
 public class SettingsPage extends BaseUi {
+	@SuppressWarnings("unused")
 	private static final String ExpectedCondition = null;
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -54,8 +55,12 @@ public class SettingsPage extends BaseUi {
 	private String selectSettingType = "//button//p[text()='$']";
 
 	private String settingsOptions = "//div//span[text()='$']";
-	
-	private String removeEmail="//div//span[text()='$']/..//*[local-name()='svg' and @role='presentation']";
+
+	private String removeEmail = "//div//span[text()='$']/..//*[local-name()='svg' and @role='presentation']";
+
+	private String addItem = "//div//label[text()='$']/..//div//input";
+
+	private String selectItem = "//div//p[contains(.,'$')]/..//div//input";
 
 	@FindBy(xpath = "//div//input[contains(@placeholder,'Search by vendor')]")
 	private WebElement searchBar;
@@ -80,9 +85,15 @@ public class SettingsPage extends BaseUi {
 
 	@FindBy(xpath = "/html/body/div[3]/div[2]/div/button")
 	private WebElement crossBtn;
-	
-	@FindBy (xpath = "//span[@id='client-snackbar']//p")
+
+	@FindBy(xpath = "//span[@id='client-snackbar']//p")
 	private WebElement snackbar;
+
+	@FindBy(xpath = "//span[@id='client-snackbar']/../following-sibling::div//button")
+	private WebElement closeSnackbar;
+
+	@FindBy(xpath = "//button//span[text()='Save and Close']")
+	private WebElement saveNclose;
 
 	/*----------------------DiningEdge Methods---------------------------*/
 
@@ -104,11 +115,11 @@ public class SettingsPage extends BaseUi {
 		logMessage("User clicks on the " + value + " List item !!");
 	}
 
-	public void selectSettinsgType(String value) {
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, value)));
+	public void selectSettinsType() {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, "EDI Settings")));
 		CommonMethods.hardwait(1000);
-		dynamicElements(selectSettingType, value).click();
-		logMessage("User clicks on the " + value + " Setting item !!");
+		dynamicElements(selectSettingType, "EDI Settings").click();
+		logMessage("User clicks on the " + "EDI Settings" + " Setting item !!");
 
 	}
 
@@ -167,16 +178,57 @@ public class SettingsPage extends BaseUi {
 		crossBtn.click();
 		logMessage("User clicks on the cross button !!");
 	}
-	
+
 	public void verifySnackbarMessage(String expected) {
 		String atcual = snackbar.getText();
 		Assert.assertEquals(atcual, expected,
 				"ASSERTION FAILED : Value is not as expeted that should be ::" + expected);
 		logMessage("ASSERTION PASSED :: Value is expected as " + expected);
 	}
-	
+
 	public void clickOnEmailRemove(String email) {
-		dynamicElements(removeEmail, email).click();
-		logMessage("User remove the email :: "+email);
+		if (validateEmailPresent(email)) {
+			dynamicElements(removeEmail, email).click();
+			logMessage("User remove the email :: " + email);
+		} else {
+			logMessage("Email Removal not required !!!");
+		}
+	}
+
+	public boolean validateEmailPresent(String email) {
+		try {
+			waitForElementToClickable(dynamicElements(removeEmail, email));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+
+	}
+
+	public void addItemToDashboard(String value, String noOfUnits) {
+		CommonMethods.scrollIntoView(driver, dynamicElements(addItem, value));
+		waitForElementToClickable(dynamicElements(addItem, value));
+		dynamicElements(addItem, value).click();
+		dynamicElements(addItem, value).sendKeys(noOfUnits);
+		logMessage("User cliks and enter the item number " + noOfUnits);
+
+	}
+
+	public void selectItemFromDashboard(String value) {
+		CommonMethods.hardwait(1000);
+		dynamicElements(selectItem, value).click();
+		logMessage("User clicks on the add button !!");
+	}
+
+	public void clickOnTheSaveAndCloseButton() {
+		waitForElementToClickable(saveNclose);
+		saveNclose.click();
+		logMessage("User clicks on the SaveAndClose button !!");
+	}
+
+	public void clickOnSnackBarCloseButton() {
+		waitForElementToClickable(closeSnackbar);
+		closeSnackbar.click();
+		logMessage("User clicks on the Snack Bar cross button !!");
 	}
 }

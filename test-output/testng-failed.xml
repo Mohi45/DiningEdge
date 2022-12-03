@@ -5,13 +5,12 @@
     <classes>
       <class name="com.diningedge.Regression.DiningEdgeLoginTest">
         <methods>
-          <include name="Test003_VerifyOrdersGuidePage"/>
-          <include name="Test001_VerifyLoginPage"/>
-          <include name="Test002_VerifyDashboardPage"/>
           <include name="take_screenshot_on_failure"/>
-          <include name="setUp"/>
           <include name="setExtent"/>
           <include name="testMethodName"/>
+          <include name="tearDown"/>
+          <include name="dataSetUp"/>
+          <include name="sendOrderGuideFromOrderEdge" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="endReport"/>
         </methods>

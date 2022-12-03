@@ -31,7 +31,7 @@ public class BaseTest {
 	public ExtentTest logExtent;
 	public ExtentReports extent;
 
-	@BeforeSuite
+	//@BeforeSuite
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		WebDriverManager.edgedriver().setup();
@@ -45,6 +45,8 @@ public class BaseTest {
 	}
 
 	public WebDriver getDriver(BrowserType type, String baseUrl) {
+		WebDriverManager.chromedriver().setup();
+		WebDriverManager.edgedriver().setup();
 		driver = DriverFactory.getInstance().getDriver(type);
 		takeScreenshot = new TakeScreenshot(this.getClass().getSimpleName(), driver);
 		driverPool.add(driver);
@@ -90,6 +92,7 @@ public class BaseTest {
 			logExtent.log(LogStatus.PASS, "Test Case PASSED :: " + result.getName());
 		}
 		extent.endTest(logExtent);
+		driver.quit();
 	}
 
 	@AfterTest

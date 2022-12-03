@@ -75,23 +75,33 @@ public class OrderEdgePage extends BaseUi {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
 	}
 
-	public void enterUnits(String units, String productName, String vendor, String unitType) {
+	// Will continue
+	public void enterUnitsInProducts(String units, String productName, String vendor, String unitType) {
+		if (verifyProductAtOrderEdgePage(productName, vendor, unitType)) {
+			enterUnits(units, productName, vendor, unitType);
+		} else {
+			clickOnComparabls(productName);
+		}
 
+	}
+
+	public void enterUnits(String units, String productName, String vendor, String unitType) {
+		CommonMethods.hardwait(1500);
 		CommonMethods.scrollIntoView(driver,
 				driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
 						+ "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='" + vendor
-						+ "']/../../../../following::div//div//p[contains(text(),'" + unitType
-						+ "')]/../../..//input")));
+						+ "']/../../../../following::div//div//div//p[contains(.,'" + unitType
+						+ "')]/../../..//input[@type='text']")));
 
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'"
 				+ productName + "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='"
-				+ vendor + "']/../../../../following::div//div//p[contains(text(),'" + unitType
-				+ "')]/../../..//input"))));
+				+ vendor + "']/../../../../following::div//div//div//p[contains(.,'" + unitType
+				+ "')]/../../..//input[@type='text']"))));
 
 		driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
 				+ "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='" + vendor
-				+ "']/../../../../following::div//div//p[contains(text(),'" + unitType + "')]/../../..//input"))
-				.sendKeys(units);
+				+ "']/../../../../following::div//div//div//p[contains(.,'" + unitType
+				+ "')]/../../..//input[@type='text']")).sendKeys(units);
 		logMessage("User added number of units = " + units);
 	}
 
@@ -109,12 +119,12 @@ public class OrderEdgePage extends BaseUi {
 		logMessage("User added number of units = " + units);
 	}
 
-	public void clickOnAddToCartButton(String value) {
+	public void clickOnAddToCartButton() {
 		wait.until(ExpectedConditions.visibilityOf(addToCart));
 		waitForElementToClickable(addToCart);
 		addToCart.click();
 		logMessage("User clicks on the Add Cart Button !!");
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(checkout, value)));
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(checkout, "Checkout")));
 		CommonMethods.hardwait(2000);
 		dynamicElements(checkout, "Checkout").click();
 		logMessage("User clicks on the Checkout Button !!");
@@ -185,9 +195,9 @@ public class OrderEdgePage extends BaseUi {
 		logMessage("User click on the " + value + " button");
 	}
 
-	public void clickOnComparabls(String value) {
-		waitForElementToClickable(dynamicElements(Comparabls, value));
-		dynamicElements(Comparabls, value).click();
+	public void clickOnComparabls(String productName) {
+		waitForElementToClickable(dynamicElements(Comparabls, productName));
+		dynamicElements(Comparabls, productName).click();
 		logMessage("User clicks on the Open Manage Comparabls Button !!");
 	}
 
@@ -195,5 +205,19 @@ public class OrderEdgePage extends BaseUi {
 		waitForElementToClickable(dynamicElements(beforeafter, value));
 		dynamicElements(beforeafter, value).click();
 		logMessage("User clicks on the " + value + " Button !!");
+	}
+
+	public boolean verifyProductAtOrderEdgePage(String productName, String vendor, String unitType) {
+		try {
+			wait.until(ExpectedConditions
+					.visibilityOf(driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
+							+ "')]/../..//parent::div/../../../..//parent::div//div[@id='grid-header']//p[text()='"
+							+ vendor + "']/../../../../following::div//div//p[contains(text(),'" + unitType
+							+ "')]/../../..//input"))));
+			return true;
+		} catch (Exception e) {
+			logMessage("Product is alreday present in the Order Edge Page !!!");
+			return false;
+		}
 	}
 }
