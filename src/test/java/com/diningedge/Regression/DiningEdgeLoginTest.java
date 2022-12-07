@@ -70,7 +70,8 @@ public class DiningEdgeLoginTest extends BaseTest {
 
 	@BeforeTest
 	public void dataSetUp() throws IOException {
-		exportworkbook = ExcelFunctions.openFile("C:\\Users\\Joyti Singh\\Desktop\\Data.xlsx");
+		exportworkbook = ExcelFunctions.openFile(
+				System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/Data.xlsx");
 		inputsheet = exportworkbook.getSheet("test");
 	}
 
@@ -95,9 +96,8 @@ public class DiningEdgeLoginTest extends BaseTest {
 		dashboard.getDiningEdgeText("DiningEdge");
 		dashboard.getDeshboardText("Dashboard");
 		dashboard.clickOnTheOrderEdge("Order Edge");
-		verifyAndEnterEmail(vendor);
+		dashboard.clickOnTheSelectLoaction();
 		addUnitsAndSendOG(vendor, productName, unitType);
-		verifyOrderFromEmail();
 	}
 
 	@AfterMethod
@@ -131,27 +131,15 @@ public class DiningEdgeLoginTest extends BaseTest {
 
 	/*-------------------Reusable Methods--------------*/
 
-	public void verifyAndEnterEmail(String vendor) {
-		dashboard.clickOnSettingButton();
-		settingsPage.searchVendorByName(vendor);
-		settingsPage.clickOnVendorName(vendor);
-		settingsPage.selectSettinsType();
-		settingsPage.clickOnSelcetType();
-		settingsPage.selectEmailFromDropDown();
-		settingsPage.clickOnEmailRemove(getProperty("sendGmail"));
-		settingsPage.enterRecepientsEmails(getProperty("sendGmail"));
-		settingsPage.clickOnSaveButton();
-		settingsPage.clickOnSnackBarCloseButton();
-	}
-
 	public void addUnitsAndSendOG(String vendor, String productName, String unitType) {
 		dashboard.clickOnTheOrderEdge("Order Edge");
 		orderEdge.enterUnits("2", productName, vendor, unitType);
 		dashboard.clickOnHeader();
 		orderEdge.clickOnAddToCartButton();
-		checkoutPage.selecctSumbitAll("Submit All");
-		settingsPage.clickOnSnackBarCloseButton();
-		CommonMethods.hardwait(5000);
+		/*
+		 * checkoutPage.selecctSumbitAll("Submit All");
+		 * settingsPage.clickOnSnackBarCloseButton(); CommonMethods.hardwait(5000);
+		 */
 	}
 
 	public void verifyOrderFromEmail() {
@@ -166,7 +154,7 @@ public class DiningEdgeLoginTest extends BaseTest {
 		orderNumberFromGmail = details.get(0);
 		System.out.println("---------------------------From Gmail---------------------------------------");
 		System.out.println(locationFromGmail + " :: " + orderDateFromGmail + " :: " + orderNumberFromGmail);
-	
+
 		assertEquals(locationFromGmail, locationFromUI, "Assertion Failed :: As Location is not correct !!");
 		logExtent.log(LogStatus.INFO,
 				"Assertion Passed :: Location is found correct from Gmail as :: " + locationFromGmail);

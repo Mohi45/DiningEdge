@@ -10,7 +10,7 @@
           <include name="testMethodName"/>
           <include name="tearDown"/>
           <include name="dataSetUp"/>
-          <include name="sendOrderGuideFromOrderEdge" invocation-numbers="0"/>
+          <include name="sendOrderGuideFromOrderEdge"/>
           <include name="setup"/>
           <include name="endReport"/>
         </methods>

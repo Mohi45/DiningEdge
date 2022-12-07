@@ -116,7 +116,7 @@ public class SettingsPage extends BaseUi {
 	}
 
 	public void selectSettinsType() {
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, "EDI Settings")));
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, "EDIs Settings")));
 		CommonMethods.hardwait(1000);
 		dynamicElements(selectSettingType, "EDI Settings").click();
 		logMessage("User clicks on the " + "EDI Settings" + " Setting item !!");

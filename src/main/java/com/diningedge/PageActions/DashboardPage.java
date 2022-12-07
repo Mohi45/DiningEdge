@@ -69,6 +69,9 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//div//a[@href='/settings']")
 	private WebElement settingBtn;
+	
+	@FindBy(xpath="//div//li[text()='loc10']")
+	private WebElement locationName;
 
 	/*----------------------DiningEdge Methods---------------------------*/
 	public DashboardPage(WebDriver driver) {
@@ -105,6 +108,10 @@ public class DashboardPage extends BaseUi {
 		wait.until(ExpectedConditions.visibilityOf(location));
 		location.click();
 		logMessage("User clicks on select Location dropDown !!");
+		wait.until(ExpectedConditions.visibilityOf(locationName));
+		locationName.click();
+		logMessage("User clicks on select Location loc10 from dropDown !!");
+		
 	}
 
 	public void clickOnTheOrderEdge(String value) {
