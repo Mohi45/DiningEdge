@@ -10,15 +10,12 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 import com.diningedge.PageActions.CheckoutPage;
 import com.diningedge.PageActions.DashboardPage;
 import com.diningedge.PageActions.LoginPage;
@@ -30,9 +27,6 @@ import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import dev.failsafe.internal.util.Assert;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DiningEdgeLoginTest extends BaseTest {
 
@@ -70,8 +64,8 @@ public class DiningEdgeLoginTest extends BaseTest {
 
 	@BeforeTest
 	public void dataSetUp() throws IOException {
-		exportworkbook = ExcelFunctions.openFile(
-				System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/Data.xlsx");
+		exportworkbook = ExcelFunctions
+				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/Data.xlsx");
 		inputsheet = exportworkbook.getSheet("test");
 	}
 
@@ -136,14 +130,16 @@ public class DiningEdgeLoginTest extends BaseTest {
 		orderEdge.enterUnits("2", productName, vendor, unitType);
 		dashboard.clickOnHeader();
 		orderEdge.clickOnAddToCartButton();
-		/*
-		 * checkoutPage.selecctSumbitAll("Submit All");
-		 * settingsPage.clickOnSnackBarCloseButton(); CommonMethods.hardwait(5000);
-		 */
+		checkoutPage.selecctSumbitAll("Submit All");
+		settingsPage.clickOnSnackBarCloseButton();
+		CommonMethods.hardwait(10000);
+		
+		verifyOrderFromEmail();
+
 	}
 
 	public void verifyOrderFromEmail() {
-		locationFromUI = checkoutPage.getOrderDetails("Location:");
+		locationFromUI = "test automation";//checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		System.out.println("----------------------------From UI--------------------------------------");

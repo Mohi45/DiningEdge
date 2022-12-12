@@ -8,11 +8,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import com.sun.mail.imap.IMAPFolder;
+
 import javax.mail.Address;
-import javax.mail.BodyPart;
 import javax.mail.Flags;
-import javax.mail.Flags.Flag;
 import javax.mail.Folder;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -21,17 +19,18 @@ import javax.mail.Part;
 import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.internet.MimeBodyPart;
-import javax.mail.search.FlagTerm;
 import javax.mail.search.SearchTerm;
 
-import com.sun.mail.imap.IMAPSSLStore;
 import com.diningedge.common.ParsingEmails;
 import com.diningedge.resources.BaseUi;
+import com.sun.mail.imap.IMAPFolder;
+import com.sun.mail.imap.IMAPSSLStore;
 
 public class ReadEmailUtility extends BaseUi {
 	Properties properties = null;
 	IMAPSSLStore store = null;
 	IMAPFolder folderInbox = null;
+	IMAPFolder successFullyDone=null;
 	String messageContent;
 	String contentType;
 	List<String> details = new ArrayList<>();
@@ -60,6 +59,9 @@ public class ReadEmailUtility extends BaseUi {
 		try {
 			store = createConnection();
 			folderInbox = (IMAPFolder) store.getFolder("INBOX");
+			successFullyDone = (IMAPFolder) store.getFolder("Successfully Done");
+			List<Message> tempSuccessList = new ArrayList<>();
+			
 			folderInbox.open(Folder.READ_WRITE);
 			SearchTerm rawTerm = new SearchTerm() {
 
@@ -106,10 +108,14 @@ public class ReadEmailUtility extends BaseUi {
 					}
 				}
 				details = ParsingEmails.parseCurrentVersion(messageContent);
+				tempSuccessList.add(message);
 				message.setFlag(Flags.Flag.DELETED, true);
 				logMessage(message.getSubject() + " :: email deleted successfully !!");
 			}
-			folderInbox.close(true);
+			 Message[] tempSuccessMessageArray = tempSuccessList.toArray(new Message[tempSuccessList.size()]);
+            folderInbox.copyMessages(tempSuccessMessageArray, successFullyDone);
+            logMessage(" email successfully Done!!");
+            folderInbox.close(true);
 			store.close();
 		} catch (Exception e) {
 			e.printStackTrace();
