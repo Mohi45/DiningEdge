@@ -13,6 +13,7 @@ public class ParsingEmails extends BaseUi {
 		log("Order Date : " + OrderDate(messageContent));
 		details.add(OrderDate(messageContent));
 		details.add(resturantName(messageContent));
+		details.add(totalOrderAmount(messageContent));
 		return details;
 	}
 
@@ -44,6 +45,14 @@ public class ParsingEmails extends BaseUi {
 		resturant = resturant.replaceAll("\\s", " ");
 		log("Resturant Name : " + resturant.trim());
 		return resturant;
+	}
+
+	public static String totalOrderAmount(String messageContent) {
+		messageContent = messageContent.replace("\n", "").replace("\r", "").replace("=", "");
+		messageContent = messageContent.replaceAll("<[^>]*>", "");
+		String totalAmount = messageContent.substring(messageContent.lastIndexOf("Total:") + 6);
+		log("Total Order Amount : " + totalAmount.trim());
+		return totalAmount;
 	}
 
 	public static String dateFormating(String date) {

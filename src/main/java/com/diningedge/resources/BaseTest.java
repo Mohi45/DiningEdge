@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -15,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.diningedge.Utilities.SendEmailUtility;
 import com.diningedge.Utilities.TakeScreenshot;
 import com.diningedge.common.CommonMethods;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -30,6 +32,7 @@ public class BaseTest {
 	TakeScreenshot takeScreenshot;
 	public ExtentTest logExtent;
 	public ExtentReports extent;
+	boolean status=true;
 
 	//@BeforeSuite
 	public void setUp() {
@@ -82,6 +85,7 @@ public class BaseTest {
 		takeScreenshot.takeScreenShotOnException(result);
 
 		if (result.getStatus() == ITestResult.FAILURE) {
+			status=false;
 			logExtent.log(LogStatus.FAIL, "Test Case Failed :: " + result.getName());
 			logExtent.log(LogStatus.FAIL, "Error is " + result.getThrowable());
 			String filePath = takeScreenshot.takeScreenshot();
@@ -94,6 +98,16 @@ public class BaseTest {
 		extent.endTest(logExtent);
 		driver.quit();
 	}
+	
+	@AfterSuite
+	public void sendReport() {
+		if(status) {
+			SendEmailUtility.sendReports("Send OG Successfully ✅", System.getProperty("user.dir")+"/target/ExtentReport.html");
+		}else {
+			SendEmailUtility.sendReports("Send OG Failed ❌", System.getProperty("user.dir")+"/target/ExtentReport.html");
+		}
+	}
+	
 
 	@AfterTest
 	public void endReport() {

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -28,8 +29,10 @@ import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class DiningEdgeLoginTest extends BaseTest {
-
+public class SendOGTest extends BaseTest {
+	int i = 0;
+	Random random = new Random();
+	public int numberOfUnits = random.nextInt(90) + 10;
 	public static XSSFWorkbook exportworkbook;
 	public static XSSFSheet inputsheet;
 	WebDriver driver;
@@ -48,7 +51,7 @@ public class DiningEdgeLoginTest extends BaseTest {
 	public static int totalNoOfCols;
 	public static int rowIndex;
 	String locationFromUI, locationFromGmail, orderDateFromUI, orderDateFromGmail, orderNumberFromUI,
-			orderNumberFromGmail;
+			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
 	List<String> details;
 
 	@BeforeMethod
@@ -75,16 +78,16 @@ public class DiningEdgeLoginTest extends BaseTest {
 		/*------------------------Data set up-------------------------*/
 
 		XSSFCell cell1, cell2;
-		DiningEdgeLoginTest.rowIndex = Math.floorMod(DiningEdgeLoginTest.acno, DiningEdgeLoginTest.totalNoOfRows) + 1;
-		System.out.println("Test Case test #" + DiningEdgeLoginTest.rowIndex);
-		cell1 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(DiningEdgeLoginTest.AcColStatus);
+		SendOGTest.rowIndex = Math.floorMod(SendOGTest.acno, SendOGTest.totalNoOfRows) + 1;
+		System.out.println("Test Case test #" + SendOGTest.rowIndex);
+		cell1 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(SendOGTest.AcColStatus);
 		cell1.setCellValue("");
-		cell2 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(DiningEdgeLoginTest.AcColdetail);
+		cell2 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(SendOGTest.AcColdetail);
 		cell2.setCellValue("");
 
 		/*-------------------------Basic Flow----------------------------------*/
-		logExtent = extent.startTest(
-				"Test0" + DiningEdgeLoginTest.rowIndex + "_sendOrderGuideAndValidateFromEmail for :: " + vendor);
+		logExtent = extent
+				.startTest("Test0" + SendOGTest.rowIndex + "_sendOrderGuideAndValidateFromEmail for :: " + vendor);
 		login.enterCredentials(getProperty("username"), getProperty("password"));
 		login.clickOnLoginButton();
 		dashboard.getDiningEdgeText("DiningEdge");
@@ -127,38 +130,44 @@ public class DiningEdgeLoginTest extends BaseTest {
 
 	public void addUnitsAndSendOG(String vendor, String productName, String unitType) {
 		dashboard.clickOnTheOrderEdge("Order Edge");
-		orderEdge.enterUnits("2", productName, vendor, unitType);
+		orderEdge.enterUnits(String.valueOf(numberOfUnits), productName, vendor, unitType);
 		dashboard.clickOnHeader();
 		orderEdge.clickOnAddToCartButton();
 		checkoutPage.selecctSumbitAll("Submit All");
 		settingsPage.clickOnSnackBarCloseButton();
-		CommonMethods.hardwait(10000);
-		
-		verifyOrderFromEmail();
+		verifyOrderFromEmail(vendor);
 
 	}
 
-	public void verifyOrderFromEmail() {
-		locationFromUI = "test automation";//checkoutPage.getOrderDetails("Location:");
+	public void verifyOrderFromEmail(String vendor) {
+		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
+		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
 		System.out.println("----------------------------From UI--------------------------------------");
-		System.out.println(locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI);
+		System.out.println(
+				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);
 		details = rd.readMail();
 		locationFromGmail = details.get(2).replaceAll("\\s", " ").trim();
 		orderDateFromGmail = details.get(1);
 		orderNumberFromGmail = details.get(0);
+		totalAmountFromGmail = details.get(3);
 		System.out.println("---------------------------From Gmail---------------------------------------");
-		System.out.println(locationFromGmail + " :: " + orderDateFromGmail + " :: " + orderNumberFromGmail);
+		System.out.println(locationFromGmail + " :: " + orderDateFromGmail + " :: " + orderNumberFromGmail + " :: "
+				+ totalAmountFromGmail);
 
 		assertEquals(locationFromGmail, locationFromUI, "Assertion Failed :: As Location is not correct !!");
-		logExtent.log(LogStatus.INFO,
+		logExtent.log(LogStatus.PASS,
 				"Assertion Passed :: Location is found correct from Gmail as :: " + locationFromGmail);
 		assertEquals(orderDateFromGmail, orderDateFromUI, "Assertion Failed :: As Order date is not correct !!");
-		logExtent.log(LogStatus.INFO,
+		logExtent.log(LogStatus.PASS,
 				"Assertion Passed :: Order Date is found correct from Gmail as :: " + orderDateFromGmail);
 		assertEquals(orderNumberFromGmail, orderNumberFromUI, "Assertion Failed :: As Order Number is not correct !!");
-		logExtent.log(LogStatus.INFO,
+		logExtent.log(LogStatus.PASS,
 				"Assertion Passed :: Order Number is found correct from Gmail as :: " + orderNumberFromGmail);
+		assertEquals(totalAmountFromGmail.trim(), totalAmountFromUI,
+				"Assertion Failed :: As Total Order Amount is not correct !!");
+		logExtent.log(LogStatus.PASS,
+				"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
 	}
 }

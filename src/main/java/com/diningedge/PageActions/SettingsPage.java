@@ -20,6 +20,7 @@ public class SettingsPage extends BaseUi {
 	private static final String ExpectedCondition = null;
 	private WebDriver driver;
 	private WebDriverWait wait;
+	List<String> settingTypelist;
 
 	protected WebElement waitForElementToAppear(By locator) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -47,6 +48,10 @@ public class SettingsPage extends BaseUi {
 
 	public WebElement dynamicElements(String locator, String value) {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
+	}
+
+	public List<WebElement> dynamicListOfElements(String locator, String value) {
+		return driver.findElements(By.xpath(locator.replace("$", value)));
 	}
 
 	/*---------------------DiningEdge Locators-------------------*/
@@ -115,12 +120,21 @@ public class SettingsPage extends BaseUi {
 		logMessage("User clicks on the " + value + " List item !!");
 	}
 
-	public void selectSettinsType() {
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, "EDIs Settings")));
+	public void selectSettinsType(String settingType) {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, settingType)));
 		CommonMethods.hardwait(1000);
-		dynamicElements(selectSettingType, "EDI Settings").click();
-		logMessage("User clicks on the " + "EDI Settings" + " Setting item !!");
+		dynamicElements(selectSettingType, settingType).click();
+		logMessage("User clicks on the " + settingType + " Setting item !!");
 
+	}
+
+	public void verifyTypeOfSettingOnPage() {
+		List<WebElement> list = driver.findElements(By.xpath("//button//p"));
+		System.out.println(list.size());
+		for (WebElement webElement : list) {
+			String name = webElement.getText();
+			System.out.println(name);
+		}
 	}
 
 	public void selectOptonsItems(String value) {

@@ -3,18 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Regression.DiningEdgeLoginTest">
+      <class name="com.diningedge.Regression.SendOGTest">
         <methods>
+          <include name="dataSetUp"/>
+          <include name="sendOrderGuideFromOrderEdge" invocation-numbers="1"/>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
-          <include name="testMethodName"/>
           <include name="tearDown"/>
-          <include name="dataSetUp"/>
-          <include name="sendOrderGuideFromOrderEdge"/>
+          <include name="testMethodName"/>
+          <include name="sendReport"/>
           <include name="setup"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.Regression.DiningEdgeLoginTest -->
+      </class> <!-- com.diningedge.Regression.SendOGTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

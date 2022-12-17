@@ -6,6 +6,7 @@ import java.util.Properties;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
+import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
@@ -41,7 +42,7 @@ public class SendEmailUtility extends BaseUi {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
-		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
+		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(getProperty("email"), getProperty("gmailPassword"));// Specify the Username
 																									// and the PassWord
@@ -106,9 +107,9 @@ public class SendEmailUtility extends BaseUi {
 	public static void sendReports(String Subject, String... filenames) {
 		try {
 
-			String user = "testprv59@gmail.com";
-			String[] to = { "testprv59@gmail.com" };// list of users to keep in TO
-			String cc = ""; // "any email to keep in cc"
+			String user = "diningedgetest@gmail.com";
+			String[] to = { "testprav59@gmail.com","apoorva.hassani@gmail.com" };// list of users to keep in TO
+			String cc = "apoorva.hassani@gmail.com "; // "any email to keep in cc"
 
 			// get connection
 			Session session = createConnection();
@@ -131,11 +132,10 @@ public class SendEmailUtility extends BaseUi {
 			// Subject of mails
 			message.setSubject(Subject);
 			// Body of mails
-			String date = CustomFunctions.getCurrentTime();
-			message.setContent("Attached is the report for the OG export on : " + date, "text");
-
-			// 4) create new MimeBodyPart object and set DataHandler object to
-			// this object
+			BodyPart messageBodyPart = new MimeBodyPart();
+			
+			messageBodyPart.setText("Order Guide Successfully sent !! \n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing BY Ⓜ️");
+			
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 			for (String filename : filenames) {
 				DataSource source = new FileDataSource(filename);
@@ -146,7 +146,8 @@ public class SendEmailUtility extends BaseUi {
 			}
 			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart2);
-
+			multipart.addBodyPart(messageBodyPart);
+			
 			message.setContent(multipart);
 
 			Transport.send(message, messageBodyPart1.getAllRecipients());
@@ -154,6 +155,7 @@ public class SendEmailUtility extends BaseUi {
 			logMsg("Message send success");
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			logMsg(e.getMessage());
 			logMsg("Technical issue in sending reporting");
 		}

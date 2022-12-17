@@ -148,7 +148,7 @@ public class CommonMethods extends BaseUi {
 	public static void hardwait(int timeOut) {
 		try {
 			Thread.sleep(timeOut);
-		} catch (InterruptedException e) {
+		} catch (InterruptedException e) { 
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

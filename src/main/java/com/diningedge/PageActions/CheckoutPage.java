@@ -48,6 +48,8 @@ public class CheckoutPage extends BaseUi {
 	private String selecctYesNo = "//button//span[text()='$']";
 
 	private String orderDetails = "//div//span[text()='$']/..//p";
+	
+	private String totalAmount = "//h2[text()='$']/..//span[text()='Total']/..//h3";
 
 	@FindBy(xpath = "//table//th//span[text()='Product']/../..//th[1]")
 	private WebElement productCheckBox;
@@ -96,5 +98,12 @@ public class CheckoutPage extends BaseUi {
 		String getOrderDetails = dynamicElements(orderDetails, value).getText();
 		System.out.println("Order Details = "+getOrderDetails);
 		return getOrderDetails;
+	}
+	
+	public String getTotalAmount(String vendor) {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(totalAmount, vendor)));
+		String finalAmount=dynamicElements(totalAmount, vendor).getText();
+		System.out.println("Final Total Amount = "+finalAmount);
+		return finalAmount;
 	}
 }

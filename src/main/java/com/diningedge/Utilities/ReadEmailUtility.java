@@ -21,6 +21,7 @@ import javax.mail.Store;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.search.SearchTerm;
 
+import com.diningedge.common.CommonMethods;
 import com.diningedge.common.ParsingEmails;
 import com.diningedge.resources.BaseUi;
 import com.sun.mail.imap.IMAPFolder;
@@ -30,60 +31,68 @@ public class ReadEmailUtility extends BaseUi {
 	Properties properties = null;
 	IMAPSSLStore store = null;
 	IMAPFolder folderInbox = null;
-	IMAPFolder successFullyDone=null;
+	IMAPFolder successFullyDone = null;
 	String messageContent;
 	String contentType;
+	int i = 0;
 	List<String> details = new ArrayList<>();
+	List<Message> tempSuccessList = new ArrayList<>();
 
 	private static IMAPSSLStore createConnection() throws MessagingException {
-		// Create IMAPSSLStore object
+
 		Properties props = System.getProperties();
 		props.setProperty("mail.store.protocol", "imaps");
 		Session session = Session.getDefaultInstance(props, null);
-		// URLName urlName = new URLName("imap.gmail.com");
 		Store store = session.getStore("imaps");
-		// IMAPSSLStore store = new IMAPSSLStore(session, urlName);
-
-		// TODO: All sysout statements are used for testing, have to remove them
-		// while implementation
 		log("Connecting to gmail...");
-
-		// Connect to GMail, enter user name and password here
 		store.connect("imap.gmail.com", getProperty("email"), getProperty("gmailPassword"));
-
 		log("Connected to - " + store);
 		return (IMAPSSLStore) store;
 	}
 
+	public Message[] foundMesageFromMail() throws MessagingException {
+		store = createConnection();
+		folderInbox = (IMAPFolder) store.getFolder("INBOX");
+		successFullyDone = (IMAPFolder) store.getFolder("Successfully Done");
+
+		folderInbox.open(Folder.READ_WRITE);
+		SearchTerm rawTerm = new SearchTerm() {
+
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public boolean match(Message message) {
+				try {
+					log("Subject is :-" + message.getSubject());
+					if (message.getSubject().contains("order") || message.getSubject().contains("Order")) {
+						return true;
+					}
+				} catch (MessagingException ex) {
+					ex.printStackTrace();
+				}
+				return false;
+			}
+		};
+		Message[] messagesFound = folderInbox.search(rawTerm);
+		System.out.println("Number of mails = " + messagesFound.length);
+		return messagesFound;
+	}
+
 	public List<String> readMail() {
 		try {
-			store = createConnection();
-			folderInbox = (IMAPFolder) store.getFolder("INBOX");
-			successFullyDone = (IMAPFolder) store.getFolder("Successfully Done");
-			List<Message> tempSuccessList = new ArrayList<>();
-			
-			folderInbox.open(Folder.READ_WRITE);
-			SearchTerm rawTerm = new SearchTerm() {
-
-				private static final long serialVersionUID = 1L;
-
-				@Override
-				public boolean match(Message message) {
-					try {
-						log("Subject is :-" + message.getSubject());
-						if (message.getSubject().contains("order")||message.getSubject().contains("Order")) {
-							return true;
-						}
-					} catch (MessagingException ex) {
-						ex.printStackTrace();
+			if (foundMesageFromMail().length != 0) {
+				System.out.println("Email Found in First Try !!!");
+			} else {
+				for (int i = 0; i < 10; i++) {
+					CommonMethods.hardwait(10000);
+					if (foundMesageFromMail().length != 0) {
+						break;
 					}
-					return false;
+					System.out.println("Trying To Fetch the email ..." + i);
 				}
-			};
-			Message[] messagesFound = folderInbox.search(rawTerm);
-			System.out.println("Number of mails = " + messagesFound.length);
-			for (int i = 0; i < messagesFound.length; i++) {
-				Message message = messagesFound[i];
+			}
+			for (int i = 0; i < foundMesageFromMail().length; i++) {
+				Message message = foundMesageFromMail()[i];
 				Address[] from = message.getFrom();
 				System.out.println("-------------------------------");
 				System.out.println("Date : " + message.getSentDate());
@@ -112,13 +121,17 @@ public class ReadEmailUtility extends BaseUi {
 				message.setFlag(Flags.Flag.DELETED, true);
 				logMessage(message.getSubject() + " :: email deleted successfully !!");
 			}
-			 Message[] tempSuccessMessageArray = tempSuccessList.toArray(new Message[tempSuccessList.size()]);
-            folderInbox.copyMessages(tempSuccessMessageArray, successFullyDone);
-            logMessage(" email successfully Done!!");
-            folderInbox.close(true);
+			Message[] tempSuccessMessageArray = tempSuccessList.toArray(new Message[tempSuccessList.size()]);
+			folderInbox.copyMessages(tempSuccessMessageArray, successFullyDone);
+			logMessage(" email successfully Done!!");
+			folderInbox.close(true);
 			store.close();
-		} catch (Exception e) {
+		} catch (
+
+		Exception e) {
 			e.printStackTrace();
+		}finally {
+			
 		}
 		return details;
 	}
