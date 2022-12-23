@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.diningedge.resources.BaseUi;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class CheckoutPage extends BaseUi {
 
@@ -48,7 +50,7 @@ public class CheckoutPage extends BaseUi {
 	private String selecctYesNo = "//button//span[text()='$']";
 
 	private String orderDetails = "//div//span[text()='$']/..//p";
-	
+
 	private String totalAmount = "//h2[text()='$']/..//span[text()='Total']/..//h3";
 
 	@FindBy(xpath = "//table//th//span[text()='Product']/../..//th[1]")
@@ -87,23 +89,24 @@ public class CheckoutPage extends BaseUi {
 		logMessage("User clicks on delete icon !!");
 	}
 
-	public void selecctSumbitAll(String value) {
+	public void selecctSumbitAll(String value, ExtentTest logExtent) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selecctYesNo, value)));
 		dynamicElements(selecctYesNo, value).click();
 		logMessage("User clicks on the " + value + " Button !!");
+		logExtent.log(LogStatus.INFO, "Step06: User clicks on the " + value + " Button !!");
 	}
 
 	public String getOrderDetails(String value) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(orderDetails, value)));
 		String getOrderDetails = dynamicElements(orderDetails, value).getText();
-		System.out.println("Order Details = "+getOrderDetails);
+		System.out.println("Order Details = " + getOrderDetails);
 		return getOrderDetails;
 	}
-	
+
 	public String getTotalAmount(String vendor) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(totalAmount, vendor)));
-		String finalAmount=dynamicElements(totalAmount, vendor).getText();
-		System.out.println("Final Total Amount = "+finalAmount);
+		String finalAmount = dynamicElements(totalAmount, vendor).getText();
+		System.out.println("Final Total Amount = " + finalAmount);
 		return finalAmount;
 	}
 }

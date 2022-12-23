@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Joyti Singh\AppData\Local\Temp\testng-eclipse--33416793\testng-customsuite.xml</span>
+                    <span>C:\Users\Joyti Singh\AppData\Local\Temp\testng-eclipse-2000144849\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.SendOGTest" class="method navigator-link" hash-for-method="sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.SendOGTest" class="method navigator-link" hash-for-method="sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing)">sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.diningedge.Regression.SendOGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -136,22 +131,68 @@
                   </a> <!-- sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing) -->
                   <span class="method-name">sendOrderGuideFromOrderEdge</span>
                   <span class="parameters">(Cheney, Automation Cheney, Cheney Testing)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing)">
-                  </a> <!-- sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing) -->
-                  <span class="method-name">sendOrderGuideFromOrderEdge</span>
-                  <span class="parameters">(US Foods, Automation US Food, US Food Testing)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;root&apos;]//h3[contains(text(),&apos;Automation CheneyWrong&apos;)]/../..//parent::div/../../../..//parent::div//div[@id=&apos;grid-header&apos;]//p[text()=&apos;Cheney&apos;]/../../../../following::div//div//div//p[contains(.,&apos;Cheney Testing&apos;)]/../../..//input[@type=&apos;text&apos;]&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;LAPTOP-SF32JU0L&apos;, ip: &apos;192.168.160.251&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9ecf5f4e55148804dbd4489b9d72938, findElement {using=xpath, value=//div[@id=&apos;root&apos;]//h3[contains(text(),&apos;Automation CheneyWrong&apos;)]/../..//parent::div/../../../..//parent::div//div[@id=&apos;grid-header&apos;]//p[text()=&apos;Cheney&apos;]/../../../../following::div//div//div//p[contains(.,&apos;Cheney Testing&apos;)]/../../..//input[@type=&apos;text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JOYTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55966/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9ecf5f4e55148804dbd4489b9d72938
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at com.diningedge.PageActions.OrderEdgePage.enterUnits(OrderEdgePage.java:94)
+	at com.diningedge.Regression.SendOGTest.addUnitsAndSendOG(SendOGTest.java:137)
+	at com.diningedge.Regression.SendOGTest.sendOrderGuideFromOrderEdge(SendOGTest.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Joyti Singh\AppData\Local\Temp\testng-eclipse--33416793\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Joyti Singh\AppData\Local\Temp\testng-eclipse-2000144849\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -200,20 +241,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sendOrderGuideFromOrderEdge')
 data.setCell(0, 2, 'com.diningedge.Regression.SendOGTest')
-data.setCell(0, 3, 59335);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sendOrderGuideFromOrderEdge')
-data.setCell(1, 2, 'com.diningedge.Regression.SendOGTest')
-data.setCell(1, 3, 47958);
+data.setCell(0, 3, 17525);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -227,75 +264,15 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2022-12-17] [13:54:01:218] User enters Name= testauto</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:01:341] User enters Password =123456</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:01:422] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:10:561] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:10:633] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:11:068] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:11:177] User clicks on select Location dropDown !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:11:265] User clicks on select Location loc10 from dropDown !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:11:582] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:14:051] User added number of units = 97</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:20:507] User clicks on the Add Cart Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:22:694] User clicks on the Checkout Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:26:095] User clicks on the Submit All Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:30:215] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:30:985] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:33:956] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:44:367] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:46:585] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:47:665] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:47:667] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:49:921] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:50:681] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:50:683] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:53:330] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:54:047] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:55:980] orderId #: 162</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:55:980] Order Date : 12/17/2022</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:55:991] Resturant Name : test automation</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:55:991] Total Order Amount : $1,241.60</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:56:946] New order : test automation (loc10) :: email deleted successfully !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:56:946] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:58:910] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:54:59:606]  email successfully Done!!</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2022-12-17] [13:55:44:044] User enters Name= testauto</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:44:179] User enters Password =123456</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:44:271] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:52:407] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:52:471] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:52:872] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:52:969] User clicks on select Location dropDown !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:53:066] User clicks on select Location loc10 from dropDown !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:53:375] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:55:55:621] User added number of units = 97</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:00:270] User clicks on the Add Cart Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:02:481] User clicks on the Checkout Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:04:038] User clicks on the Submit All Button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:06:845] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:09:036] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:13:373] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:14:364] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:14:367] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:17:852] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:18:686] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:18:686] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:22:417] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:23:241] Subject is :-New order : test automation (loc10)</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:25:253] orderId #: 164</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:25:258] Order Date : 12/17/2022</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:25:258] Resturant Name : test automation</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:25:258] Total Order Amount : $11,931.00</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:26:340] New order : test automation (loc10) :: email deleted successfully !!</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:26:344] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:29:922] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2022-12-17] [13:56:30:851]  email successfully Done!!</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:48:997] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:49:158] User enters Password =123456</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:49:266] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:52:955] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:53:047] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:53:627] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:53:797] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:53:932] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2022-12-23] [20:58:54:248] User clicks on Order Edge Button !!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -320,55 +297,41 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">dataSetUp</span>
-                <span class="method-start">216 ms</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">testMethodName(public void com.diningedge.Regression.SendOGTest.sendOrderGuideFromOrderEdge(java.lang.String,java.l...)</span>
-                <span class="method-start">742 ms</span>
+                <span class="method-start">852 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">772 ms</span>
+                <span class="method-start">879 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</span>
-                <span class="method-start">110525 ms</span>
+                <span class="method-start">12973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderGuideFromOrderEdge status=SUCCESS method=SendOGTest.sendOrderGuideFromOrde...)</span>
-                <span class="method-start">169870 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">169870 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">testMethodName(public void com.diningedge.Regression.SendOGTest.sendOrderGuideFromOrderEdge(java.lang.String,java.l...)</span>
-                <span class="method-start">170203 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">170205 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">sendOrderGuideFromOrderEdge(US Foods, Automation US Food, US Food Testing)</span>
-                <span class="method-start">213402 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderGuideFromOrderEdge status=SUCCESS method=SendOGTest.sendOrderGuideFromOrde...)</span>
-                <span class="method-start">261360 ms</span>
+                <span class="method-start">30530 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">261360 ms</span>
+                <span class="method-name">sendEmailReport</span>
+                <span class="method-start">30530 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderGuideFromOrderEdge status=FAILURE method=SendOGTest.sendOrderGuideFromOrde...)</span>
+                <span class="method-start">30530 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">261688 ms</span>
+                <span class="method-start">33993 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">sendReport</span>
-                <span class="method-start">261994 ms</span>
+                <span class="method-start">34339 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

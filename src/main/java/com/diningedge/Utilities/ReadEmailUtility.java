@@ -83,12 +83,12 @@ public class ReadEmailUtility extends BaseUi {
 			if (foundMesageFromMail().length != 0) {
 				System.out.println("Email Found in First Try !!!");
 			} else {
-				for (int i = 0; i < 10; i++) {
+				for (int i = 1; i <=10; i++) {
 					CommonMethods.hardwait(10000);
 					if (foundMesageFromMail().length != 0) {
 						break;
 					}
-					System.out.println("Trying To Fetch the email ..." + i);
+					System.out.println("Trying To Fetch the email ... attempt " + i);
 				}
 			}
 			for (int i = 0; i < foundMesageFromMail().length; i++) {
@@ -123,15 +123,15 @@ public class ReadEmailUtility extends BaseUi {
 			}
 			Message[] tempSuccessMessageArray = tempSuccessList.toArray(new Message[tempSuccessList.size()]);
 			folderInbox.copyMessages(tempSuccessMessageArray, successFullyDone);
-			logMessage(" email successfully Done!!");
+			logMessage("Moved email in successfully Done!!");
 			folderInbox.close(true);
 			store.close();
 		} catch (
 
 		Exception e) {
 			e.printStackTrace();
-		}finally {
-			
+		} finally {
+
 		}
 		return details;
 	}
@@ -154,6 +154,15 @@ public class ReadEmailUtility extends BaseUi {
 
 		messageContent = responseBuffer.toString();
 		return messageContent;
+	}
+
+	public boolean foundMail() {
+		if (readMail().isEmpty()) {
+			return true;
+		} else {
+			return false;
+		}
+
 	}
 
 	public static void main(String... strings) {

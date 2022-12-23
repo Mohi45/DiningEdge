@@ -25,8 +25,9 @@ import com.diningedge.PageActions.OrderEdgePage;
 import com.diningedge.PageActions.SettingsPage;
 import com.diningedge.Utilities.ExcelFunctions;
 import com.diningedge.Utilities.ReadEmailUtility;
-import com.diningedge.common.CommonMethods;
+import com.diningedge.Utilities.SendEmailUtility;
 import com.diningedge.resources.BaseTest;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class SendOGTest extends BaseTest {
@@ -43,6 +44,8 @@ public class SendOGTest extends BaseTest {
 	SettingsPage settingsPage;
 	ManageItemsPage manageItemsPage;
 	ReadEmailUtility rd = new ReadEmailUtility();
+	protected String vendorName;
+	boolean status = false;
 
 	public static int acno;
 	public static int totalNoOfRows;
@@ -72,11 +75,11 @@ public class SendOGTest extends BaseTest {
 		inputsheet = exportworkbook.getSheet("test");
 	}
 
-	@Test(dataProvider = "testData")
-	public void sendOrderGuideFromOrderEdge(String vendor, String productName, String unitType)
-			throws InterruptedException {
+	@Test(dataProvider = "testData", priority = 1)
+	public void sendOrderGuideFromOrderEdge(String vendor, String productName, String unitType) throws Exception {
 		/*------------------------Data set up-------------------------*/
-
+		vendorName = vendor;
+		/*------------------------------------------------------------*/
 		XSSFCell cell1, cell2;
 		SendOGTest.rowIndex = Math.floorMod(SendOGTest.acno, SendOGTest.totalNoOfRows) + 1;
 		System.out.println("Test Case test #" + SendOGTest.rowIndex);
@@ -88,13 +91,14 @@ public class SendOGTest extends BaseTest {
 		/*-------------------------Basic Flow----------------------------------*/
 		logExtent = extent
 				.startTest("Test0" + SendOGTest.rowIndex + "_sendOrderGuideAndValidateFromEmail for :: " + vendor);
-		login.enterCredentials(getProperty("username"), getProperty("password"));
+		login.enterCredentials(getProperty("username"), getProperty("password"), logExtent);
 		login.clickOnLoginButton();
-		dashboard.getDiningEdgeText("DiningEdge");
-		dashboard.getDeshboardText("Dashboard");
-		dashboard.clickOnTheOrderEdge("Order Edge");
-		dashboard.clickOnTheSelectLoaction();
-		addUnitsAndSendOG(vendor, productName, unitType);
+		dashboard.getDiningEdgeText("DiningEdge", logExtent);
+		dashboard.getDeshboardText("Dashboard", logExtent);
+		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
+		dashboard.clickOnTheSelectLoaction(logExtent);
+		addUnitsAndSendOG(vendor, productName+"Wrong", unitType, logExtent);
+		verifyOrderFromEmail(vendor);
 	}
 
 	@AfterMethod
@@ -128,18 +132,16 @@ public class SendOGTest extends BaseTest {
 
 	/*-------------------Reusable Methods--------------*/
 
-	public void addUnitsAndSendOG(String vendor, String productName, String unitType) {
-		dashboard.clickOnTheOrderEdge("Order Edge");
-		orderEdge.enterUnits(String.valueOf(numberOfUnits), productName, vendor, unitType);
+	public void addUnitsAndSendOG(String vendor, String productName, String unitType, ExtentTest logExtents) {
+		dashboard.clickOnTheOrderEdge("Order Edge", logExtents);
+		orderEdge.enterUnits(String.valueOf(numberOfUnits), productName, vendor, unitType, logExtents);
 		dashboard.clickOnHeader();
-		orderEdge.clickOnAddToCartButton();
-		checkoutPage.selecctSumbitAll("Submit All");
+		orderEdge.clickOnAddToCartButton(logExtents);
+		checkoutPage.selecctSumbitAll("Submit All", logExtents);
 		settingsPage.clickOnSnackBarCloseButton();
-		verifyOrderFromEmail(vendor);
-
 	}
 
-	public void verifyOrderFromEmail(String vendor) {
+	public void verifyOrderFromEmail(String vendor) throws Exception {
 		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
@@ -148,26 +150,48 @@ public class SendOGTest extends BaseTest {
 		System.out.println(
 				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);
 		details = rd.readMail();
-		locationFromGmail = details.get(2).replaceAll("\\s", " ").trim();
-		orderDateFromGmail = details.get(1);
-		orderNumberFromGmail = details.get(0);
-		totalAmountFromGmail = details.get(3);
+
+		try {
+			locationFromGmail = details.get(2).replaceAll("\\s", " ").trim();
+			orderDateFromGmail = details.get(1);
+			orderNumberFromGmail = details.get(0);
+			totalAmountFromGmail = details.get(3);
+		} catch (Exception e) {
+			System.out.println("Details are not found for OG !!");
+		}
 		System.out.println("---------------------------From Gmail---------------------------------------");
 		System.out.println(locationFromGmail + " :: " + orderDateFromGmail + " :: " + orderNumberFromGmail + " :: "
 				+ totalAmountFromGmail);
 
-		assertEquals(locationFromGmail, locationFromUI, "Assertion Failed :: As Location is not correct !!");
-		logExtent.log(LogStatus.PASS,
-				"Assertion Passed :: Location is found correct from Gmail as :: " + locationFromGmail);
-		assertEquals(orderDateFromGmail, orderDateFromUI, "Assertion Failed :: As Order date is not correct !!");
-		logExtent.log(LogStatus.PASS,
-				"Assertion Passed :: Order Date is found correct from Gmail as :: " + orderDateFromGmail);
-		assertEquals(orderNumberFromGmail, orderNumberFromUI, "Assertion Failed :: As Order Number is not correct !!");
-		logExtent.log(LogStatus.PASS,
-				"Assertion Passed :: Order Number is found correct from Gmail as :: " + orderNumberFromGmail);
-		assertEquals(totalAmountFromGmail.trim(), totalAmountFromUI,
-				"Assertion Failed :: As Total Order Amount is not correct !!");
-		logExtent.log(LogStatus.PASS,
-				"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
+		if (details.isEmpty()) {
+			status = true;
+		} else {
+			assertEquals(locationFromGmail, locationFromUI, "Assertion Failed :: As Location is not correct !!");
+			logExtent.log(LogStatus.PASS,
+					"Assertion Passed :: Location is found correct from Gmail as :: " + locationFromGmail);
+			assertEquals(orderDateFromGmail, orderDateFromUI, "Assertion Failed :: As Order date is not correct !!");
+			logExtent.log(LogStatus.PASS,
+					"Assertion Passed :: Order Date is found correct from Gmail as :: " + orderDateFromGmail);
+			assertEquals(orderNumberFromGmail, orderNumberFromUI,
+					"Assertion Failed :: As Order Number is not correct !!");
+			logExtent.log(LogStatus.PASS,
+					"Assertion Passed :: Order Number is found correct from Gmail as :: " + orderNumberFromGmail);
+			assertEquals(totalAmountFromGmail.trim(), totalAmountFromUI,
+					"Assertion Failed :: As Total Order Amount is not correct !!");
+			logExtent.log(LogStatus.PASS,
+					"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
+		}
+	}
+
+	/*-------------------------------------Sending Reports-------------------------*/
+
+	@AfterMethod
+	public void sendEmailReport() {
+
+		if (status) {
+			SendEmailUtility.sendReport("⚠️ Order email not recieved within time ❌", vendorName);
+		} else {
+			System.out.println("----------------------------");
+		}
 	}
 }

@@ -108,8 +108,8 @@ public class SendEmailUtility extends BaseUi {
 		try {
 
 			String user = "diningedgetest@gmail.com";
-			String[] to = { "testprav59@gmail.com","apoorva.hassani@gmail.com" };// list of users to keep in TO
-			String cc = "apoorva.hassani@gmail.com "; // "any email to keep in cc"
+			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO  ,"apoorva.hassani@gmail.com"
+			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
 
 			// get connection
 			Session session = createConnection();
@@ -134,7 +134,7 @@ public class SendEmailUtility extends BaseUi {
 			// Body of mails
 			BodyPart messageBodyPart = new MimeBodyPart();
 			
-			messageBodyPart.setText("Order Guide Successfully sent !! \n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing BY Ⓜ️");
+			messageBodyPart.setText("Hi Team!!, \n\n Send OG Failed While sending mail form UI !! \n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
 			
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 			for (String filename : filenames) {
@@ -146,6 +146,56 @@ public class SendEmailUtility extends BaseUi {
 			}
 			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart2);
+			multipart.addBodyPart(messageBodyPart);
+			
+			message.setContent(multipart);
+
+			Transport.send(message, messageBodyPart1.getAllRecipients());
+
+			logMsg("Message send success");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			logMsg(e.getMessage());
+			logMsg("Technical issue in sending reporting");
+		}
+
+	}
+	
+	
+	public static void sendReport(String Subject,String vendor) {
+		try {
+
+			String user = "diningedgetest@gmail.com";
+			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
+			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
+
+			// get connection
+			Session session = createConnection();
+
+			MimeMessage message = new MimeMessage(session);
+
+			MimeMessage messageBodyPart1 = new MimeMessage(session);
+			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+
+			InternetAddress[] recipientAddress = new InternetAddress[to.length];
+			int counter = 0;
+			for (String recipient : to) {
+				recipientAddress[counter] = new InternetAddress(recipient.trim());
+				counter++;
+			}
+
+			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
+			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+
+			// Subject of mails
+			message.setSubject(Subject);
+			// Body of mails
+			BodyPart messageBodyPart = new MimeBodyPart();
+			
+			messageBodyPart.setText("Hi Team !!, \n \n We didn't received email for ::"+vendor+":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+			
+			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart);
 			
 			message.setContent(multipart);

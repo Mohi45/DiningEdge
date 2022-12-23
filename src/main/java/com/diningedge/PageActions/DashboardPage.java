@@ -20,6 +20,8 @@ import org.testng.annotations.Factory;
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class DashboardPage extends BaseUi {
 	private WebDriver driver;
@@ -84,18 +86,20 @@ public class DashboardPage extends BaseUi {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
 	}
 
-	public void getDiningEdgeText(String diningText) {
+	public void getDiningEdgeText(String diningText, ExtentTest logExtent) {
 		wait.until(ExpectedConditions.visibilityOf(diningedgeText));
 		diningedgeText.getText();
 		Assert.assertEquals(diningText, "DiningEdge", "Assertion Failed: DigingEdge text is not Same as expected");
 		logMessage("Assertion Passed: " + diningText + " is present on the HomePage");
+		logExtent.log(LogStatus.PASS, "Assertion Passed: " + diningText + " is present on the HomePage");
 	}
 
-	public void getDeshboardText(String dashboardText) {
+	public void getDeshboardText(String dashboardText ,ExtentTest logExtent) {
 		wait.until(ExpectedConditions.visibilityOf(diningedgeText));
 		dashText.getText();
 		Assert.assertEquals(dashboardText, "Dashboard", "Assertion Failed: Dashboard text is not Same as expected");
 		logMessage("Assertion Passed: " + dashboardText + " is present on the HomePage");
+		logExtent.log(LogStatus.PASS, "Assertion Passed: " + dashboardText + " is present on the HomePage");
 	}
 
 	public void clickOnOrdersGuideIcon() {
@@ -104,20 +108,22 @@ public class DashboardPage extends BaseUi {
 		logMessage("User clicks on Orders Guide Page !!");
 	}
 
-	public void clickOnTheSelectLoaction() {
+	public void clickOnTheSelectLoaction(ExtentTest logExtents) {
 		wait.until(ExpectedConditions.visibilityOf(location));
 		location.click();
 		logMessage("User clicks on select Location dropDown !!");
 		wait.until(ExpectedConditions.visibilityOf(locationName));
 		locationName.click();
 		logMessage("User clicks on select Location loc10 from dropDown !!");
+		logExtents.log(LogStatus.INFO, "Step2: User selects the loc10 location!!");
 		
 	}
 
-	public void clickOnTheOrderEdge(String value) {
+	public void clickOnTheOrderEdge(String value,ExtentTest logExtents) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(listItems, value)));
 		dynamicElements(listItems, value).click();
 		logMessage("User clicks on " + value + " Button !!");
+		logExtents.log(LogStatus.INFO, " User clicks on the "+value+" Button!!");
 	}
 
 	public void verifyOrderEdgePage(String expected) {
@@ -125,7 +131,7 @@ public class DashboardPage extends BaseUi {
 		String actual = verifyOrderEdge.getText();
 		Assert.assertEquals(actual, expected,
 				"Assertion Failed: Actual Value :" + actual + " is not same as expected that is : " + expected);
-		logMessage("Assertion Passed: " + actual + " is present on the HomePage");
+		logMessage("Assertion  : " + actual + " is present on the HomePage");
 	}
 
 	public void clickOnHeader() {

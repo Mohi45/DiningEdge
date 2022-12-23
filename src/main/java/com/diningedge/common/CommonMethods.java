@@ -157,5 +157,6 @@ public class CommonMethods extends BaseUi {
 	public static boolean verifyChecboxIsSelected(WebElement element) {
 		return element.isSelected();
 	}
+	
 
 }

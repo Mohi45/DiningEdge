@@ -14,6 +14,8 @@ import org.testng.Assert;
 
 import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class OrderEdgePage extends BaseUi {
 
@@ -76,16 +78,17 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	// Will continue
-	public void enterUnitsInProducts(String units, String productName, String vendor, String unitType) {
+	public void enterUnitsInProducts(String units, String productName, String vendor, String unitType,
+			ExtentTest logExtent) {
 		if (verifyProductAtOrderEdgePage(productName, vendor, unitType)) {
-			enterUnits(units, productName, vendor, unitType);
+			enterUnits(units, productName, vendor, unitType, logExtent);
 		} else {
 			clickOnComparabls(productName);
 		}
 
 	}
 
-	public void enterUnits(String units, String productName, String vendor, String unitType) {
+	public void enterUnits(String units, String productName, String vendor, String unitType, ExtentTest logExtent) {
 		CommonMethods.hardwait(1500);
 		CommonMethods.scrollIntoView(driver,
 				driver.findElement(By.xpath("//div[@id='root']//h3[contains(text(),'" + productName
@@ -103,6 +106,10 @@ public class OrderEdgePage extends BaseUi {
 				+ "']/../../../../following::div//div//div//p[contains(.,'" + unitType
 				+ "')]/../../..//input[@type='text']")).sendKeys(units);
 		logMessage("User added number of units = " + units);
+		logExtent.log(LogStatus.INFO, "Step3: User enters below details");
+		logExtent.log(LogStatus.INFO, "User added number of units = " + units + " for combination of " + productName
+				+ " :: " + vendor + " :: " + unitType);
+
 	}
 
 	public void enterUnitsAfterBestPrices(String units, String productName, String vendor, String unitType) {
@@ -119,15 +126,17 @@ public class OrderEdgePage extends BaseUi {
 		logMessage("User added number of units = " + units);
 	}
 
-	public void clickOnAddToCartButton() {
+	public void clickOnAddToCartButton(ExtentTest logExtent) {
 		wait.until(ExpectedConditions.visibilityOf(addToCart));
 		waitForElementToClickable(addToCart);
 		addToCart.click();
 		logMessage("User clicks on the Add Cart Button !!");
+		logExtent.log(LogStatus.INFO, "Step04: User clicks on the Add Cart Button !!");
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(checkout, "Checkout")));
 		CommonMethods.hardwait(2000);
 		dynamicElements(checkout, "Checkout").click();
 		logMessage("User clicks on the Checkout Button !!");
+		logExtent.log(LogStatus.INFO, "Step05: User clicks on the Checkout Button !!");
 	}
 
 	public void clickOnBesrPriceToggelButton() {

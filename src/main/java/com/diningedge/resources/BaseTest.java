@@ -1,5 +1,7 @@
 package com.diningedge.resources;
 
+import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,18 +13,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.Utilities.SendEmailUtility;
 import com.diningedge.Utilities.TakeScreenshot;
 import com.diningedge.common.CommonMethods;
 import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 
 public class BaseTest {
 
@@ -32,9 +33,10 @@ public class BaseTest {
 	TakeScreenshot takeScreenshot;
 	public ExtentTest logExtent;
 	public ExtentReports extent;
-	boolean status=true;
-
-	//@BeforeSuite
+	ReadEmailUtility rd = new ReadEmailUtility();
+	boolean status = false;
+	public String filePath;
+	// @BeforeSuite
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		WebDriverManager.edgedriver().setup();
@@ -85,10 +87,10 @@ public class BaseTest {
 		takeScreenshot.takeScreenShotOnException(result);
 
 		if (result.getStatus() == ITestResult.FAILURE) {
-			status=false;
+			status = true;
 			logExtent.log(LogStatus.FAIL, "Test Case Failed :: " + result.getName());
 			logExtent.log(LogStatus.FAIL, "Error is " + result.getThrowable());
-			String filePath = takeScreenshot.takeScreenshot();
+			filePath = takeScreenshot.takeScreenshot();
 			logExtent.log(LogStatus.FAIL, logExtent.addScreenCapture(filePath));// to add screenshot in extent report
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			logExtent.log(LogStatus.SKIP, "Test Case Skipped :: " + result.getName());
@@ -98,16 +100,15 @@ public class BaseTest {
 		extent.endTest(logExtent);
 		driver.quit();
 	}
-	
+
 	@AfterSuite
 	public void sendReport() {
-		if(status) {
-			SendEmailUtility.sendReports("Send OG Successfully ✅", System.getProperty("user.dir")+"/target/ExtentReport.html");
-		}else {
-			SendEmailUtility.sendReports("Send OG Failed ❌", System.getProperty("user.dir")+"/target/ExtentReport.html");
+		if (status) {
+			System.out.println("Sending email in case of UI failure...");
+			SendEmailUtility.sendReports("Not able to sent mail from DiningEdge UI ❌",
+					filePath);
 		}
 	}
-	
 
 	@AfterTest
 	public void endReport() {

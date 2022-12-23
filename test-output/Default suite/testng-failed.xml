@@ -6,13 +6,14 @@
       <class name="com.diningedge.Regression.SendOGTest">
         <methods>
           <include name="dataSetUp"/>
-          <include name="sendOrderGuideFromOrderEdge" invocation-numbers="1"/>
+          <include name="sendOrderGuideFromOrderEdge" invocation-numbers="0"/>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
           <include name="tearDown"/>
           <include name="testMethodName"/>
           <include name="sendReport"/>
           <include name="setup"/>
+          <include name="sendEmailReport"/>
           <include name="endReport"/>
         </methods>
       </class> <!-- com.diningedge.Regression.SendOGTest -->
