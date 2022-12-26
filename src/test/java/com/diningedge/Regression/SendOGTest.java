@@ -23,9 +23,11 @@ import com.diningedge.PageActions.LoginPage;
 import com.diningedge.PageActions.ManageItemsPage;
 import com.diningedge.PageActions.OrderEdgePage;
 import com.diningedge.PageActions.SettingsPage;
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.Utilities.ExcelFunctions;
 import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.Utilities.SendEmailUtility;
+import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseTest;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -56,6 +58,7 @@ public class SendOGTest extends BaseTest {
 	String locationFromUI, locationFromGmail, orderDateFromUI, orderDateFromGmail, orderNumberFromUI,
 			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
 	List<String> details;
+	public String sheetName;
 
 	@BeforeMethod
 	public void setup() {
@@ -70,9 +73,10 @@ public class SendOGTest extends BaseTest {
 
 	@BeforeTest
 	public void dataSetUp() throws IOException {
+		sheetName=CustomFunctions.getSheetName();
 		exportworkbook = ExcelFunctions
-				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/Data.xlsx");
-		inputsheet = exportworkbook.getSheet("test");
+				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "OGData.xlsx");
+		inputsheet = exportworkbook.getSheet(sheetName);
 	}
 
 	@Test(dataProvider = "testData", priority = 1)
@@ -83,9 +87,9 @@ public class SendOGTest extends BaseTest {
 		XSSFCell cell1, cell2;
 		SendOGTest.rowIndex = Math.floorMod(SendOGTest.acno, SendOGTest.totalNoOfRows) + 1;
 		System.out.println("Test Case test #" + SendOGTest.rowIndex);
-		cell1 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(SendOGTest.AcColStatus);
+		cell1 = exportworkbook.getSheet(sheetName).getRow(rowIndex).createCell(SendOGTest.AcColStatus);
 		cell1.setCellValue("");
-		cell2 = exportworkbook.getSheet("test").getRow(rowIndex).createCell(SendOGTest.AcColdetail);
+		cell2 = exportworkbook.getSheet(sheetName).getRow(rowIndex).createCell(SendOGTest.AcColdetail);
 		cell2.setCellValue("");
 
 		/*-------------------------Basic Flow----------------------------------*/
@@ -97,7 +101,8 @@ public class SendOGTest extends BaseTest {
 		dashboard.getDeshboardText("Dashboard", logExtent);
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
-		addUnitsAndSendOG(vendor, productName+"Wrong", unitType, logExtent);
+		addUnitsAndSendOG(vendor, productName, unitType, logExtent);
+		//CommonMethods.hardwait(60000);
 		verifyOrderFromEmail(vendor);
 	}
 
@@ -189,7 +194,7 @@ public class SendOGTest extends BaseTest {
 	public void sendEmailReport() {
 
 		if (status) {
-			SendEmailUtility.sendReport("⚠️ Order email not recieved within time ❌", vendorName);
+			SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed ❌", vendorName);
 		} else {
 			System.out.println("----------------------------");
 		}

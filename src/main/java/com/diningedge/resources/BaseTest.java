@@ -45,7 +45,7 @@ public class BaseTest {
 	@BeforeTest
 	public void setExtent() {
 		extent = new ExtentReports(System.getProperty("user.dir") + "/target/ExtentReport.html", true);
-		extent.addSystemInfo("User Name", "Mohit Kumar");
+		extent.addSystemInfo("User Name", "Automation Testing by Ⓜ️");
 		extent.addSystemInfo("Environment", "QA Automation");
 	}
 
@@ -105,7 +105,7 @@ public class BaseTest {
 	public void sendReport() {
 		if (status) {
 			System.out.println("Sending email in case of UI failure...");
-			SendEmailUtility.sendReports("Not able to sent mail from DiningEdge UI ❌",
+			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ❌",
 					filePath);
 		}
 	}

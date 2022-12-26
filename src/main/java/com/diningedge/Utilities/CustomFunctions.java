@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
@@ -105,6 +106,14 @@ public class CustomFunctions extends BaseUi {
 		} catch (Exception e) {
 			System.out.println("error no pop-up or issue closing pop up");
 		}
+	}
+	
+	public static String getSheetName() {
+		final String[] sheets = {"Cheney", "US_Food", "Sysco", "PGF"};
+		Random random = new Random();
+		int index = random.nextInt(sheets.length);
+		System.out.println("SheetName= "+sheets[index]);
+		return sheets[index];
 	}
 
 }
