@@ -20,6 +20,7 @@ import javax.mail.internet.MimeMultipart;
 
 import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 
+import com.diningedge.common.CreateTableUtility;
 import com.diningedge.resources.BaseUi;
 
 public class SendEmailUtility extends BaseUi {
@@ -34,18 +35,20 @@ public class SendEmailUtility extends BaseUi {
 	public static Session createConnection() throws MessagingException {
 		logMsg("Connecting to the Gmail ...");
 		Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.socketFactory.port", "465");
+		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.port", "587");
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(getProperty("email"), getProperty("gmailPassword"));// Specify the Username
-																									// and the PassWord
+				return new PasswordAuthentication(getProperty("email"), getProperty("gmailPassword"));// Specify the
+																										// Username
+																										// and the
+																										// PassWord
 			}
 		});
 		return session;
@@ -104,66 +107,7 @@ public class SendEmailUtility extends BaseUi {
 	 * @param Subject
 	 * @param filenames
 	 */
-	public static void sendReports(String Subject, String... filenames) {
-		try {
-
-			String user = "diningedgetest@gmail.com";
-			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO  ,"apoorva.hassani@gmail.com"
-			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
-
-			// get connection
-			Session session = createConnection();
-
-			MimeMessage message = new MimeMessage(session);
-
-			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
-
-			InternetAddress[] recipientAddress = new InternetAddress[to.length];
-			int counter = 0;
-			for (String recipient : to) {
-				recipientAddress[counter] = new InternetAddress(recipient.trim());
-				counter++;
-			}
-
-			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
-			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
-
-			// Subject of mails
-			message.setSubject(Subject);
-			// Body of mails
-			BodyPart messageBodyPart = new MimeBodyPart();
-			
-			messageBodyPart.setText("Hi Team!!, \n\n Send OG Failed While sending mail form UI !! \n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
-			
-			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
-			for (String filename : filenames) {
-				DataSource source = new FileDataSource(filename);
-				messageBodyPart2.setDataHandler(new DataHandler(source));
-				messageBodyPart2.setFileName(filename);
-				logMsg("Attached file - " + filename);
-
-			}
-			Multipart multipart = new MimeMultipart();
-			multipart.addBodyPart(messageBodyPart2);
-			multipart.addBodyPart(messageBodyPart);
-			
-			message.setContent(multipart);
-
-			Transport.send(message, messageBodyPart1.getAllRecipients());
-
-			logMsg("Message send success");
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			logMsg(e.getMessage());
-			logMsg("Technical issue in sending reporting");
-		}
-
-	}
-	
-	
-	public static void sendReport(String Subject,String vendor) {
+	public static void sendReports(String Subject, String vendor, String location, String... filenames) {
 		try {
 
 			String user = "diningedgetest@gmail.com";
@@ -192,12 +136,150 @@ public class SendEmailUtility extends BaseUi {
 			message.setSubject(Subject);
 			// Body of mails
 			BodyPart messageBodyPart = new MimeBodyPart();
-			
-			messageBodyPart.setText("Hi Team !!, \n \n We didn't received email for ::"+vendor+":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
-			
+			BodyPart messageBodyPart3 = new MimeBodyPart();
+			BodyPart messageBodyPart4 = new MimeBodyPart();
+			BodyPart messageBodyPart5 = new MimeBodyPart();
+			messageBodyPart.setText("Hi Team!!,\n");
+			messageBodyPart5.setText("Order Submission failed for below Details ⤵");
+			messageBodyPart3.setContent(CreateTableUtility.createTableTest(vendor), "text/html");
+			messageBodyPart4.setText(" \n\n\n\n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
+
+			/*-----------------------this is used when u are trying to send multiple files------------*/
+
+			for (String filename : filenames) {
+				DataSource source = new FileDataSource(filename);
+				messageBodyPart2.setDataHandler(new DataHandler(source));
+				messageBodyPart2.setFileName(filename);
+				logMsg("Attached file - " + filename);
+
+			}
+			Multipart multipart = new MimeMultipart();
+			multipart.addBodyPart(messageBodyPart2);
+			multipart.addBodyPart(messageBodyPart);
+			multipart.addBodyPart(messageBodyPart5);
+			multipart.addBodyPart(messageBodyPart3);
+			multipart.addBodyPart(messageBodyPart4);
+
+			message.setContent(multipart);
+
+			Transport.send(message, messageBodyPart1.getAllRecipients());
+
+			logMsg("Message send success");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			logMsg(e.getMessage());
+			logMsg("Technical issue in sending reporting");
+		}
+
+	}
+
+	/**
+	 * This is used for send reports for user
+	 * 
+	 * @param Subject
+	 * @param filenames
+	 */
+	public static void sendReports(String Subject, String... filenames) {
+		try {
+
+			String user = "diningedgetest@gmail.com";
+			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
+			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
+
+			// get connection
+			Session session = createConnection();
+
+			MimeMessage message = new MimeMessage(session);
+
+			MimeMessage messageBodyPart1 = new MimeMessage(session);
+			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+
+			InternetAddress[] recipientAddress = new InternetAddress[to.length];
+			int counter = 0;
+			for (String recipient : to) {
+				recipientAddress[counter] = new InternetAddress(recipient.trim());
+				counter++;
+			}
+
+			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
+			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+
+			// Subject of mails
+			message.setSubject(Subject);
+			// Body of mails
+			BodyPart messageBodyPart = new MimeBodyPart();
+
+			messageBodyPart.setText(
+					"Hi Team!!, \n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+
+			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
+
+			/*-----------------------this is used when u are trying to send multiple files------------*/
+
+			for (String filename : filenames) {
+				DataSource source = new FileDataSource(filename);
+				messageBodyPart2.setDataHandler(new DataHandler(source));
+				messageBodyPart2.setFileName(filename);
+				logMsg("Attached file - " + filename);
+
+			}
+
+			Multipart multipart = new MimeMultipart();
+			multipart.addBodyPart(messageBodyPart2);
+			multipart.addBodyPart(messageBodyPart);
+
+			message.setContent(multipart);
+
+			Transport.send(message, messageBodyPart1.getAllRecipients());
+
+			logMsg("Message send success");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			logMsg(e.getMessage());
+			logMsg("Technical issue in sending reporting");
+		}
+
+	}
+
+	public static void sendReport(String Subject, String vendor) {
+		try {
+
+			String user = "diningedgetest@gmail.com";
+			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
+			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
+
+			// get connection
+			Session session = createConnection();
+
+			MimeMessage message = new MimeMessage(session);
+
+			MimeMessage messageBodyPart1 = new MimeMessage(session);
+			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+
+			InternetAddress[] recipientAddress = new InternetAddress[to.length];
+			int counter = 0;
+			for (String recipient : to) {
+				recipientAddress[counter] = new InternetAddress(recipient.trim());
+				counter++;
+			}
+
+			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
+			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+
+			// Subject of mails
+			message.setSubject(Subject);
+			// Body of mails
+			BodyPart messageBodyPart = new MimeBodyPart();
+
+			messageBodyPart.setText("Hi Team !!, \n \n We didn't received email for ::" + vendor
+					+ ":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+
 			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart);
-			
+
 			message.setContent(multipart);
 
 			Transport.send(message, messageBodyPart1.getAllRecipients());

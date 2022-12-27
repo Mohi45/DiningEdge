@@ -12,6 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -35,7 +36,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class SendOGTest extends BaseTest {
 	int i = 0;
 	Random random = new Random();
-	public int numberOfUnits = random.nextInt(90) + 10;
+	public int numberOfUnits = random.nextInt(4) + 1;
 	public static XSSFWorkbook exportworkbook;
 	public static XSSFSheet inputsheet;
 	WebDriver driver;
@@ -47,6 +48,7 @@ public class SendOGTest extends BaseTest {
 	ManageItemsPage manageItemsPage;
 	ReadEmailUtility rd = new ReadEmailUtility();
 	protected String vendorName;
+	protected String location = "loc10";
 	boolean status = false;
 
 	public static int acno;
@@ -73,7 +75,7 @@ public class SendOGTest extends BaseTest {
 
 	@BeforeTest
 	public void dataSetUp() throws IOException {
-		sheetName=CustomFunctions.getSheetName();
+		sheetName = CustomFunctions.getSheetName();
 		exportworkbook = ExcelFunctions
 				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "OGData.xlsx");
 		inputsheet = exportworkbook.getSheet(sheetName);
@@ -102,7 +104,7 @@ public class SendOGTest extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		addUnitsAndSendOG(vendor, productName, unitType, logExtent);
-		//CommonMethods.hardwait(60000);
+		// CommonMethods.hardwait(60000);
 		verifyOrderFromEmail(vendor);
 	}
 
@@ -198,5 +200,10 @@ public class SendOGTest extends BaseTest {
 		} else {
 			System.out.println("----------------------------");
 		}
+	}
+
+	@AfterSuite
+	public void mailTriggerInCaseOfUI() {
+		sendReport(vendorName, location);
 	}
 }

@@ -101,12 +101,12 @@ public class BaseTest {
 		driver.quit();
 	}
 
-	@AfterSuite
-	public void sendReport() {
+
+	public void sendReport(String vendor,String location) {
 		if (status) {
 			System.out.println("Sending email in case of UI failure...");
 			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ❌",
-					filePath);
+					vendor,location,filePath);
 		}
 	}
 
