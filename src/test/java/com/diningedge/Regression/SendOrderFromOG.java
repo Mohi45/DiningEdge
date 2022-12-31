@@ -3,19 +3,15 @@ package com.diningedge.Regression;
 import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 import static org.testng.Assert.assertEquals;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.diningedge.PageActions.CheckoutPage;
@@ -23,18 +19,15 @@ import com.diningedge.PageActions.DashboardPage;
 import com.diningedge.PageActions.LoginPage;
 import com.diningedge.PageActions.ManageItemsPage;
 import com.diningedge.PageActions.OrderEdgePage;
+import com.diningedge.PageActions.Order_OGPage;
 import com.diningedge.PageActions.SettingsPage;
-import com.diningedge.Utilities.CustomFunctions;
-import com.diningedge.Utilities.ExcelFunctions;
 import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.Utilities.SendEmailUtility;
-import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseTest;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class SendOGTest extends BaseTest {
-	int i = 0;
+public class SendOrderFromOG extends BaseTest {
+
 	Random random = new Random();
 	public int numberOfUnits = random.nextInt(2) + 1;
 	public static XSSFWorkbook exportworkbook;
@@ -46,21 +39,15 @@ public class SendOGTest extends BaseTest {
 	CheckoutPage checkoutPage;
 	SettingsPage settingsPage;
 	ManageItemsPage manageItemsPage;
+	Order_OGPage orderOg;
 	ReadEmailUtility rd = new ReadEmailUtility();
 	protected String vendorName;
 	protected String location = "loc10";
 	boolean status = false;
-
-	public static int acno;
-	public static int totalNoOfRows;
-	public static int AcColStatus;
-	public static int AcColdetail;
-	public static int totalNoOfCols;
-	public static int rowIndex;
+	private String vendor;
+	List<String> details;
 	String locationFromUI, locationFromGmail, orderDateFromUI, orderDateFromGmail, orderNumberFromUI,
 			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
-	List<String> details;
-	public String sheetName;
 
 	@BeforeMethod
 	public void setup() {
@@ -71,83 +58,38 @@ public class SendOGTest extends BaseTest {
 		checkoutPage = new CheckoutPage(driver);
 		settingsPage = new SettingsPage(driver);
 		manageItemsPage = new ManageItemsPage(driver);
+		orderOg = new Order_OGPage(driver);
 	}
 
-	@BeforeTest
-	public void dataSetUp() throws IOException {
-		sheetName = CustomFunctions.getSheetName();
-		exportworkbook = ExcelFunctions
-				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "OGData.xlsx");
-		inputsheet = exportworkbook.getSheet(sheetName);
-	}
-
-	@Test(dataProvider = "testData", priority = 1)
-	public void sendOrderGuideFromOrderEdge(String vendor, String productName, String unitType) throws Exception {
-		/*------------------------Data set up-------------------------*/
-		vendorName = vendor;
-		/*------------------------------------------------------------*/
-		XSSFCell cell1, cell2;
-		SendOGTest.rowIndex = Math.floorMod(SendOGTest.acno, SendOGTest.totalNoOfRows) + 1;
-		System.out.println("Test Case test #" + SendOGTest.rowIndex);
-		cell1 = exportworkbook.getSheet(sheetName).getRow(rowIndex).createCell(SendOGTest.AcColStatus);
-		cell1.setCellValue("");
-		cell2 = exportworkbook.getSheet(sheetName).getRow(rowIndex).createCell(SendOGTest.AcColdetail);
-		cell2.setCellValue("");
-
-		/*-------------------------Basic Flow----------------------------------*/
+	@Test
+	public void sendOrderFromOG() throws Exception {
 		logExtent = extent
 				.startTest("Test0" + SendOGTest.rowIndex + "_sendOrderGuideAndValidateFromEmail for :: " + vendor);
 		login.enterCredentials(getProperty("username"), getProperty("password"), logExtent);
 		login.clickOnLoginButton();
 		dashboard.getDiningEdgeText("DiningEdge", logExtent);
 		dashboard.getDeshboardText("Dashboard", logExtent);
-		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
-		dashboard.clickOnTheSelectLoaction(logExtent);
-		addUnitsAndSendOG(vendor, productName, unitType, logExtent);
-		verifyOrderFromEmail(vendor);
-	}
-
-	@AfterMethod
-	public void tearDown() {
-		acno++;
-	}
-
-	/*--------------------------Data Provider to provide data------------------*/
-
-	@DataProvider(name = "testData")
-	public static Object[][] testData() throws IOException {
-		System.out.println("Inside Dataprovider. Creating the Object Array to store test data inputs.");
-		Object[][] td = null;
-		try {
-			// Get TestCase sheet data
-			totalNoOfCols = inputsheet.getRow(inputsheet.getFirstRowNum()).getPhysicalNumberOfCells();
-			totalNoOfRows = inputsheet.getLastRowNum();
-			System.out.println(totalNoOfRows + " Accounts and Columns are: " + totalNoOfCols);
-			td = new String[totalNoOfRows][totalNoOfCols];
-			for (int i = 1; i <= totalNoOfRows; i++) {
-				for (int j = 0; j < totalNoOfCols; j++) {
-					td[i - 1][j] = ExcelFunctions.getCellValue(inputsheet, i, j);
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("Test Cases captured in the Object Array. Exiting dataprovider.");
-		return td;
-	}
-
-	/*-------------------Reusable Methods--------------*/
-
-	public void addUnitsAndSendOG(String vendor, String productName, String unitType, ExtentTest logExtents) {
-		dashboard.clickOnTheOrderEdge("Order Edge", logExtents);
-		orderEdge.enterUnits(String.valueOf(numberOfUnits), productName, vendor, unitType, logExtents);
-		dashboard.clickOnHeader();
-		orderEdge.clickOnAddToCartButton(logExtents);
-		checkoutPage.selecctSumbitAll("Submit All", logExtents);
+		dashboard.clickOnTheOrderEdge("Order from OG", logExtent);
+		orderOg.clickOnUpdatePackButton();
+		orderOg.enterPack_SizeAndPreicesValues("Pack", String.valueOf(numberOfUnits));
+		orderOg.enterPack_SizeAndPreicesValues("Size", String.valueOf(numberOfUnits));
+		orderEdge.clickOnSaveAndCancel("Save");
 		settingsPage.clickOnSnackBarCloseButton();
+		orderOg.clickOnUpdatePriceButton();
+		orderOg.enterPack_SizeAndPreicesValues("Price", String.valueOf(numberOfUnits));
+		orderEdge.clickOnSaveAndCancel("Save");
+		orderOg.clickOnUpdatePriceButton();
+		settingsPage.clickOnSnackBarCloseButton();
+		orderOg.selectQuantity("Cheney Testing", String.valueOf(numberOfUnits));
+		dashboard.clickOnHeader();
+		orderEdge.clickOnAddToCartButton(logExtent);
+		checkoutPage.selecctSumbitAll("Submit All", logExtent);
+		settingsPage.clickOnSnackBarCloseButton();
+		verifyOrderFromEmail("Cheney");
 	}
 
 	public void verifyOrderFromEmail(String vendor) throws Exception {
+		vendorName=vendor;
 		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
@@ -188,7 +130,7 @@ public class SendOGTest extends BaseTest {
 					"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
 		}
 	}
-
+	
 	/*-------------------------------------Sending Reports-------------------------*/
 
 	@AfterMethod
@@ -205,4 +147,5 @@ public class SendOGTest extends BaseTest {
 	public void mailTriggerInCaseOfUI() {
 		sendReport(vendorName, location);
 	}
+
 }

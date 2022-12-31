@@ -5,123 +5,125 @@
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- sendOrderGuideFromOrderEdge *****]]>
+      <![CDATA[***** STARTING TEST STEP:- sendOrderFromOG *****]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:51:919] User enters Name = testauto]]>
+      <![CDATA[[2022-12-31] [20:04:57:042] User enters Name = testauto]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:52:038] User enters Password =123456]]>
+      <![CDATA[[2022-12-31] [20:04:57:250] User enters Password =123456]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:52:115] User clicks on the Login Button !!!]]>
+      <![CDATA[[2022-12-31] [20:04:57:373] User clicks on the Login Button !!!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:56:836] Assertion Passed: DiningEdge is present on the HomePage]]>
+      <![CDATA[[2022-12-31] [20:05:07:245] Assertion Passed: DiningEdge is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:56:893] Assertion Passed: Dashboard is present on the HomePage]]>
+      <![CDATA[[2022-12-31] [20:05:07:344] Assertion Passed: Dashboard is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:57:359] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2022-12-31] [20:05:08:128] User clicks on Order from OG Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:57:473] User clicks on select Location dropDown !!]]>
+      <![CDATA[[2022-12-31] [20:05:11:985] User click on the Save button]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:57:576] User clicks on select Location loc10 from dropDown !!]]>
+      <![CDATA[[2022-12-31] [20:05:15:338] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:39:57:899] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2022-12-31] [20:05:15:981] User click on the Save button]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:00:143] User added number of units = 3]]>
+      <![CDATA[[2022-12-31] [20:05:18:424] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:04:226] User clicks on the Add Cart Button !!]]>
+      <![CDATA[[2022-12-31] [20:05:25:254] User clicks on the Add Cart Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:06:438] User clicks on the Checkout Button !!]]>
+      <![CDATA[[2022-12-31] [20:05:27:527] User clicks on the Checkout Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:07:794] User clicks on the Submit All Button !!]]>
+      <![CDATA[[2022-12-31] [20:05:30:189] User clicks on the Submit All Button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:10:411] User clicks on the Snack Bar cross button !!]]>
+      <![CDATA[[2022-12-31] [20:05:33:295] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:13:215] Connecting to gmail...]]>
+      <![CDATA[[2022-12-31] [20:05:34:560] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:16:360] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2022-12-31] [20:05:38:215] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:17:281] Subject is :-New order : test automation (loc10)]]>
+      <![CDATA[[2022-12-31] [20:05:48:776] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:17:281] Connecting to gmail...]]>
+      <![CDATA[[2022-12-31] [20:05:51:643] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:20:011] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2022-12-31] [20:05:52:703] Subject is :-New order : test automation (loc10)]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:20:951] Subject is :-New order : test automation (loc10)]]>
+      <![CDATA[[2022-12-31] [20:05:52:706] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:20:962] Connecting to gmail...]]>
+      <![CDATA[[2022-12-31] [20:05:55:958] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:23:647] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2022-12-31] [20:05:56:893] Subject is :-New order : test automation (loc10)]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:24:473] Subject is :-New order : test automation (loc10)]]>
+      <![CDATA[[2022-12-31] [20:05:56:895] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:26:261] orderId #: 299]]>
+      <![CDATA[[2022-12-31] [20:05:59:952] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:26:261] Order Date : 12/27/2022]]>
+      <![CDATA[[2022-12-31] [20:06:00:913] Subject is :-New order : test automation (loc10)]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:26:268] Resturant Name : test automation]]>
+      <![CDATA[[2022-12-31] [20:06:03:656] orderId #: 316]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:26:268] Total Order Amount : $38.40]]>
+      <![CDATA[[2022-12-31] [20:06:03:658] Order Date : 12/31/2022]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:27:178] New order : test automation (loc10) :: email deleted successfully !!]]>
+      <![CDATA[[2022-12-31] [20:06:03:660] Resturant Name : test automation]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:27:185] Connecting to gmail...]]>
+      <![CDATA[[2022-12-31] [20:06:03:661] Total Order Amount : $1.00]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:29:367] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2022-12-31] [20:06:04:515] New order : test automation (loc10) :: email deleted successfully !!]]>
     </line>
     <line>
-      <![CDATA[[2022-12-27] [15:40:30:161] Moved email in successfully Done!!]]>
+      <![CDATA[[2022-12-31] [20:06:04:518] Connecting to gmail...]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-31] [20:06:08:042] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2022-12-31] [20:06:09:026] Moved email in successfully Done!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-12-27T15:39:06 IST" name="Default suite" finished-at="2022-12-27T15:40:31 IST" duration-ms="84950">
+  <suite started-at="2022-12-31T20:02:30 IST" name="Default suite" finished-at="2022-12-31T20:06:10 IST" duration-ms="219675">
     <groups>
     </groups>
-    <test started-at="2022-12-27T15:39:06 IST" name="Default test" finished-at="2022-12-27T15:40:31 IST" duration-ms="84950">
-      <class name="com.diningedge.Regression.SendOGTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:39:06 IST" name="setExtent" finished-at="2022-12-27T15:39:06 IST" duration-ms="171" status="PASS">
+    <test started-at="2022-12-31T20:02:30 IST" name="Default test" finished-at="2022-12-31T20:06:10 IST" duration-ms="219675">
+      <class name="com.diningedge.Regression.SendOrderFromOG">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:02:30 IST" name="setExtent" finished-at="2022-12-31T20:02:30 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="dataSetUp()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:39:06 IST" name="dataSetUp" finished-at="2022-12-27T15:39:07 IST" depends-on-methods="com.diningedge.resources.BaseTest.setExtent" duration-ms="431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataSetUp -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:39:07 IST" name="testMethodName" finished-at="2022-12-27T15:39:07 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:02:30 IST" name="testMethodName" finished-at="2022-12-31T20:02:30 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.diningedge.Regression.SendOGTest.sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -130,159 +132,144 @@
               <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- sendOrderGuideFromOrderEdge *****]]>
+              <![CDATA[***** STARTING TEST STEP:- sendOrderFromOG *****]]>
             </line>
             <line>
               <![CDATA[ ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:39:07 IST" name="setup" finished-at="2022-12-27T15:39:51 IST" duration-ms="44496" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:02:30 IST" name="setup" finished-at="2022-12-31T20:04:56 IST" duration-ms="145681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:39:51 IST" name="sendOrderGuideFromOrderEdge" data-provider="testData" finished-at="2022-12-27T15:40:30 IST" duration-ms="39206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cheney]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Automation Cheney]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Cheney Testing]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="sendOrderFromOG()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:04:56 IST" name="sendOrderFromOG" finished-at="2022-12-31T20:06:09 IST" duration-ms="73311" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2022-12-27] [15:39:51:919] User enters Name = testauto]]>
+              <![CDATA[[2022-12-31] [20:04:57:042] User enters Name = testauto]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:52:038] User enters Password =123456]]>
+              <![CDATA[[2022-12-31] [20:04:57:250] User enters Password =123456]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:52:115] User clicks on the Login Button !!!]]>
+              <![CDATA[[2022-12-31] [20:04:57:373] User clicks on the Login Button !!!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:56:836] Assertion Passed: DiningEdge is present on the HomePage]]>
+              <![CDATA[[2022-12-31] [20:05:07:245] Assertion Passed: DiningEdge is present on the HomePage]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:56:893] Assertion Passed: Dashboard is present on the HomePage]]>
+              <![CDATA[[2022-12-31] [20:05:07:344] Assertion Passed: Dashboard is present on the HomePage]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:57:359] User clicks on Order Edge Button !!]]>
+              <![CDATA[[2022-12-31] [20:05:08:128] User clicks on Order from OG Button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:57:473] User clicks on select Location dropDown !!]]>
+              <![CDATA[[2022-12-31] [20:05:11:985] User click on the Save button]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:57:576] User clicks on select Location loc10 from dropDown !!]]>
+              <![CDATA[[2022-12-31] [20:05:15:338] User clicks on the Snack Bar cross button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:39:57:899] User clicks on Order Edge Button !!]]>
+              <![CDATA[[2022-12-31] [20:05:15:981] User click on the Save button]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:00:143] User added number of units = 3]]>
+              <![CDATA[[2022-12-31] [20:05:18:424] User clicks on the Snack Bar cross button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:04:226] User clicks on the Add Cart Button !!]]>
+              <![CDATA[[2022-12-31] [20:05:25:254] User clicks on the Add Cart Button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:06:438] User clicks on the Checkout Button !!]]>
+              <![CDATA[[2022-12-31] [20:05:27:527] User clicks on the Checkout Button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:07:794] User clicks on the Submit All Button !!]]>
+              <![CDATA[[2022-12-31] [20:05:30:189] User clicks on the Submit All Button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:10:411] User clicks on the Snack Bar cross button !!]]>
+              <![CDATA[[2022-12-31] [20:05:33:295] User clicks on the Snack Bar cross button !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:13:215] Connecting to gmail...]]>
+              <![CDATA[[2022-12-31] [20:05:34:560] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:16:360] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2022-12-31] [20:05:38:215] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:17:281] Subject is :-New order : test automation (loc10)]]>
+              <![CDATA[[2022-12-31] [20:05:48:776] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:17:281] Connecting to gmail...]]>
+              <![CDATA[[2022-12-31] [20:05:51:643] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:20:011] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2022-12-31] [20:05:52:703] Subject is :-New order : test automation (loc10)]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:20:951] Subject is :-New order : test automation (loc10)]]>
+              <![CDATA[[2022-12-31] [20:05:52:706] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:20:962] Connecting to gmail...]]>
+              <![CDATA[[2022-12-31] [20:05:55:958] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:23:647] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2022-12-31] [20:05:56:893] Subject is :-New order : test automation (loc10)]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:24:473] Subject is :-New order : test automation (loc10)]]>
+              <![CDATA[[2022-12-31] [20:05:56:895] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:26:261] orderId #: 299]]>
+              <![CDATA[[2022-12-31] [20:05:59:952] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:26:261] Order Date : 12/27/2022]]>
+              <![CDATA[[2022-12-31] [20:06:00:913] Subject is :-New order : test automation (loc10)]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:26:268] Resturant Name : test automation]]>
+              <![CDATA[[2022-12-31] [20:06:03:656] orderId #: 316]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:26:268] Total Order Amount : $38.40]]>
+              <![CDATA[[2022-12-31] [20:06:03:658] Order Date : 12/31/2022]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:27:178] New order : test automation (loc10) :: email deleted successfully !!]]>
+              <![CDATA[[2022-12-31] [20:06:03:660] Resturant Name : test automation]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:27:185] Connecting to gmail...]]>
+              <![CDATA[[2022-12-31] [20:06:03:661] Total Order Amount : $1.00]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:29:367] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2022-12-31] [20:06:04:515] New order : test automation (loc10) :: email deleted successfully !!]]>
             </line>
             <line>
-              <![CDATA[[2022-12-27] [15:40:30:161] Moved email in successfully Done!!]]>
+              <![CDATA[[2022-12-31] [20:06:04:518] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-31] [20:06:08:042] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2022-12-31] [20:06:09:026] Moved email in successfully Done!!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- sendOrderGuideFromOrderEdge -->
-        <test-method is-config="true" signature="sendEmailReport()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:40:30 IST" name="sendEmailReport" finished-at="2022-12-27T15:40:30 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- sendOrderFromOG -->
+        <test-method is-config="true" signature="sendEmailReport()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:06:09 IST" name="sendEmailReport" finished-at="2022-12-31T20:06:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmailReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:40:30 IST" name="tearDown" finished-at="2022-12-27T15:40:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:40:30 IST" name="take_screenshot_on_failure" finished-at="2022-12-27T15:40:31 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:06:09 IST" name="take_screenshot_on_failure" finished-at="2022-12-31T20:06:09 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendOrderGuideFromOrderEdge status=SUCCESS method=SendOGTest.sendOrderGuideFromOrderEdge(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.diningedge.Regression.SendOGTest@2a3b5b47] output=[2022-12-27] [15:39:51:919] User enters Name = testauto]]]>
+                <![CDATA[[TestResult name=sendOrderFromOG status=SUCCESS method=SendOrderFromOG.sendOrderFromOG()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d] output=[2022-12-31] [20:04:57:042] User enters Name = testauto]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:40:31 IST" name="endReport" finished-at="2022-12-27T15:40:31 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:06:09 IST" name="endReport" finished-at="2022-12-31T20:06:10 IST" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method is-config="true" signature="mailTriggerInCaseOfUI()[pri:0, instance:com.diningedge.Regression.SendOGTest@2a3b5b47]" started-at="2022-12-27T15:40:31 IST" name="mailTriggerInCaseOfUI" finished-at="2022-12-27T15:40:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="mailTriggerInCaseOfUI()[pri:0, instance:com.diningedge.Regression.SendOrderFromOG@6adbc9d]" started-at="2022-12-31T20:06:10 IST" name="mailTriggerInCaseOfUI" finished-at="2022-12-31T20:06:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mailTriggerInCaseOfUI -->
-      </class> <!-- com.diningedge.Regression.SendOGTest -->
+      </class> <!-- com.diningedge.Regression.SendOrderFromOG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
