@@ -18,12 +18,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.diningedge.PageActions.CheckoutPage;
-import com.diningedge.PageActions.DashboardPage;
-import com.diningedge.PageActions.LoginPage;
-import com.diningedge.PageActions.ManageItemsPage;
-import com.diningedge.PageActions.OrderEdgePage;
-import com.diningedge.PageActions.SettingsPage;
+import com.diningedge.PageActions.DiningEdge.CheckoutPage;
+import com.diningedge.PageActions.DiningEdge.DashboardPage;
+import com.diningedge.PageActions.DiningEdge.LoginPage;
+import com.diningedge.PageActions.DiningEdge.ManageItemsPage;
+import com.diningedge.PageActions.DiningEdge.OrderEdgePage;
+import com.diningedge.PageActions.DiningEdge.SettingsPage;
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.Utilities.ExcelFunctions;
 import com.diningedge.Utilities.ReadEmailUtility;

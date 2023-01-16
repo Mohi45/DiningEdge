@@ -14,13 +14,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.diningedge.PageActions.CheckoutPage;
-import com.diningedge.PageActions.DashboardPage;
-import com.diningedge.PageActions.LoginPage;
-import com.diningedge.PageActions.ManageItemsPage;
-import com.diningedge.PageActions.OrderEdgePage;
-import com.diningedge.PageActions.Order_OGPage;
-import com.diningedge.PageActions.SettingsPage;
+import com.diningedge.PageActions.DiningEdge.CheckoutPage;
+import com.diningedge.PageActions.DiningEdge.DashboardPage;
+import com.diningedge.PageActions.DiningEdge.LoginPage;
+import com.diningedge.PageActions.DiningEdge.ManageItemsPage;
+import com.diningedge.PageActions.DiningEdge.OrderEdgePage;
+import com.diningedge.PageActions.DiningEdge.Order_OGPage;
+import com.diningedge.PageActions.DiningEdge.SettingsPage;
 import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.Utilities.SendEmailUtility;
 import com.diningedge.resources.BaseTest;
@@ -70,6 +70,7 @@ public class SendOrderFromOG extends BaseTest {
 		dashboard.getDiningEdgeText("DiningEdge", logExtent);
 		dashboard.getDeshboardText("Dashboard", logExtent);
 		dashboard.clickOnTheOrderEdge("Order from OG", logExtent);
+		manageItemsPage.clickOnTheSearchIconEndEnterValue("Cheney Testing");
 		orderOg.clickOnUpdatePackButton();
 		orderOg.enterPack_SizeAndPreicesValues("Pack", String.valueOf(numberOfUnits));
 		orderOg.enterPack_SizeAndPreicesValues("Size", String.valueOf(numberOfUnits));
@@ -89,7 +90,7 @@ public class SendOrderFromOG extends BaseTest {
 	}
 
 	public void verifyOrderFromEmail(String vendor) throws Exception {
-		vendorName=vendor;
+		vendorName = vendor;
 		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
@@ -130,7 +131,7 @@ public class SendOrderFromOG extends BaseTest {
 					"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
 		}
 	}
-	
+
 	/*-------------------------------------Sending Reports-------------------------*/
 
 	@AfterMethod

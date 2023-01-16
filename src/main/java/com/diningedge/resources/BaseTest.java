@@ -63,6 +63,9 @@ public class BaseTest {
 	public WebDriver getDriver() {
 		return getDriver(BrowserType.CHROME, getProperty("diningEdge"));
 	}
+	public WebDriver getDriver(String website) {
+		return getDriver(BrowserType.CHROME, website);
+	}
 
 	@BeforeMethod
 	public void testMethodName(Method method) {

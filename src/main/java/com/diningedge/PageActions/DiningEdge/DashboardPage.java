@@ -1,4 +1,4 @@
-package com.diningedge.PageActions;
+package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
 import java.time.Instant;
