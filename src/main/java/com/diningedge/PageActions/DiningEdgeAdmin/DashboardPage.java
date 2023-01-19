@@ -123,9 +123,14 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='delete']")
 	private WebElement deleteCompany;
+	
+	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='openCompanyImpersonated']")
+	private WebElement openCompanyImpersonated;
 
 	@FindBy(id = "modal-delete-button")
 	private WebElement modalDelete;
+	
+	String deleteLocation="//tr//td[contains(.,'$')]/..//td//a[@name='delete']";
 
 	/*---------------------------DiningEdgeAdmin Methods-------------------------------------------*/
 	public WebElement dynamicElements(String locator, String value) {
@@ -254,9 +259,20 @@ public class DashboardPage extends BaseUi {
 		logMessage("User clicks on the delete company icon !!");
 	}
 	
+	public void ClickOnUserIconFromAdmin() {
+		wait.until(ExpectedConditions.visibilityOf(openCompanyImpersonated));
+		openCompanyImpersonated.click();
+		logMessage("User clicks on the USer Icon company !!");
+	}
+	
 	public void deleteCompanyFromPopUp() {
 		wait.until(ExpectedConditions.visibilityOf(modalDelete));
 		modalDelete.click();
 		logMessage("User clicks on the delete company icon form Poup !!");
+	}
+	
+	public void deleteLocationAndUserFromAdmin(String locationName) {
+		dynamicElements(deleteLocation, locationName).click();
+		logMessage("User clicks on the delete location icon !!");
 	}
 }
