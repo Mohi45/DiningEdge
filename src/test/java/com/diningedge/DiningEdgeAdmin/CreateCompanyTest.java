@@ -31,6 +31,9 @@ public class CreateCompanyTest extends BaseTest {
 		login.clickOnLoginButton();
 		dashboardPage.getDashBoardTitle("Diningedge Admin");
 		enterCompanyDetails();
+		enterCompanyLocations();
+		//enterUserDetails();
+		
 	}
 
 	public void enterCompanyDetails() {
@@ -60,7 +63,8 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.clickOnCompanies();
 		dashboardPage.clickOnInnerCompany();
 	}
-	@AfterClass
+	
+	//@AfterClass
 	public void dataCleanUp() throws InterruptedException {
 		Thread.sleep(4000);
 		dashboardPage.deleteCompany();
