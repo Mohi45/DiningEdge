@@ -102,21 +102,6 @@ public class CommonMethods extends BaseUi {
 		er.assignProject(project + " Online OG Export");
 	}
 
-	public static void sendMail() {
-		try {
-			er.flush();
-			er.close();
-
-			String emailMsg = "Daily " + project + " OG Export Status: " + CustomFunctions.getCurrentTime();
-
-			//SendEmailUtility.sendReports(emailMsg, reportFile, extentReport);
-			logMsg("Email Sent with Attachment");
-		} catch (Exception e) {
-			logMsg("report sent failure!!!!");
-			e.printStackTrace();
-		}
-	}
-
 	public static void closeResources() throws IOException {
 		logMsg("Closing the resources ....");
 
