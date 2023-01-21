@@ -109,7 +109,7 @@ public class CommonMethods extends BaseUi {
 
 			String emailMsg = "Daily " + project + " OG Export Status: " + CustomFunctions.getCurrentTime();
 
-			SendEmailUtility.sendReports(emailMsg, reportFile, extentReport);
+			//SendEmailUtility.sendReports(emailMsg, reportFile, extentReport);
 			logMsg("Email Sent with Attachment");
 		} catch (Exception e) {
 			logMsg("report sent failure!!!!");
