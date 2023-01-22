@@ -70,7 +70,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void testMethodName(Method method) {
 		stepStartMessage(method.getName());
-		CommonMethods.deleteFiles(System.getProperty("user.home") + "/Downloads", ".csv");
+		//CommonMethods.deleteFiles(System.getProperty("user.home") + "/Downloads", ".csv");
 	}
 
 	public void stepStartMessage(String testStepName) {
