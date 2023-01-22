@@ -33,6 +33,7 @@ public class CreateCompanyTest extends BaseTest {
 		enterCompanyDetails();
 		enterCompanyLocations();
 		//enterUserDetails();
+		//clickOnUserIconToLogin();
 		
 	}
 
@@ -60,13 +61,21 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.enterUserDetails();
 		dashboardPage.selectMultipleRoles();
 		dashboardPage.clickOnCompanySaveButton();
-		dashboardPage.clickOnCompanies();
-		dashboardPage.clickOnInnerCompany();
+	}
+	
+	public void clickOnUserIconToLogin() {
+		dashboardPage.clickOnDeshboard();
+		dashboardPage.serchCompanyDetails();
+		dashboardPage.ClickOnUserIconFromAdmin();
+		
 	}
 	
 	//@AfterClass
 	public void dataCleanUp() throws InterruptedException {
 		Thread.sleep(4000);
+		dashboardPage.clickOnLocations();
+		dashboardPage.clickOnCompanies();
+		dashboardPage.clickOnInnerCompany();
 		dashboardPage.deleteCompany();
 		dashboardPage.deleteCompanyFromPopUp();
 	}

@@ -1,7 +1,9 @@
 package com.diningedge.PageActions.DiningEdgeAdmin;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -123,14 +125,20 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='delete']")
 	private WebElement deleteCompany;
-	
+
 	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='openCompanyImpersonated']")
 	private WebElement openCompanyImpersonated;
 
 	@FindBy(id = "modal-delete-button")
 	private WebElement modalDelete;
-	
-	String deleteLocation="//tr//td[contains(.,'$')]/..//td//a[@name='delete']";
+
+	String deleteLocation = "//tr//td[contains(.,'$')]/..//td//a[@name='delete']";
+
+	@FindBy(xpath = "//div//input[@type='search']")
+	private WebElement serachCompany;
+
+	@FindBy(xpath = "//div//span[text()='Search']/..")
+	private WebElement serachbtn;
 
 	/*---------------------------DiningEdgeAdmin Methods-------------------------------------------*/
 	public WebElement dynamicElements(String locator, String value) {
@@ -147,6 +155,13 @@ public class DashboardPage extends BaseUi {
 		wait.until(ExpectedConditions.visibilityOf(dashboardTitle));
 		String titleFromUI = dashboardTitle.getText();
 		Assert.assertEquals(title, titleFromUI, title + " is not same");
+	}
+
+	public void clickOnDeshboard() {
+		driver.get("https://admin-qaprod.diningedge.com/?action=list&entity=Companies");
+		wait.until(ExpectedConditions.visibilityOf(dashboardTitle));
+		dashboardTitle.click();
+		logMessage("User clicks on the title ");
 	}
 
 	public void clickOnAddCompanyButton() {
@@ -258,21 +273,29 @@ public class DashboardPage extends BaseUi {
 		deleteCompany.click();
 		logMessage("User clicks on the delete company icon !!");
 	}
-	
+
 	public void ClickOnUserIconFromAdmin() {
 		wait.until(ExpectedConditions.visibilityOf(openCompanyImpersonated));
 		openCompanyImpersonated.click();
 		logMessage("User clicks on the USer Icon company !!");
 	}
-	
+
 	public void deleteCompanyFromPopUp() {
 		wait.until(ExpectedConditions.visibilityOf(modalDelete));
 		modalDelete.click();
 		logMessage("User clicks on the delete company icon form Poup !!");
 	}
-	
+
 	public void deleteLocationAndUserFromAdmin(String locationName) {
 		dynamicElements(deleteLocation, locationName).click();
 		logMessage("User clicks on the delete location icon !!");
+	}
+
+	public void serchCompanyDetails() {
+		wait.until(ExpectedConditions.visibilityOf(serachCompany));
+		serachCompany.sendKeys("Automation Testing Company");
+		logMessage("User enter the Automation Testing Company");
+		serachbtn.click();
+		logMessage("User clicks on the search button !!");
 	}
 }
