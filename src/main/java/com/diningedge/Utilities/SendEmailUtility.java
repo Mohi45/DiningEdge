@@ -107,7 +107,7 @@ public class SendEmailUtility extends BaseUi {
 	 * @param Subject
 	 * @param filenames
 	 */
-	public static void sendReports(String Subject, String vendor, String location, String... filenames) {
+	public static void sendReports(String Subject, String vendor, String location, String[] filenames) {
 		try {
 
 			String user = "diningedgetest@gmail.com";
