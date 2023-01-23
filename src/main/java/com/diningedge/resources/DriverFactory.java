@@ -24,8 +24,8 @@ public class DriverFactory {
 
 	public WebDriver getDriver(BrowserType type) {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		options.addArguments("--window-size=1920,1200");
+		//options.addArguments("--headless");
+		//options.addArguments("--window-size=1920,1200");
 		options.addArguments("disable-infobars"); 
 		options.addArguments("--disable-extensions"); 
 		options.addArguments("--disable-dev-shm-usage");
