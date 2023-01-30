@@ -32,8 +32,8 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.getDashBoardTitle("Diningedge Admin");
 		enterCompanyDetails();
 		enterCompanyLocations();
-		//enterUserDetails();
-		//clickOnUserIconToLogin();
+		enterUserDetails();
+		clickOnUserIconToLogin();
 		
 	}
 
