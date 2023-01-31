@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.diningedge.PageActions.DiningEdgeAdmin.DashboardPage;
 import com.diningedge.PageActions.DiningEdgeAdmin.LoginPage;
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseTest;
 
 public class CreateCompanyTest extends BaseTest {
@@ -16,6 +17,10 @@ public class CreateCompanyTest extends BaseTest {
 	WebDriver driver;
 	LoginPage login;
 	DashboardPage dashboardPage;
+	static String companyName = "Automation Testing Comapny" + CustomFunctions.getCurrentDate()
+			+ CustomFunctions.generateRandomNumber();
+	static String location = "Automation Street" + CustomFunctions.getCurrentDate()
+			+ CustomFunctions.generateRandomNumber();
 
 	@BeforeMethod
 	public void setup() {
@@ -34,43 +39,43 @@ public class CreateCompanyTest extends BaseTest {
 		enterCompanyLocations();
 		enterUserDetails();
 		clickOnUserIconToLogin();
-		
+
 	}
 
 	public void enterCompanyDetails() {
 		dashboardPage.clickOnAddCompanyButton();
-		dashboardPage.enterCompanyName("Automation Testing Company");
+		dashboardPage.enterCompanyName(companyName);
 		dashboardPage.clickOnCheckBox();
 		dashboardPage.clickOnCompanySaveButton();
 		dashboardPage.clickOnCompanies();
 	}
-	
+
 	public void enterCompanyLocations() {
 		dashboardPage.clickOnLocations();
 		dashboardPage.clickOnAddLocations();
-		dashboardPage.enterLocationName("Automation Street 123 by M");
-		dashboardPage.selectCompanyName("Automation Testing Company");
+		dashboardPage.enterLocationName(location);
+		dashboardPage.selectCompanyName(companyName);
 		dashboardPage.selectBaseLocation();
 		dashboardPage.clickOnCompanySaveButton();
 	}
-	
+
 	public void enterUserDetails() {
 		dashboardPage.clickOnTheUser();
 		dashboardPage.clickOnAddUsers();
-		dashboardPage.selectCompanyNameForUser("Automation Testing Company");
+		dashboardPage.selectCompanyNameForUser(companyName);
 		dashboardPage.enterUserDetails();
 		dashboardPage.selectMultipleRoles();
 		dashboardPage.clickOnCompanySaveButton();
 	}
-	
+
 	public void clickOnUserIconToLogin() {
 		dashboardPage.clickOnDeshboard();
-		dashboardPage.serchCompanyDetails();
-		dashboardPage.ClickOnUserIconFromAdmin();
-		
+		dashboardPage.serchCompanyDetails(companyName);
+		dashboardPage.ClickOnUserIconFromAdmin(companyName);
+
 	}
-	
-	//@AfterClass
+
+	// @AfterClass
 	public void dataCleanUp() throws InterruptedException {
 		Thread.sleep(4000);
 		dashboardPage.clickOnLocations();
@@ -79,5 +84,4 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.deleteCompany();
 		dashboardPage.deleteCompanyFromPopUp();
 	}
-
 }

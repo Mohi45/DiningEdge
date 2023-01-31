@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseUi;
 
 public class DashboardPage extends BaseUi {
@@ -126,8 +127,7 @@ public class DashboardPage extends BaseUi {
 	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='delete']")
 	private WebElement deleteCompany;
 
-	@FindBy(xpath = "//tr//td[contains(.,'Automation Testing Company')]/..//td//a[@name='openCompanyImpersonated']")
-	private WebElement openCompanyImpersonated;
+	String openCompanyImpersonated="//tr//td[contains(.,'$')]/..//td//a[@name='openCompanyImpersonated']";
 
 	@FindBy(id = "modal-delete-button")
 	private WebElement modalDelete;
@@ -258,8 +258,8 @@ public class DashboardPage extends BaseUi {
 
 	public void enterUserDetails() {
 		userFirstName.sendKeys("Automation Testing");
-		userName.sendKeys("Automation");
-		userEmail.sendKeys("testprav59@gmail.com");
+		userName.sendKeys("Automation" + CustomFunctions.generateRandomNumber());
+		userEmail.sendKeys("testprav" + CustomFunctions.generateRandomNumber() + "@gmail.com");
 		userPassword.sendKeys("Password123");
 		userEnabled.click();
 	}
@@ -274,9 +274,9 @@ public class DashboardPage extends BaseUi {
 		logMessage("User clicks on the delete company icon !!");
 	}
 
-	public void ClickOnUserIconFromAdmin() {
-		wait.until(ExpectedConditions.visibilityOf(openCompanyImpersonated));
-		openCompanyImpersonated.click();
+	public void ClickOnUserIconFromAdmin(String companyName) {
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(openCompanyImpersonated,companyName)));
+		dynamicElements(openCompanyImpersonated,companyName).click();
 		logMessage("User clicks on the USer Icon company !!");
 	}
 
@@ -291,9 +291,9 @@ public class DashboardPage extends BaseUi {
 		logMessage("User clicks on the delete location icon !!");
 	}
 
-	public void serchCompanyDetails() {
+	public void serchCompanyDetails(String companyName) {
 		wait.until(ExpectedConditions.visibilityOf(serachCompany));
-		serachCompany.sendKeys("Automation Testing Company");
+		serachCompany.sendKeys(companyName);
 		logMessage("User enter the Automation Testing Company");
 		serachbtn.click();
 		logMessage("User clicks on the search button !!");

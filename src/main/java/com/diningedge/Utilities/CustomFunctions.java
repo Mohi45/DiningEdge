@@ -32,6 +32,17 @@ public class CustomFunctions extends BaseUi {
 	}
 
 	/**
+	 * This is used to timestamp with date and time
+	 * 
+	 * @return
+	 */
+	public static String getCurrentDate() {
+		DateFormat dateFormat = new SimpleDateFormat(" [yyyy-MM-dd]");
+		Date dt = new Date();
+		return dateFormat.format(dt);
+	}
+
+	/**
 	 * This method is used to get latest file from specific path
 	 * 
 	 * @param dirPath
@@ -86,7 +97,7 @@ public class CustomFunctions extends BaseUi {
 		try {
 			driver.switchTo().alert().accept();
 		} catch (NoAlertPresentException e) {
-			logMsg("No Alert found on page !!!");			
+			logMsg("No Alert found on page !!!");
 		}
 	}
 
@@ -107,13 +118,18 @@ public class CustomFunctions extends BaseUi {
 			System.out.println("error no pop-up or issue closing pop up");
 		}
 	}
-	
+
 	public static String getSheetName() {
-		final String[] sheets = {"Cheney", "US_Food", "Sysco", "PFG"};
+		final String[] sheets = { "Cheney", "US_Food", "Sysco", "PFG" };
 		Random random = new Random();
 		int index = random.nextInt(sheets.length);
-		System.out.println("SheetName= "+sheets[index]);
+		System.out.println("SheetName= " + sheets[index]);
 		return sheets[index];
+	}
+
+	public static int generateRandomNumber() {
+		Random random = new Random();
+		return random.nextInt(99)+1;
 	}
 
 }
