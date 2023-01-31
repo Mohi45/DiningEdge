@@ -193,11 +193,10 @@ public class SendOGTest extends BaseTest {
 
 	@AfterMethod
 	public void sendEmailReport() {
-
 		if (status) {
 			SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed ❌", vendorName);
 		} else {
-			System.out.println("----------------------------");
+		System.out.println("---------------------------------");	
 		}
 	}
 

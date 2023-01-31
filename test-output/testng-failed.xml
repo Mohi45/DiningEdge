@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.DiningEdgeAdmin.CreateCompanyTest">
+      <class name="com.diningedge.Regression.OrderEdgeProductFlow">
         <methods>
+          <include name="Test01_BasicFlowLogin"/>
+          <include name="setup"/>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
-          <include name="setup"/>
           <include name="testMethodName"/>
-          <include name="loginInToAdminPage"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.DiningEdgeAdmin.CreateCompanyTest -->
+      </class> <!-- com.diningedge.Regression.OrderEdgeProductFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

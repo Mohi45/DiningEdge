@@ -75,13 +75,4 @@ public class CreateCompanyTest extends BaseTest {
 
 	}
 
-	// @AfterClass
-	public void dataCleanUp() throws InterruptedException {
-		Thread.sleep(4000);
-		dashboardPage.clickOnLocations();
-		dashboardPage.clickOnCompanies();
-		dashboardPage.clickOnInnerCompany();
-		dashboardPage.deleteCompany();
-		dashboardPage.deleteCompanyFromPopUp();
-	}
 }

@@ -24,7 +24,7 @@ import com.diningedge.common.CreateTableUtility;
 import com.diningedge.resources.BaseUi;
 
 public class SendEmailUtility extends BaseUi {
-
+	
 	/**
 	 * This is used to create connection to the Gmail for specific user
 	 * 
@@ -75,9 +75,9 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			messageBodyPart1.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-
+			message.setFrom(user);
 			message.setSubject("OnLineMacro :: " + PurveyorName + " :: " + RestaurantName);
 
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
@@ -120,8 +120,8 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
-
+			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
 			for (String recipient : to) {
@@ -131,7 +131,6 @@ public class SendEmailUtility extends BaseUi {
 
 			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
 			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
-
 			// Subject of mails
 			message.setSubject(Subject);
 			// Body of mails
@@ -142,7 +141,8 @@ public class SendEmailUtility extends BaseUi {
 			messageBodyPart.setText("Hi Team!!,\n");
 			messageBodyPart5.setText("Order Submission failed for below Details ⤵");
 			messageBodyPart3.setContent(CreateTableUtility.createTableTest(vendor), "text/html");
-			messageBodyPart4.setText(" \n\n\n\n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+			messageBodyPart4.setText(
+					" \n\n\n\n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
 			/*-----------------------this is used when u are trying to send multiple files------------*/
@@ -194,8 +194,8 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
-
+			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
 			for (String recipient : to) {
@@ -257,8 +257,8 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
-
+			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
 			for (String recipient : to) {
@@ -278,6 +278,69 @@ public class SendEmailUtility extends BaseUi {
 					+ ":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
 
 			Multipart multipart = new MimeMultipart();
+			multipart.addBodyPart(messageBodyPart);
+
+			message.setContent(multipart);
+
+			Transport.send(message, messageBodyPart1.getAllRecipients());
+
+			logMsg("Message send success");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			logMsg(e.getMessage());
+			logMsg("Technical issue in sending reporting");
+		}
+
+	}
+
+	public static void sendReportSuccess(String Subject, String... filenames) {
+		try {
+
+			String user = "diningedgetest@gmail.com";
+			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
+			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
+
+			// get connection
+			Session session = createConnection();
+
+			MimeMessage message = new MimeMessage(session);
+
+			MimeMessage messageBodyPart1 = new MimeMessage(session);
+			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			message.setFrom(user);
+			InternetAddress[] recipientAddress = new InternetAddress[to.length];
+			int counter = 0;
+			for (String recipient : to) {
+				recipientAddress[counter] = new InternetAddress(recipient.trim());
+				counter++;
+			}
+
+			messageBodyPart1.addRecipients(Message.RecipientType.TO, recipientAddress);
+			messageBodyPart1.setRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+
+			// Subject of mails
+			message.setSubject(Subject);
+			// Body of mails
+			BodyPart messageBodyPart = new MimeBodyPart();
+
+			messageBodyPart.setText(
+					"Hi Team!!, \n\n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+
+			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
+
+			/*-----------------------this is used when u are trying to send multiple files------------*/
+
+			for (String filename : filenames) {
+				DataSource source = new FileDataSource(filename);
+				messageBodyPart2.setDataHandler(new DataHandler(source));
+				messageBodyPart2.setFileName(filename);
+				logMsg("Attached file - " + filename);
+
+			}
+
+			Multipart multipart = new MimeMultipart();
+			multipart.addBodyPart(messageBodyPart2);
 			multipart.addBodyPart(messageBodyPart);
 
 			message.setContent(multipart);
