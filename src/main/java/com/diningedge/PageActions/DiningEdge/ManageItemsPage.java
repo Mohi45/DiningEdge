@@ -51,7 +51,7 @@ public class ManageItemsPage extends BaseUi {
 	@FindBy(id = "adornment-search")
 	private WebElement searchBox;
 
-	@FindBy(id = "//th//button[@title='Delete']")
+	@FindBy(xpath  = "//th//button[@title='Delete']")
 	private WebElement deleteIcon;
 
 	/*----------------------DiningEdge Methods---------------------------*/

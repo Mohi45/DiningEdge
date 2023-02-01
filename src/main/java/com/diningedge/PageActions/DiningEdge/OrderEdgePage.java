@@ -2,6 +2,7 @@ package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -228,5 +229,26 @@ public class OrderEdgePage extends BaseUi {
 			logMessage("Product is alreday present in the Order Edge Page !!!");
 			return false;
 		}
+	}
+	
+	public String getUnitType() {
+		final String[] units = {"CUP", "DOZ", "G", "LB","KG","MG","ML"};
+		Random random = new Random();
+		int index = random.nextInt(units.length);
+		return units[index];
+	}
+	
+	public String getStorageType() {
+		final String[] units = {"Solid", "Liquid", "FREEZE", "Bread"};
+		Random random = new Random();
+		int index = random.nextInt(units.length);
+		return units[index];
+	}
+	
+	public String getPrimaryCategory() {
+		final String[] units = {"Cheney", "GFS", "PFG", "Sysco","test"};
+		Random random = new Random();
+		int index = random.nextInt(units.length);
+		return units[index];
 	}
 }
