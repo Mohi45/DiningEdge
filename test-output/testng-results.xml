@@ -11,100 +11,109 @@
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:19:757] User enters Name = testauto]]>
+      <![CDATA[[2023-02-05] [23:00:43:098] User enters Name = testauto]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:19:889] User enters Password =123456]]>
+      <![CDATA[[2023-02-05] [23:00:43:194] User enters Password =123456]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:19:965] User clicks on the Login Button !!!]]>
+      <![CDATA[[2023-02-05] [23:00:43:260] User clicks on the Login Button !!!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:23:762] Assertion Passed: DiningEdge is present on the HomePage]]>
+      <![CDATA[[2023-02-05] [23:00:47:024] Assertion Passed: DiningEdge is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:23:835] Assertion Passed: Dashboard is present on the HomePage]]>
+      <![CDATA[[2023-02-05] [23:00:47:068] Assertion Passed: Dashboard is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:24:366] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2023-02-05] [23:00:47:458] User clicks on Order Edge Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:24:505] User clicks on select Location dropDown !!]]>
+      <![CDATA[[2023-02-05] [23:00:47:558] User clicks on select Location dropDown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:24:623] User clicks on select Location loc10 from dropDown !!]]>
+      <![CDATA[[2023-02-05] [23:00:47:644] User clicks on select Location loc10 from dropDown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:27:647] User clicks on the add Product Button !!]]>
+      <![CDATA[[2023-02-05] [23:00:50:508] User clicks on the add Product Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:27:722] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-02-05] [23:00:50:567] Assertion Passed: Create product is present on the popup]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:27:775] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-02-05] [23:00:50:608] Assertion Passed: Create product is present on the popup]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:28:252] User enters the value product 74 in Name]]>
+      <![CDATA[[2023-02-05] [23:00:51:241] User enters the value Automation Product 93 in Name]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:28:339] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-02-05] [23:00:51:329] Assertion Passed: Create product is present on the popup]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:28:538] User enters the value 65 in Size]]>
+      <![CDATA[[2023-02-05] [23:00:51:482] User enters the value 44 in Size]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:28:714] User enters the value Unit * Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:51:600] User enters the value Unit * Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:28:902] User selects the value CUP From the Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:51:734] User selects the value G From the Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:29:442] User enters the value Primary Category * Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:52:199] User enters the value Primary Category * Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:29:599] User selects the value Cheney From the Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:52:314] User selects the value GFS From the Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:30:052] User enters the value Storage Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:52:767] User enters the value Storage Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:30:196] User selects the value Bread From the Dropdown !!]]>
+      <![CDATA[[2023-02-05] [23:00:52:882] User selects the value Liquid From the Dropdown !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:30:652] User click on the Save button]]>
+      <![CDATA[[2023-02-05] [23:00:53:258] User click on the Save button]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:34:706] User clicks on the Snack Bar cross button !!]]>
+      <![CDATA[[2023-02-05] [23:00:56:897] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:34:968] User selects the Manage Items From the list]]>
+      <![CDATA[[2023-02-05] [23:00:57:198] User clicks on the Open Manage Comparabls Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:35:187] User selects the Products List From the list]]>
+      <![CDATA[[2023-02-05] [23:01:02:027] User adds comparabls !!]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:37:918] User clicks on the Search Icon on Product List Page]]>
+      <![CDATA[[2023-02-05] [23:01:03:321] User click on the Save and Close button]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:38:693] User enters the product 74 To be searched]]>
+      <![CDATA[[2023-02-05] [23:01:05:373] User clicks on the cross icon]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:39:022] User clicks on the Delete icon]]>
+      <![CDATA[[2023-02-05] [23:01:07:590] User selects the Manage Items From the list]]>
     </line>
     <line>
-      <![CDATA[[2023-02-01] [23:11:42:548] User clicks on the Snack Bar cross button !!]]>
+      <![CDATA[[2023-02-05] [23:01:07:729] User selects the Products List From the list]]>
+    </line>
+    <line>
+      <![CDATA[[2023-02-05] [23:01:09:874] User clicks on the Search Icon on Product List Page]]>
+    </line>
+    <line>
+      <![CDATA[[2023-02-05] [23:01:10:609] User enters the Automation Product 93 To be searched]]>
+    </line>
+    <line>
+      <![CDATA[[2023-02-05] [23:01:10:799] User clicks on the Delete icon]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-01T23:11:05 IST" name="Default suite" finished-at="2023-02-01T23:11:42 IST" duration-ms="37905">
+  <suite started-at="2023-02-05T23:00:27 IST" name="Default suite" finished-at="2023-02-05T23:01:11 IST" duration-ms="43106">
     <groups>
     </groups>
-    <test started-at="2023-02-01T23:11:05 IST" name="Default test" finished-at="2023-02-01T23:11:42 IST" duration-ms="37905">
+    <test started-at="2023-02-05T23:00:27 IST" name="Default test" finished-at="2023-02-05T23:01:11 IST" duration-ms="43106">
       <class name="com.diningedge.Regression.OrderEdgeProductFlow">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:05 IST" name="setExtent" finished-at="2023-02-01T23:11:05 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:00:27 IST" name="setExtent" finished-at="2023-02-05T23:00:28 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:05 IST" name="testMethodName" finished-at="2023-02-01T23:11:05 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:00:28 IST" name="testMethodName" finished-at="2023-02-05T23:00:28 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,114 +133,123 @@
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:05 IST" name="setup" finished-at="2023-02-01T23:11:19 IST" duration-ms="14213" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:00:28 IST" name="setup" finished-at="2023-02-05T23:00:42 IST" duration-ms="14772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Test01_BasicFlowLogin()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:19 IST" name="Test01_BasicFlowLogin" finished-at="2023-02-01T23:11:34 IST" duration-ms="15167" status="PASS">
+        <test-method signature="Test01_BasicFlowLogin()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:00:42 IST" name="Test01_BasicFlowLogin" finished-at="2023-02-05T23:01:07 IST" duration-ms="24515" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-02-01] [23:11:19:757] User enters Name = testauto]]>
+              <![CDATA[[2023-02-05] [23:00:43:098] User enters Name = testauto]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:19:889] User enters Password =123456]]>
+              <![CDATA[[2023-02-05] [23:00:43:194] User enters Password =123456]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:19:965] User clicks on the Login Button !!!]]>
+              <![CDATA[[2023-02-05] [23:00:43:260] User clicks on the Login Button !!!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:23:762] Assertion Passed: DiningEdge is present on the HomePage]]>
+              <![CDATA[[2023-02-05] [23:00:47:024] Assertion Passed: DiningEdge is present on the HomePage]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:23:835] Assertion Passed: Dashboard is present on the HomePage]]>
+              <![CDATA[[2023-02-05] [23:00:47:068] Assertion Passed: Dashboard is present on the HomePage]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:24:366] User clicks on Order Edge Button !!]]>
+              <![CDATA[[2023-02-05] [23:00:47:458] User clicks on Order Edge Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:24:505] User clicks on select Location dropDown !!]]>
+              <![CDATA[[2023-02-05] [23:00:47:558] User clicks on select Location dropDown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:24:623] User clicks on select Location loc10 from dropDown !!]]>
+              <![CDATA[[2023-02-05] [23:00:47:644] User clicks on select Location loc10 from dropDown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:27:647] User clicks on the add Product Button !!]]>
+              <![CDATA[[2023-02-05] [23:00:50:508] User clicks on the add Product Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:27:722] Assertion Passed: Create product is present on the popup]]>
+              <![CDATA[[2023-02-05] [23:00:50:567] Assertion Passed: Create product is present on the popup]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:27:775] Assertion Passed: Create product is present on the popup]]>
+              <![CDATA[[2023-02-05] [23:00:50:608] Assertion Passed: Create product is present on the popup]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:28:252] User enters the value product 74 in Name]]>
+              <![CDATA[[2023-02-05] [23:00:51:241] User enters the value Automation Product 93 in Name]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:28:339] Assertion Passed: Create product is present on the popup]]>
+              <![CDATA[[2023-02-05] [23:00:51:329] Assertion Passed: Create product is present on the popup]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:28:538] User enters the value 65 in Size]]>
+              <![CDATA[[2023-02-05] [23:00:51:482] User enters the value 44 in Size]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:28:714] User enters the value Unit * Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:51:600] User enters the value Unit * Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:28:902] User selects the value CUP From the Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:51:734] User selects the value G From the Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:29:442] User enters the value Primary Category * Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:52:199] User enters the value Primary Category * Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:29:599] User selects the value Cheney From the Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:52:314] User selects the value GFS From the Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:30:052] User enters the value Storage Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:52:767] User enters the value Storage Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:30:196] User selects the value Bread From the Dropdown !!]]>
+              <![CDATA[[2023-02-05] [23:00:52:882] User selects the value Liquid From the Dropdown !!]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:30:652] User click on the Save button]]>
+              <![CDATA[[2023-02-05] [23:00:53:258] User click on the Save button]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:34:706] User clicks on the Snack Bar cross button !!]]>
+              <![CDATA[[2023-02-05] [23:00:56:897] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-02-05] [23:00:57:198] User clicks on the Open Manage Comparabls Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-02-05] [23:01:02:027] User adds comparabls !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-02-05] [23:01:03:321] User click on the Save and Close button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-02-05] [23:01:05:373] User clicks on the cross icon]]>
             </line>
           </reporter-output>
         </test-method> <!-- Test01_BasicFlowLogin -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:34 IST" name="take_screenshot_on_failure" finished-at="2023-02-01T23:11:34 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:01:07 IST" name="take_screenshot_on_failure" finished-at="2023-02-05T23:01:07 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test01_BasicFlowLogin status=SUCCESS method=OrderEdgeProductFlow.Test01_BasicFlowLogin()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451] output=[2023-02-01] [23:11:19:757] User enters Name = testauto]]]>
+                <![CDATA[[TestResult name=Test01_BasicFlowLogin status=SUCCESS method=OrderEdgeProductFlow.Test01_BasicFlowLogin()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6] output=[2023-02-05] [23:00:43:098] User enters Name = testauto]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="dataCleanUp()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:34 IST" name="dataCleanUp" finished-at="2023-02-01T23:11:42 IST" duration-ms="7835" status="PASS">
+        <test-method is-config="true" signature="dataCleanUp()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:01:07 IST" name="dataCleanUp" finished-at="2023-02-05T23:01:10 IST" duration-ms="3359" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-02-01] [23:11:34:968] User selects the Manage Items From the list]]>
+              <![CDATA[[2023-02-05] [23:01:07:590] User selects the Manage Items From the list]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:35:187] User selects the Products List From the list]]>
+              <![CDATA[[2023-02-05] [23:01:07:729] User selects the Products List From the list]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:37:918] User clicks on the Search Icon on Product List Page]]>
+              <![CDATA[[2023-02-05] [23:01:09:874] User clicks on the Search Icon on Product List Page]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:38:693] User enters the product 74 To be searched]]>
+              <![CDATA[[2023-02-05] [23:01:10:609] User enters the Automation Product 93 To be searched]]>
             </line>
             <line>
-              <![CDATA[[2023-02-01] [23:11:39:022] User clicks on the Delete icon]]>
-            </line>
-            <line>
-              <![CDATA[[2023-02-01] [23:11:42:548] User clicks on the Snack Bar cross button !!]]>
+              <![CDATA[[2023-02-05] [23:01:10:799] User clicks on the Delete icon]]>
             </line>
           </reporter-output>
         </test-method> <!-- dataCleanUp -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@6221a451]" started-at="2023-02-01T23:11:42 IST" name="endReport" finished-at="2023-02-01T23:11:42 IST" duration-ms="389" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.OrderEdgeProductFlow@52719fb6]" started-at="2023-02-05T23:01:10 IST" name="endReport" finished-at="2023-02-05T23:01:11 IST" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

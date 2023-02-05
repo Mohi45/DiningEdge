@@ -54,6 +54,8 @@ public class ManageItemsPage extends BaseUi {
 	@FindBy(xpath  = "//th//button[@title='Delete']")
 	private WebElement deleteIcon;
 
+	@FindBy (xpath = "//div//h2[text()='Manage Units']/../..//button")
+	private WebElement cross;
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -84,6 +86,12 @@ public class ManageItemsPage extends BaseUi {
 		waitForElementToClickable(deleteIcon);
 		deleteIcon.click();
 		logMessage("User clicks on the Delete icon");
+	}
+	
+	public void clickOnCrossIcon() {
+		waitForElementToClickable(cross);
+		cross.click();
+		logMessage("User clicks on the cross icon");
 	}
 
 }

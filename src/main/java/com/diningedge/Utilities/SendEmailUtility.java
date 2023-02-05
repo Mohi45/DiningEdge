@@ -142,7 +142,7 @@ public class SendEmailUtility extends BaseUi {
 			messageBodyPart5.setText("Order Submission failed for below Details ⤵");
 			messageBodyPart3.setContent(CreateTableUtility.createTableTest(vendor), "text/html");
 			messageBodyPart4.setText(
-					" \n\n\n\n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+					" \n\n\n\n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by M");
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
 			/*-----------------------this is used when u are trying to send multiple files------------*/
@@ -212,7 +212,7 @@ public class SendEmailUtility extends BaseUi {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			messageBodyPart.setText(
-					"Hi Team!!, \n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+					"Hi Team!!, \n\n Please Find Attacted ScreenShot !! \n \n Thanks!! \n Automation Testing by M");
 
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
@@ -275,7 +275,7 @@ public class SendEmailUtility extends BaseUi {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			messageBodyPart.setText("Hi Team !!, \n \n We didn't received email for ::" + vendor
-					+ ":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+					+ ":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by M");
 
 			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart);
@@ -325,7 +325,7 @@ public class SendEmailUtility extends BaseUi {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			messageBodyPart.setText(
-					"Hi Team!!, \n\n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing by Ⓜ️");
+					"Hi Team!!, \n\n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing by M");
 
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 

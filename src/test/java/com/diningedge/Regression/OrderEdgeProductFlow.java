@@ -21,10 +21,10 @@ public class OrderEdgeProductFlow extends BaseTest {
 	DashboardPage dashboard;
 	OrderEdgePage orderEdge;
 	ManageItemsPage manageItemPage;
-	String productName = "product " + CustomFunctions.generateRandomNumber();
-	String size=String.valueOf(CustomFunctions.generateRandomNumber());
+	String productName = "Automation Product " + CustomFunctions.generateRandomNumber();
+	String size = String.valueOf(CustomFunctions.generateRandomNumber());
 	SettingsPage settingsPage;
-	
+
 	@BeforeMethod
 	public void setup() {
 		driver = getDriver();
@@ -32,7 +32,7 @@ public class OrderEdgeProductFlow extends BaseTest {
 		dashboard = new DashboardPage(driver);
 		orderEdge = new OrderEdgePage(driver);
 		manageItemPage = new ManageItemsPage(driver);
-		settingsPage =new SettingsPage(driver);
+		settingsPage = new SettingsPage(driver);
 	}
 
 	@Test
@@ -46,11 +46,7 @@ public class OrderEdgeProductFlow extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		createNewProduct();
-	}
-
-	@AfterClass
-	public void dataCleanUp() {
-		ManangeProducts();
+		//addComparabls();
 	}
 
 	public void createNewProduct() {
@@ -60,17 +56,30 @@ public class OrderEdgeProductFlow extends BaseTest {
 		orderEdge.enterDetailsOnCreateProduct("Size", size);
 		orderEdge.selcetValueFromDropDown("Unit *", orderEdge.getUnitType());
 		orderEdge.selcetValueFromDropDown("Primary Category *", orderEdge.getPrimaryCategory());
-		orderEdge.selcetValueFromDropDown("Storage",orderEdge.getStorageType());
+		orderEdge.selcetValueFromDropDown("Storage", orderEdge.getStorageType());
 		orderEdge.clickOnSaveAndCancel("Save");
 		settingsPage.clickOnSnackBarCloseButton();
 	}
 
+	public void addComparabls() {
+		orderEdge.clickOnComparabls(productName);
+		orderEdge.enterProductIdAndSelectComparabls("Cheney", "008");
+		orderEdge.clickOnSaveAndCancel("Save and Close");	
+		manageItemPage.clickOnCrossIcon();
+		dashboard.clickOnHeader();
+	}
+
+	/*--------------------------------------------------------------------------------------*/
 	public void ManangeProducts() {
 		manageItemPage.selectItemTypeFromList("Manage Items");
 		manageItemPage.selectItemTypeFromList("Products List");
 		manageItemPage.clickOnTheSearchIconEndEnterValue(productName);
-		//manageItemPage.clickOnDeleteIcon();
-		//settingsPage.clickOnSnackBarCloseButton();
+		manageItemPage.clickOnDeleteIcon();
+	}
+
+	//@AfterClass
+	public void dataCleanUp() {
+		ManangeProducts();
 	}
 
 }

@@ -9,6 +9,7 @@
           <include name="setup"/>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
+          <include name="dataCleanUp"/>
           <include name="testMethodName"/>
           <include name="endReport"/>
         </methods>

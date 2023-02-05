@@ -108,7 +108,7 @@ public class BaseTest {
 	public void sendReport(String vendor,String location) {
 		if (status) {
 			System.out.println("Sending email in case of UI failure...");
-			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ❌",
+			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ",
 					vendor,location,filePath);
 		}else {
 			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !!", vendor,

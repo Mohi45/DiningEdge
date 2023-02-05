@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -48,8 +49,6 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	/*---------------------DiningEdge Locators-------------------*/
-	private String Comparabls = "//div//h3[contains(.,'$')]/../..//a//button//span//*[local-name()='svg' and @role='presentation']";
-
 	private String beforeafter = "//button[@aria-label='$']";
 
 	@FindBy(xpath = "//div//button[@title='Cart']")
@@ -64,8 +63,13 @@ public class OrderEdgePage extends BaseUi {
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
 
+	@FindBy(xpath = "//span//input")
+	private WebElement checkBoxComparabls;
+
 	/*-------------------------Dynamic Locators------------------*/
 	private String checkout = "//div//span[text()='$']";
+	private String Comparabls = "//div//h3[contains(.,'$')]/../..//a//button//span//*[local-name()='svg' and @role='presentation']";
+	private String searchComarabls = "//div//label[text()='$']/..//input";
 
 	/*----------------------DiningEdge Methods---------------------------*/
 	public OrderEdgePage(WebDriver driver) {
@@ -230,23 +234,31 @@ public class OrderEdgePage extends BaseUi {
 			return false;
 		}
 	}
-	
+
+	public void enterProductIdAndSelectComparabls(String productName, String value) {
+		waitForElementToClickable(dynamicElements(searchComarabls, productName));
+		dynamicElements(searchComarabls, productName).sendKeys(value);
+		CustomFunctions.hardWaitForScript();
+		checkBoxComparabls.click();
+		logMsg("User adds comparabls !!");
+	}
+
 	public String getUnitType() {
-		final String[] units = {"CUP", "DOZ", "G", "LB","KG","MG","ML"};
+		final String[] units = { "CUP", "DOZ", "G", "LB", "KG", "MG", "ML" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
-	
+
 	public String getStorageType() {
-		final String[] units = {"Solid", "Liquid", "FREEZE", "Bread"};
+		final String[] units = { "Solid", "Liquid", "FREEZE", "Bread" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
-	
+
 	public String getPrimaryCategory() {
-		final String[] units = {"Cheney", "GFS", "PFG", "Sysco","test"};
+		final String[] units = { "Cheney", "GFS", "PFG", "Sysco", "test" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
