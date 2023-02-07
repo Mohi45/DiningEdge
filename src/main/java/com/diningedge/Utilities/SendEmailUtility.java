@@ -24,7 +24,7 @@ import com.diningedge.common.CreateTableUtility;
 import com.diningedge.resources.BaseUi;
 
 public class SendEmailUtility extends BaseUi {
-	
+
 	/**
 	 * This is used to create connection to the Gmail for specific user
 	 * 
@@ -75,7 +75,7 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			// messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			messageBodyPart1.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setFrom(user);
 			message.setSubject("OnLineMacro :: " + PurveyorName + " :: " + RestaurantName);
@@ -120,7 +120,7 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			// messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
@@ -194,7 +194,7 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			// messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
@@ -257,7 +257,7 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			// messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
@@ -294,7 +294,7 @@ public class SendEmailUtility extends BaseUi {
 
 	}
 
-	public static void sendReportSuccess(String Subject, String... filenames) {
+	public static void sendReportSuccess(String Subject, String vandor) {
 		try {
 
 			String user = "diningedgetest@gmail.com";
@@ -307,7 +307,7 @@ public class SendEmailUtility extends BaseUi {
 			MimeMessage message = new MimeMessage(session);
 
 			MimeMessage messageBodyPart1 = new MimeMessage(session);
-			//messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
+			// messageBodyPart1.setFrom(new InternetAddress(user));// change accordingly
 			message.setFrom(user);
 			InternetAddress[] recipientAddress = new InternetAddress[to.length];
 			int counter = 0;
@@ -324,23 +324,13 @@ public class SendEmailUtility extends BaseUi {
 			// Body of mails
 			BodyPart messageBodyPart = new MimeBodyPart();
 
-			messageBodyPart.setText(
-					"Hi Team!!, \n\n Please Find Attacted Report !! \n \n Thanks!! \n Automation Testing by M");
-
-			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
+			messageBodyPart
+					.setText("Hi Team!!, \n\n Hope you are doing well ! \n \n We have successfully sent the order for "
+							+ vandor + " !! \n Thanks!! \n Automation Testing by M");
 
 			/*-----------------------this is used when u are trying to send multiple files------------*/
 
-			for (String filename : filenames) {
-				DataSource source = new FileDataSource(filename);
-				messageBodyPart2.setDataHandler(new DataHandler(source));
-				messageBodyPart2.setFileName(filename);
-				logMsg("Attached file - " + filename);
-
-			}
-
 			Multipart multipart = new MimeMultipart();
-			multipart.addBodyPart(messageBodyPart2);
 			multipart.addBodyPart(messageBodyPart);
 
 			message.setContent(multipart);

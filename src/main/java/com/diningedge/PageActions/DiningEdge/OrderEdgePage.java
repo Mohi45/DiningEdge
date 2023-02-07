@@ -181,6 +181,7 @@ public class OrderEdgePage extends BaseUi {
 		clickOnDropdown(label);
 		WebElement element = driver.findElement(By.xpath("//div//ul//li[text()='" + value + "']"));
 		CommonMethods.scrollIntoView(driver, element);
+		CustomFunctions.hardWaitForScript();
 		element.click();
 		logMessage("User selects the value " + value + " From the Dropdown !!");
 	}
