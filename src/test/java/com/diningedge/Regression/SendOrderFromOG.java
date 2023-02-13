@@ -30,6 +30,7 @@ public class SendOrderFromOG extends BaseTest {
 
 	Random random = new Random();
 	public int numberOfUnits = random.nextInt(2) + 1;
+	String productName=ManageItemsPage.getProductNames();
 	public static XSSFWorkbook exportworkbook;
 	public static XSSFSheet inputsheet;
 	WebDriver driver;
@@ -70,23 +71,23 @@ public class SendOrderFromOG extends BaseTest {
 		dashboard.getDiningEdgeText("DiningEdge", logExtent);
 		dashboard.getDeshboardText("Dashboard", logExtent);
 		dashboard.clickOnTheOrderEdge("Order from OG", logExtent);
-		manageItemsPage.clickOnTheSearchIconEndEnterValue("Cheney Testing");
-		orderOg.clickOnUpdatePackButton();
+		manageItemsPage.clickOnTheSearchIconEndEnterValue(productName);
+		orderOg.clickOnUpdatePackButton(productName);
 		orderOg.enterPack_SizeAndPreicesValues("Pack", String.valueOf(numberOfUnits));
 		orderOg.enterPack_SizeAndPreicesValues("Size", String.valueOf(numberOfUnits));
 		orderEdge.clickOnSaveAndCancel("Save");
 		settingsPage.clickOnSnackBarCloseButton();
-		orderOg.clickOnUpdatePriceButton();
+		orderOg.clickOnUpdatePriceButton(productName);
 		orderOg.enterPack_SizeAndPreicesValues("Price", String.valueOf(numberOfUnits));
 		orderEdge.clickOnSaveAndCancel("Save");
-		orderOg.clickOnUpdatePriceButton();
+		orderOg.clickOnUpdatePriceButton(productName);
 		settingsPage.clickOnSnackBarCloseButton();
-		orderOg.selectQuantity("Cheney Testing", String.valueOf(numberOfUnits));
+		orderOg.selectQuantity(productName, String.valueOf(numberOfUnits));
 		dashboard.clickOnHeader();
 		orderEdge.clickOnAddToCartButton(logExtent);
 		checkoutPage.selecctSumbitAll("Submit All", logExtent);
 		settingsPage.clickOnSnackBarCloseButton();
-		verifyOrderFromEmail("Cheney");
+		verifyOrderFromEmail(productName);
 	}
 
 	public void verifyOrderFromEmail(String vendor) throws Exception {

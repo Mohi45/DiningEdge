@@ -46,7 +46,7 @@ public class OrderEdgeProductFlow extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		createNewProduct();
-		//addComparabls();
+		addComparabls();
 	}
 
 	public void createNewProduct() {
@@ -77,7 +77,7 @@ public class OrderEdgeProductFlow extends BaseTest {
 		manageItemPage.clickOnDeleteIcon();
 	}
 
-	//@AfterClass
+	@AfterClass
 	public void dataCleanUp() {
 		ManangeProducts();
 	}

@@ -2,6 +2,7 @@ package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -51,10 +52,10 @@ public class ManageItemsPage extends BaseUi {
 	@FindBy(id = "adornment-search")
 	private WebElement searchBox;
 
-	@FindBy(xpath  = "//th//button[@title='Delete']")
+	@FindBy(xpath = "//th//button[@title='Delete']")
 	private WebElement deleteIcon;
 
-	@FindBy (xpath = "//div//h2[text()='Manage Units']/../..//button")
+	@FindBy(xpath = "//div//h2[text()='Manage Units']/../..//button")
 	private WebElement cross;
 	/*----------------------DiningEdge Methods---------------------------*/
 
@@ -87,11 +88,20 @@ public class ManageItemsPage extends BaseUi {
 		deleteIcon.click();
 		logMessage("User clicks on the Delete icon");
 	}
-	
+
 	public void clickOnCrossIcon() {
 		waitForElementToClickable(cross);
 		cross.click();
 		logMessage("User clicks on the cross icon");
+	}
+
+	public static String getProductNames() {
+		final String[] units = { "Cheney Testing", "US Food Testing", "Sysco Testing", "PFG Testing",
+				"Hillcrest Testing", "Kellys Testing" };
+		Random random = new Random();
+		int index = random.nextInt(units.length);
+		System.out.println("Product Name = " + units[index]);
+		return units[index];
 	}
 
 }

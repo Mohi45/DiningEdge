@@ -65,14 +65,14 @@ public class Order_OGPage extends BaseUi {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(120, 1));
 	}
 
-	public void clickOnUpdatePackButton() {
+	public void clickOnUpdatePackButton(String productName) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", dynamicElements(editPack, "Cheney Testing"));
+		executor.executeScript("arguments[0].click();", dynamicElements(editPack, productName));
 		System.out.println("User clicks on the Update pack pancil button !!");
 	}
-	public void clickOnUpdatePriceButton() {
+	public void clickOnUpdatePriceButton(String productName) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", dynamicElements(editPrice, "Cheney Testing"));
+		executor.executeScript("arguments[0].click();", dynamicElements(editPrice, productName));
 		System.out.println("User clicks on the Update price pancil button !!");
 	}
 

@@ -51,7 +51,7 @@ public class CheckoutPage extends BaseUi {
 
 	private String orderDetails = "//div//span[text()='$']/..//p";
 
-	private String totalAmount = "//h2[text()='$']/..//span[text()='Total']/..//h3";
+	private String totalAmount = "//h2[contains(text(),'$')]/..//span[text()='Total']/..//h3";
 
 	@FindBy(xpath = "//table//th//span[text()='Product']/../..//th[1]")
 	private WebElement productCheckBox;
@@ -104,7 +104,12 @@ public class CheckoutPage extends BaseUi {
 	}
 
 	public String getTotalAmount(String vendor) {
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(totalAmount, vendor)));
+		if (vendor.contains(" ")) {
+			vendor = vendor.split(" ")[0];
+		} else {
+			System.out.println("Product name is alreday correct !!");
+		}
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(totalAmount, vendor.split(" ")[0])));
 		String finalAmount = dynamicElements(totalAmount, vendor).getText();
 		System.out.println("Final Total Amount = " + finalAmount);
 		return finalAmount;
