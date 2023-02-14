@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Regression_Testing_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Testing Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--893047297\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Regression_Testing_Suite" class="navigator-link ">
+                    <span>C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\src\main\java\TestngSuites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Regression_Testing_Suite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Regression_Testing_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression_Testing_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression_Testing_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression_Testing_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression_Testing_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Testing_Suite" class="hide-methods failed suite-Regression_Testing_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Testing_Suite -->
+                      <a href="#" panel-name="suite-Regression_Testing_Suite" class="show-methods failed suite-Regression_Testing_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Testing_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Testing_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Testing_Suite" title="com.diningedge.Regression.OrderEdgeProductFlow" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Testing_Suite" title="com.diningedge.Regression.NewVendorFlow" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Testing_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Regression_Testing_Suite" class="hide-methods passed suite-Regression_Testing_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Testing_Suite -->
+                      <a href="#" panel-name="suite-Regression_Testing_Suite" class="show-methods passed suite-Regression_Testing_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Testing_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Regression_Testing_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.CreateProductFlow" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Testing_Suite" title="com.diningedge.Regression.CreateProductFlow" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Testing_Suite" title="com.diningedge.Regression.SendOrderFromOG" class="method navigator-link" hash-for-method="sendOrderFromOG">sendOrderFromOG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Testing_Suite" title="com.diningedge.Regression.SendOGTest" class="method navigator-link" hash-for-method="sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Testing_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,8 +147,88 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Regression_Testing_Suite" class="panel Regression_Testing_Suite">
+          <div class="suite-Regression_Testing_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.diningedge.Regression.OrderEdgeProductFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test01_BasicFlowLogin">
+                  </a> <!-- Test01_BasicFlowLogin -->
+                  <span class="method-name">Test01_BasicFlowLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg class=&quot;jss415&quot; focusable=&quot;false&quot; viewBox=&quot;0 0 15.676 15.676&quot; aria-hidden=&quot;true&quot; role=&quot;presentation&quot; style=&quot;stroke: rgb(226, 226, 226); font-size: 18px;&quot;&gt;...&lt;/svg&gt; is not clickable at point (83, 614). Other element would receive the click: &lt;div class=&quot;jss700 jss698&quot; role=&quot;document&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92dc179c99f92d91139b1c6047e6e52a, clickElement {id=b1fbb000-2775-496e-ad0e-f604cbfa28a8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61346}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61346/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (92dc179c99f92d91139b1c6047e6e52a)] -&gt; xpath: //div//h3[contains(.,&apos;Automation Product 2&apos;)]/../..//a//button//span//*[local-name()=&apos;svg&apos; and @role=&apos;presentation&apos;]]
+Session ID: 92dc179c99f92d91139b1c6047e6e52a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.diningedge.PageActions.DiningEdge.OrderEdgePage.clickOnComparabls(OrderEdgePage.java:215)
+	at com.diningedge.Regression.OrderEdgeProductFlow.addComparabls(OrderEdgeProductFlow.java:65)
+	at com.diningedge.Regression.OrderEdgeProductFlow.Test01_BasicFlowLogin(OrderEdgeProductFlow.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing_Suite-class-failed -->
+          <div class="suite-Regression_Testing_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.diningedge.Regression.NewVendorFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test01_BasicFlowLogin">
+                  </a> <!-- Test01_BasicFlowLogin -->
+                  <span class="method-name">Test01_BasicFlowLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input aria-invalid=&quot;false&quot; autocomplete=&quot;off&quot; class=&quot;jss598 jss583&quot; id=&quot;integration-downshift-simple&quot; placeholder=&quot;Enter 3 or more characters&quot; type=&quot;text&quot; tabindex=&quot;0&quot; value=&quot;Automation Cheney&quot;&gt; is not clickable at point (1360, 196). Other element would receive the click: &lt;div class=&quot;jss700 jss699&quot; role=&quot;document&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85d25e82e6cd9c18c1d1e4c7f7cfc921, clickElement {id=1cc23cae-8535-4eb7-8017-8e0cbc68db5b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61387/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (85d25e82e6cd9c18c1d1e4c7f7cfc921)] -&gt; xpath: //div//input[@id=&apos;integration-downshift-simple&apos;]]
+Session ID: 85d25e82e6cd9c18c1d1e4c7f7cfc921
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.diningedge.PageActions.DiningEdge.Order_OGPage.enterVendorToAssign(Order_OGPage.java:155)
+	at com.diningedge.Regression.NewVendorFlow.createNewVendorItem(NewVendorFlow.java:61)
+	at com.diningedge.Regression.NewVendorFlow.Test01_BasicFlowLogin(NewVendorFlow.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing_Suite-class-failed -->
+          <div class="suite-Regression_Testing_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.diningedge.Regression.CreateProductFlow</span>
@@ -133,118 +242,330 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Regression_Testing_Suite-class-passed -->
+          <div class="suite-Regression_Testing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.diningedge.Regression.SendOrderFromOG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendOrderFromOG">
+                  </a> <!-- sendOrderFromOG -->
+                  <span class="method-name">sendOrderFromOG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing_Suite-class-passed -->
+          <div class="suite-Regression_Testing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.diningedge.Regression.SendOGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)">
+                  </a> <!-- sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing) -->
+                  <span class="method-name">sendOrderGuideFromOrderEdge</span>
+                  <span class="parameters">(Cheney, Automation Cheney, Cheney Testing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing_Suite-class-passed -->
+        </div> <!-- panel Regression_Testing_Suite -->
+        <div panel-name="test-xml-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--893047297\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\src\main\java\TestngSuites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Regression Testing Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;CreateProductFlow&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.diningedge.Regression.CreateProductFlow&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- CreateProductFlow --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;SendOGTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.diningedge.Regression.SendOGTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SendOGTest --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;SendOrderFromOG&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.diningedge.Regression.SendOrderFromOG&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SendOrderFromOG --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;OrderEdgeProductFlow&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.diningedge.Regression.OrderEdgeProductFlow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OrderEdgeProductFlow --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;NewVendorFlow&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.diningedge.Regression.NewVendorFlow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NewVendorFlow --&gt;
+&lt;/suite&gt; &lt;!-- Regression Testing Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Regression Testing Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">CreateProductFlow (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SendOGTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SendOrderFromOG (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">OrderEdgeProductFlow (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NewVendorFlow (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Regression Testing Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Regression Testing Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Regression_Testing_Suite');
+function tableData_Regression_Testing_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test01_BasicFlowLogin')
-data.setCell(0, 2, 'com.diningedge.Regression.CreateProductFlow')
-data.setCell(0, 3, 21883);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'sendOrderFromOG')
+data.setCell(0, 2, 'com.diningedge.Regression.SendOrderFromOG')
+data.setCell(0, 3, 49258);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sendOrderGuideFromOrderEdge')
+data.setCell(1, 2, 'com.diningedge.Regression.SendOGTest')
+data.setCell(1, 3, 48348);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test01_BasicFlowLogin')
+data.setCell(2, 2, 'com.diningedge.Regression.NewVendorFlow')
+data.setCell(2, 3, 25165);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test01_BasicFlowLogin')
+data.setCell(3, 2, 'com.diningedge.Regression.OrderEdgeProductFlow')
+data.setCell(3, 3, 22523);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test01_BasicFlowLogin')
+data.setCell(4, 2, 'com.diningedge.Regression.CreateProductFlow')
+data.setCell(4, 3, 19606);
+window.suiteTableData['Regression_Testing_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Regression_Testing_Suite">
+              </div> <!-- times-div-Regression_Testing_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Regression Testing Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
               <span class="reporter-method-name">Test01_BasicFlowLogin</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2023-02-14] [12:55:27:654] User enters Name = testauto</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:27:785] User enters Password =123456</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:27:867] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:30:955] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:31:028] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:31:480] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:31:608] User clicks on select Location dropDown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:31:717] User clicks on select Location loc10 from dropDown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:32:044] User selects the Manage Items From the list</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:32:233] User selects the Products List From the list</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:34:206] User clicks on the Add Product icon</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:34:479] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:34:520] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:35:132] User enters the value Automation Product 2 in Name</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:35:180] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:35:303] User enters the value 2 in Size</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:35:429] User enters the value Unit * Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:38:602] User selects the value CUP From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:39:029] User enters the value Primary Category * Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:42:164] User selects the value PFG From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:42:580] User enters the value Storage Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:45:721] User selects the value Solid From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:46:087] User click on the Save button</span>
-                <span class="reporter-method-output">[2023-02-14] [12:55:49:325] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:20:105] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:20:202] User enters Password =123456</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:20:286] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:23:510] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:23:562] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:23:917] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:24:022] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:24:102] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:24:430] User selects the Manage Items From the list</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:24:643] User selects the Products List From the list</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:26:629] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:26:690] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:26:863] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:27:401] User enters the value Automation Product 1 in Name</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:27:443] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:27:545] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:27:648] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:30:781] User selects the value KG From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:31:253] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:34:368] User selects the value PFG From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:34:784] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:37:909] User selects the value Solid From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:38:265] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-02-14] [13:31:39:527] User clicks on the Snack Bar cross button !!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-02-14] [13:32:05:559] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:05:656] User enters Password =123456</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:05:728] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:09:997] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:10:037] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:10:409] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:10:518] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:10:598] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:10:876] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:13:396] User added number of units = 2</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:16:997] User clicks on the Add Cart Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:19:171] User clicks on the Checkout Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:20:531] User clicks on the Submit All Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:23:184] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:24:158] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:26:912] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:37:365] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:39:821] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:40:650] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:40:653] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:43:139] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:43:927] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:43:929] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:46:403] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:47:188] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:48:742] orderId #: 584</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:48:745] Order Date : 02/14/2023</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:48:748] Resturant Name : test automation</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:48:749] Total Order Amount : $4.00</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:49:725] New order : test automation (loc10) :: email deleted successfully !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:49:728] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:52:178] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:32:52:958] Moved email in successfully Done!!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sendOrderFromOG</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-02-14] [13:33:06:841] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:06:943] User enters Password =123456</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:07:011] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:10:271] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:10:315] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:10:794] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:10:927] User clicks on the Search Icon on Product List Page</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:11:076] User enters the Sysco Testing To be searched</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:13:329] User clicks on the Update pack pancil button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:13:541] USer enters the value 1 for Pack</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:13:706] USer enters the value 1 for Size</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:13:807] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:15:799] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:15:856] User clicks on the Update price pancil button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:16:022] USer enters the value 1 for Price</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:16:114] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:16:130] User clicks on the Update price pancil button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:16:978] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:17:140] USer enters the value 1 for Sysco Testing</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:21:117] User clicks on the Add Cart Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:23:248] User clicks on the Checkout Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:24:526] User clicks on the Submit All Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:26:852] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:27:602] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:30:075] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:40:481] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:42:411] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:43:202] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:43:204] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:45:683] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:46:479] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:46:482] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:48:959] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:49:748] Subject is :-New order : test automation (loc10)</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:250] orderId #: 586</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:251] Order Date : 02/14/2023</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:254] Resturant Name : test automation</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:255] Total Order Amount : $1.00</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:950] New order : test automation (loc10) :: email deleted successfully !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:51:953] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:54:385] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-02-14] [13:33:55:174] Moved email in successfully Done!!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Test01_BasicFlowLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-02-14] [13:34:08:296] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:08:388] User enters Password =123456</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:08:456] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:12:407] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:12:452] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:12:802] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:12:901] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:12:983] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:15:761] User clicks on the add Product Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:15:808] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:15:836] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:16:398] User enters the value Automation Product 2 in Name</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:16:484] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:16:593] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:16:702] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:19:834] User selects the value LB From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:20:285] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:23:397] User selects the value Cheney From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:23:796] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:26:908] User selects the value FREEZE From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:27:275] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:29:525] User clicks on the Snack Bar cross button !!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Test01_BasicFlowLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-02-14] [13:34:47:986] User enters Name = testauto</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:48:087] User enters Password =123456</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:48:208] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:51:884] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:51:924] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:52:404] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:52:676] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:53:272] User enters the name of vendor = Automation Product 1</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:53:830] User enters the vendorId = Automation Product 1</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:54:250] User enters the other details = 2</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:54:334] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-02-14] [13:34:57:464] User select the unit Type :: CUP</span>
+                <span class="reporter-method-output">[2023-02-14] [13:35:03:523] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-02-14] [13:35:06:646] User select the vendor :: Sysco</span>
+                <span class="reporter-method-output">[2023-02-14] [13:35:07:150] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-02-14] [13:35:08:833] User clicks on the Snack Bar cross button !!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Regression_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -257,28 +578,178 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">testMethodName(public void com.diningedge.Regression.CreateProductFlow.Test01_BasicFlowLogin())</span>
-                <span class="method-start">236 ms</span>
+                <span class="method-start">207 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">239 ms</span>
+                <span class="method-start">209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Test01_BasicFlowLogin</span>
-                <span class="method-start">13562 ms</span>
+                <span class="method-start">14728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=SUCCESS method=CreateProductFlow.Test01_BasicFlowLogin...)</span>
-                <span class="method-start">35448 ms</span>
+                <span class="method-start">34337 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">dataCleanUp</span>
-                <span class="method-start">35453 ms</span>
+                <span class="method-start">34520 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">36707 ms</span>
+                <span class="method-start">34527 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.SendOGTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">34547 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">dataSetUp</span>
+                <span class="method-start">34551 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.SendOGTest.sendOrderGuideFromOrderEdge(java.lang.String,java.l...)</span>
+                <span class="method-start">34998 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34998 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sendOrderGuideFromOrderEdge(Cheney, Automation Cheney, Cheney Testing)</span>
+                <span class="method-start">60189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">sendEmailReport</span>
+                <span class="method-start">108540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108541 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderGuideFromOrderEdge status=SUCCESS method=SendOGTest.sendOrderGuideFromOrde...)</span>
+                <span class="method-start">108542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">108784 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.SendOrderFromOG</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">109033 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG() throws java.lang.Exception)</span>
+                <span class="method-start">109037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">109038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sendOrderFromOG</span>
+                <span class="method-start">121498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">sendEmailReport</span>
+                <span class="method-start">170758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderFromOG status=SUCCESS method=SendOrderFromOG.sendOrderFromOG()[pri:0, inst...)</span>
+                <span class="method-start">170759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">170999 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.OrderEdgeProductFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">171072 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">171078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.OrderEdgeProductFlow.Test01_BasicFlowLogin())</span>
+                <span class="method-start">171078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test01_BasicFlowLogin</span>
+                <span class="method-start">182946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=FAILURE method=OrderEdgeProductFlow.Test01_BasicFlowLo...)</span>
+                <span class="method-start">205473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dataCleanUp</span>
+                <span class="method-start">208538 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">208541 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.NewVendorFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">208556 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.NewVendorFlow.Test01_BasicFlowLogin())</span>
+                <span class="method-start">208559 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">208560 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test01_BasicFlowLogin</span>
+                <span class="method-start">222629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=FAILURE method=NewVendorFlow.Test01_BasicFlowLogin()[p...)</span>
+                <span class="method-start">247795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">250607 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.SendOGTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">mailTriggerInCaseOfUI</span>
+                <span class="method-start">250664 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.diningedge.Regression.SendOrderFromOG</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">mailTriggerInCaseOfUI</span>
+                <span class="method-start">254366 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

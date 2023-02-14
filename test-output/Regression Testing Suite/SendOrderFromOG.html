@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>TestNG:  SendOrderFromOG</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SendOrderFromOG</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 14 13:32:54 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>62 seconds (62034 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG()'><b>sendOrderFromOG</b><br>Test class: com.diningedge.Regression.SendOrderFromOG<br/>
+<a href="#Output-424219073" onClick='toggleBox("Output-424219073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-424219073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-424219073">
+[2023-02-14] [13:33:06:841] User enters Name = testauto<br/>
+[2023-02-14] [13:33:06:943] User enters Password =123456<br/>
+[2023-02-14] [13:33:07:011] User clicks on the Login Button !!!<br/>
+[2023-02-14] [13:33:10:271] Assertion Passed: DiningEdge is present on the HomePage<br/>
+[2023-02-14] [13:33:10:315] Assertion Passed: Dashboard is present on the HomePage<br/>
+[2023-02-14] [13:33:10:794] User clicks on Order from OG Button !!<br/>
+[2023-02-14] [13:33:10:927] User clicks on the Search Icon on Product List Page<br/>
+[2023-02-14] [13:33:11:076] User enters the Sysco Testing To be searched<br/>
+[2023-02-14] [13:33:13:329] User clicks on the Update pack pancil button !!<br/>
+[2023-02-14] [13:33:13:541] USer enters the value 1 for Pack<br/>
+[2023-02-14] [13:33:13:706] USer enters the value 1 for Size<br/>
+[2023-02-14] [13:33:13:807] User click on the Save button<br/>
+[2023-02-14] [13:33:15:799] User clicks on the Snack Bar cross button !!<br/>
+[2023-02-14] [13:33:15:856] User clicks on the Update price pancil button !!<br/>
+[2023-02-14] [13:33:16:022] USer enters the value 1 for Price<br/>
+[2023-02-14] [13:33:16:114] User click on the Save button<br/>
+[2023-02-14] [13:33:16:130] User clicks on the Update price pancil button !!<br/>
+[2023-02-14] [13:33:16:978] User clicks on the Snack Bar cross button !!<br/>
+[2023-02-14] [13:33:17:140] USer enters the value 1 for Sysco Testing<br/>
+[2023-02-14] [13:33:21:117] User clicks on the Add Cart Button !!<br/>
+[2023-02-14] [13:33:23:248] User clicks on the Checkout Button !!<br/>
+[2023-02-14] [13:33:24:526] User clicks on the Submit All Button !!<br/>
+[2023-02-14] [13:33:26:852] User clicks on the Snack Bar cross button !!<br/>
+[2023-02-14] [13:33:27:602] Connecting to gmail...<br/>
+[2023-02-14] [13:33:30:075] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>
+[2023-02-14] [13:33:40:481] Connecting to gmail...<br/>
+[2023-02-14] [13:33:42:411] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>
+[2023-02-14] [13:33:43:202] Subject is :-New order : test automation (loc10)<br/>
+[2023-02-14] [13:33:43:204] Connecting to gmail...<br/>
+[2023-02-14] [13:33:45:683] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>
+[2023-02-14] [13:33:46:479] Subject is :-New order : test automation (loc10)<br/>
+[2023-02-14] [13:33:46:482] Connecting to gmail...<br/>
+[2023-02-14] [13:33:48:959] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>
+[2023-02-14] [13:33:49:748] Subject is :-New order : test automation (loc10)<br/>
+[2023-02-14] [13:33:51:250] orderId #: 586<br/>
+[2023-02-14] [13:33:51:251] Order Date : 02/14/2023<br/>
+[2023-02-14] [13:33:51:254] Resturant Name : test automation<br/>
+[2023-02-14] [13:33:51:255] Total Order Amount : $1.00<br/>
+[2023-02-14] [13:33:51:950] New order : test automation (loc10) :: email deleted successfully !!<br/>
+[2023-02-14] [13:33:51:953] Connecting to gmail...<br/>
+[2023-02-14] [13:33:54:385] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>
+[2023-02-14] [13:33:55:174] Moved email in successfully Done!!<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.diningedge.Regression.SendOrderFromOG@18271936</td></tr>
+</table><p>
+</body>
+</html>

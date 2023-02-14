@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="1" name="Test">
-    <classes>
-      <class name="com.diningedge.Regression.CreateProductFlow"/>
-      <class name="com.diningedge.Regression.SendOGTest"/>
-      <class name="com.diningedge.Regression.SendOrderFromOG"/>
-      <class name="com.diningedge.Regression.OrderEdgeProductFlow"/>
-      <class name="com.diningedge.Regression.NewVendorFlow"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name = "Regression Testing Suite" thread-count = "1">
+   <test name = "CreateProductFlow">
+      <classes>
+         <class name = "com.diningedge.Regression.CreateProductFlow" />
+      </classes>
+   </test>
+   <test name = "SendOGTest">
+      <classes>
+         <class name = "com.diningedge.Regression.SendOGTest" />
+      </classes>
+   </test>
+   <test name = "SendOrderFromOG">
+      <classes>
+         <class name = "com.diningedge.Regression.SendOrderFromOG" />
+      </classes>
+   </test>
+   <test name = "OrderEdgeProductFlow">
+      <classes>
+         <class name = "com.diningedge.Regression.OrderEdgeProductFlow" />
+      </classes>
+   </test>
+   <test name = "NewVendorFlow">
+      <classes>
+         <class name = "com.diningedge.Regression.NewVendorFlow" />
+      </classes>
+   </test>
+</suite>

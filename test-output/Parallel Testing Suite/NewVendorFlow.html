@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>TestNG:  NewVendorFlow</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NewVendorFlow</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 14 13:25:44 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>70 seconds (70393 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.diningedge.Regression.NewVendorFlow.Test01_BasicFlowLogin()'><b>Test01_BasicFlowLogin</b><br>Test class: com.diningedge.Regression.NewVendorFlow<br/>
+<a href="#Output-1780814067" onClick='toggleBox("Output-1780814067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1780814067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1780814067">
+[2023-02-14] [13:26:15:826] User enters Name = testauto<br/>
+[2023-02-14] [13:26:16:069] User enters Password =123456<br/>
+[2023-02-14] [13:26:16:249] User clicks on the Login Button !!!<br/>
+[2023-02-14] [13:26:22:677] Assertion Passed: DiningEdge is present on the HomePage<br/>
+[2023-02-14] [13:26:23:008] Assertion Passed: Dashboard is present on the HomePage<br/>
+[2023-02-14] [13:26:24:645] User clicks on Order from OG Button !!<br/>
+[2023-02-14] [13:26:26:023] User clicks on the new vedor item button !!<br/>
+[2023-02-14] [13:26:28:140] User enters the name of vendor = Automation Product 2<br/>
+[2023-02-14] [13:26:30:269] User enters the vendorId = Automation Product 2<br/>
+[2023-02-14] [13:26:31:698] User enters the other details = 2<br/>
+[2023-02-14] [13:26:31:889] User clicks on the Unit * dropDown<br/>
+[2023-02-14] [13:26:35:187] User select the unit Type :: G<br/>
+[2023-02-14] [13:26:41:284] User clicks on the Vendor dropDown<br/>
+[2023-02-14] [13:26:44:427] User select the vendor :: Cheney<br/>
+[2023-02-14] [13:26:44:977] User click on the Save button<br/>
+[2023-02-14] [13:26:48:938] User clicks on the Snack Bar cross button !!<br/>
+[2023-02-14] [13:26:54:642] User clicks on the = Automation Cheney<br/>
+[2023-02-14] [13:26:54:939] User clicks on Order Edge Button !!<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.diningedge.Regression.NewVendorFlow@1a75e76a</td></tr>
+</table><p>
+</body>
+</html>

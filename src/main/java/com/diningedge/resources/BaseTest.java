@@ -99,7 +99,7 @@ public class BaseTest {
 			logExtent.log(LogStatus.PASS, "Test Case PASSED :: " + result.getName());
 		}
 		extent.endTest(logExtent);
-		//driver.quit();
+		driver.quit();
 	}
 
 
