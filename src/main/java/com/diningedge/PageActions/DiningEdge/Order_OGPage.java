@@ -2,6 +2,7 @@ package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseUi;
 
 public class Order_OGPage extends BaseUi {
@@ -49,10 +51,21 @@ public class Order_OGPage extends BaseUi {
 	private String editPrice = "//table//tr//td//p[text()='$']/../following-sibling::td[3]//div//button";
 	private String selectQyt = "//table//tr//td//p[text()='$']/../following-sibling::td[4]//div//div//input";
 	private String pack_size = "//div//label[text()='$']/..//div//input";
-	private String selectUnitType = "//div//ul//li[text()='$']//span";
+	private String selectUnitType = "//div//ul//li[text()='$']//span/..";
+	private String assignVendor ="//div[text()='Add new Product']/..//div[text()='$']";
 
 	@FindBy(xpath = "//div//label[text()='Unit *']/..//div//div//input")
 	private WebElement selectUnit;
+	
+	@FindBy(xpath = "//div[@label='Vendor']//input")
+	private WebElement selectVendor;
+	
+	@FindBy(xpath = "//span[text()='New Vendor Item']/..")
+	private WebElement newVendor;
+	
+	@FindBy(xpath  = "//div//input[@id='integration-downshift-simple']")
+	private WebElement simple;
+	
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -68,12 +81,12 @@ public class Order_OGPage extends BaseUi {
 	public void clickOnUpdatePackButton(String productName) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", dynamicElements(editPack, productName));
-		System.out.println("User clicks on the Update pack pancil button !!");
+		logMessage("User clicks on the Update pack pancil button !!");
 	}
 	public void clickOnUpdatePriceButton(String productName) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", dynamicElements(editPrice, productName));
-		System.out.println("User clicks on the Update price pancil button !!");
+		logMessage("User clicks on the Update price pancil button !!");
 	}
 
 	public void enterPack_SizeAndPreicesValues(String packOrSize, String value) {
@@ -81,7 +94,7 @@ public class Order_OGPage extends BaseUi {
 		dynamicElements(pack_size, packOrSize).sendKeys(Keys.CONTROL + "a");
 		dynamicElements(pack_size, packOrSize).sendKeys(Keys.DELETE);
 		dynamicElements(pack_size, packOrSize).sendKeys(value);
-		System.out.println("USer enters the value " + value + " for " + packOrSize);
+		logMessage("USer enters the value " + value + " for " + packOrSize);
 	}
 	
 	public void selectQuantity(String packOrSize, String value) {
@@ -89,16 +102,59 @@ public class Order_OGPage extends BaseUi {
 		dynamicElements(selectQyt, packOrSize).sendKeys(Keys.CONTROL + "a");
 		dynamicElements(selectQyt, packOrSize).sendKeys(Keys.DELETE);
 		dynamicElements(selectQyt, packOrSize).sendKeys(value);
-		System.out.println("USer enters the value " + value + " for " + packOrSize);
+		logMessage("USer enters the value " + value + " for " + packOrSize);
 	}
 	
 
 	public void clickOnUnitAndSelectUnitType(String unitType) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", selectUnit);
-		System.out.println("User clicks on the Unit * dropDown");
-		dynamicElements(selectUnitType, unitType);
-		System.out.println("User select the unit Type :: " + unitType);
+		logMessage("User clicks on the Unit * dropDown");
+		CustomFunctions.hardWaitForScript();
+		dynamicElements(selectUnitType, unitType).click();
+		logMessage("User select the unit Type :: " + unitType);
+		CustomFunctions.hardWaitForScript();
 	}
-
+	
+	public void clickOnVendorAndSelectVendor(String vendor) {
+		CustomFunctions.hardWaitForScript();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", selectVendor);
+		logMessage("User clicks on the Vendor dropDown");
+		CustomFunctions.hardWaitForScript();
+		dynamicElements(selectUnitType, vendor).click();
+		logMessage("User select the vendor :: " + vendor);
+	}
+	
+	public void clickOnNewVendor() {
+		waitForElementToClickable(newVendor);
+		newVendor.click();
+		logMessage("User clicks on the new vedor item button !!");
+	}
+	
+	public void enterNewVendorDetails(String name,String vendorId,String packValue) {
+		dynamicElements(pack_size, "Name").sendKeys(name);
+		logMessage("User enters the name of vendor = "+name);
+		dynamicElements(pack_size, "Vendor Item ID").sendKeys(vendorId);
+		logMessage("User enters the vendorId = "+vendorId);
+		dynamicElements(pack_size, "Pack").sendKeys(packValue);
+		dynamicElements(pack_size, "Size").sendKeys(packValue);
+		dynamicElements(pack_size, "Price").sendKeys(packValue);
+		logMessage("User enters the other details = "+packValue);
+	}
+	public static String getVendorNames() {
+		final String[] units = { "Cheney", "US Foods", "Sysco", "PFG"};
+		Random random = new Random();
+		int index = random.nextInt(units.length);
+		System.out.println("Product Name = " + units[index]);
+		return units[index];
+	}
+	
+	public void enterVendorToAssign(String vendor) {
+		waitForElementToClickable(simple);
+		simple.click();
+		simple.sendKeys(vendor);
+		dynamicElements(assignVendor, vendor).click();
+		logMessage("User clicks on the = "+vendor);
+	}
 }

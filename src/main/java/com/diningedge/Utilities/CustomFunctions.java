@@ -129,7 +129,7 @@ public class CustomFunctions extends BaseUi {
 
 	public static int generateRandomNumber() {
 		Random random = new Random();
-		return random.nextInt(99)+1;
+		return random.nextInt(2)+1;
 	}
 
 }

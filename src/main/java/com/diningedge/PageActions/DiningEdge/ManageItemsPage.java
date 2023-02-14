@@ -57,6 +57,9 @@ public class ManageItemsPage extends BaseUi {
 
 	@FindBy(xpath = "//div//h2[text()='Manage Units']/../..//button")
 	private WebElement cross;
+	
+	@FindBy(xpath = "//div//span[text()='Add product']/..")
+	private WebElement addProduct;
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -94,6 +97,13 @@ public class ManageItemsPage extends BaseUi {
 		cross.click();
 		logMessage("User clicks on the cross icon");
 	}
+	
+	public void clickOnAddProductButton() {
+		waitForElementToClickable(addProduct);
+		addProduct.click();
+		logMessage("User clicks on the Add Product icon");
+	}
+	
 
 	public static String getProductNames() {
 		final String[] units = { "Cheney Testing", "US Food Testing", "Sysco Testing", "PFG Testing",
