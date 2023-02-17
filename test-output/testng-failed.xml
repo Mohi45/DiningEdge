@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Regression Testing Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" name="OrderEdgeProductFlow(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Regression.OrderEdgeProductFlow">
-        <methods>
-          <include name="Test01_BasicFlowLogin"/>
-          <include name="setup"/>
-          <include name="take_screenshot_on_failure"/>
-          <include name="setExtent"/>
-          <include name="dataCleanUp"/>
-          <include name="testMethodName"/>
-          <include name="endReport"/>
-        </methods>
-      </class> <!-- com.diningedge.Regression.OrderEdgeProductFlow -->
-    </classes>
-  </test> <!-- OrderEdgeProductFlow(failed) -->
-  <test thread-count="1" name="NewVendorFlow(failed)">
-    <classes>
-      <class name="com.diningedge.Regression.NewVendorFlow">
+      <class name="com.diningedge.Regression.E2E_Flow">
         <methods>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
-          <include name="Test01_BasicFlowLogin"/>
           <include name="testMethodName"/>
           <include name="setup"/>
+          <include name="Test01_BasicFlowLogin"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.Regression.NewVendorFlow -->
+      </class> <!-- com.diningedge.Regression.E2E_Flow -->
     </classes>
-  </test> <!-- NewVendorFlow(failed) -->
-</suite> <!-- Failed suite [Regression Testing Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
