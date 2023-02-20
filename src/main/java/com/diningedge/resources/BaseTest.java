@@ -117,6 +117,6 @@ public class BaseTest {
 	public void endReport() {
 		extent.flush();
 		extent.close();
-		driver.close();
+		//driver.close();
 	}
 }

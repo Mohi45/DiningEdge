@@ -3,13 +3,18 @@ package com.diningedge.Regression;
 import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.diningedge.PageActions.DiningEdge.CheckoutPage;
@@ -19,6 +24,7 @@ import com.diningedge.PageActions.DiningEdge.ManageItemsPage;
 import com.diningedge.PageActions.DiningEdge.OrderEdgePage;
 import com.diningedge.PageActions.DiningEdge.SettingsPage;
 import com.diningedge.Utilities.CustomFunctions;
+import com.diningedge.Utilities.ExcelFunctions;
 import com.diningedge.Utilities.ReadEmailUtility;
 import com.diningedge.Utilities.SendEmailUtility;
 import com.diningedge.resources.BaseTest;
@@ -39,9 +45,18 @@ public class E2E_Flow extends BaseTest {
 			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
 	List<String> details;
 	ReadEmailUtility rd = new ReadEmailUtility();
-	protected String vendorName;
+	protected String vendorName ="Cheney";
 	protected String location = "loc10";
 	boolean status = false;
+	public static int acno;
+	public static int totalNoOfRows;
+	public static int AcColStatus;
+	public static int AcColdetail;
+	public static int totalNoOfCols;
+	public static int rowIndex;
+	public static XSSFWorkbook exportworkbook;
+	public static XSSFSheet inputsheet;
+	public String sheetName;
 	
 	@BeforeMethod
 	public void setup() {
@@ -53,9 +68,16 @@ public class E2E_Flow extends BaseTest {
 		settingsPage = new SettingsPage(driver);
 		checkoutPage = new CheckoutPage(driver);
 	}
+	@BeforeTest
+	public void dataSetUp() throws IOException {
+		sheetName = CustomFunctions.getSheetName();
+		exportworkbook = ExcelFunctions
+				.openFile(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "OGData.xlsx");
+		inputsheet = exportworkbook.getSheet(sheetName);
+	}
 
-	@Test
-	public void Test01_BasicFlowLogin() throws Exception {
+	@Test(dataProvider = "testData")
+	public void Test01_BasicFlowLogin(String vendor, String productNames, String unitType,String id) throws Exception {
 		/*-------------------------Basic Flow----------------------------------*/
 		logExtent = extent.startTest("Test01_BasicFlowLogin");
 		login.enterCredentials(getProperty("username"), getProperty("password"), logExtent);
@@ -65,9 +87,33 @@ public class E2E_Flow extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		createNewProduct();
-		addComparabls();
-		addUnitsAndSendOG("Cheney", productName, "Automation002", logExtent);
-		verifyOrderFromEmail("Cheney");
+		addComparabls(vendor,id);
+		addUnitsAndSendOG(vendor, productName, "Automation002", logExtent);
+		verifyOrderFromEmail(vendor);
+	}
+	
+	/*--------------------------Data Provider to provide data------------------*/
+
+	@DataProvider(name = "testData")
+	public static Object[][] testData() throws IOException {
+		System.out.println("Inside Dataprovider. Creating the Object Array to store test data inputs.");
+		Object[][] td = null;
+		try {
+			// Get TestCase sheet data
+			totalNoOfCols = inputsheet.getRow(inputsheet.getFirstRowNum()).getPhysicalNumberOfCells();
+			totalNoOfRows = inputsheet.getLastRowNum();
+			System.out.println(totalNoOfRows + " Accounts and Columns are: " + totalNoOfCols);
+			td = new String[totalNoOfRows][totalNoOfCols];
+			for (int i = 1; i <= totalNoOfRows; i++) {
+				for (int j = 0; j < totalNoOfCols; j++) {
+					td[i - 1][j] = ExcelFunctions.getCellValue(inputsheet, i, j);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("Test Cases captured in the Object Array. Exiting dataprovider.");
+		return td;
 	}
 
 	public void createNewProduct() {
@@ -82,9 +128,9 @@ public class E2E_Flow extends BaseTest {
 		settingsPage.clickOnSnackBarCloseButton();
 	}
 
-	public void addComparabls() {
+	public void addComparabls(String vendor,String id) {
 		orderEdge.clickOnComparabls(productName);
-		orderEdge.enterProductIdAndSelectComparabls("Cheney", "008");
+		orderEdge.enterProductIdAndSelectComparabls(vendor, id);
 		orderEdge.clickOnSaveAndCancel("Save and Close");
 		manageItemPage.clickOnCrossIcon();
 		dashboard.clickOnHeader();

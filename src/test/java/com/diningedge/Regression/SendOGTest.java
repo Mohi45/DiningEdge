@@ -82,7 +82,7 @@ public class SendOGTest extends BaseTest {
 	}
 
 	@Test(dataProvider = "testData", priority = 1)
-	public void sendOrderGuideFromOrderEdge(String vendor, String productName, String unitType) throws Exception {
+	public void sendOrderGuideFromOrderEdge(String vendor, String productName, String unitType,String id) throws Exception {
 		/*------------------------Data set up-------------------------*/
 		vendorName = vendor;
 		/*------------------------------------------------------------*/

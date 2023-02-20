@@ -136,7 +136,7 @@ public class CustomFunctions extends BaseUi {
 		final String[] sheets = { "Automation_Cheney_1", "Automation_US_Food_1", "Automation_Sysco_1", "Automation_PFG_1" };
 		Random random = new Random();
 		int index = random.nextInt(sheets.length);
-		System.out.println("SheetName= " + sheets[index]);
+		System.out.println("Product_Name= " + sheets[index]);
 		return sheets[index];
 	}
 

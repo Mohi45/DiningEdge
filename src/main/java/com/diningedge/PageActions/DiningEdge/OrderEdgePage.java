@@ -1,7 +1,10 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -63,8 +66,7 @@ public class OrderEdgePage extends BaseUi {
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
 
-	@FindBy(xpath = "//span//input")
-	private WebElement checkBoxComparabls;
+	private String checkBoxComparabls= "//div//p[text()='$']/..//div//span/input";
 
 	/*-------------------------Dynamic Locators------------------*/
 	private String checkout = "//div//span[text()='$']";
@@ -240,7 +242,7 @@ public class OrderEdgePage extends BaseUi {
 		waitForElementToClickable(dynamicElements(searchComarabls, productName));
 		dynamicElements(searchComarabls, productName).sendKeys(value);
 		CustomFunctions.hardWaitForScript();
-		checkBoxComparabls.click();
+		dynamicElements(checkBoxComparabls,value).click();
 		logMsg("User adds comparabls !!");
 	}
 
@@ -264,4 +266,5 @@ public class OrderEdgePage extends BaseUi {
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
+	
 }
