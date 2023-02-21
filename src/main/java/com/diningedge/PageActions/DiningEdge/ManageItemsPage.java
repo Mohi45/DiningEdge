@@ -94,7 +94,12 @@ public class ManageItemsPage extends BaseUi {
 
 	public void clickOnCrossIcon() {
 		waitForElementToClickable(cross);
+		try {
 		cross.click();
+		}catch (Exception e) {
+			logMessage("closing....");
+			cross.click();
+		}
 		logMessage("User clicks on the cross icon");
 	}
 	

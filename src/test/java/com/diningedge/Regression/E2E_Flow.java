@@ -79,6 +79,8 @@ public class E2E_Flow extends BaseTest {
 	@Test(dataProvider = "testData")
 	public void Test01_BasicFlowLogin(String vendor, String productNames, String unitType,String id) throws Exception {
 		/*-------------------------Basic Flow----------------------------------*/
+		vendorName=vendor;
+		/*---------------------------------------------------------------------*/
 		logExtent = extent.startTest("Test01_BasicFlowLogin");
 		login.enterCredentials(getProperty("username"), getProperty("password"), logExtent);
 		login.clickOnLoginButton();
@@ -133,6 +135,7 @@ public class E2E_Flow extends BaseTest {
 		orderEdge.enterProductIdAndSelectComparabls(vendor, id);
 		orderEdge.clickOnSaveAndCancel("Save and Close");
 		manageItemPage.clickOnCrossIcon();
+		CustomFunctions.hardWaitForScript();
 		dashboard.clickOnHeader();
 	}
 
