@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.diningedge.PageActions.DiningEdge.ManageItemsPage;
 import com.diningedge.PageActions.DiningEdgeAdmin.DashboardPage;
 import com.diningedge.PageActions.DiningEdgeAdmin.LoginPage;
 import com.diningedge.Utilities.CustomFunctions;
@@ -17,16 +18,16 @@ public class CreateCompanyTest extends BaseTest {
 	WebDriver driver;
 	LoginPage login;
 	DashboardPage dashboardPage;
-	static String companyName = "Automation Testing Comapny" + CustomFunctions.getCurrentDate()
-			+ CustomFunctions.generateRandomNumber();
-	static String location = "Automation Street" + CustomFunctions.getCurrentDate()
-			+ CustomFunctions.generateRandomNumber();
-
+	static String companyName = "Automation Testing Comapny" + CustomFunctions.generateRandomNumber();
+	static String location = "Automation Street" + CustomFunctions.generateRandomNumber();
+	static String productName = "Automation " + CustomFunctions.getSheetName();
+	ManageItemsPage manageItemPage;
 	@BeforeMethod
 	public void setup() {
 		driver = getDriver(getProperty("diningEdgeAdmin"));
 		login = new LoginPage(driver);
 		dashboardPage = new DashboardPage(driver);
+		manageItemPage = new ManageItemsPage(driver);
 	}
 
 	@Test
@@ -37,9 +38,10 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.getDashBoardTitle("Diningedge Admin");
 		enterCompanyDetails();
 		enterCompanyLocations();
+		dashboardPage.createProductList(companyName, productName);
 		enterUserDetails();
 		clickOnUserIconToLogin();
-
+		ManangeProducts();
 	}
 
 	public void enterCompanyDetails() {
@@ -72,7 +74,13 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.clickOnDeshboard();
 		dashboardPage.serchCompanyDetails(companyName);
 		dashboardPage.ClickOnUserIconFromAdmin(companyName);
-
+	}
+	
+	/*--------------------------------------------------------------------------------------*/
+	public void ManangeProducts() {
+		manageItemPage.selectItemTypeFromList("Manage Items");
+		manageItemPage.selectItemTypeFromList("Products List");
+		manageItemPage.uploadCsvFile();
 	}
 
 }

@@ -12,13 +12,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseUi;
 
 public class ManageItemsPage extends BaseUi {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-
+	
 	protected WebElement waitForElementToAppear(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 	}
@@ -60,6 +61,13 @@ public class ManageItemsPage extends BaseUi {
 	
 	@FindBy(xpath = "//div//span[text()='Add product']/..")
 	private WebElement addProduct;
+	
+	@FindBy(xpath = "//div//button//span[text()='Import']/..")
+	private WebElement importBtn;
+	
+	@FindBy(xpath = "//div//button//span[text()='Upload']/..")
+	private WebElement uploadBtn;
+	
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -117,6 +125,15 @@ public class ManageItemsPage extends BaseUi {
 		int index = random.nextInt(units.length);
 		System.out.println("Product Name = " + units[index]);
 		return units[index];
+	}
+	
+	public void uploadCsvFile() {
+		importBtn.click();
+		driver.findElement(By.xpath("//div//input[@type='file']")).sendKeys(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "productList.csv");
+		logMessage("File Uploaded successfully");	
+		CustomFunctions.hardWaitForScript();
+		uploadBtn.click();
+		logMessage("User clicks on Upload btn");
 	}
 
 }

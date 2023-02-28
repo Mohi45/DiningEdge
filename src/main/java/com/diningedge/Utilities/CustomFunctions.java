@@ -1,5 +1,10 @@
 package com.diningedge.Utilities;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileFilter;
 import java.text.DateFormat;
@@ -66,7 +71,7 @@ public class CustomFunctions extends BaseUi {
 
 	public static void hardWaitForScript() {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -129,7 +134,7 @@ public class CustomFunctions extends BaseUi {
 
 	public static int generateRandomNumber() {
 		Random random = new Random();
-		return random.nextInt(5)+1;
+		return random.nextInt(9999)+1;
 	}
 	
 	public static String getProductName() {
@@ -139,5 +144,7 @@ public class CustomFunctions extends BaseUi {
 		System.out.println("Product_Name= " + sheets[index]);
 		return sheets[index];
 	}
+	
+	
 
 }

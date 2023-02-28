@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.diningedge.Utilities.CustomFunctions;
+import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
 public class DashboardPage extends BaseUi {
@@ -139,7 +140,30 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//div//span[text()='Search']/..")
 	private WebElement serachbtn;
+	
+	@FindBy(xpath = "//aside//section//ul//li//a//span[text()='Products']")
+	private WebElement products;
+	
+	@FindBy(xpath = "//aside//section//ul//li//a//span[text()='Product Lists']")
+	private WebElement productList;
+	
+	@FindBy(xpath = "//div//a[contains(.,'Add ProductLists')]")
+	private WebElement productListBtn;
+	
+	@FindBy(id = "productlists_name")
+	private WebElement name;
+	
+	@FindBy(xpath = "//div/select/following-sibling::span")
+	private WebElement selectCompany;
+	
+	@FindBy(xpath = "//div//button[contains(.,'Save changes')]")
+	private WebElement save;
 
+	@FindBy(xpath = "//span/input[@type='search']")
+	private WebElement searchCompany;
+
+	private String selectCompanyFromList="//span//ul//li[contains(.,'$')]";
+	
 	/*---------------------------DiningEdgeAdmin Methods-------------------------------------------*/
 	public WebElement dynamicElements(String locator, String value) {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
@@ -297,5 +321,25 @@ public class DashboardPage extends BaseUi {
 		logMessage("User enter the Automation Testing Company");
 		serachbtn.click();
 		logMessage("User clicks on the search button !!");
+	}
+	
+	public void createProductList(String company,String productName) {
+		clickOnDeshboard();
+		products.click();
+		logMessage("User clicks on Products");
+		productList.click();
+		logMessage("User clicks on ProductList");
+		driver.get("https://admin-qaprod.diningedge.com/?entity=ProductLists&action=list&menuIndex=1&submenuIndex=0");
+		productListBtn.click();
+		logMessage("User clicks on add product button");
+		name.sendKeys(productName);
+		logMessage("User enters the product name = "+productName);
+		selectCompany.click();
+		searchCompany.sendKeys(company);
+		dynamicElements(selectCompanyFromList, company).click();
+		driver.findElement(By.id("productlists_allLocations")).click();
+		CommonMethods.scrollIntoView(driver, save);
+		save.click(); 
+		
 	}
 }
