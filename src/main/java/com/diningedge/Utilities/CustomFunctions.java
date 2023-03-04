@@ -71,7 +71,7 @@ public class CustomFunctions extends BaseUi {
 
 	public static void hardWaitForScript() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -135,6 +135,10 @@ public class CustomFunctions extends BaseUi {
 	public static int generateRandomNumber() {
 		Random random = new Random();
 		return random.nextInt(9999)+1;
+	}
+	public static int generateRandomUnitSize() {
+		Random random = new Random();
+		return random.nextInt(2)+1;
 	}
 	
 	public static String getProductName() {

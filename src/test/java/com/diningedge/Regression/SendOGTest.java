@@ -1,5 +1,5 @@
 package com.diningedge.Regression;
-
+//working fine E2E
 import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 import static org.testng.Assert.assertEquals;
 
@@ -148,7 +148,7 @@ public class SendOGTest extends BaseTest {
 	}
 
 	public void verifyOrderFromEmail(String vendor) throws Exception {
-		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
+		locationFromUI = "DiningEdgeAutomation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);

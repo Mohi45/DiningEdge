@@ -38,7 +38,7 @@ public class E2E_Flow extends BaseTest {
 	OrderEdgePage orderEdge;
 	ManageItemsPage manageItemPage;
 	String productName = CustomFunctions.getProductName();
-	String size = String.valueOf(CustomFunctions.generateRandomNumber());
+	String size = String.valueOf(CustomFunctions.generateRandomUnitSize());
 	SettingsPage settingsPage;
 	CheckoutPage checkoutPage;
 	String locationFromUI, locationFromGmail, orderDateFromUI, orderDateFromGmail, orderNumberFromUI,
@@ -144,6 +144,7 @@ public class E2E_Flow extends BaseTest {
 		manageItemPage.selectItemTypeFromList("Manage Items");
 		manageItemPage.selectItemTypeFromList("Products List");
 		manageItemPage.clickOnTheSearchIconEndEnterValue(productName);
+		CustomFunctions.hardWaitForScript();
 		manageItemPage.clickOnDeleteIcon();
 		settingsPage.clickOnSnackBarCloseButton();
 	}
@@ -158,7 +159,7 @@ public class E2E_Flow extends BaseTest {
 	}
 
 	public void verifyOrderFromEmail(String vendor) throws Exception {
-		locationFromUI = "test automation";// checkoutPage.getOrderDetails("Location:");
+		locationFromUI = "DiningEdgeAutomation";// checkoutPage.getOrderDetails("Location:");
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
@@ -204,6 +205,7 @@ public class E2E_Flow extends BaseTest {
 	@AfterMethod
 	public void sendEmailReport() {
 		if (status) {
+			System.out.println("Failing due to not send mail");
 			SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed !!", vendorName);
 		} else {
 			System.out.println("---------------------------------");

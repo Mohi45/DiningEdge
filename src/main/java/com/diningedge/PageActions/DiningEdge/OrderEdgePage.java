@@ -66,7 +66,7 @@ public class OrderEdgePage extends BaseUi {
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
 
-	private String checkBoxComparabls= "//div//p[text()='$']/..//div//span/input";
+	private String checkBoxComparabls = "//div//p[text()='$']/..//div//span/input";
 
 	/*-------------------------Dynamic Locators------------------*/
 	private String checkout = "//div//span[text()='$']";
@@ -242,7 +242,7 @@ public class OrderEdgePage extends BaseUi {
 		waitForElementToClickable(dynamicElements(searchComarabls, productName));
 		dynamicElements(searchComarabls, productName).sendKeys(value);
 		CustomFunctions.hardWaitForScript();
-		dynamicElements(checkBoxComparabls,value).click();
+		dynamicElements(checkBoxComparabls, value).click();
 		logMsg("User adds comparabls !!");
 	}
 
@@ -254,17 +254,17 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	public String getStorageType() {
-		final String[] units = { "Solid", "Liquid", "FREEZE", "Bread" };
+		final String[] units = { "Solid", "Liquid", "Freeze", "Bread" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
 
 	public String getPrimaryCategory() {
-		final String[] units = { "Cheney", "GFS", "PFG", "Sysco", "test" };
+		final String[] units = { "Cheney", "PFG", "Sysco", "test" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
-	
+
 }

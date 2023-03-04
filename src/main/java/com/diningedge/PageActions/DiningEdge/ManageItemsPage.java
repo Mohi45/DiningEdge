@@ -102,6 +102,7 @@ public class ManageItemsPage extends BaseUi {
 
 	public void clickOnCrossIcon() {
 		waitForElementToClickable(cross);
+		CustomFunctions.hardWaitForScript();
 		try {
 		cross.click();
 		}catch (Exception e) {
