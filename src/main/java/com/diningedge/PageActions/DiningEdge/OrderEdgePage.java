@@ -66,7 +66,7 @@ public class OrderEdgePage extends BaseUi {
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
 	
-	private String save = "//button//span[text()='Save']/..";
+	private String save = "//button//span[text()='$']/..";
 
 	private String checkBoxComparabls = "//div//p[text()='$']/..//div//span/input";
 
