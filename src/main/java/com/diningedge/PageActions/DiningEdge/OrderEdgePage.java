@@ -66,8 +66,7 @@ public class OrderEdgePage extends BaseUi {
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
 	
-	@FindBy(xpath = "//button//span[text()='Save']/..")
-	private WebElement save;
+	private String save = "//button//span[text()='Save']/..";
 
 	private String checkBoxComparabls = "//div//p[text()='$']/..//div//span/input";
 
@@ -212,7 +211,7 @@ public class OrderEdgePage extends BaseUi {
 
 	public void clickOnSaveAndCancel(String value) {
 		CustomFunctions.hardWaitForScript();
-		save.click();
+		dynamicElements(save, value).click();
 		logMessage("User click on the " + value + " button");
 	}
 

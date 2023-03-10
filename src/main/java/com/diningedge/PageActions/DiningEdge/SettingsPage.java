@@ -67,8 +67,8 @@ public class SettingsPage extends BaseUi {
 	private String addItem = "//div//label[text()='$']/..//div//input";
 
 	private String selectItem = "//div//p[contains(.,'$')]/..//div//input";
-	
-	private String selectVendor="//div[contains(text(),'$')]";
+
+	private String selectVendor = "//div[contains(text(),'$')]";
 
 	@FindBy(xpath = "//div//input[contains(@placeholder,'Search by vendor')]")
 	private WebElement searchBar;
@@ -102,16 +102,16 @@ public class SettingsPage extends BaseUi {
 
 	@FindBy(xpath = "//button//span[text()='Save and Close']")
 	private WebElement saveNclose;
-	
+
 	@FindBy(xpath = "//button//span[text()='Add Vendor']/..")
 	private WebElement addVendor;
-	
+
 	@FindBy(xpath = "//div//a[@href='/settings']")
 	private WebElement settingIcon;
-	
+
 	@FindBy(xpath = "//div//input[contains(@placeholder,'more characters')]")
 	private WebElement input;
-	
+
 	@FindBy(xpath = "//div//label//span[text()='Add in All locations']/..//span//input/..")
 	private WebElement addLocation;
 
@@ -263,32 +263,32 @@ public class SettingsPage extends BaseUi {
 		closeSnackbar.click();
 		logMessage("User clicks on the Snack Bar cross button !!");
 	}
-	
+
 	public void clickOnAddVendorButton() {
 		waitForElementToClickable(addVendor);
 		addVendor.click();
 		logMessage("User clicks on the add Vendor button !!");
 	}
-	
+
 	public void clickOnSettingIcon() {
 		waitForElementToClickable(settingIcon);
 		settingIcon.click();
 		logMessage("User clicks on the setting Icon button !!");
 	}
-	
+
 	public void enterAndSelectVendorName(String vendorName) {
 		waitForElementToClickable(input);
 		input.sendKeys(vendorName);
 		dynamicElements(selectVendor, vendorName).click();
-		logMessage("User eneter and select the vendorName = "+vendorName);
+		logMessage("User eneter and select the vendorName = " + vendorName);
 	}
-	
+
 	public void checkVendorLocation() {
 		waitForElementToClickable(addLocation);
 		addLocation.click();
 		logMessage("User clicks on the setting Icon button !!");
 	}
-	
+
 	public void refresh() {
 		driver.navigate().refresh();
 		CustomFunctions.hardWaitForScript();
