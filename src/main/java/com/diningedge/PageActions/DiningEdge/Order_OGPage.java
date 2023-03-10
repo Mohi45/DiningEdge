@@ -1,7 +1,9 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -156,5 +158,16 @@ public class Order_OGPage extends BaseUi {
 		simple.sendKeys(vendor);
 		dynamicElements(assignVendor, vendor).click();
 		logMessage("User clicks on the = "+vendor);
+	}
+	
+	public static  Map<Integer, String> getVendors() {
+		Map<Integer, String> map=new HashMap<>();
+		map.put(1, "Cheney");
+		map.put(2, "US Foods");
+		map.put(3, "Sysco");
+		map.put(4, "PFG");
+		map.put(5, "Europan");
+		map.put(6, "Micro Roots");
+		return map;
 	}
 }

@@ -1,5 +1,6 @@
 package com.diningedge.PageActions.DiningEdge;
 
+import java.io.Serial;
 import java.time.Duration;
 import java.util.List;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
@@ -66,6 +68,8 @@ public class SettingsPage extends BaseUi {
 	private String addItem = "//div//label[text()='$']/..//div//input";
 
 	private String selectItem = "//div//p[contains(.,'$')]/..//div//input";
+	
+	private String selectVendor="//div[contains(text(),'$')]";
 
 	@FindBy(xpath = "//div//input[contains(@placeholder,'Search by vendor')]")
 	private WebElement searchBar;
@@ -99,6 +103,18 @@ public class SettingsPage extends BaseUi {
 
 	@FindBy(xpath = "//button//span[text()='Save and Close']")
 	private WebElement saveNclose;
+	
+	@FindBy(xpath = "//button//span[text()='Add Vendor']/..")
+	private WebElement addVendor;
+	
+	@FindBy(xpath = "//div//a[@href='/settings']")
+	private WebElement settingIcon;
+	
+	@FindBy(xpath = "//div//input[contains(@placeholder,'more characters')]")
+	private WebElement input;
+	
+	@FindBy(xpath = "//div//label//span[text()='Add in All locations']/..//span//input/..")
+	private WebElement addLocation;
 
 	/*----------------------DiningEdge Methods---------------------------*/
 
@@ -109,7 +125,9 @@ public class SettingsPage extends BaseUi {
 	}
 
 	public void searchVendorByName(String vendor) {
+		CustomFunctions.hardWaitForScript();
 		waitForElementToClickable(searchBar);
+		searchBar.clear();
 		searchBar.sendKeys(vendor);
 		logMessage("User enters " + vendor + " search bar !!");
 	}
@@ -122,7 +140,7 @@ public class SettingsPage extends BaseUi {
 
 	public void selectSettinsType(String settingType) {
 		wait.until(ExpectedConditions.visibilityOf(dynamicElements(selectSettingType, settingType)));
-		CommonMethods.hardwait(1000);
+		CommonMethods.hardwait(2000);
 		dynamicElements(selectSettingType, settingType).click();
 		logMessage("User clicks on the " + settingType + " Setting item !!");
 
@@ -153,6 +171,7 @@ public class SettingsPage extends BaseUi {
 	}
 
 	public void selectEmailFromDropDown() {
+		clickOnSelcetType();
 		waitForElementToClickable(selectEmail);
 		selectEmail.click();
 		logMessage("User clicks the Email DropDown");
@@ -244,5 +263,35 @@ public class SettingsPage extends BaseUi {
 		waitForElementToClickable(closeSnackbar);
 		closeSnackbar.click();
 		logMessage("User clicks on the Snack Bar cross button !!");
+	}
+	
+	public void clickOnAddVendorButton() {
+		waitForElementToClickable(addVendor);
+		addVendor.click();
+		logMessage("User clicks on the add Vendor button !!");
+	}
+	
+	public void clickOnSettingIcon() {
+		waitForElementToClickable(settingIcon);
+		settingIcon.click();
+		logMessage("User clicks on the setting Icon button !!");
+	}
+	
+	public void enterAndSelectVendorName(String vendorName) {
+		waitForElementToClickable(input);
+		input.sendKeys(vendorName);
+		dynamicElements(selectVendor, vendorName).click();
+		logMessage("User eneter and select the vendorName = "+vendorName);
+	}
+	
+	public void checkVendorLocation() {
+		waitForElementToClickable(addLocation);
+		addLocation.click();
+		logMessage("User clicks on the setting Icon button !!");
+	}
+	
+	public void refresh() {
+		driver.navigate().refresh();
+		CustomFunctions.hardWaitForScript();
 	}
 }

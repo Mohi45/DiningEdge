@@ -1,16 +1,10 @@
 package com.diningedge.common;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
@@ -159,6 +153,11 @@ public class CommonMethods extends BaseUi {
 		}
 	}
 
+	public static void jsClick(WebElement element,WebDriver driver) {
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
+	}
+	
 	public static boolean verifyChecboxIsSelected(WebElement element) {
 		return element.isSelected();
 	}

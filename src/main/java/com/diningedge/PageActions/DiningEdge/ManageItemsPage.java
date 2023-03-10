@@ -19,7 +19,7 @@ public class ManageItemsPage extends BaseUi {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-	
+
 	protected WebElement waitForElementToAppear(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 	}
@@ -58,16 +58,24 @@ public class ManageItemsPage extends BaseUi {
 
 	@FindBy(xpath = "//div//h2[text()='Manage Units']/../..//button")
 	private WebElement cross;
-	
+
 	@FindBy(xpath = "//div//span[text()='Add product']/..")
 	private WebElement addProduct;
-	
+
 	@FindBy(xpath = "//div//button//span[text()='Import']/..")
 	private WebElement importBtn;
-	
+
 	@FindBy(xpath = "//div//button//span[text()='Upload']/..")
 	private WebElement uploadBtn;
+
+	private String addCategory = "//li//p[text()='$']";
+
+	private String inputCategory = "(//div//label[text()='$']/..//div//input)[2]";
+	private String inputStorage = "(//div//label[text()='$']/..//div//input)";
+
+	private String saveCategory = "(//div//label[text()='$']/../..//button)[1]";
 	
+
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -104,20 +112,19 @@ public class ManageItemsPage extends BaseUi {
 		waitForElementToClickable(cross);
 		CustomFunctions.hardWaitForScript();
 		try {
-		cross.click();
-		}catch (Exception e) {
+			cross.click();
+		} catch (Exception e) {
 			logMessage("closing....");
 			cross.click();
 		}
 		logMessage("User clicks on the cross icon");
 	}
-	
+
 	public void clickOnAddProductButton() {
 		waitForElementToClickable(addProduct);
 		addProduct.click();
 		logMessage("User clicks on the Add Product icon");
 	}
-	
 
 	public static String getProductNames() {
 		final String[] units = { "Cheney Testing", "US Food Testing", "Sysco Testing", "PFG Testing",
@@ -127,14 +134,31 @@ public class ManageItemsPage extends BaseUi {
 		System.out.println("Product Name = " + units[index]);
 		return units[index];
 	}
-	
+
 	public void uploadCsvFile() {
 		importBtn.click();
-		driver.findElement(By.xpath("//div//input[@type='file']")).sendKeys(System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "productList.csv");
-		logMessage("File Uploaded successfully");	
+		driver.findElement(By.xpath("//div//input[@type='file']")).sendKeys(
+				System.getProperty("user.dir") + "/src/main/java/com/diningedge/testData/" + "productList.csv");
+		logMessage("File Uploaded successfully");
 		CustomFunctions.hardWaitForScript();
 		uploadBtn.click();
 		logMessage("User clicks on Upload btn");
+	}
+	public void clickOnDropdown(String label) {
+		driver.findElement(By.xpath("//form//label[contains(text(),'" + label + "')]/..//div//div")).click();
+		logMessage("User enters the value " + label + " Dropdown !!");
+	}
+
+	public void addProductCategary(String label, String categery,String inputLabel) {
+		dynamicElements(addCategory,label).click();
+		if(inputLabel.equalsIgnoreCase("storage")) {
+			dynamicElements(inputStorage, inputLabel).sendKeys(categery);
+			logMessage("User enters the Storage "+categery);
+		}else{
+		dynamicElements(inputCategory,inputLabel).sendKeys(categery);
+		logMessage("User enters the category "+categery);
+		}
+		dynamicElements(saveCategory, inputLabel).click();
 	}
 
 }

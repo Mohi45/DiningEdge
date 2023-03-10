@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-1227078063\testng-customsuite.xml</span>
+                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--1452439974\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.E2E_Flow" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019)">Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.DiningEdgeAdmin.CreateCompanyTest" class="method navigator-link" hash-for-method="loginInToAdminPage">loginInToAdminPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,26 +119,83 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.diningedge.Regression.E2E_Flow</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.diningedge.DiningEdgeAdmin.CreateCompanyTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019)">
-                  </a> <!-- Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019) -->
-                  <span class="method-name">Test01_BasicFlowLogin</span>
-                  <span class="parameters">(Sysco, Automation Sysco, Sysco Testing, 019)</span>
+                  <a name="loginInToAdminPage">
+                  </a> <!-- loginInToAdminPage -->
+                  <span class="method-name">loginInToAdminPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;root&apos;]//h3[contains(text(),&apos;Automation_US Foods&apos;)]/../..//parent::div/../../../..//parent::div//div[@id=&apos;grid-header&apos;]//p[text()=&apos;US Foods&apos;]/../../../../following::div//div//div//p[contains(.,&apos;US Foods_Testing&apos;)]/../../..//input[@type=&apos;text&apos;]&quot;}
+  (Session info: chrome=110.0.5481.180)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee109c63951b6c89324bbed707185108, findElement {using=xpath, value=//div[@id=&apos;root&apos;]//h3[contains(text(),&apos;Automation_US Foods&apos;)]/../..//parent::div/../../../..//parent::div//div[@id=&apos;grid-header&apos;]//p[text()=&apos;US Foods&apos;]/../../../../following::div//div//div//p[contains(.,&apos;US Foods_Testing&apos;)]/../../..//input[@type=&apos;text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49790/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee109c63951b6c89324bbed707185108
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at com.diningedge.PageActions.DiningEdge.OrderEdgePage.enterUnits(OrderEdgePage.java:104)
+	at com.diningedge.DiningEdgeAdmin.CreateCompanyTest.addUnitsAndSendOG(CreateCompanyTest.java:184)
+	at com.diningedge.DiningEdgeAdmin.CreateCompanyTest.loginInToAdminPage(CreateCompanyTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-1227078063\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--1452439974\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +204,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.diningedge.Regression.E2E_Flow&quot;/&gt;
+      &lt;class name=&quot;com.diningedge.DiningEdgeAdmin.CreateCompanyTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,14 +246,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test01_BasicFlowLogin')
-data.setCell(0, 2, 'com.diningedge.Regression.E2E_Flow')
-data.setCell(0, 3, 126819);
+data.setCell(0, 1, 'loginInToAdminPage')
+data.setCell(0, 2, 'com.diningedge.DiningEdgeAdmin.CreateCompanyTest')
+data.setCell(0, 3, 517299);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -208,57 +265,322 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019)</span>
+              <span class="reporter-method-name">loginInToAdminPage</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2023-03-04] [19:02:38:817] User enters Name = testauto123</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:38:976] User enters Password =12345678</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:39:066] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:42:910] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:43:032] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:43:469] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:43:619] User clicks on select Location dropDown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:43:740] User clicks on select Location loc10 from dropDown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:45:649] User clicks on the add Product Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:45:726] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:45:774] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:46:497] User enters the value Automation_Cheney_1 in Name</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:46:682] Assertion Passed: Create product is present on the popup</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:46:836] User enters the value 2 in Size</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:47:015] User enters the value Unit * Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:50:245] User selects the value G From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:50:755] User enters the value Primary Category * Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:53:878] User selects the value PFG From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:54:300] User enters the value Storage Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:57:541] User selects the value Freeze From the Dropdown !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:02:57:951] User click on the Save button</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:27:653] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:27:859] User clicks on the Open Manage Comparabls Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:33:244] User adds comparabls !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:35:276] User click on the Save and Close button</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:41:294] User clicks on the cross icon</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:46:538] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:54:852] User added number of units = 2</span>
-                <span class="reporter-method-output">[2023-03-04] [19:03:57:880] User clicks on the Add Cart Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:00:124] User clicks on the Checkout Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:03:527] User clicks on the Submit All Button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:14:448] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:17:748] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:30:090] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:31:059] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:31:063] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:33:698] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:34:527] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:34:532] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:37:092] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:38:032] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:265] orderId #: 14</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:267] Order Date : 03/04/2023</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:271] Resturant Name : DiningEdgeAutomation</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:272] Total Order Amount : $2.00</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:989] New order : DiningEdgeAutomation (loc10) :: email deleted successfully !!</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:40:994] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:43:743] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-03-04] [19:04:44:562] Moved email in successfully Done!!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:38:599] User enters Name = vandy</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:38:691] User enters Password = NC$33433$</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:45:076] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:45:920] User clicks on the Add Companies Button!!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:46:071] USer enters the Company Name = Automation Testing Comapny4068</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:46:148] User select Home office and Order unengaged items allowed check boxes !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:48:010] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:48:101] User clicks on companies Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:52:034] User clicks on Locations Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:52:757] User clicks on Add Locations Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:52:901] USer enters the Location Name = Automation Street999</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:53:201] User selects the Company = Automation Testing Comapny4068</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:53:290] User select clicks on the base location checkbox !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:55:423] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:58:282] User clicks on the title </span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:58:351] User clicks on Products</span>
+                <span class="reporter-method-output">[2023-03-10] [21:43:59:508] User clicks on ProductList</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:01:583] User clicks on add product button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:01:679] User enters the product name = Automation Sysco</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:07:571] User clicks on Add Users Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:07:866] User selects the Company = Automation Testing Comapny4068</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:08:546] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:09:829] User clicks on the title </span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:09:927] User enter the Automation Testing Company</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:12:033] User clicks on the search button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:50:993] User clicks on the USer Icon company !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:54:000] User selects the Manage Items From the list</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:54:219] User selects the Products List From the list</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:56:296] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:56:352] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:56:408] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:57:247] User enters the value Automation_Cheney in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:57:454] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:57:588] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:44:57:726] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:00:891] User selects the value G From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:01:364] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:01:548] User enters the category PFG_1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:01:729] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:01:923] User enters the Storage Freeze_1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:05:101] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:08:643] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:08:897] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:08:944] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:08:981] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:09:527] User enters the value Automation_US Foods in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:09:562] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:09:700] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:09:833] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:13:015] User selects the value DOZ From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:13:477] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:13:665] User enters the category Cheney_2</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:13:824] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:13:989] User enters the Storage Bread_2</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:17:203] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:20:597] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:20:845] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:20:893] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:20:937] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:21:420] User enters the value Automation_Sysco in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:21:466] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:21:594] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:21:714] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:24:844] User selects the value ML From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:25:339] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:25:505] User enters the category test_3</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:25:661] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:25:841] User enters the Storage Freeze_3</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:29:019] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:32:259] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:32:516] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:32:561] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:32:600] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:33:051] User enters the value Automation_PFG in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:33:097] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:33:214] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:33:336] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:36:500] User selects the value MG From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:36:969] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:37:126] User enters the category PFG_4</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:37:311] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:37:500] User enters the Storage Liquid_4</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:40:678] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:43:582] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:43:834] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:43:880] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:43:918] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:44:492] User enters the value Automation_Europan in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:44:550] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:44:672] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:44:792] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:47:938] User selects the value DOZ From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:48:417] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:48:602] User enters the category Cheney_5</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:48:800] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:48:985] User enters the Storage Bread_5</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:52:187] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:55:185] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:55:448] User clicks on the Add Product icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:55:494] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:55:529] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:56:204] User enters the value Automation_Micro Roots in Name</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:56:278] Assertion Passed: Create product is present on the popup</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:56:425] User enters the value 1 in Size</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:56:583] User enters the value Unit * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:45:59:737] User selects the value KG From the Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:00:247] User enters the value Primary Category * Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:00:415] User enters the category Sysco_6</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:00:573] User enters the value Storage Dropdown !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:00:738] User enters the Storage Bread_6</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:03:924] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:07:431] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:07:608] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:09:168] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:09:284] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:09:572] User eneter and select the vendorName = Cheney</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:09:706] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:12:964] User enters Cheney search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:13:155] User clicks on the Cheney List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:15:331] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:15:428] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:15:546] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:15:681] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:15:842] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:16:147] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:16:332] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:19:889] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:20:016] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:20:128] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:20:395] User eneter and select the vendorName = US Foods</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:20:558] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:23:751] User enters US Foods search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:25:716] User clicks on the US Foods List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:27:874] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:27:965] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:28:076] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:28:199] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:28:353] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:28:613] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:28:782] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:32:959] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:33:072] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:33:200] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:33:462] User eneter and select the vendorName = Sysco</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:33:600] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:36:778] User enters Sysco search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:38:711] User clicks on the Sysco List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:40:881] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:40:970] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:41:082] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:41:210] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:41:363] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:41:633] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:41:814] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:45:479] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:45:604] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:45:721] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:46:084] User eneter and select the vendorName = PFG</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:46:217] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:49:408] User enters PFG search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:51:378] User clicks on the PFG List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:53:530] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:53:616] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:53:730] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:53:859] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:54:008] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:54:290] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:54:472] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:58:644] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:58:762] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:46:58:873] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:00:733] User eneter and select the vendorName = Europan</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:00:873] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:04:053] User enters Europan search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:05:967] User clicks on the Europan List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:126] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:219] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:334] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:466] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:609] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:08:884] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:09:052] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:12:796] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:12:916] User clicks on the add Vendor button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:13:029] User clicks on the setting Icon button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:14:934] User eneter and select the vendorName = Micro Roots</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:15:076] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:18:311] User enters Micro Roots search bar !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:20:252] User clicks on the Micro Roots List item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:22:406] User clicks on the EDI Settings Setting item !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:22:502] User Select on the Send Order Setting options !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:22:609] User Clicks on Active checkobx !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:22:741] User clicks the select Type DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:22:897] User clicks the Email DropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:23:184] User enter the following email ::diningedgetest@gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:23:346] User clicks on the Save button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:26:948] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:30:073] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:36:683] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:36:891] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:37:359] User enters the name of vendor = Cheney_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:38:425] User enters the vendorId = 001</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:38:796] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:38:888] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:42:033] User select the unit Type :: MG</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:48:114] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:51:254] User select the vendor :: Cheney</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:54:465] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:55:913] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:59:150] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:59:434] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:47:59:932] User enters the name of vendor = US Foods_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:00:111] User enters the vendorId = 002</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:00:887] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:01:014] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:04:167] User select the unit Type :: MG</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:10:217] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:13:329] User select the vendor :: US Foods</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:16:563] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:17:986] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:21:206] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:21:478] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:21:942] User enters the name of vendor = Sysco_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:22:118] User enters the vendorId = 003</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:22:627] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:22:713] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:25:864] User select the unit Type :: LB</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:31:931] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:35:072] User select the vendor :: Sysco</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:38:292] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:39:685] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:42:903] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:43:158] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:43:531] User enters the name of vendor = PFG_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:43:721] User enters the vendorId = 004</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:44:106] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:44:195] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:47:366] User select the unit Type :: KG</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:53:429] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:56:565] User select the vendor :: PFG</span>
+                <span class="reporter-method-output">[2023-03-10] [21:48:59:751] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:01:133] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:04:367] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:04:654] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:05:180] User enters the name of vendor = Europan_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:05:359] User enters the vendorId = 005</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:05:895] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:05:979] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:09:108] User select the unit Type :: DOZ</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:15:178] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:18:315] User select the vendor :: Europan</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:21:625] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:22:963] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:26:181] User clicks on Order from OG Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:26:480] User clicks on the new vedor item button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:27:171] User enters the name of vendor = Micro Roots_Testing</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:27:457] User enters the vendorId = 006</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:27:991] User enters the other details = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:28:084] User clicks on the Unit * dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:31:212] User select the unit Type :: ML</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:37:273] User clicks on the Vendor dropDown</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:40:400] User select the vendor :: Micro Roots</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:43:609] User click on the Save button</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:45:284] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:48:708] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:50:836] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:55:548] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:49:57:309] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:03:163] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:06:381] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:11:012] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:12:223] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:18:315] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:21:537] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:26:126] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:27:409] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:33:124] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:36:475] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:41:157] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:42:287] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:47:487] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:50:780] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:55:680] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:50:56:908] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:03:171] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:06:481] User clicks on the Open Manage Comparabls Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:11:166] User adds comparabls !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:12:469] User clicks on the SaveAndClose button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:17:676] User clicks on the cross icon</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:20:827] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:22:505] User added number of units = 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:26:186] User clicks on the Add Cart Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:28:389] User clicks on the Checkout Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:29:754] User clicks on the Submit All Button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:32:588] User clicks on the Snack Bar cross button !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:33:190] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:36:305] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:46:762] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:49:930] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:50:845] Subject is :-New order : Automation Testing Comapny4068 (Automation Street999)</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:50:846] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:53:208] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:54:081] Subject is :-New order : Automation Testing Comapny4068 (Automation Street999)</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:54:083] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:56:285] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:57:157] Subject is :-New order : Automation Testing Comapny4068 (Automation Street999)</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:58:826] orderId #: 1</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:58:827] Order Date : 03/10/2023</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:58:829] Resturant Name : Automation Testing Comapny4068</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:58:831] Total Order Amount : $1.00</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:59:568] New order : Automation Testing Comapny4068 (Automation Street999) :: email deleted successfully !!</span>
+                <span class="reporter-method-output">[2023-03-10] [21:51:59:570] Connecting to gmail...</span>
+                <span class="reporter-method-output">[2023-03-10] [21:52:02:394] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
+                <span class="reporter-method-output">[2023-03-10] [21:52:03:266] Moved email in successfully Done!!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,47 +598,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.diningedge.Regression.E2E_Flow</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.diningedge.DiningEdgeAdmin.CreateCompanyTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">dataSetUp</span>
-                <span class="method-start">254 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">testMethodName(public void com.diningedge.Regression.E2E_Flow.Test01_BasicFlowLogin(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">977 ms</span>
+                <span class="method-name">testMethodName(public void com.diningedge.DiningEdgeAdmin.CreateCompanyTest.loginInToAdminPage())</span>
+                <span class="method-start">231 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">981 ms</span>
+                <span class="method-start">234 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test01_BasicFlowLogin(Sysco, Automation Sysco, Sysco Testing, 019)</span>
-                <span class="method-start">39059 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInToAdminPage</span>
+                <span class="method-start">4957 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">sendEmailReport</span>
-                <span class="method-start">165889 ms</span>
+                <span class="method-name">take_screenshot_on_failure([TestResult name=loginInToAdminPage status=FAILURE method=CreateCompanyTest.loginInToAdminPage()[pri...)</span>
+                <span class="method-start">522268 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=SUCCESS method=E2E_Flow.Test01_BasicFlowLogin(java.lan...)</span>
-                <span class="method-start">165890 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">dataCleanUp</span>
-                <span class="method-start">165907 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">173979 ms</span>
+                <span class="method-start">525200 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">mailTriggerInCaseOfUI</span>
-                <span class="method-start">174335 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

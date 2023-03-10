@@ -65,6 +65,9 @@ public class OrderEdgePage extends BaseUi {
 
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
+	
+	@FindBy(xpath = "//button//span[text()='Save']/..")
+	private WebElement save;
 
 	private String checkBoxComparabls = "//div//p[text()='$']/..//div//span/input";
 
@@ -208,7 +211,8 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	public void clickOnSaveAndCancel(String value) {
-		driver.findElement(By.xpath("//div//button//span[text()='" + value + "']/..")).click();
+		CustomFunctions.hardWaitForScript();
+		save.click();
 		logMessage("User click on the " + value + " button");
 	}
 

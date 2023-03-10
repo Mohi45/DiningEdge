@@ -45,7 +45,7 @@ public class E2E_Flow extends BaseTest {
 			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
 	List<String> details;
 	ReadEmailUtility rd = new ReadEmailUtility();
-	protected String vendorName ="Cheney";
+	protected String vendorName = "Cheney";
 	protected String location = "loc10";
 	boolean status = false;
 	public static int acno;
@@ -57,7 +57,7 @@ public class E2E_Flow extends BaseTest {
 	public static XSSFWorkbook exportworkbook;
 	public static XSSFSheet inputsheet;
 	public String sheetName;
-	
+
 	@BeforeMethod
 	public void setup() {
 		driver = getDriver();
@@ -68,6 +68,7 @@ public class E2E_Flow extends BaseTest {
 		settingsPage = new SettingsPage(driver);
 		checkoutPage = new CheckoutPage(driver);
 	}
+
 	@BeforeTest
 	public void dataSetUp() throws IOException {
 		sheetName = CustomFunctions.getSheetName();
@@ -77,9 +78,9 @@ public class E2E_Flow extends BaseTest {
 	}
 
 	@Test(dataProvider = "testData")
-	public void Test01_BasicFlowLogin(String vendor, String productNames, String unitType,String id) throws Exception {
+	public void Test01_BasicFlowLogin(String vendor, String productNames, String unitType, String id) throws Exception {
 		/*-------------------------Basic Flow----------------------------------*/
-		vendorName=vendor;
+		vendorName = vendor;
 		/*---------------------------------------------------------------------*/
 		logExtent = extent.startTest("Test01_BasicFlowLogin");
 		login.enterCredentials(getProperty("username"), getProperty("password"), logExtent);
@@ -89,11 +90,11 @@ public class E2E_Flow extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		createNewProduct();
-		addComparabls(vendor,id);
+		addComparabls(vendor, id);
 		addUnitsAndSendOG(vendor, productName, "Automation002", logExtent);
 		verifyOrderFromEmail(vendor);
 	}
-	
+
 	/*--------------------------Data Provider to provide data------------------*/
 
 	@DataProvider(name = "testData")
@@ -130,7 +131,7 @@ public class E2E_Flow extends BaseTest {
 		settingsPage.clickOnSnackBarCloseButton();
 	}
 
-	public void addComparabls(String vendor,String id) {
+	public void addComparabls(String vendor, String id) {
 		orderEdge.clickOnComparabls(productName);
 		orderEdge.enterProductIdAndSelectComparabls(vendor, id);
 		orderEdge.clickOnSaveAndCancel("Save and Close");
