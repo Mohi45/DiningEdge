@@ -26,6 +26,7 @@ public class DriverFactory {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		options.addArguments("--window-size=1920,1200");
+		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("disable-infobars"); 
 		options.addArguments("--disable-extensions"); 
 		options.addArguments("--disable-dev-shm-usage");
