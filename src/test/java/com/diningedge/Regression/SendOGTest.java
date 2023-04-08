@@ -46,6 +46,7 @@ public class SendOGTest extends BaseTest {
 	CheckoutPage checkoutPage;
 	SettingsPage settingsPage;
 	ManageItemsPage manageItemsPage;
+	SettingsPage settingPage;
 	ReadEmailUtility rd = new ReadEmailUtility();
 	protected String vendorName;
 	protected String location = "loc10";
@@ -71,6 +72,7 @@ public class SendOGTest extends BaseTest {
 		checkoutPage = new CheckoutPage(driver);
 		settingsPage = new SettingsPage(driver);
 		manageItemsPage = new ManageItemsPage(driver);
+		settingPage = new SettingsPage(driver);
 	}
 
 	@BeforeTest
@@ -101,6 +103,7 @@ public class SendOGTest extends BaseTest {
 		login.clickOnLoginButton();
 		dashboard.getDiningEdgeText("DiningEdge", logExtent);
 		dashboard.getDeshboardText("Dashboard", logExtent);
+		settingEdiSetUp();
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
 		addUnitsAndSendOG(vendor, productName, unitType, logExtent);
@@ -187,6 +190,19 @@ public class SendOGTest extends BaseTest {
 			logExtent.log(LogStatus.PASS,
 					"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
 		}
+	}
+	
+	public void settingEdiSetUp() {
+		settingPage.clickOnSettingIcon();
+		settingPage.searchVendorByName(vendorName);
+		settingPage.clickOnVendorName(vendorName);
+		settingPage.selectSettinsType("EDI Settings");
+		settingPage.selectOptonsItems("Send Order");
+		settingPage.clickOnActiveChecksBox();
+		settingPage.selectEmailFromDropDown();
+		settingPage.enterRecepientsEmails("diningedgetest@gmail.com");
+		settingPage.clickOnSaveButton();
+		settingPage.clickOnSnackBarCloseButton();
 	}
 
 	/*-------------------------------------Sending Reports-------------------------*/

@@ -76,8 +76,8 @@ public class CreateCompanyTest extends BaseTest {
 		ManangeProducts();
 		createNewProduct();
 		createVendors();
-		//createNewVendorItem();
-		//addComparabls();
+		createNewVendorItem();
+		addComparabls();
 		//addUnitsAndSendOG(logExtent);
 	}
 

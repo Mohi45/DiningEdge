@@ -114,6 +114,9 @@ public class SettingsPage extends BaseUi {
 
 	@FindBy(xpath = "//div//label//span[text()='Add in All locations']/..//span//input/..")
 	private WebElement addLocation;
+	
+	@FindBy(xpath = "//div//span[contains(.,'@gmail.com')]/..//*[local-name()='svg']")
+	private WebElement emailCross;
 
 	/*----------------------DiningEdge Methods---------------------------*/
 
@@ -190,6 +193,7 @@ public class SettingsPage extends BaseUi {
 	}
 
 	public void enterRecepientsEmails(String emails) {
+		emailCross.click();
 		waitForElementToClickable(reciepients);
 		reciepients.clear();
 		reciepients.sendKeys(emails);
