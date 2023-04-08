@@ -37,6 +37,7 @@ public class E2E_Flow extends BaseTest {
 	DashboardPage dashboard;
 	OrderEdgePage orderEdge;
 	ManageItemsPage manageItemPage;
+	SettingsPage settingPage;
 	String productName = CustomFunctions.getProductName();
 	String size = String.valueOf(CustomFunctions.generateRandomUnitSize());
 	SettingsPage settingsPage;
@@ -67,6 +68,7 @@ public class E2E_Flow extends BaseTest {
 		manageItemPage = new ManageItemsPage(driver);
 		settingsPage = new SettingsPage(driver);
 		checkoutPage = new CheckoutPage(driver);
+		settingPage = new SettingsPage(driver);
 	}
 
 	@BeforeTest
@@ -89,6 +91,8 @@ public class E2E_Flow extends BaseTest {
 		dashboard.getDeshboardText("Dashboard", logExtent);
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
+		settingEdiSetUp();
+		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		createNewProduct();
 		addComparabls(vendor, id);
 		addUnitsAndSendOG(vendor, productName, "Automation002", logExtent);
@@ -199,6 +203,19 @@ public class E2E_Flow extends BaseTest {
 			logExtent.log(LogStatus.PASS,
 					"Assertion Passed :: Total Order Amount is found correct from Gmail as :: " + totalAmountFromGmail);
 		}
+	}
+	
+	public void settingEdiSetUp() {
+		settingPage.clickOnSettingIcon();
+		settingPage.searchVendorByName(vendorName);
+		settingPage.clickOnVendorName(vendorName);
+		settingPage.selectSettinsType("EDI Settings");
+		settingPage.selectOptonsItems("Send Order");
+		settingPage.clickOnActiveChecksBox();
+		settingPage.selectEmailFromDropDown();
+		settingPage.enterRecepientsEmails("diningedgetest@gmail.com");
+		settingPage.clickOnSaveButton();
+		settingPage.clickOnSnackBarCloseButton();
 	}
 
 	/*-------------------------------------Sending Reports-------------------------*/
