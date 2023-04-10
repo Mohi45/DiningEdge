@@ -248,7 +248,7 @@ public class SendEmailUtility extends BaseUi {
 		try {
 
 			String user = "diningedgetest@gmail.com";
-			String[] to = { "apoorva.hassani@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
+			String[] to = { "apoorva.hassani@gmail.com","naomi.canning@diningedge.com","nks4087@gmail.com" };// list of users to keep in TO ,"apoorva.hassani@gmail.com"
 			String cc = "diningedgeauto123@gmail.com"; // "any email to keep in cc"
 
 			// get connection

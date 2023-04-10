@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Regression.CreateCompany_E2E">
+      <class name="com.diningedge.Rest.RestTest">
         <methods>
-          <include name="loginInToAdminPage"/>
-          <include name="take_screenshot_on_failure"/>
-          <include name="setExtent"/>
-          <include name="testMethodName"/>
-          <include name="endReport"/>
-          <include name="setup"/>
+          <include name="validateGetResponse"/>
         </methods>
-      </class> <!-- com.diningedge.Regression.CreateCompany_E2E -->
+      </class> <!-- com.diningedge.Rest.RestTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

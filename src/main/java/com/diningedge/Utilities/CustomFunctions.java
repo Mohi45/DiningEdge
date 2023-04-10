@@ -1,10 +1,5 @@
 package com.diningedge.Utilities;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileFilter;
 import java.text.DateFormat;

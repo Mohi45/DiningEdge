@@ -41,7 +41,7 @@ public class E2E_Flow extends BaseTest {
 	String productName = CustomFunctions.getProductName();
 	String size = String.valueOf(CustomFunctions.generateRandomUnitSize());
 	SettingsPage settingsPage;
-	CheckoutPage checkoutPage;
+	CheckoutPage checkoutPage; 
 	String locationFromUI, locationFromGmail, orderDateFromUI, orderDateFromGmail, orderNumberFromUI,
 			orderNumberFromGmail, totalAmountFromUI, totalAmountFromGmail;
 	List<String> details;
