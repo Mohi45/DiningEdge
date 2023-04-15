@@ -1,10 +1,7 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -211,6 +208,7 @@ public class OrderEdgePage extends BaseUi {
 
 	public void clickOnSaveAndCancel(String value) {
 		CustomFunctions.hardWaitForScript();
+		waitForElementToClickable(dynamicElements(save, value));
 		dynamicElements(save, value).click();
 		logMessage("User click on the " + value + " button");
 	}
@@ -257,14 +255,14 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	public String getStorageType() {
-		final String[] units = { "Solid", "Liquid", "Freeze", "Bread" };
+		final String[] units = { "Solid", "Liquid", "Freeze", "Bread","Food","Soft" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
 
 	public String getPrimaryCategory() {
-		final String[] units = { "Cheney", "PFG", "Sysco", "test" };
+		final String[] units = { "Cheney", "PFG", "Sysco", "test" ,"Appetizer","Beverage","bread","Food"};
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];

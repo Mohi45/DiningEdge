@@ -213,7 +213,7 @@ public class E2E_Flow extends BaseTest {
 		settingPage.selectOptonsItems("Send Order");
 		settingPage.clickOnActiveChecksBox();
 		settingPage.selectEmailFromDropDown();
-		settingPage.enterRecepientsEmails("diningedgetest@gmail.com");
+		settingPage.enterRecepientsEmail("diningedgetest@gmail.com");
 		settingPage.clickOnSaveButton();
 		settingPage.clickOnSnackBarCloseButton();
 	}

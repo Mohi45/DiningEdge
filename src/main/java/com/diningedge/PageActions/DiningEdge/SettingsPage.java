@@ -199,6 +199,12 @@ public class SettingsPage extends BaseUi {
 		reciepients.sendKeys(emails);
 		logMessage("User enter the following email ::" + emails);
 	}
+	public void enterRecepientsEmail(String emails) {
+		waitForElementToClickable(reciepients);
+		reciepients.clear();
+		reciepients.sendKeys(emails);
+		logMessage("User enter the following email ::" + emails);
+	}
 
 	public void clickOnSaveButton() {
 		waitForElementToClickable(saveBtn);

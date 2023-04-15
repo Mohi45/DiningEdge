@@ -2,8 +2,9 @@ package com.diningedge.Regression;
 
 import static com.diningedge.Utilities.ConfigPropertyReader.getProperty;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,19 +12,20 @@ import com.diningedge.PageActions.DiningEdge.DashboardPage;
 import com.diningedge.PageActions.DiningEdge.LoginPage;
 import com.diningedge.PageActions.DiningEdge.ManageItemsPage;
 import com.diningedge.PageActions.DiningEdge.OrderEdgePage;
+import com.diningedge.PageActions.DiningEdge.PurchasePage;
 import com.diningedge.PageActions.DiningEdge.SettingsPage;
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseTest;
 
-public class CreateProductFlow extends BaseTest {
+public class CreatePurchaseTest extends BaseTest {
 	WebDriver driver;
 	LoginPage login;
 	DashboardPage dashboard;
 	OrderEdgePage orderEdge;
 	ManageItemsPage manageItemPage;
-	String productName = "Automation Product " + CustomFunctions.generateRandomNumber();
-	String size = String.valueOf(CustomFunctions.generateRandomUnitSize());
-	SettingsPage settingsPage;
+	PurchasePage purchasePage;
+	SettingsPage settingPage;
+	public String vendorN;
 
 	@BeforeMethod
 	public void setup() {
@@ -32,7 +34,8 @@ public class CreateProductFlow extends BaseTest {
 		dashboard = new DashboardPage(driver);
 		orderEdge = new OrderEdgePage(driver);
 		manageItemPage = new ManageItemsPage(driver);
-		settingsPage = new SettingsPage(driver);
+		purchasePage = new PurchasePage(driver);
+		settingPage = new SettingsPage(driver);
 	}
 
 	@Test
@@ -45,31 +48,35 @@ public class CreateProductFlow extends BaseTest {
 		dashboard.getDeshboardText("Dashboard", logExtent);
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		dashboard.clickOnTheSelectLoaction(logExtent);
-		createNewProduct();
+		createNewPurchases();
 	}
 
-	public void createNewProduct() {
-		manageItemPage.selectItemTypeFromList("Manage Items");
-		manageItemPage.selectItemTypeFromList("Products List");
-		manageItemPage.clickOnAddProductButton();
-		orderEdge.varifyPopupForCreateProduct("Create product");
-		orderEdge.enterDetailsOnCreateProduct("Name", productName);
-		orderEdge.enterDetailsOnCreateProduct("Size", size);
-		orderEdge.selcetValueFromDropDown("Unit *", orderEdge.getUnitType());
-		orderEdge.selcetValueFromDropDown("Primary Category *", orderEdge.getPrimaryCategory());
-		orderEdge.selcetValueFromDropDown("Storage", orderEdge.getStorageType());
+	private void createNewPurchases() {
+		vendorN = purchasePage.getPrimaryVendor();
+		dashboard.clickOnTheOrderEdge("Purchases", logExtent);
+		purchasePage.clickOnNewPurchaseAndSelectVendor(vendorN);
 		orderEdge.clickOnSaveAndCancel("Save");
-		settingsPage.clickOnSnackBarCloseButton();
+		settingPage.clickOnSnackBarCloseButton();
+		addPurchase();
+		addRequiredDetails();
 	}
 
-	/*--------------------------------------------------------------------------------------*/
-	public void ManangeProducts() {
-		manageItemPage.clickOnTheSearchIconEndEnterValue(productName);
-		manageItemPage.clickOnDeleteIcon();
+	public void addPurchase() {
+		String[] items = purchasePage.getVendorName(vendorN);
+		for (int i = 0; i < items.length; i++) {
+			purchasePage.searchAndSelectItem(items[i]);
+			orderEdge.clickOnSaveAndCancel("Save");
+			settingPage.clickOnSnackBarCloseButton();
+		}
+
 	}
 
-	@AfterClass
-	public void dataCleanUp() {
-		ManangeProducts();
+	public void addRequiredDetails() {
+		purchasePage.enterInvoiceNumber("1231233");
+		purchasePage.selectInvoiceDate();
+		orderEdge.clickOnSaveAndCancel("OK");
+		CustomFunctions.hardWaitForScript();
+		settingPage.clickOnSnackBarCloseButton();
+		orderEdge.clickOnSaveAndCancel("Save");
 	}
 }

@@ -135,8 +135,8 @@ public class DashboardPage extends BaseUi {
 	}
 
 	public void clickOnHeader() {
-		CommonMethods.hardwait(2000);
 		verifyOrderEdge.click();
+		CommonMethods.hardwait(2000);
 	}
 
 	public void clickOnSettingButton() {

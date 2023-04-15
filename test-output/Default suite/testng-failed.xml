@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Rest.RestTest">
+      <class name="com.diningedge.Regression.SendOrderFromOG">
         <methods>
-          <include name="validateGetResponse"/>
+          <include name="mailTriggerInCaseOfUI"/>
+          <include name="setup"/>
+          <include name="sendOrderFromOG"/>
+          <include name="take_screenshot_on_failure"/>
+          <include name="setExtent"/>
+          <include name="sendEmailReport"/>
+          <include name="testMethodName"/>
+          <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.Rest.RestTest -->
+      </class> <!-- com.diningedge.Regression.SendOrderFromOG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
