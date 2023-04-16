@@ -67,6 +67,9 @@ public class ManageItemsPage extends BaseUi {
 
 	@FindBy(xpath = "//div//button//span[text()='Upload']/..")
 	private WebElement uploadBtn;
+	
+	@FindBy(xpath = "//div//button//span[text()='History']/../../..")
+	private WebElement historyBtn;
 
 	private String addCategory = "//li//p[text()='$']";
 
@@ -74,12 +77,17 @@ public class ManageItemsPage extends BaseUi {
 	private String inputStorage = "(//div//label[text()='$']/..//div//input)";
 
 	private String saveCategory = "(//div//label[text()='$']/../..//button)[1]";
+	private String productBtn="//tr//th[text()='$']";
+	private String getValues="(//th//p[text()='$']/../../../th)[#]";
 	
 
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
+	}
+	public WebElement dynamicElements(String locator, String value,String index) {
+		return driver.findElement(By.xpath(locator.replace("$", value).replace("#", index)));
 	}
 
 	public ManageItemsPage(WebDriver driver) {
@@ -108,6 +116,13 @@ public class ManageItemsPage extends BaseUi {
 		logMessage("User clicks on the Delete icon");
 	}
 
+	public void clickOnHistoryButton() {
+		CustomFunctions.hardWaitForScript();
+		waitForElementToClickable(historyBtn);
+		historyBtn.click();
+		CustomFunctions.hardWaitForScript();
+		logMessage("User clicks on the History Btn");
+	}
 	public void clickOnCrossIcon() {
 		waitForElementToClickable(cross);
 		CustomFunctions.hardWaitForScript();
@@ -158,6 +173,16 @@ public class ManageItemsPage extends BaseUi {
 		logMessage("User enters the category "+categery);
 		}
 		dynamicElements(saveCategory, inputLabel).click();
+	}
+	
+	public void clickOnTheProduct(String product) {
+		waitForElementToClickable(dynamicElements(productBtn, product));
+		dynamicElements(productBtn, product).click();
+		logMessage("User select the "+product);
+	}
+	
+	public String getTheValues(String invoice,String index) {
+		return dynamicElements(getValues, invoice, index).getText();
 	}
 
 }

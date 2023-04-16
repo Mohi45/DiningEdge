@@ -9,18 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">142,858</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57,751</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.diningedge.Regression.SendOrderFromOG</td><td><a href="#m0">sendOrderFromOG</a></td><td rowspan="1">1681541070497</td><td rowspan="1">53373</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.diningedge.Regression.CreatePurchaseTest</td><td><a href="#m0">Test01_BasicFlowLogin</a></td><td rowspan="1">1681662355176</td><td rowspan="1">16517</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.diningedge.Regression.SendOrderFromOG#sendOrderFromOG</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2023-04-15] [12:14:30:716] User enters Name = testauto123<br/>[2023-04-15] [12:14:30:827] User enters Password =12345678<br/>[2023-04-15] [12:14:30:896] User clicks on the Login Button !!!<br/>[2023-04-15] [12:14:35:073] Assertion Passed: DiningEdge is present on the HomePage<br/>[2023-04-15] [12:14:35:122] Assertion Passed: Dashboard is present on the HomePage<br/>[2023-04-15] [12:14:35:640] User clicks on Order from OG Button !!<br/>[2023-04-15] [12:14:35:810] User clicks on the Search Icon on Product List Page<br/>[2023-04-15] [12:14:36:026] User enters the US Food Testing To be searched<br/>[2023-04-15] [12:14:39:387] User clicks on the Update pack pancil button !!<br/>[2023-04-15] [12:14:39:591] USer enters the value 1 for Pack<br/>[2023-04-15] [12:14:39:772] USer enters the value 1 for Size<br/>[2023-04-15] [12:14:42:952] User click on the Save button<br/>[2023-04-15] [12:14:45:167] User clicks on the Snack Bar cross button !!<br/>[2023-04-15] [12:14:45:225] User clicks on the Update price pancil button !!<br/>[2023-04-15] [12:14:45:419] USer enters the value 1 for Price<br/>[2023-04-15] [12:14:48:558] User click on the Save button<br/>[2023-04-15] [12:14:48:578] User clicks on the Update price pancil button !!<br/>[2023-04-15] [12:14:49:396] User clicks on the Snack Bar cross button !!<br/>[2023-04-15] [12:14:49:567] USer enters the value 1 for US Food Testing<br/>[2023-04-15] [12:14:51:844] User clicks on the Add Cart Button !!<br/>[2023-04-15] [12:14:53:999] User clicks on the Checkout Button !!<br/>[2023-04-15] [12:14:55:343] User clicks on the Submit All Button !!<br/>[2023-04-15] [12:14:58:125] User clicks on the Snack Bar cross button !!<br/>[2023-04-15] [12:14:58:903] Connecting to gmail...<br/>[2023-04-15] [12:15:00:890] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>[2023-04-15] [12:15:11:257] Connecting to gmail...<br/>[2023-04-15] [12:15:13:044] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>[2023-04-15] [12:15:13:739] Subject is :-New order : DiningEdgeAutomation (loc10)<br/>[2023-04-15] [12:15:13:741] Connecting to gmail...<br/>[2023-04-15] [12:15:15:875] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>[2023-04-15] [12:15:16:521] Subject is :-New order : DiningEdgeAutomation (loc10)<br/>[2023-04-15] [12:15:16:524] Connecting to gmail...<br/>[2023-04-15] [12:15:18:345] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>[2023-04-15] [12:15:18:977] Subject is :-New order : DiningEdgeAutomation (loc10)<br/>[2023-04-15] [12:15:20:231] orderId #: 380<br/>[2023-04-15] [12:15:20:233] Order Date : 04/15/2023<br/>[2023-04-15] [12:15:20:235] Resturant Name : DiningEdgeAutomation<br/>[2023-04-15] [12:15:20:237] Total Order Amount : $1.00<br/>[2023-04-15] [12:15:20:731] New order : DiningEdgeAutomation (loc10) :: email deleted successfully !!<br/>[2023-04-15] [12:15:20:734] Connecting to gmail...<br/>[2023-04-15] [12:15:22:573] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com<br/>[2023-04-15] [12:15:23:229] Moved email in successfully Done!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Assertion Failed :: As Total Order Amount is not correct !! expected [$1.000] but found [$1.00]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.diningedge.Regression.SendOrderFromOG.verifyOrderFromEmail(SendOrderFromOG.java:129)
-	at com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG(SendOrderFromOG.java:90)
+<h2>Default test</h2><h3 id="m0">com.diningedge.Regression.CreatePurchaseTest#Test01_BasicFlowLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2023-04-16] [21:55:55:381] User enters Name = testauto123<br/>[2023-04-16] [21:55:55:494] User enters Password =12345678<br/>[2023-04-16] [21:55:55:559] User clicks on the Login Button !!!<br/>[2023-04-16] [21:56:00:488] Assertion Passed: DiningEdge is present on the HomePage<br/>[2023-04-16] [21:56:00:537] Assertion Passed: Dashboard is present on the HomePage<br/>[2023-04-16] [21:56:00:886] User clicks on Order Edge Button !!<br/>[2023-04-16] [21:56:00:989] User clicks on select Location dropDown !!<br/>[2023-04-16] [21:56:01:077] User clicks on select Location loc10 from dropDown !!<br/>[2023-04-16] [21:56:01:457] User clicks on Purchases Button !!<br/>[2023-04-16] [21:56:01:633] User clicks on the create purchase icon !!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#select\-locationVendor&quot;}
+  (Session info: chrome=111.0.5563.149)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6e8cf560967d6b6800d52037aabc36e, findElement {using=id, value=select-locationVendor}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.149, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52212/devtoo..., se:cdpVersion: 111.0.5563.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6e8cf560967d6b6800d52037aabc36e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.diningedge.PageActions.DiningEdge.PurchasePage.clickOnNewPurchaseAndSelectVendor(PurchasePage.java:76)
+	at com.diningedge.Regression.CreatePurchaseTest.createNewPurchases(CreatePurchaseTest.java:70)
+	at com.diningedge.Regression.CreatePurchaseTest.Test01_BasicFlowLogin(CreatePurchaseTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

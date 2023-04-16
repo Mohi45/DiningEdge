@@ -34,6 +34,7 @@ public class BaseTest {
 	ReadEmailUtility rd = new ReadEmailUtility();
 	boolean status = false;
 	public String filePath;
+
 	// @BeforeSuite
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
@@ -61,6 +62,7 @@ public class BaseTest {
 	public WebDriver getDriver() {
 		return getDriver(BrowserType.CHROME, getProperty("diningEdge"));
 	}
+
 	public WebDriver getDriver(String website) {
 		return getDriver(BrowserType.CHROME, website);
 	}
@@ -68,7 +70,8 @@ public class BaseTest {
 	@BeforeMethod
 	public void testMethodName(Method method) {
 		stepStartMessage(method.getName());
-		//CommonMethods.deleteFiles(System.getProperty("user.home") + "/Downloads", ".csv");
+		// CommonMethods.deleteFiles(System.getProperty("user.home") + "/Downloads",
+		// ".csv");
 	}
 
 	public void stepStartMessage(String testStepName) {
@@ -101,13 +104,11 @@ public class BaseTest {
 		extent.endTest(logExtent);
 	}
 
-
-	public void sendReport(String vendor,String location) {
+	public void sendReport(String vendor, String location, String type) {
 		if (status) {
 			System.out.println("Sending email in case of UI failure...");
-			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ",
-					vendor,location,filePath);
-		}else {
+			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ["+type+"]", vendor, location, filePath);
+		} else {
 			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !!", vendor);
 
 		}
@@ -117,6 +118,6 @@ public class BaseTest {
 	public void endReport() {
 		extent.flush();
 		extent.close();
-		//driver.close();
+		driver.close();
 	}
 }

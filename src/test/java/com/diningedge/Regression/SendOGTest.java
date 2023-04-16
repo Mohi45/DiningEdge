@@ -218,6 +218,6 @@ public class SendOGTest extends BaseTest {
 
 	@AfterSuite
 	public void mailTriggerInCaseOfUI() {
-		sendReport(vendorName, location);
+		sendReport(vendorName, location,"OrderEdge");
 	}
 }

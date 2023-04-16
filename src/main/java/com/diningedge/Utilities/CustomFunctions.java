@@ -133,7 +133,7 @@ public class CustomFunctions extends BaseUi {
 	}
 	public static int generateRandomUnitSize() {
 		Random random = new Random();
-		return random.nextInt(2)+1;
+		return random.nextInt(3)+1;
 	}
 	
 	public static String getProductName() {

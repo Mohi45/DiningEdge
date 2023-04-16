@@ -1,9 +1,11 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,12 +20,13 @@ public class PurchasePage extends BaseUi {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-	
+
 	public PurchasePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(120, 1));
 	}
+
 	protected WebElement waitForElementToClickable(WebElement element) {
 		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
@@ -32,79 +35,121 @@ public class PurchasePage extends BaseUi {
 		return driver.findElement(By.xpath(locator.replace("$", value)));
 	}
 
-	@FindBy(xpath="//button//span[text()='Purchases']")
+	@FindBy(xpath = "//button//span[text()='Purchases']")
 	private WebElement purchaseIcon;
-	
+
 	@FindBy(id = "select-locationVendor")
 	private WebElement vendorloc;
-	
+
 	@FindBy(xpath = "//div//label[text()='Add new purchase item']/..//div//input")
 	private WebElement searchItem;
-	
+
 	@FindBy(xpath = "//div[text()='Add new Vendor Product']/following-sibling::div")
 	private WebElement selectItem;
-	
+
 	@FindBy(xpath = "//div//input[@placeholder='Select invoice date']")
 	private WebElement dateSelect;
-	
+
 	@FindBy(xpath = "//div//input[@placeholder='Enter invoice number']")
 	private WebElement invoiceInput;
-	
+
 	@FindBy(xpath = "//div//input[@placeholder='Enter note']")
 	private WebElement internalNote;
-	
-	private String selectVendor="//div//ul/li[text()='$']";
-	
-	
+
+	@FindBy(xpath = "(//th//p[text()='Charge']/../../../../../../../../..//input)[10]")
+	private WebElement chargeInput;
+
+	@FindBy(xpath = "(//th//p[text()='Charge']/../../../../../../../../..//input)[9]")
+	private WebElement unitInput;
+
+	@FindBy(xpath = "//div//span[text()='Product:']/..")
+	private WebElement product;
+
+	private String chregePrUnit = "//th//p[text()='Charge']/../../../../../../../../..//div/button/../../..//div/p";
+
+	private String selectVendor = "//div//ul/li[text()='$']";
+
 	public void clickOnNewPurchaseAndSelectVendor(String vendor) {
 		waitForElementToClickable(purchaseIcon);
 		purchaseIcon.click();
 		logMessage("User clicks on the create purchase icon !!");
 		vendorloc.click();
 		dynamicElements(selectVendor, vendor).click();
-		logMessage("User selects the "+vendor +" from the list");
+		logMessage("User selects the " + vendor + " from the list");
 	}
-	
+
 	public void searchAndSelectItem(String item) {
 		waitForElementToClickable(searchItem);
 		searchItem.sendKeys(item);
 		selectItem.click();
-		logMessage("User select teh item code "+item);
+		logMessage("User select the item code " + item);
 	}
-	
+
+	public void addChargeUnits(String charge) {
+		waitForElementToClickable(chargeInput);
+		chargeInput.sendKeys(Keys.CONTROL + "a");
+		chargeInput.sendKeys(Keys.DELETE);
+		chargeInput.sendKeys(charge);
+		logMessage("User select the charge code " + charge);
+	}
+
+	public void addUnitUnits(String unit) {
+		waitForElementToClickable(chargeInput);
+		unitInput.sendKeys(Keys.CONTROL + "a");
+		unitInput.sendKeys(Keys.DELETE);
+		unitInput.sendKeys(unit);
+		logMessage("User select the unit code " + unit);
+	}
+
 	public void selectInvoiceDate() {
 		waitForElementToClickable(dateSelect);
 		dateSelect.click();
 		logMessage("User selects the current date");
 	}
-	
+
 	public void enterInvoiceNumber(String invoiceNumber) {
 		waitForElementToClickable(invoiceInput);
 		invoiceInput.sendKeys(invoiceNumber);
-		logMessage("User enters the invoice number "+invoiceNumber);
+		logMessage("User enters the invoice number " + invoiceNumber);
 		CustomFunctions.hardWaitForScript();
 	}
+
 	public void clickOnInternalNote() {
 		internalNote.click();
 		CustomFunctions.hardWaitForScript();
 	}
-	
+
+	public String getCheragePerUnit() {
+		List<WebElement> list = driver.findElements(By.xpath(chregePrUnit));
+		String charePerUnit = "";
+		for (int i = 0; i < list.size(); i++) {
+			charePerUnit += list.get(i).getText().trim();
+		}
+		return charePerUnit.trim();
+	}
+
 	public String[] getVendorName(String vendor) {
-		if(vendor.equalsIgnoreCase("cheney")) {
-			String[] cheneyItems= {"006","007","008","009"};
+		if (vendor.equalsIgnoreCase("cheney")) {
+			String[] cheneyItems = { "201", "205", "209", "213", "217" };
 			return cheneyItems;
-		}else if(vendor.equalsIgnoreCase("PFG")) {
-			String[] pfgItems= {"012","013","014","015"};
+		} else if (vendor.equalsIgnoreCase("PFG")) {
+			String[] pfgItems = { "204", "207", "210", "214", "218" };
 			return pfgItems;
-		}else {
-			String[] syscoItems= {"003","017","018","019"};
+		} else {
+			String[] syscoItems = { "202", "206", "211", "215" };
 			return syscoItems;
 		}
 	}
+
 	public String getPrimaryVendor() {
-		final String[] units = { "Cheney", "PFG", "Sysco"};
+		final String[] units = { "Cheney", "PFG", "Sysco" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
+
+	public String getProductName() {
+		return product.getText();
+	}
+
 }

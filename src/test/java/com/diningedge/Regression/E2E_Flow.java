@@ -232,7 +232,7 @@ public class E2E_Flow extends BaseTest {
 
 	@AfterSuite
 	public void mailTriggerInCaseOfUI() {
-		sendReport(vendorName, location);
+		sendReport(vendorName, location,"OrderEdge");
 	}
 
 	@AfterClass

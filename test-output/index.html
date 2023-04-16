@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-926264822\testng-customsuite.xml</span>
+                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--710816385\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.SendOrderFromOG" class="method navigator-link" hash-for-method="sendOrderFromOG">sendOrderFromOG</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.CreatePurchaseTest" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,22 +122,45 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.diningedge.Regression.SendOrderFromOG</span>
+              <span class="class-name">com.diningedge.Regression.CreatePurchaseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sendOrderFromOG">
-                  </a> <!-- sendOrderFromOG -->
-                  <span class="method-name">sendOrderFromOG</span>
-                  <div class="stack-trace">java.lang.AssertionError: Assertion Failed :: As Total Order Amount is not correct !! expected [$1.000] but found [$1.00]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.diningedge.Regression.SendOrderFromOG.verifyOrderFromEmail(SendOrderFromOG.java:129)
-	at com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG(SendOrderFromOG.java:90)
+                  <a name="Test01_BasicFlowLogin">
+                  </a> <!-- Test01_BasicFlowLogin -->
+                  <span class="method-name">Test01_BasicFlowLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#select\-locationVendor&quot;}
+  (Session info: chrome=111.0.5563.149)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6e8cf560967d6b6800d52037aabc36e, findElement {using=id, value=select-locationVendor}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.149, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52212/devtoo..., se:cdpVersion: 111.0.5563.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6e8cf560967d6b6800d52037aabc36e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.diningedge.PageActions.DiningEdge.PurchasePage.clickOnNewPurchaseAndSelectVendor(PurchasePage.java:76)
+	at com.diningedge.Regression.CreatePurchaseTest.createNewPurchases(CreatePurchaseTest.java:70)
+	at com.diningedge.Regression.CreatePurchaseTest.Test01_BasicFlowLogin(CreatePurchaseTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,7 +198,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-926264822\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--710816385\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,7 +207,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.diningedge.Regression.SendOrderFromOG&quot;/&gt;
+      &lt;class name=&quot;com.diningedge.Regression.CreatePurchaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -226,14 +249,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sendOrderFromOG')
-data.setCell(0, 2, 'com.diningedge.Regression.SendOrderFromOG')
-data.setCell(0, 3, 53373);
+data.setCell(0, 1, 'Test01_BasicFlowLogin')
+data.setCell(0, 2, 'com.diningedge.Regression.CreatePurchaseTest')
+data.setCell(0, 3, 16517);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -245,50 +268,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">sendOrderFromOG</span>
+              <span class="reporter-method-name">Test01_BasicFlowLogin</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2023-04-15] [12:14:30:716] User enters Name = testauto123</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:30:827] User enters Password =12345678</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:30:896] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:35:073] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:35:122] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:35:640] User clicks on Order from OG Button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:35:810] User clicks on the Search Icon on Product List Page</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:36:026] User enters the US Food Testing To be searched</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:39:387] User clicks on the Update pack pancil button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:39:591] USer enters the value 1 for Pack</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:39:772] USer enters the value 1 for Size</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:42:952] User click on the Save button</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:45:167] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:45:225] User clicks on the Update price pancil button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:45:419] USer enters the value 1 for Price</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:48:558] User click on the Save button</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:48:578] User clicks on the Update price pancil button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:49:396] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:49:567] USer enters the value 1 for US Food Testing</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:51:844] User clicks on the Add Cart Button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:53:999] User clicks on the Checkout Button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:55:343] User clicks on the Submit All Button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:58:125] User clicks on the Snack Bar cross button !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:14:58:903] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:00:890] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:11:257] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:13:044] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:13:739] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:13:741] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:15:875] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:16:521] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:16:524] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:18:345] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:18:977] Subject is :-New order : DiningEdgeAutomation (loc10)</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:231] orderId #: 380</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:233] Order Date : 04/15/2023</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:235] Resturant Name : DiningEdgeAutomation</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:237] Total Order Amount : $1.00</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:731] New order : DiningEdgeAutomation (loc10) :: email deleted successfully !!</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:20:734] Connecting to gmail...</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:22:573] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com</span>
-                <span class="reporter-method-output">[2023-04-15] [12:15:23:229] Moved email in successfully Done!!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:55:55:381] User enters Name = testauto123</span>
+                <span class="reporter-method-output">[2023-04-16] [21:55:55:494] User enters Password =12345678</span>
+                <span class="reporter-method-output">[2023-04-16] [21:55:55:559] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:00:488] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:00:537] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:00:886] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:00:989] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:01:077] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:01:457] User clicks on Purchases Button !!</span>
+                <span class="reporter-method-output">[2023-04-16] [21:56:01:633] User clicks on the create purchase icon !!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -306,40 +297,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.diningedge.Regression.SendOrderFromOG</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.diningedge.Regression.CreatePurchaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">testMethodName(public void com.diningedge.Regression.SendOrderFromOG.sendOrderFromOG() throws java.lang.Exception)</span>
-                <span class="method-start">208 ms</span>
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.CreatePurchaseTest.Test01_BasicFlowLogin())</span>
+                <span class="method-start">188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">210 ms</span>
+                <span class="method-start">191 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sendOrderFromOG</span>
-                <span class="method-start">86359 ms</span>
+                <span class="method-name">Test01_BasicFlowLogin</span>
+                <span class="method-start">38118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">sendEmailReport</span>
-                <span class="method-start">139741 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=sendOrderFromOG status=FAILURE method=SendOrderFromOG.sendOrderFromOG()[pri:0, inst...)</span>
-                <span class="method-start">139742 ms</span>
+                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=FAILURE method=CreatePurchaseTest.Test01_BasicFlowLogi...)</span>
+                <span class="method-start">54644 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">142573 ms</span>
+                <span class="method-start">57465 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">mailTriggerInCaseOfUI</span>
-                <span class="method-start">142871 ms</span>
+                <span class="method-start">57807 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
