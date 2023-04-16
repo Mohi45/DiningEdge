@@ -325,7 +325,7 @@ public class SendEmailUtility extends BaseUi {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			messageBodyPart
-					.setText("Hi Team!!, \n\n Hope you are doing well ! \n We have successfully sent the order for "
+					.setText("Hi Team!!, \n\n Hope you are doing well ! \n Our script is working fine for "
 							+ vandor + ". \n\n Thanks!! \n Automation Testing by M");
 
 			/*-----------------------this is used when u are trying to send multiple files------------*/

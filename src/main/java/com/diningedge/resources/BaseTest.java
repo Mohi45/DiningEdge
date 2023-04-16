@@ -109,7 +109,7 @@ public class BaseTest {
 			System.out.println("Sending email in case of UI failure...");
 			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ["+type+"]", vendor, location, filePath);
 		} else {
-			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !!", vendor);
+			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !!["+type+"]", vendor);
 
 		}
 	}
