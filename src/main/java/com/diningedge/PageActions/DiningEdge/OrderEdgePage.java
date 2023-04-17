@@ -62,7 +62,7 @@ public class OrderEdgePage extends BaseUi {
 
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
-	
+
 	private String save = "//button//span[text()='$']/..";
 
 	private String checkBoxComparabls = "//div//p[text()='$']/..//div//span/input";
@@ -255,14 +255,14 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	public String getStorageType() {
-		final String[] units = { "Solid", "Liquid", "Freeze", "Bread","Food","Soft" };
+		final String[] units = { "Solid", "Liquid", "Freeze", "Bread", "Food", "Soft" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
 	}
 
 	public String getPrimaryCategory() {
-		final String[] units = { "Cheney", "PFG", "Sysco", "test" ,"Appetizer","Beverage","bread","Food"};
+		final String[] units = { "Cheney", "PFG", "Sysco", "test", "Appetizer", "Beverage", "bread", "Food" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];

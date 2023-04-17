@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -155,6 +156,7 @@ public class SendOGTest extends BaseTest {
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
+		totalAmountFromUI= StringUtils.chop(totalAmountFromUI);
 		System.out.println("----------------------------From UI--------------------------------------");
 		System.out.println(
 				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);

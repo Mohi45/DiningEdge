@@ -6,6 +6,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
@@ -131,6 +132,7 @@ public class E2E_Flow extends BaseTest {
 		orderEdge.selcetValueFromDropDown("Unit *", orderEdge.getUnitType());
 		orderEdge.selcetValueFromDropDown("Primary Category *", orderEdge.getPrimaryCategory());
 		orderEdge.selcetValueFromDropDown("Storage", orderEdge.getStorageType());
+		orderEdge.enterDetailsOnCreateProduct("Position", "1");
 		orderEdge.clickOnSaveAndCancel("Save");
 		settingsPage.clickOnSnackBarCloseButton();
 	}
@@ -168,6 +170,7 @@ public class E2E_Flow extends BaseTest {
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
+		totalAmountFromUI= StringUtils.chop(totalAmountFromUI);
 		System.out.println("----------------------------From UI--------------------------------------");
 		System.out.println(
 				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);
@@ -213,7 +216,7 @@ public class E2E_Flow extends BaseTest {
 		settingPage.selectOptonsItems("Send Order");
 		settingPage.clickOnActiveChecksBox();
 		settingPage.selectEmailFromDropDown();
-		settingPage.enterRecepientsEmail("diningedgetest@gmail.com");
+		settingPage.enterRecepientsEmails("diningedgetest@gmail.com");
 		settingPage.clickOnSaveButton();
 		settingPage.clickOnSnackBarCloseButton();
 	}
