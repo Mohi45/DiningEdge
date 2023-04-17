@@ -3,19 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Regression.E2E_Flow">
+      <class name="com.diningedge.Regression.SendOrderFromOG">
         <methods>
-          <include name="dataSetUp"/>
-          <include name="take_screenshot_on_failure"/>
-          <include name="setExtent"/>
-          <include name="testMethodName"/>
           <include name="mailTriggerInCaseOfUI"/>
           <include name="setup"/>
-          <include name="Test01_BasicFlowLogin" invocation-numbers="0"/>
+          <include name="sendOrderFromOG"/>
+          <include name="take_screenshot_on_failure"/>
+          <include name="setExtent"/>
           <include name="sendEmailReport"/>
+          <include name="testMethodName"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.Regression.E2E_Flow -->
+      </class> <!-- com.diningedge.Regression.SendOrderFromOG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

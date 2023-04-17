@@ -142,7 +142,7 @@ public class ManageItemsPage extends BaseUi {
 	}
 
 	public static String getProductNames() {
-		final String[] units = { "Cheney Testing", "US Food Testing", "Sysco Testing", "PFG Testing" };
+		final String[] units = { "Milk Cheney", "Milk sysco", "US Food Milk", "PFG Milk" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		System.out.println("Product Name = " + units[index]);

@@ -59,6 +59,9 @@ public class CheckoutPage extends BaseUi {
 	@FindBy(xpath = "//span/..//button[@title='Delete']")
 	private WebElement delete;
 
+	@FindBy(xpath = "(//span[text()='Total']/..//h3)[1]")
+	private WebElement getTotalAmt;
+	
 	/*----------------------DiningEdge Methods---------------------------*/
 
 	public WebElement dynamicElements(String locator, String value) {
@@ -109,9 +112,11 @@ public class CheckoutPage extends BaseUi {
 		} else {
 			System.out.println("Product name is alreday correct !!");
 		}
-		wait.until(ExpectedConditions.visibilityOf(dynamicElements(totalAmount, vendor.split(" ")[0])));
-		String finalAmount = dynamicElements(totalAmount, vendor).getText();
+		wait.until(ExpectedConditions.visibilityOf(getTotalAmt));
+		String finalAmount = getTotalAmt.getText();
 		System.out.println("Final Total Amount = " + finalAmount);
 		return finalAmount;
 	}
+	
+	
 }
