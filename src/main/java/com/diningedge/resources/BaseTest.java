@@ -107,11 +107,19 @@ public class BaseTest {
 	public void sendReport(String vendor, String location, String type) {
 		if (status) {
 			System.out.println("Sending email in case of UI failure...");
-			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed ["+type+"]", vendor, location, filePath);
+			SendEmailUtility.sendReports("Automation Testing :: Order Submission Failed [" + type + "]", vendor,
+					location, filePath);
 		} else {
-			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !!["+type+"]", vendor);
+			SendEmailUtility.sendReportSuccess("Automation Testing :: Order Submission Success !![" + type + "]",
+					vendor);
 
 		}
+	}
+
+	public void sendReportAlert() {
+		System.out.println("Sending email in case of Service Down...");
+		SendEmailUtility.sendReports("ALERT DININGEDGE SERVER DOWN ⚠️", filePath);
+
 	}
 
 	@AfterTest

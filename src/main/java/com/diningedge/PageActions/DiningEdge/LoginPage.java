@@ -57,5 +57,9 @@ public class LoginPage extends BaseUi {
 		loginBtn.click();
 		logMessage("User clicks on the Login Button !!!");
 	}
+	
+	public boolean elementDisplay() {
+		return userName.isDisplayed();
+	}
 
 }

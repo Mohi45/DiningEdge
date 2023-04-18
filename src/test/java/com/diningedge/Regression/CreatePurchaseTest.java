@@ -119,12 +119,12 @@ public class CreatePurchaseTest extends BaseTest {
 		inventoryPage.clickOnFilterIcon();
 		inventoryPage.clickAndSelectProduct(product);
 		qty = inventoryPage.getTheValues(invoiceNumber, "8");
-		chargeFromInvoice = inventoryPage.getTheValues(invoiceNumber, "11");
+		chargeFromInvoice = inventoryPage.getTheValues(invoiceNumber, "11");	
 		extedePriceFromInvoice = inventoryPage.getTheValues(invoiceNumber, "12");
 		Assert.assertEquals(chargeFromInvoice, "$" + chargeUnit + ".000", "Charge per unit is not matched !!");
 		Assert.assertEquals("$" + String.valueOf(extedePrice) + ".000", extedePriceFromInvoice,
 				"Extended price not matched !!");
-		Assert.assertEquals(qty, String.valueOf(unit), "Charge per unit is not matched !!");
+		Assert.assertEquals(qty, String.valueOf(unit), "Quantity is not matched !!");
 	}
 
 	
