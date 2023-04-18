@@ -118,7 +118,7 @@ public class BaseTest {
 
 	public void sendReportAlert() {
 		System.out.println("Sending email in case of Service Down...");
-		SendEmailUtility.sendReports("ALERT DININGEDGE SERVER DOWN ⚠️", filePath);
+		SendEmailUtility.sendReportsAlert("ALERT DININGEDGE SERVER DOWN ⚠️", filePath);
 
 	}
 
