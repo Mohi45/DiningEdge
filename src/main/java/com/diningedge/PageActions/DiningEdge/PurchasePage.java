@@ -69,6 +69,11 @@ public class PurchasePage extends BaseUi {
 
 	private String selectVendor = "//div//ul/li[text()='$']";
 
+	private String selectItemViaPO = "//div//p[text()='$']/../../..";
+	
+	@FindBy(xpath = "//div//p[text()='Total:']/../..//h3")
+	private WebElement total;
+
 	public void clickOnNewPurchaseAndSelectVendor(String vendor) {
 		waitForElementToClickable(purchaseIcon);
 		purchaseIcon.click();
@@ -148,8 +153,21 @@ public class PurchasePage extends BaseUi {
 		return units[index];
 	}
 
+	public void selectItemWithPONumber(String poNumber) {
+		dynamicElements(selectItemViaPO, poNumber).click();
+		logMessage("User clicks on the PO Number = " + poNumber);
+	}
+
 	public String getProductName() {
 		return product.getText();
 	}
 
+	public String getTotal() {
+		return total.getText();
+	}
+	
+	public static void main(String...strings) {
+		String s="$1.000";
+		System.out.println(s.split("\\.")[0]);
+	}
 }

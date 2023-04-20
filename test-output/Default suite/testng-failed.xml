@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diningedge.Regression.ServerStatus">
+      <class name="com.diningedge.Regression.ValidatePurchaseHistory">
         <methods>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
           <include name="testMethodName"/>
-          <include name="validateService"/>
           <include name="setup"/>
-          <include name="sendAlert"/>
+          <include name="sendOrderFromOG"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.diningedge.Regression.ServerStatus -->
+      </class> <!-- com.diningedge.Regression.ValidatePurchaseHistory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
