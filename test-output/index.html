@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--1152559369\testng-customsuite.xml</span>
+                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-159648624\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.ServerStatusProd" class="method navigator-link" hash-for-method="validateService">validateService</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="InventoryRegression.CreateAndValidateInventory" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +122,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.diningedge.Regression.ServerStatusProd</span>
+              <span class="class-name">InventoryRegression.CreateAndValidateInventory</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateService">
-                  </a> <!-- validateService -->
-                  <span class="method-name">validateService</span>
+                  <a name="Test01_BasicFlowLogin">
+                  </a> <!-- Test01_BasicFlowLogin -->
+                  <span class="method-name">Test01_BasicFlowLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse--1152559369\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-159648624\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +146,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.diningedge.Regression.ServerStatusProd&quot;/&gt;
+      &lt;class name=&quot;InventoryRegression.CreateAndValidateInventory&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateService')
-data.setCell(0, 2, 'com.diningedge.Regression.ServerStatusProd')
-data.setCell(0, 3, 61);
+data.setCell(0, 1, 'Test01_BasicFlowLogin')
+data.setCell(0, 2, 'InventoryRegression.CreateAndValidateInventory')
+data.setCell(0, 3, 27563);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 61 ms</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -206,6 +206,25 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Test01_BasicFlowLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-05-01] [21:22:07:406] User enters Name = testauto123</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:07:565] User enters Password =12345678</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:07:652] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:11:083] Assertion Passed: DiningEdge is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:11:157] Assertion Passed: Dashboard is present on the HomePage</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:11:561] User clicks on Order Edge Button !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:11:692] User clicks on select Location dropDown !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:11:796] User clicks on select Location loc10 from dropDown !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:15:254] User clicks on the Inventory button !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:16:103] User clicks on the Create invetory Button !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:19:379] User selects the :: Grid Order</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:29:078] User click on the Complete button</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:29:843] User clicks on the Complete Button !!</span>
+                <span class="reporter-method-output">[2023-05-01] [21:22:32:175] User clicks on the eye button !!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -221,35 +240,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.diningedge.Regression.ServerStatusProd</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">InventoryRegression.CreateAndValidateInventory</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">testMethodName(public void com.diningedge.Regression.ServerStatusProd.validateService())</span>
-                <span class="method-start">4425 ms</span>
+                <span class="method-name">testMethodName(public void InventoryRegression.CreateAndValidateInventory.Test01_BasicFlowLogin())</span>
+                <span class="method-start">5064 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4431 ms</span>
+                <span class="method-start">5067 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateService</span>
-                <span class="method-start">32851 ms</span>
+                <span class="method-name">Test01_BasicFlowLogin</span>
+                <span class="method-start">17792 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=validateService status=SUCCESS method=ServerStatusProd.validateService()[pri:0, ins...)</span>
-                <span class="method-start">32915 ms</span>
+                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=SUCCESS method=CreateAndValidateInventory.Test01_Basic...)</span>
+                <span class="method-start">45358 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">32922 ms</span>
+                <span class="method-start">45367 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">sendAlert</span>
-                <span class="method-start">33260 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

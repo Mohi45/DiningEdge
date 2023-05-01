@@ -3,6 +3,7 @@ package com.diningedge.common;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Date;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -168,4 +169,11 @@ public class CommonMethods extends BaseUi {
 		return element.isSelected();
 	}
 
+	public static String getDate() {
+		LocalDate currentDate = LocalDate.now();
+		String d=currentDate.toString().split("-")[2];
+		int n= Integer.parseInt(d);
+		String ss=String.valueOf(n);
+		return ss;
+	}
 }

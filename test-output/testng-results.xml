@@ -2,47 +2,89 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[2023-05-01] [13:04:38:394] Connecting to gmail...]]>
+      <![CDATA[[2023-05-01] [21:21:49:610] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-05-01] [13:04:41:060] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2023-05-01] [21:21:52:755] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-05-01] [13:04:41:500] Moved email in successfully Done!!]]>
+      <![CDATA[[2023-05-01] [21:21:53:596] Moved email in successfully Done!!]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[***** STARTING TEST STEP:- validateService *****]]>
+      <![CDATA[[2023-05-01] [21:22:07:406] User enters Name = testauto123]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[[2023-05-01] [21:22:07:565] User enters Password =12345678]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:07:652] User clicks on the Login Button !!!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:11:083] Assertion Passed: DiningEdge is present on the HomePage]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:11:157] Assertion Passed: Dashboard is present on the HomePage]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:11:561] User clicks on Order Edge Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:11:692] User clicks on select Location dropDown !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:11:796] User clicks on select Location loc10 from dropDown !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:15:254] User clicks on the Inventory button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:16:103] User clicks on the Create invetory Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:19:379] User selects the :: Grid Order]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:29:078] User click on the Complete button]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:29:843] User clicks on the Complete Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-05-01] [21:22:32:175] User clicks on the eye button !!]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-01T13:04:38 IST" name="Default suite" finished-at="2023-05-01T13:05:11 IST" duration-ms="33243">
+  <suite started-at="2023-05-01T21:21:49 IST" name="Default suite" finished-at="2023-05-01T21:22:35 IST" duration-ms="45652">
     <groups>
     </groups>
-    <test started-at="2023-05-01T13:04:38 IST" name="Default test" finished-at="2023-05-01T13:05:11 IST" duration-ms="33243">
-      <class name="com.diningedge.Regression.ServerStatusProd">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:04:38 IST" name="setExtent" finished-at="2023-05-01T13:04:42 IST" duration-ms="4375" status="PASS">
+    <test started-at="2023-05-01T21:21:49 IST" name="Default test" finished-at="2023-05-01T21:22:35 IST" duration-ms="45652">
+      <class name="InventoryRegression.CreateAndValidateInventory">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:21:49 IST" name="setExtent" finished-at="2023-05-01T21:21:54 IST" duration-ms="5010" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-05-01] [13:04:38:394] Connecting to gmail...]]>
+              <![CDATA[[2023-05-01] [21:21:49:610] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2023-05-01] [13:04:41:060] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2023-05-01] [21:21:52:755] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2023-05-01] [13:04:41:500] Moved email in successfully Done!!]]>
+              <![CDATA[[2023-05-01] [21:21:53:596] Moved email in successfully Done!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:04:42 IST" name="testMethodName" finished-at="2023-05-01T13:04:42 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:21:54 IST" name="testMethodName" finished-at="2023-05-01T21:21:54 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.diningedge.Regression.ServerStatusProd.validateService()]]>
+                <![CDATA[public void InventoryRegression.CreateAndValidateInventory.Test01_BasicFlowLogin()]]>
               </value>
             </param>
           </params>
@@ -51,41 +93,79 @@
               <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- validateService *****]]>
+              <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
             </line>
             <line>
               <![CDATA[ ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:04:42 IST" name="setup" finished-at="2023-05-01T13:05:10 IST" duration-ms="28419" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:21:54 IST" name="setup" finished-at="2023-05-01T21:22:07 IST" duration-ms="12725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateService()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:05:10 IST" name="validateService" finished-at="2023-05-01T13:05:11 IST" duration-ms="61" status="PASS">
+        <test-method signature="Test01_BasicFlowLogin()[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:22:07 IST" name="Test01_BasicFlowLogin" finished-at="2023-05-01T21:22:34 IST" duration-ms="27563" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:07:406] User enters Name = testauto123]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:07:565] User enters Password =12345678]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:07:652] User clicks on the Login Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:11:083] Assertion Passed: DiningEdge is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:11:157] Assertion Passed: Dashboard is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:11:561] User clicks on Order Edge Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:11:692] User clicks on select Location dropDown !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:11:796] User clicks on select Location loc10 from dropDown !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:15:254] User clicks on the Inventory button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:16:103] User clicks on the Create invetory Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:19:379] User selects the :: Grid Order]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:29:078] User click on the Complete button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:29:843] User clicks on the Complete Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-05-01] [21:22:32:175] User clicks on the eye button !!]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- validateService -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:05:11 IST" name="take_screenshot_on_failure" finished-at="2023-05-01T13:05:11 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- Test01_BasicFlowLogin -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:22:34 IST" name="take_screenshot_on_failure" finished-at="2023-05-01T21:22:34 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateService status=SUCCESS method=ServerStatusProd.validateService()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10] output={null}]]]>
+                <![CDATA[[TestResult name=Test01_BasicFlowLogin status=SUCCESS method=CreateAndValidateInventory.Test01_BasicFlowLogin()[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422] output=[2023-05-01] [21:22:07:406] User enters Name = testauto123]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:05:11 IST" name="endReport" finished-at="2023-05-01T13:05:11 IST" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:InventoryRegression.CreateAndValidateInventory@3646a422]" started-at="2023-05-01T21:22:34 IST" name="endReport" finished-at="2023-05-01T21:22:35 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method is-config="true" signature="sendAlert()[pri:0, instance:com.diningedge.Regression.ServerStatusProd@2a7f1f10]" started-at="2023-05-01T13:05:11 IST" name="sendAlert" finished-at="2023-05-01T13:05:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendAlert -->
-      </class> <!-- com.diningedge.Regression.ServerStatusProd -->
+      </class> <!-- InventoryRegression.CreateAndValidateInventory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

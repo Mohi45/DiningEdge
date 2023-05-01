@@ -3,6 +3,7 @@ package com.diningedge.PageActions.DiningEdge;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -77,25 +78,29 @@ public class InventoryPage extends BaseUi {
 
 	@FindBy(xpath = "//span[text()='New Inventory']/..")
 	private WebElement createInv;
-	
+
 	@FindBy(xpath = "(//button//span[text()='Complete']/..)[2]")
 	private WebElement complete;
 
 	private String getValues = "(//th[text()='$']/../th)[#]";
 
 	private String selectGrid = "//div//p[text()='$']/..";
-	
-	private String eyeBtn="((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[5]/button)[1]";
-	
-	private String eyeBtnhover="((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[3]//div)[1]";
-	
-	private String qyt1="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[3]//input";
-	private String qyt2="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[5]//input";
-	private String qyt3="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[7]//input";
-	
-	private String measure1="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[4]//div//div)[3]";
-	private String measure2="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[6]//div//div)[3]";
-	private String measure3="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[8]//div//div)[3]";
+
+	private String eyeBtn = "((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[5]/button)[1]";
+
+	private String eyeBtnhover = "((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[3]//div)[1]";
+
+	private String qyt1 = "(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[3]//input";
+	private String qyt2 = "(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[5]//input";
+	private String qyt3 = "(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[7]//input";
+
+	private String measure1 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[4]//div//div)[3]";
+	private String measure2 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[6]//div//div)[3]";
+	private String measure3 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[8]//div//div)[3]";
+
+	private String measureGet1 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)//p)[4]";
+	private String measureGet2 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)//p)[6]";
+	private String measureGet3 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)//p)[8]";
 
 	public WebElement dynamicElements(String locator, String value, String index) {
 		return driver.findElement(By.xpath(locator.replace("$", value).replace("#", index)));
@@ -137,33 +142,49 @@ public class InventoryPage extends BaseUi {
 	public void ClickOnTheGrid(String value) {
 		waitForElementToClickable(dynamicElements(selectGrid, value));
 		dynamicElements(selectGrid, value).click();
-		logMessage("User selects the :: "+value);
+		logMessage("User selects the :: " + value);
 	}
-	
-	public void enterQuntity(String qtyValue,String quntity) {
+
+	public void enterQuntity(String qtyValue, String quntity) {
 		dynamicElements(qyt1, qtyValue).sendKeys(quntity);
 		dynamicElements(qyt2, qtyValue).sendKeys(quntity);
 		dynamicElements(qyt3, qtyValue).sendKeys(quntity);
-		
+
 	}
-	
-	
+
 	public List<String> getMeasuers(String value) {
-		List<String> list= new ArrayList<>();
+		List<String> list = new ArrayList<>();
 		list.add(dynamicElements(measure1, value).getText());
 		list.add(dynamicElements(measure2, value).getText());
 		list.add(dynamicElements(measure3, value).getText());
 		return list;
 	}
-	
+
+	public List<String> getMeasuersFromValidation(String value) {
+		List<String> list = new ArrayList<>();
+		list.add(dynamicElements(measureGet1, value).getText());
+		list.add(dynamicElements(measureGet2, value).getText());
+		list.add(dynamicElements(measureGet3, value).getText());
+		return list;
+	}
+
 	public void clickOnCompleteButton() {
 		waitForElementToClickable(complete);
 		complete.click();
 		logMessage("User clicks on the Complete Button !!");
 	}
-	
+
 	public void clickOnEyeButton(String date) {
-		CommonMethods.hoverAndClick(dynamicElements(eyeBtnhover, date),dynamicElements(eyeBtn, date), driver);
+		CommonMethods.hoverAndClick(dynamicElements(eyeBtnhover, date), dynamicElements(eyeBtn, date), driver);
 		logMessage("User clicks on the eye button !!");
+	}
+
+	public List<String> getVendorNames() {
+		List<String> list = new ArrayList<>();
+		final String[] name = { "Milk", "Tomatoes", "Chicken", "Ice Cream", "Juice Orange" };
+		for (int i = 0; i < name.length; i++) {
+			list.add(name[i]);
+		}
+		return list;
 	}
 }
