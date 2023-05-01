@@ -6,6 +6,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.mail.MessagingException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -46,6 +48,11 @@ public class BaseTest {
 		extent = new ExtentReports(System.getProperty("user.dir") + "/target/ExtentReport.html", true);
 		extent.addSystemInfo("User Name", "Automation Testing by Ⓜ️");
 		extent.addSystemInfo("Environment", "QA Automation");
+		try {
+			rd.moveEmails();
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public WebDriver getDriver(BrowserType type, String baseUrl) {

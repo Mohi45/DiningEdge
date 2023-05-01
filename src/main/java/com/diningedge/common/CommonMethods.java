@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.Utilities.ExcleReader;
@@ -147,19 +148,24 @@ public class CommonMethods extends BaseUi {
 	public static void hardwait(int timeOut) {
 		try {
 			Thread.sleep(timeOut);
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	public static void jsClick(WebElement element,WebDriver driver) {
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+	public static void jsClick(WebElement element, WebDriver driver) {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
-	
+
+	public static void hoverAndClick(WebElement ele1, WebElement ele, WebDriver driver) {
+		Actions builder = new Actions(driver);
+		builder.moveToElement(ele1).moveToElement(ele).click().build().perform();
+	}
+
 	public static boolean verifyChecboxIsSelected(WebElement element) {
 		return element.isSelected();
 	}
-	
+
 }

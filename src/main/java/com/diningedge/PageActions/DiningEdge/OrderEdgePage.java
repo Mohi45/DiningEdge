@@ -62,6 +62,9 @@ public class OrderEdgePage extends BaseUi {
 
 	@FindBy(xpath = "//div/h2[contains(text(),'Create')]")
 	private WebElement popupHeader;
+	
+	@FindBy(xpath = "((//span[text()='Order Name/PO Number']/../../../../../..//table)[2]//th)[2]")
+	private WebElement pendingOrd;
 
 	private String save = "//button//span[text()='$']/..";
 
@@ -144,6 +147,16 @@ public class OrderEdgePage extends BaseUi {
 		logMessage("User clicks on the Checkout Button !!");
 		logExtent.log(LogStatus.INFO, "Step05: User clicks on the Checkout Button !!");
 	}
+	
+	public void clickOnTheAddNewOrder() {
+		wait.until(ExpectedConditions.visibilityOf(addToCart));
+		waitForElementToClickable(addToCart);
+		addToCart.click();
+		logMessage("User clicks on the Add Cart Button !!");
+		wait.until(ExpectedConditions.visibilityOf(dynamicElements(checkout, "New order")));
+		CommonMethods.hardwait(3000);
+		dynamicElements(checkout, "New order").click();
+	}
 
 	public void clickOnBesrPriceToggelButton() {
 		waitForElementToClickable(bestPriceToggel);
@@ -217,6 +230,12 @@ public class OrderEdgePage extends BaseUi {
 		waitForElementToClickable(dynamicElements(Comparabls, productName));
 		dynamicElements(Comparabls, productName).click();
 		logMessage("User clicks on the Open Manage Comparabls Button !!");
+	}
+	
+	public void clickOnPendingOrder() {
+		waitForElementToClickable(pendingOrd);
+		pendingOrd.click();
+		logMessage("Click on the pending order !!");
 	}
 
 	public void clickOnPreviousAfterButton(String value) {

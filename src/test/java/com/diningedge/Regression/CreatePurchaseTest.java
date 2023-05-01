@@ -33,8 +33,9 @@ public class CreatePurchaseTest extends BaseTest {
 	public String invoice = "Invoice" + CustomFunctions.generateRandomNumber();
 	public int chargeUnit = CustomFunctions.generateRandomUnitSize();
 	public int unit = CustomFunctions.generateRandomUnitSize();
+	public double unitUn;
 	String productName;
-	String chargeFromPH, chargeFromInvoice, extedePriceFromPH, extedePriceFromInvoice, chargePerUnit, qty;
+	String chargeFromPH, chargeFromInvoice, extedePriceFromPH, extedePriceFromInvoice, chargePerUnit, qty, unitU, code;
 	public int extedePrice = chargeUnit * unit;
 	protected String location = "loc10";
 
@@ -79,7 +80,8 @@ public class CreatePurchaseTest extends BaseTest {
 		String[] items = purchasePage.getVendorName(vendorN);
 		Random random = new Random();
 		int index = random.nextInt(items.length);
-		purchasePage.searchAndSelectItem(items[index]);
+		code = items[index];
+		purchasePage.searchAndSelectItem(code);
 		orderEdge.clickOnSaveAndCancel("Save");
 		settingPage.clickOnSnackBarCloseButton();
 		purchasePage.addUnitUnits(String.valueOf(unit));
@@ -94,6 +96,10 @@ public class CreatePurchaseTest extends BaseTest {
 		orderEdge.clickOnSaveAndCancel("OK");
 		CustomFunctions.hardWaitForScript();
 		settingPage.clickOnSnackBarCloseButton();
+		purchasePage.clickOnUBtn();
+		unitU = purchasePage.getUnits(code);
+		unitUn = Double.parseDouble(unitU);
+		manageItemPage.clickOnCrossIcon();
 		CustomFunctions.hardWaitForScript();
 		chargePerUnit = purchasePage.getCheragePerUnit().split("/ ")[0];
 		chargePerUnit += "/" + purchasePage.getCheragePerUnit().split("/ ")[1];
@@ -119,17 +125,17 @@ public class CreatePurchaseTest extends BaseTest {
 		inventoryPage.clickOnFilterIcon();
 		inventoryPage.clickAndSelectProduct(product);
 		qty = inventoryPage.getTheValues(invoiceNumber, "8");
-		chargeFromInvoice = inventoryPage.getTheValues(invoiceNumber, "11");	
+		chargeFromInvoice = inventoryPage.getTheValues(invoiceNumber, "11");
 		extedePriceFromInvoice = inventoryPage.getTheValues(invoiceNumber, "12");
 		Assert.assertEquals(chargeFromInvoice, "$" + chargeUnit + ".000", "Charge per unit is not matched !!");
 		Assert.assertEquals("$" + String.valueOf(extedePrice) + ".000", extedePriceFromInvoice,
 				"Extended price not matched !!");
+		unit *= unitUn;
 		Assert.assertEquals(qty, String.valueOf(unit), "Quantity is not matched !!");
 	}
 
-	
 	@AfterSuite
 	public void mailTriggerInCaseOfUI() {
-		sendReport(vendorN, location,"Purchases");
+		sendReport(vendorN, location, "Purchases");
 	}
 }

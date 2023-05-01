@@ -1,6 +1,7 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.diningedge.Utilities.CustomFunctions;
+import com.diningedge.common.CommonMethods;
 import com.diningedge.resources.BaseUi;
 
 public class InventoryPage extends BaseUi {
@@ -73,7 +75,27 @@ public class InventoryPage extends BaseUi {
 	@FindBy(xpath = "//button//span[text()='Apply & Filter']")
 	private WebElement applyFilter;
 
+	@FindBy(xpath = "//span[text()='New Inventory']/..")
+	private WebElement createInv;
+	
+	@FindBy(xpath = "(//button//span[text()='Complete']/..)[2]")
+	private WebElement complete;
+
 	private String getValues = "(//th[text()='$']/../th)[#]";
+
+	private String selectGrid = "//div//p[text()='$']/..";
+	
+	private String eyeBtn="((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[5]/button)[1]";
+	
+	private String eyeBtnhover="((//div//p[text()='Automation']/../../..//p[text()='$']/..//div)[3]//div)[1]";
+	
+	private String qyt1="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[3]//input";
+	private String qyt2="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[5]//input";
+	private String qyt3="(//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[7]//input";
+	
+	private String measure1="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[4]//div//div)[3]";
+	private String measure2="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[6]//div//div)[3]";
+	private String measure3="((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)[8]//div//div)[3]";
 
 	public WebElement dynamicElements(String locator, String value, String index) {
 		return driver.findElement(By.xpath(locator.replace("$", value).replace("#", index)));
@@ -106,4 +128,42 @@ public class InventoryPage extends BaseUi {
 		return dynamicElements(getValues, invoice, index).getText();
 	}
 
+	public void clickOnCreateButton() {
+		waitForElementToClickable(createInv);
+		createInv.click();
+		logMessage("User clicks on the Create invetory Button !!");
+	}
+
+	public void ClickOnTheGrid(String value) {
+		waitForElementToClickable(dynamicElements(selectGrid, value));
+		dynamicElements(selectGrid, value).click();
+		logMessage("User selects the :: "+value);
+	}
+	
+	public void enterQuntity(String qtyValue,String quntity) {
+		dynamicElements(qyt1, qtyValue).sendKeys(quntity);
+		dynamicElements(qyt2, qtyValue).sendKeys(quntity);
+		dynamicElements(qyt3, qtyValue).sendKeys(quntity);
+		
+	}
+	
+	
+	public List<String> getMeasuers(String value) {
+		List<String> list= new ArrayList<>();
+		list.add(dynamicElements(measure1, value).getText());
+		list.add(dynamicElements(measure2, value).getText());
+		list.add(dynamicElements(measure3, value).getText());
+		return list;
+	}
+	
+	public void clickOnCompleteButton() {
+		waitForElementToClickable(complete);
+		complete.click();
+		logMessage("User clicks on the Complete Button !!");
+	}
+	
+	public void clickOnEyeButton(String date) {
+		CommonMethods.hoverAndClick(dynamicElements(eyeBtnhover, date),dynamicElements(eyeBtn, date), driver);
+		logMessage("User clicks on the eye button !!");
+	}
 }

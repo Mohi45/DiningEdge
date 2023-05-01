@@ -83,7 +83,7 @@ public class ReadEmailUtility extends BaseUi {
 			if (foundMesageFromMail().length != 0) {
 				System.out.println("Email Found in First Try !!!");
 			} else {
-				for (int i = 1; i <=10; i++) {
+				for (int i = 1; i <= 10; i++) {
 					CommonMethods.hardwait(10000);
 					if (foundMesageFromMail().length != 0) {
 						break;
@@ -165,8 +165,30 @@ public class ReadEmailUtility extends BaseUi {
 
 	}
 
+	public void moveEmails() throws MessagingException {
+
+		for (int i = 0; i < foundMesageFromMail().length; i++) {
+			Message message = foundMesageFromMail()[i];
+			message.setFlag(Flags.Flag.DELETED, true);
+			logMessage(message.getSubject() + " :: email deleted successfully !!");
+		}
+
+		Message[] tempSuccessMessageArray = tempSuccessList.toArray(new Message[tempSuccessList.size()]);
+		folderInbox.copyMessages(tempSuccessMessageArray, successFullyDone);
+
+		logMessage("Moved email in successfully Done!!");
+		folderInbox.close(true);
+		
+		store.close();
+	}
+
 	public static void main(String... strings) {
 		ReadEmailUtility rd = new ReadEmailUtility();
-		rd.readMail();
+		try {
+			rd.moveEmails();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

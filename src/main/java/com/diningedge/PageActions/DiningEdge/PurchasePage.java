@@ -1,6 +1,8 @@
 package com.diningedge.PageActions.DiningEdge;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -65,14 +67,21 @@ public class PurchasePage extends BaseUi {
 	@FindBy(xpath = "//div//span[text()='Product:']/..")
 	private WebElement product;
 
-	private String chregePrUnit = "//th//p[text()='Charge']/../../../../../../../../..//div/button/../../..//div/p";
+	private String chregePrUnit = "(//div//p//span[contains(text(),'Item')]/../../../..//th)[7]//div//p";
 
 	private String selectVendor = "//div//ul/li[text()='$']";
 
 	private String selectItemViaPO = "//div//p[text()='$']/../../..";
-	
+
 	@FindBy(xpath = "//div//p[text()='Total:']/../..//h3")
 	private WebElement total;
+
+	@FindBy(id = "U")
+	private WebElement uBtn;
+
+	private String unit = "((//th//div[contains(.,'$')])[2]/../..//th)[7]//input";
+
+	private String dateselect = "(//button//span[text()='2']/..)[1]";
 
 	public void clickOnNewPurchaseAndSelectVendor(String vendor) {
 		waitForElementToClickable(purchaseIcon);
@@ -110,6 +119,16 @@ public class PurchasePage extends BaseUi {
 		waitForElementToClickable(dateSelect);
 		dateSelect.click();
 		logMessage("User selects the current date");
+	}
+
+	public void addDate() {
+		LocalDate currentDate = LocalDate.now();
+		LocalDate nextDay = currentDate.plusDays(2);
+		String d=nextDay.toString().split("-")[2];
+		int n= Integer.parseInt(d);
+		String ss=String.valueOf(n);
+		dynamicElements(dateselect, ss).click();
+		logMessage("select date as :: "+ss);
 	}
 
 	public void enterInvoiceNumber(String invoiceNumber) {
@@ -165,9 +184,14 @@ public class PurchasePage extends BaseUi {
 	public String getTotal() {
 		return total.getText();
 	}
-	
-	public static void main(String...strings) {
-		String s="$1.000";
-		System.out.println(s.split("\\.")[0]);
+
+	public String getUnits(String vendor) {
+		return dynamicElements(unit, vendor).getAttribute("value");
 	}
+
+	public void clickOnUBtn() {
+		uBtn.click();
+		logMessage("User clicks on the U btton!!");
+	}
+	
 }
