@@ -87,7 +87,7 @@ public class CreateAndValidateInventory extends BaseTest {
 	
 	@AfterSuite
 	public void mailTriggerInCaseOfUI() {
-		sendReport(vendorName, location, "OrderFromOG");
+		sendReport(vendorName, location, "CrateAndValidateInventory");
 	}
 
 }
