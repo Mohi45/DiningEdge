@@ -102,6 +102,10 @@ public class InventoryPage extends BaseUi {
 	private String measureGet2 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)//p)[6]";
 	private String measureGet3 = "((//span[text()='Name']/../../../../..//div//tr//th//p[text()='$']/../..//th)//p)[8]";
 
+	private String productName = "//th[text()='$']/..";
+	private String editBtn = "(//th[text()='$']/..//th)[11]//button";
+	private String editProduct = "((//th[text()='$']/..//th)/../..)[2]";	
+
 	public WebElement dynamicElements(String locator, String value, String index) {
 		return driver.findElement(By.xpath(locator.replace("$", value).replace("#", index)));
 	}
@@ -186,5 +190,12 @@ public class InventoryPage extends BaseUi {
 			list.add(name[i]);
 		}
 		return list;
+	}
+
+	public void EditProductItem(String value) {
+		dynamicElements(productName, value).click();
+		CustomFunctions.hardWaitForScript();
+		CommonMethods.hoverAndClick(dynamicElements(editProduct, value), dynamicElements(editBtn, value), driver);
+		
 	}
 }
