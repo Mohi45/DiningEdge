@@ -84,7 +84,7 @@ public class ReadEmailUtility extends BaseUi {
 				System.out.println("Email Found in First Try !!!");
 			} else {
 				for (int i = 1; i <= 10; i++) {
-					CommonMethods.hardwait(10000);
+					CommonMethods.hardwait(20000);
 					if (foundMesageFromMail().length != 0) {
 						break;
 					}

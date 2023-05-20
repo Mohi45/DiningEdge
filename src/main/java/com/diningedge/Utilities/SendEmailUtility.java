@@ -339,7 +339,7 @@ public class SendEmailUtility extends BaseUi {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			messageBodyPart.setText("Hi Team !!, \n \n We didn't received email for ::" + vendor
-					+ ":: with in 100 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by M");
+					+ ":: with in 200 seconds!!.\n Please check at your end !! \n \n Thanks!! \n Automation Testing by M");
 
 			Multipart multipart = new MimeMultipart();
 			multipart.addBodyPart(messageBodyPart);
