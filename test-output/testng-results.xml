@@ -1,90 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[2023-05-03] [19:36:43:190] Connecting to gmail...]]>
+      <![CDATA[[2023-06-14] [17:19:29:272] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:36:45:295] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2023-06-14] [17:19:32:695] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:36:45:650] Moved email in successfully Done!!]]>
-    </line>
-    <line>
-      <![CDATA[ ]]>
-    </line>
-    <line>
-      <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
+      <![CDATA[[2023-06-14] [17:19:33:138] Moved email in successfully Done!!]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:04:051] User enters Name = testauto123]]>
+      <![CDATA[***** STARTING TEST STEP:- loginInToAdminPage *****]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:04:161] User enters Password =12345678]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:04:227] User clicks on the Login Button !!!]]>
+      <![CDATA[[2023-06-14] [17:19:40:889] User enters Name = vandy]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:11:916] Assertion Passed: DiningEdge is present on the HomePage]]>
+      <![CDATA[[2023-06-14] [17:19:40:983] User enters Password = NC$33433$]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:11:965] Assertion Passed: Dashboard is present on the HomePage]]>
+      <![CDATA[[2023-06-14] [17:19:49:058] User clicks on the Login Button !!!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:12:285] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2023-06-14] [17:19:49:964] User clicks on the Add Companies Button!!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:12:395] User clicks on select Location dropDown !!]]>
+      <![CDATA[[2023-06-14] [17:19:50:185] USer enters the Company Name = Automation Testing Comapny7542]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:12:478] User clicks on select Location loc10 from dropDown !!]]>
+      <![CDATA[[2023-06-14] [17:19:50:295] User select Home office and Order unengaged items allowed check boxes !!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:17:625] User clicks on the Inventory button !!]]>
+      <![CDATA[[2023-06-14] [17:19:51:946] User clicks on save continue Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:18:329] User clicks on the Create invetory Button !!]]>
+      <![CDATA[[2023-06-14] [17:19:52:077] User clicks on companies Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:18:460] User selects the Reports From the list]]>
+      <![CDATA[[2023-06-14] [17:19:56:054] User clicks on Locations Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-05-03] [19:39:18:708] User selects the Inventory Onhand From the list]]>
+      <![CDATA[[2023-06-14] [17:19:56:750] User clicks on Add Locations Button !!]]>
     </line>
     <line>
-      <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\InventoryOnHandEdit\2023_05_03_07_39_34_3934\screenshot.png]]>
+      <![CDATA[[2023-06-14] [17:19:56:931] USer enters the Location Name = Automation Street7528]]>
     </line>
     <line>
-      <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\InventoryOnHandEdit\2023_05_03_07_39_36_3936\screenshot.png]]>
+      <![CDATA[[2023-06-14] [17:19:57:382] User selects the Company = Automation Testing Comapny7542]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:19:57:506] User select clicks on the base location checkbox !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:01:038] User clicks on save continue Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:04:979] User clicks on the title ]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:05:068] User clicks on Products]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:06:598] User clicks on ProductList]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:08:907] User clicks on add product button]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:09:036] User enters the product name = Automation US_Food]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:15:632] User clicks on Add Users Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:16:185] User selects the Company = Automation Testing Comapny7542]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:17:100] User clicks on save continue Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:18:905] User clicks on the title ]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:19:090] User enter the Automation Testing Company]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:21:378] User clicks on the search button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:40:098] User clicks on the USer Icon company !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:46:470] User selects the Manage Items From the list]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:46:806] User selects the Products List From the list]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:47:787] File Uploaded successfully]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:20:50:943] User clicks on Upload btn]]>
+    </line>
+    <line>
+      <![CDATA[[2023-06-14] [17:21:08:462] Product list imported successfully !!]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-03T19:36:43 IST" name="Default suite" finished-at="2023-05-03T19:39:37 IST" duration-ms="174943">
+  <suite started-at="2023-06-14T17:19:29 IST" name="Default suite" finished-at="2023-06-14T17:21:08 IST" duration-ms="99836">
     <groups>
     </groups>
-    <test started-at="2023-05-03T19:36:43 IST" name="Default test" finished-at="2023-05-03T19:39:37 IST" duration-ms="174943">
-      <class name="InventoryRegression.InventoryOnHandEdit">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:36:43 IST" name="setExtent" finished-at="2023-05-03T19:36:46 IST" duration-ms="3247" status="PASS">
+    <test started-at="2023-06-14T17:19:29 IST" name="Default test" finished-at="2023-06-14T17:21:08 IST" duration-ms="99836">
+      <class name="com.diningedge.Regression.CreateCompany_UploadProductList">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:19:29 IST" name="setExtent" finished-at="2023-06-14T17:19:34 IST" duration-ms="5099" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-05-03] [19:36:43:190] Connecting to gmail...]]>
+              <![CDATA[[2023-06-14] [17:19:29:272] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:36:45:295] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2023-06-14] [17:19:32:695] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:36:45:650] Moved email in successfully Done!!]]>
+              <![CDATA[[2023-06-14] [17:19:33:138] Moved email in successfully Done!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:36:46 IST" name="testMethodName" finished-at="2023-05-03T19:36:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:19:34 IST" name="testMethodName" finished-at="2023-06-14T17:19:34 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void InventoryRegression.InventoryOnHandEdit.Test01_BasicFlowLogin()]]>
+                <![CDATA[public void com.diningedge.Regression.CreateCompany_UploadProductList.loginInToAdminPage()]]>
               </value>
             </param>
           </params>
@@ -93,152 +144,130 @@
               <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
+              <![CDATA[***** STARTING TEST STEP:- loginInToAdminPage *****]]>
             </line>
             <line>
               <![CDATA[ ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:36:46 IST" name="setup" finished-at="2023-05-03T19:39:03 IST" duration-ms="137543" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:19:34 IST" name="setup" finished-at="2023-06-14T17:19:40 IST" duration-ms="6467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Test01_BasicFlowLogin()[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:39:03 IST" name="Test01_BasicFlowLogin" finished-at="2023-05-03T19:39:34 IST" duration-ms="30967" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//th[text()='Milk']/..//th)[11]//button"}
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d2ffdedb5736f0d6d9057ffe8afc2ee, findElement {using=xpath, value=(//th[text()='Milk']/..//th)[11]//button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65303}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65303/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d2ffdedb5736f0d6d9057ffe8afc2ee]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//th[text()='Milk']/..//th)[11]//button"}
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d2ffdedb5736f0d6d9057ffe8afc2ee, findElement {using=xpath, value=(//th[text()='Milk']/..//th)[11]//button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65303}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65303/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d2ffdedb5736f0d6d9057ffe8afc2ee
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at com.diningedge.PageActions.DiningEdge.InventoryPage.dynamicElements(InventoryPage.java:55)
-at com.diningedge.PageActions.DiningEdge.InventoryPage.EditProductItem(InventoryPage.java:198)
-at InventoryRegression.InventoryOnHandEdit.editOnHandInventory(InventoryOnHandEdit.java:64)
-at InventoryRegression.InventoryOnHandEdit.Test01_BasicFlowLogin(InventoryOnHandEdit.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="loginInToAdminPage()[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:19:40 IST" name="loginInToAdminPage" finished-at="2023-06-14T17:21:08 IST" duration-ms="87869" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-05-03] [19:39:04:051] User enters Name = testauto123]]>
+              <![CDATA[[2023-06-14] [17:19:40:889] User enters Name = vandy]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:04:161] User enters Password =12345678]]>
+              <![CDATA[[2023-06-14] [17:19:40:983] User enters Password = NC$33433$]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:04:227] User clicks on the Login Button !!!]]>
+              <![CDATA[[2023-06-14] [17:19:49:058] User clicks on the Login Button !!!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:11:916] Assertion Passed: DiningEdge is present on the HomePage]]>
+              <![CDATA[[2023-06-14] [17:19:49:964] User clicks on the Add Companies Button!!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:11:965] Assertion Passed: Dashboard is present on the HomePage]]>
+              <![CDATA[[2023-06-14] [17:19:50:185] USer enters the Company Name = Automation Testing Comapny7542]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:12:285] User clicks on Order Edge Button !!]]>
+              <![CDATA[[2023-06-14] [17:19:50:295] User select Home office and Order unengaged items allowed check boxes !!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:12:395] User clicks on select Location dropDown !!]]>
+              <![CDATA[[2023-06-14] [17:19:51:946] User clicks on save continue Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:12:478] User clicks on select Location loc10 from dropDown !!]]>
+              <![CDATA[[2023-06-14] [17:19:52:077] User clicks on companies Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:17:625] User clicks on the Inventory button !!]]>
+              <![CDATA[[2023-06-14] [17:19:56:054] User clicks on Locations Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:18:329] User clicks on the Create invetory Button !!]]>
+              <![CDATA[[2023-06-14] [17:19:56:750] User clicks on Add Locations Button !!]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:18:460] User selects the Reports From the list]]>
+              <![CDATA[[2023-06-14] [17:19:56:931] USer enters the Location Name = Automation Street7528]]>
             </line>
             <line>
-              <![CDATA[[2023-05-03] [19:39:18:708] User selects the Inventory Onhand From the list]]>
+              <![CDATA[[2023-06-14] [17:19:57:382] User selects the Company = Automation Testing Comapny7542]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:19:57:506] User select clicks on the base location checkbox !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:01:038] User clicks on save continue Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:04:979] User clicks on the title ]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:05:068] User clicks on Products]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:06:598] User clicks on ProductList]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:08:907] User clicks on add product button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:09:036] User enters the product name = Automation US_Food]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:15:632] User clicks on Add Users Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:16:185] User selects the Company = Automation Testing Comapny7542]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:17:100] User clicks on save continue Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:18:905] User clicks on the title ]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:19:090] User enter the Automation Testing Company]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:21:378] User clicks on the search button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:40:098] User clicks on the USer Icon company !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:46:470] User selects the Manage Items From the list]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:46:806] User selects the Products List From the list]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:47:787] File Uploaded successfully]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:20:50:943] User clicks on Upload btn]]>
+            </line>
+            <line>
+              <![CDATA[[2023-06-14] [17:21:08:462] Product list imported successfully !!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Test01_BasicFlowLogin -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:39:34 IST" name="take_screenshot_on_failure" finished-at="2023-05-03T19:39:37 IST" duration-ms="2879" status="PASS">
+        </test-method> <!-- loginInToAdminPage -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:21:08 IST" name="take_screenshot_on_failure" finished-at="2023-06-14T17:21:08 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test01_BasicFlowLogin status=FAILURE method=InventoryOnHandEdit.Test01_BasicFlowLogin()[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7] output=[2023-05-03] [19:39:04:051] User enters Name = testauto123]]]>
+                <![CDATA[[TestResult name=loginInToAdminPage status=SUCCESS method=CreateCompany_UploadProductList.loginInToAdminPage()[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10] output=[2023-06-14] [17:19:40:889] User enters Name = vandy]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\InventoryOnHandEdit\2023_05_03_07_39_34_3934\screenshot.png]]>
-            </line>
-            <line>
-              <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\InventoryOnHandEdit\2023_05_03_07_39_36_3936\screenshot.png]]>
-            </line>
           </reporter-output>
         </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:InventoryRegression.InventoryOnHandEdit@5ab956d7]" started-at="2023-05-03T19:39:37 IST" name="endReport" finished-at="2023-05-03T19:39:37 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.CreateCompany_UploadProductList@2a7f1f10]" started-at="2023-06-14T17:21:08 IST" name="endReport" finished-at="2023-06-14T17:21:08 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- InventoryRegression.InventoryOnHandEdit -->
+      </class> <!-- com.diningedge.Regression.CreateCompany_UploadProductList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

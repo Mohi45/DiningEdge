@@ -36,8 +36,8 @@ public class DriverFactory {
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", downloadFilepath);
 		options.setExperimentalOption("prefs", chromePrefs);
-		options.addArguments("--headless");
-		options.addArguments("--window-size=1920,1200");
+		//options.addArguments("--headless");
+		//options.addArguments("--window-size=1920,1200");
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("disable-infobars");
 		options.addArguments("--disable-extensions");

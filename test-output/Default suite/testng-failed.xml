@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="InventoryRegression.InventoryOnHandEdit">
+      <class name="com.diningedge.Regression.CreateCompany_UploadProductList">
         <methods>
+          <include name="setup"/>
           <include name="take_screenshot_on_failure"/>
           <include name="setExtent"/>
           <include name="testMethodName"/>
-          <include name="Test01_BasicFlowLogin"/>
+          <include name="loginInToAdminPage"/>
           <include name="endReport"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- InventoryRegression.InventoryOnHandEdit -->
+      </class> <!-- com.diningedge.Regression.CreateCompany_UploadProductList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,676 +1,316 @@
-"Product Id","Position","Product Name","Primary Category","Secondary Category","Storages","Standard Unit of Measure","Taxable","Comparable","Par Level","Price","Custom Unit of Measure"
-"20718","1","Chicken, tender breaded","Appetizer","","Dry Storage","1 LB","No","Yes","0","8",""
-"28574","2","JUICE - CRANBERRY","Beverage","","Food","32 FL OZ","No","Yes","0","40",""
-"25339","3","JUICE - LIME","Beverage","","Food","1 L","No","Yes","0","6",""
-"25331","4","JUICE - ORANGE","Beverage","","Food","10 Fl Oz","No","Yes","0","1.0525",""
-"25336","5","JUICE - ORANGE GAL","Beverage","","Food","1 GAL","No","Yes","0","9.87",""
-"28560","6","JUICE - ORANGE INDIV","Beverage","","Food","5.5 1","No","Yes","0","0.79",""
-"22147","7","Lemonade - Bottles","Beverage","","shelf 1","1 UNIT","No","Yes","0","1.704167",""
-"28556","8","POWERADE FRUIT PUNCH","Beverage","","Food","1 UNIT","No","Yes","0","1.353333",""
-"28555","9","POWERADE LEMON LIME","Beverage","","Food","1","No","Yes","0","2.706667",""
-"28557","10","POWERADE MOUNTAIN BLAST","Beverage","","Food","1 UNIT","No","Yes","0","2",""
-"22137","11","Soda - Club 10oz","Beverage","","Food","10 OZ","No","Yes","0","0.959167",""
-"28569","12","SODA - TONIC DIET","Beverage","","Food","10 FL OZ","No","Yes","0","0.818333",""
-"22174","13","Soda Bib LG","Beverage","","Food","1 UNIT","No","Yes","0","101.63",""
-"22175","14","Soda Bib SM","Beverage","","","1 UNIT","No","Yes","0","53.09",""
-"22140","15","Soda Coke","Beverage","","Food","1 UNIT","No","Yes","0","0.78625",""
-"22138","16","Soda Diet Can","Beverage","","Food","Can","No","Yes","0","0.78625",""
-"22139","17","Soda Sprite","Beverage","","Food","1 UNIT","No","Yes","0","0.78625",""
-"24506","18","Soda Tonic Bottles","Beverage","","Food","1 UNIT","No","Yes","0","0.959167",""
-"25340","19","SWEET & SOUR MIX","Beverage","","Food","1 L","No","Yes","0","3.676667",""
-"20719","20","BREAD - RYE","bread","","Food","1 UNIT","No","Yes","0","5.3",""
-"23883","21","BREAD - SOURDOUGH","bread","","Food","1 UNIT","No","Yes","0","6.5217",""
-"20720","22","BUN - HAMBURGER","bread","","Food","1 UNIT","No","Yes","0","4.73375",""
-"20721","23","BUN - SLIDER","bread","","Food","1 UNIT","No","Yes","0","58.14",""
-"20722","24","Bun, gluten free","bread","","Food","1 UNIT","No","Yes","0","23.9",""
-"20723","25","garlic knot","bread","","Food","Case","No","Yes","0","31.45",""
-"20724","26","hot dog buns","bread","","Food","1 UNIT","No","Yes","0","4.555",""
-"20725","27","Pretzel bites new","bread","","Food","1 UNIT","No","Yes","0","42.57",""
-"20726","28","ROLL - DINNER","bread","","Food","1 UNIT","No","Yes","0","0.697833",""
-"20727","29","TEXAS TOAST","bread","","Food","1 UNIT","No","Yes","0","3.7",""
-"20728","30","AMERICA CHEESE","Dairy","","Shelf 1|Food","1 LB","No","Yes","0","4.17",""
-"20729","31","BLUE CHEESE - STELLA","Dairy","","Food","1 LB","No","Yes","0","5.12",""
-"20730","32","BRIE CHEESE","Dairy","","Food","1 LB","No","Yes","0","8.26",""
-"20731","33","BUTTER - CLARIFIED","Dairy","","Food","1 LB","No","Yes","0","4.23",""
-"20732","34","BUTTER - SOLIDS","Dairy","","Food","1 LB","No","Yes","0","3.43",""
-"20733","35","BUTTER - WHIPPED","Dairy","","Food","1 LB","No","Yes","0","0.486",""
-"20734","36","BUTTER MILK","Dairy","","Food","1 UNIT","No","Yes","0","3.94",""
-"20735","37","BUTTER OLEO","Dairy","","Food","1 UNIT","No","Yes","0","15.903333",""
-"25342","38","BUTTERMILK WHOLE","Dairy","","Food","HALF GAL","No","Yes","0","3.96",""
-"20736","39","CHEDDAR - SLICED","Dairy","","Food","1 LB","No","Yes","0","4.16",""
-"25343","40","CHEESE - CHEDDAR WHITE","Dairy","","Food","1 LB","No","Yes","0","5.69",""
-"20737","41","CHEESE KIT","Dairy","","Food","1 LB","No","Yes","0","86.58",""
-"25333","42","CHEESE PEPPER JACK","Dairy","","Food","1 LB","No","Yes","0","0.32",""
-"20738","43","CHEESE SPREAD","Dairy","","Food","1 UNIT","No","Yes","0","17.43",""
-"22921","44","CHEESE, COTTAGE","Dairy","","Food","1 LB","No","Yes","0","2.826",""
-"20739","45","CHEESE, CURD","Dairy","","Food","1 UNIT","No","Yes","0","26.3",""
-"20740","46","CUBED CHEESE","Dairy","","Food","1 LB","No","Yes","0","75.72",""
-"20741","47","EGGS - LIQUID","Dairy","","Food","1 LB","No","Yes","0","2.3703",""
-"20742","48","EGGS DOZ","Dairy","","Food","1 UNIT","No","Yes","0","2.764667",""
-"24508","49","Feta Cheese","Dairy","","Food","1 LB","No","Yes","0","0.2156",""
-"20743","50","GOAT CHEESE","Dairy","","Food","1 LB","No","Yes","0","7.3",""
-"20744","51","HALF AND HALF","Dairy","","Food","1 QT","No","Yes","0","21.06",""
-"20745","52","HEAVY CREAM","Dairy","","Food","1 QT","No","Yes","0","4.82",""
-"20746","53","Ice Cream, Vanilla Bean","Dairy","","Food","1 UNIT","No","Yes","0","45.29",""
-"20747","54","kg butter","Dairy","","Food","1 UNIT","No","Yes","0","73.49",""
-"20748","55","MILK","Dairy","","Food","1 UNIT","No","Yes","0","7.03",""
-"20749","56","MONTREY CHEDDAR JACK - SHREDDED","Dairy","","Food","1 LB","No","Yes","0","0.1525",""
-"20750","57","MOZZERELLA - SHREDDED","Dairy","","Food","1 LB","No","Yes","0","4.32",""
-"22154","58","MUENSTER CHEESE","Dairy","","shelf 1","1 LB","No","Yes","0","3.96",""
-"20751","59","P.C. CREAM CHEESE","Dairy","","Food","1 UNIT","No","Yes","0","25.46",""
-"20752","60","P.C. CREAMERS","Dairy","","Food","1 UNIT","No","Yes","0","42.85",""
-"20753","61","P.C. CREAMERS - FRENCH","Dairy","","Food","1 UNIT","No","Yes","0","16.05",""
-"20754","62","PARM - GRATED","Dairy","","Food","1 LB","No","Yes","0","5.48",""
-"20755","63","PARM - SHAVED","Dairy","","Food","1 LB","No","Yes","0","28.92",""
-"20756","64","PARM - SHREDDED","Dairy","","Food","1 LB","No","Yes","0","6.002",""
-"20757","65","PEPPERJACK","Dairy","","Food","1 LB","No","Yes","0","3.67",""
-"20758","66","PROVOLONE - SLICED","Dairy","","Food","1 LB","No","Yes","0","4.07",""
-"22131","67","Sour Cream","Dairy","","shelf 1","5 LB","No","Yes","0","9.745",""
-"20759","68","SWISS CHEESE SLICED","Dairy","","Food","1 LB","No","Yes","0","4.54",""
-"20760","69","BAGELS - PLAIN","Desserts","","Food","1 UNIT","No","Yes","0","24.78",""
-"20761","70","BANANA CREAM PIE","Desserts","","Food","1 UNIT","No","Yes","0","5.11",""
-"20762","71","BISCUITS","Desserts","","Food","1 UNIT","No","Yes","0","0.1832",""
-"20763","72","BLINTZ - CHEESE","Desserts","","Food","1 UNIT","No","Yes","0","65.06",""
-"20764","73","BOULE","Desserts","","Food","1 UNIT","No","Yes","0","57.99",""
-"20765","74","BREAD - CUBAN","Desserts","","Food","1 UNIT","No","Yes","0","34.52",""
-"20766","75","BUTTER CREAM-ICING","Desserts","","Food","1 LB","No","Yes","0","44.3",""
-"20768","76","CAKE - CHEESE MINI","Desserts","","Food","1 UNIT","No","Yes","0","39.6",""
-"20769","77","CAKE - CHEESE POPS","Desserts","","Food","1 UNIT","No","Yes","0","33.3",""
-"20767","78","CAKE - CHEESE SALTED CARMEL","Desserts","","Food","1 UNIT","No","Yes","0","63.61",""
-"20770","79","CAKE - CHOC TOFFEE MOOSE","Desserts","","Food","1 UNIT","No","Yes","0","97.89",""
-"20771","80","CAKE - CHOCOLATE SHEET","Desserts","","Food","1 UNIT","No","Yes","0","135.98",""
-"20772","81","CAKE - LEMON","Desserts","","Food","1 UNIT","No","Yes","0","46.13",""
-"20773","82","CAKE - POUND","Desserts","","Food","1 UNIT","No","Yes","0","58.93",""
-"20774","83","COOKIES - CHOC CHIP","Desserts","","Food","1 UNIT","No","Yes","0","28.16",""
-"20775","84","COOKIES - LEMON","Desserts","","Food","1 UNIT","No","Yes","0","66.57",""
-"20776","85","COOKIES - PNTBTR","Desserts","","Food","1 UNIT","No","Yes","0","71.26",""
-"20777","86","COOKIES - WH CHOC MAC NUT","Desserts","","Food","1 UNIT","No","Yes","0","76.87",""
-"20778","87","FENNEL","Desserts","","Food","1 UNIT","No","Yes","0","6.03",""
-"20779","88","FILO DOUGH","Desserts","","Food","1 UNIT","No","Yes","0","33.5",""
-"25329","89","ICE CREAM SANDWICH","Desserts","","Food","CS","No","Yes","0","29.81",""
-"20780","90","LADY FINGERS","Desserts","","Food","1 UNIT","No","Yes","0","22.47",""
-"20781","91","MANGO PUREE","Desserts","","Food","1 UNIT","No","Yes","0","47.94",""
-"20782","92","MUD PIE","Desserts","","Food","1 UNIT","No","Yes","0","26.43",""
-"20783","93","MUFFIN BATTER","Desserts","","Food","1 UNIT","No","Yes","0","64.32",""
-"20784","94","PASTA SHEETS","Desserts","","Food","1 UNIT","No","Yes","0","27.09",""
-"20785","95","PETIT FOURS - MINI ASST.","Desserts","","Food","1 UNIT","No","Yes","0","81.5",""
-"20786","96","PIE - 5&quot; SHELLS,Desserts,Bakery,UNIT,NO,YES,","Desserts","","Food","1 UNIT","No","Yes","0","",""
-"20787","97","PIE - APPLE","Desserts","","Food","1 UNIT","No","Yes","0","16.36",""
-"22126","98","PIE - CHERRY","Desserts","","shelf 1","PIE","No","Yes","0","25.73",""
-"20788","99","PIE - COCONUT CREAM","Desserts","","Food","1 UNIT","No","Yes","0","35.62",""
-"20789","100","PIE - KEY LIME","Desserts","","Food","1 UNIT","No","Yes","0","108.13",""
-"20790","101","PIE - PUMPKIN","Desserts","","Food","1 UNIT","No","Yes","0","6.845",""
-"20791","102","PIZZA DOUGH","Desserts","","Food","1 UNIT","No","Yes","0","39.17",""
-"20792","103","PLUM SAUCE","Desserts","","Food","1 GAL","No","Yes","0","19.72",""
-"20793","104","PRETZELS - JUMBO","Desserts","","Food","1 UNIT","No","Yes","0","37",""
-"20794","105","PUFF PASTRY","Desserts","","Food","1 UNIT","No","Yes","0","57.09",""
-"20795","106","RASPBERRY PUREE","Desserts","","Food","1 UNIT","No","Yes","0","10.71",""
-"20796","107","ROLLS - CINNAMON","Desserts","","Food","1 UNIT","No","Yes","0","47.87",""
-"20797","108","ROLLS - UDI&#039;S","Desserts","","Food","1 UNIT","No","Yes","0","1.1",""
-"20798","109","SCHULSTAD - DANISH SM","Desserts","","Food","1 UNIT","No","Yes","0","58.47",""
-"20799","110","SORBET","Desserts","","Food","1 UNIT","No","Yes","0","33.6",""
-"20800","111","SWEETENED COND MILK","Desserts","","Food","1 UNIT","No","Yes","0","50.95",""
-"20801","112","TIRAMISU","Desserts","","Food","1 UNIT","No","Yes","0","56.77",""
-"20802","113","TOPPING-HEATH BAR","Desserts","","Food","1 LB","No","Yes","0","105.77",""
-"20803","114","TORTILLAS CUT CORN","Desserts","","Food","1 UNIT","No","Yes","0","36.23",""
-"20804","115","WAKAME SALAD","Desserts","","Food","1 UNIT","No","Yes","0","27",""
-"20805","116","A-1","Dry Goods","","Food","1 UNIT","No","Yes","0","5.64",""
-"20806","117","AGAR AGAR","Dry Goods","","Food|Dry Storage","1 UNIT","No","Yes","0","59.99",""
-"20807","118","ALL SPICE - GROUND","Dry Goods","","Food|Shelf 1","1 UNIT","No","Yes","0","9.23",""
-"20808","119","ALMOND ROCA","Dry Goods","","Food|Shelf 1","1 UNIT","No","Yes","0","24.25",""
-"20809","120","ANDIES MINTS","Dry Goods","","Food","1 UNIT","No","Yes","0","76.47",""
-"20810","121","ANISE STAR","Dry Goods","","Food","1 LB","No","Yes","0","11.95",""
-"20811","122","ASSORTED TEAS","Dry Goods","","Food","1 UNIT","No","Yes","0","23.68",""
-"20812","123","BAG IN A BOX LARGE","Dry Goods","","Food","1 GAL","No","Yes","0","101.63",""
-"20813","124","BAG IN A BOX SMALL","Dry Goods","","Food","1 GAL","No","Yes","0","55.01",""
-"20814","125","BAKING POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","39.62",""
-"20815","126","BALSAMIC GLAZE","Dry Goods","","Food","1 UNIT","No","Yes","0","5.72",""
-"20816","127","BARLEY - PEARL","Dry Goods","","Food","1 UNIT","No","Yes","0","19.19",""
-"20817","128","BAY LEAVES","Dry Goods","","Food","1 UNIT","No","Yes","0","5.75",""
-"20818","129","BBQ SAUCE","Dry Goods","","Food","1 GAL","No","Yes","0","14.0925",""
-"22166","130","BBQ Spice","Dry Goods","","Food","1 LB","No","Yes","0","5.4455",""
-"20819","131","BEANS - BAKED","Dry Goods","","Food","1 UNIT","No","Yes","0","9.735",""
-"20820","132","BEANS - RED KIDNEY","Dry Goods","","Food","1 UNIT","No","Yes","0","8.2",""
-"20821","133","BEEF BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","36.85",""
-"20822","134","BEYOND BURGER","Dry Goods","","Food","1 UNIT","No","Yes","0","102.49",""
-"20823","135","BLACK EYE PEAS (DRY)","Dry Goods","","Food","1 LB","No","Yes","0","1.44",""
-"20824","136","BLACK PEPPER - BUTCHER BLOCK","Dry Goods","","Food","1 LB","No","Yes","0","13.01",""
-"20825","137","BLACK PEPPER - WHOLE","Dry Goods","","Food","1 LB","No","Yes","0","7.26",""
-"20826","138","BLACKENING SPICE","Dry Goods","","Food","1 LB","No","Yes","0","5.79",""
-"20827","139","BLUECHEESE POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","23.06",""
-"20828","140","BREAD - FLAT","Dry Goods","","Food","1 UNIT","No","Yes","0","29.5",""
-"20829","141","BREAD - WHEAT","Dry Goods","","Food","1 UNIT","No","Yes","0","4.99",""
-"20830","142","BREAD - WHITE","Dry Goods","","Food","1 UNIT","No","Yes","0","5.11",""
-"20831","143","BREAD STICKS","Dry Goods","","Food","1 UNIT","No","Yes","0","47.22",""
-"20832","144","BROWNIE MIX","Dry Goods","","Food","1 UNIT","No","Yes","0","23.93",""
-"20833","145","BUTTER - KG LOGO","Dry Goods","","Food","1 UNIT","No","Yes","0","66.69",""
-"20834","146","butter pickle","Dry Goods","","Food","1 UNIT","No","Yes","0","3.59",""
-"20835","147","BUTTERMILK POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","12.33",""
-"20836","148","BUTTERSCOTCH","Dry Goods","","Food","1 UNIT","No","Yes","0","6.41",""
-"20837","149","CAKE MIX - CARROT","Dry Goods","","Food","1 UNIT","No","Yes","0","12.36",""
-"20838","150","CALCIUM CHLORIDE","Dry Goods","","Food","1 UNIT","No","Yes","0","12.99",""
-"20839","151","CANDIED WALNUTS","Dry Goods","","Food","1 LB","No","Yes","0","7.841667",""
-"20840","152","CANNED TUNA (SOLID WHITE)","Dry Goods","","Food","1 UNIT","No","Yes","0","18.395",""
-"20841","153","CAPERS ( DRY + COOLER)","Dry Goods","","Food","1 UNIT","No","Yes","0","7.84",""
-"20842","154","CARAMEL TOPPING","Dry Goods","","Food","1 UNIT","No","Yes","0","10.65",""
-"20843","155","CARAWAY SEED","Dry Goods","","Food","1 LB","No","Yes","0","15.76",""
-"20844","156","CARIBBEAN JAMAICAN JERK","Dry Goods","","Food","1 OZ","No","Yes","0","17.83",""
-"20845","157","CAYENNE PEPPER","Dry Goods","","Food","1 OZ","No","Yes","0","12.04",""
-"20846","158","CELERY SALT","Dry Goods","","Food","1 LB","No","Yes","0","6.16",""
-"20847","159","CELERY SEED","Dry Goods","","Food","1 OZ","No","Yes","0","13.04",""
-"20848","160","CHEESE SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","20.68",""
-"20849","161","CHICKEN BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","36.85",""
-"20850","162","CHILI POWDER","Dry Goods","","Food","1 LB","No","Yes","0","45.48",""
-"20851","163","CHILI POWDER - ANCHO","Dry Goods","","Food","1 LB","No","Yes","0","13.04",""
-"20852","164","CHILI SAUCE - SWEET","Dry Goods","","Food","1 UNIT","No","Yes","0","12.56",""
-"20853","165","CHINESE 5 SPICE","Dry Goods","","Food","1 LB","No","Yes","0","8.95",""
-"20854","166","CHOCOLATE - CALLEBAUT","Dry Goods","","Food","1 LB","No","Yes","0","5.32",""
-"20855","167","CHOCOLATE - COCO POWDER","Dry Goods","","Food","1 LB","No","Yes","0","7.92",""
-"20856","168","CHOCOLATE - DARK","Dry Goods","","Food","1 LB","No","Yes","0","4.32",""
-"20857","169","CHOCOLATE - DIPPING WHITE","Dry Goods","","Food","1 UNIT","No","Yes","0","55",""
-"20858","170","CHOCOLATE - NUTELLA","Dry Goods","","Food","1 UNIT","No","Yes","0","23.62",""
-"20861","171","Chopped Clams","Dry Goods","","Food","1 UNIT","No","Yes","0","13.06",""
-"20859","172","CHOW MEIN NOODLES","Dry Goods","","Food","1 UNIT","No","Yes","0","7.64",""
-"20860","173","Cinnomom","Dry Goods","","Food","1 LB","No","Yes","0","41.23",""
-"22164","174","Cloves","Dry Goods","","Food","1 LB","No","Yes","0","23.15",""
-"20862","175","COCKTAIL SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","11.5",""
-"20863","176","COCONUT FLAKES","Dry Goods","","Food","1 LB","No","Yes","0","1.79",""
-"20864","177","COCONUT MILK","Dry Goods","","Food","1 UNIT","No","Yes","0","14.75",""
-"20865","178","COFFEE DECAF/EURO128/2","Dry Goods","","Food","1 UNIT","No","Yes","0","109.6",""
-"20866","179","COFFEE EURO 128/2.5 oz","Dry Goods","","Food","1 UNIT","No","Yes","0","167.38",""
-"20867","180","COOKIES - ROLLED GAUFRETTES","Dry Goods","","Food","1 UNIT","No","Yes","0","44.64",""
-"20868","181","COOKIIES BISCOTTI","Dry Goods","","Food","1 UNIT","No","Yes","0","48.44",""
-"20869","182","CORIANDER - WHOLE","Dry Goods","","Food","1 LB","No","Yes","0","12.7",""
-"20870","183","CORN","Dry Goods","","Food","1 UNIT","No","Yes","0","46.83",""
-"28566","184","CORN CANNED","Dry Goods","","","Can","No","Yes","0","7.986667",""
-"20871","185","CORN FLAKES","Dry Goods","","Food","1 LB","No","Yes","0","6.82",""
-"20872","186","CORN STARCH","Dry Goods","","Food","1 LB","No","Yes","0","0.99",""
-"20873","187","CORNBREAD MIX","Dry Goods","","Food","1 UNIT","No","Yes","0","12.905",""
-"20874","188","COUS COUS ISRAELI","Dry Goods","","Food","1 UNIT","No","Yes","0","15.07",""
-"20875","189","CRAB BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","16.95",""
-"20876","190","CRACKERS - OYSTER","Dry Goods","","Food","1 UNIT","No","Yes","0","28.46",""
-"20877","191","CRACKERS - SALTINE","Dry Goods","","Food","1 UNIT","No","Yes","0","62.26",""
-"20878","192","CRAISONS","Dry Goods","","Food","1 LB","No","Yes","0","3.352",""
-"20879","193","CRANBERRY SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","12.51",""
-"20880","194","CREAM OF TARTAR","Dry Goods","","Food","1 LB","No","Yes","0","19.78",""
-"20881","195","CROUTONS","Dry Goods","","Food","1 UNIT","No","Yes","0","7.355",""
-"20882","196","CROUTONS - FOCACCIA","Dry Goods","","Food","1 UNIT","No","Yes","0","8.46",""
-"20883","197","CUMIN","Dry Goods","","Food","1 UNIT","No","Yes","0","20.99",""
-"22167","198","Curry Powder","Dry Goods","","Food","1 LB","No","Yes","0","5.75",""
-"22146","199","DEMI GLACE","Dry Goods","","shelf 1","1 UNIT","No","Yes","0","21.25",""
-"20884","200","DESSERT SAUCES","Dry Goods","","Food","1 UNIT","No","Yes","0","3.56",""
-"20885","201","DICED TOMATOES","Dry Goods","","Food","1 UNIT","No","Yes","0","8.16",""
-"20886","202","DILL WEED","Dry Goods","","Food","1 UNIT","No","Yes","0","2.29",""
-"20887","203","DISPENSER KETCHUP","Dry Goods","","Food","1 UNIT","No","Yes","0","26.7",""
-"20888","204","DISPENSER MAYO","Dry Goods","","Food","1 UNIT","No","Yes","0","19.21",""
-"20889","205","DISPENSER MUSTARD","Dry Goods","","Food","1 UNIT","No","Yes","0","17.58",""
-"20890","206","DRAKES BATTER","Dry Goods","","Food","1 LB","No","Yes","0","1.13",""
-"20891","207","DRESSING - 1000 ISLAND","Dry Goods","","Food","1 UNIT","No","Yes","0","11.07",""
-"20892","208","DRESSING - APPLE CIDER VIN","Dry Goods","","Food","1 UNIT","No","Yes","0","15.42",""
-"25324","209","DRESSING - BALSAMIC VINAGRETTE","Dry Goods","","Food","1 GAL","No","Yes","0","17.15",""
-"28572","210","DRESSING - GREEK VINAGRETTE","Dry Goods","","Food","1 GAL","No","Yes","0","26.07",""
-"20893","211","DRESSING - ITALIAN","Dry Goods","","Food","1 GAL","No","Yes","0","15.4725",""
-"20894","212","DRESSING - RANCH PACKETS - DRY","Dry Goods","","Food","1 UNIT","No","Yes","0","2.8306",""
-"20895","213","DRESSING -ASIAN SESAME","Dry Goods","","Food","1 UNIT","No","Yes","0","17.8",""
-"20896","214","DRESSING -BALASAMIC","Dry Goods","","Food","1 UNIT","No","Yes","0","17.83",""
-"20897","215","DRESSING -BLUE CHEESE","Dry Goods","","Food","1 GAL","No","Yes","0","16.82",""
-"20898","216","DRESSING -CEASAR","Dry Goods","","Food","1 GAL","No","Yes","0","22.15",""
-"20899","217","DRESSING -HONEY MUSTARD","Dry Goods","","Food","1 UNIT","No","Yes","0","15.21",""
-"20900","218","DRESSING -RASBERRY VINEGARETTE","Dry Goods","","Food","1 UNIT","No","Yes","0","16.07",""
-"20901","219","DRESSING -VADALIA ONION","Dry Goods","","Food","1 UNIT","No","Yes","0","12.24",""
-"20902","220","DRESSING-MANGO","Dry Goods","","Food","1 GAL","No","Yes","0","14.45",""
-"20903","221","ESCARGOT","Dry Goods","","Food","1 UNIT","No","Yes","0","10.05",""
-"20904","222","EXTRACT - ALMOND","Dry Goods","","Food","1 UNIT","No","Yes","0","6.04",""
-"20905","223","EXTRACT - LEMON","Dry Goods","","Food","1 UNIT","No","Yes","0","4.85",""
-"20906","224","EXTRACT - STRAWBERRY EXTRACT","Dry Goods","","Food","1 UNIT","No","Yes","0","61",""
-"20907","225","EXTRACT - VANILLA","Dry Goods","","Food","1 UNIT","No","Yes","0","73.38",""
-"20908","226","FISH SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","1.93",""
-"20909","227","FLORIDA ORANGE SUNSHINE CAKE","Dry Goods","","Food","1 UNIT","No","Yes","0","52.2",""
-"20910","228","FLOUR - A.P.","Dry Goods","","Food","1 LB","No","Yes","0","0.4734",""
-"20911","229","FRIED GREEN TOMATOES","Dry Goods","","Food","1 UNIT","No","Yes","0","51.24",""
-"20912","230","GARLIC POWDER","Dry Goods","","Food","1 LB","No","Yes","0","7.87",""
-"20913","231","GINGER - GROUND","Dry Goods","","Food","1 LB","No","Yes","0","12.5",""
-"20914","232","GOLDEN RAISINS","Dry Goods","","Food","1 LB","No","Yes","0","3.17",""
-"20915","233","GRAHAM CRACKERS","Dry Goods","","Food","1 UNIT","No","Yes","0","24.76",""
-"20916","234","GRAMMA CHICKEN SEASONING","Dry Goods","","Food","1 UNIT","No","Yes","0","40.62",""
-"20917","235","GRITS","Dry Goods","","Food","1 UNIT","No","Yes","0","3.69",""
-"20918","236","GUAJILLO CHILI","Dry Goods","","Food","1 LB","No","Yes","0","3.05",""
-"20919","237","GULF BAY SEASONING","Dry Goods","","Food","1 LB","No","Yes","0","54.8",""
-"20920","238","GUMBO FILE","Dry Goods","","Food","1 LB","No","Yes","0","9.5",""
-"20921","239","habanero hot sauce","Dry Goods","","Food","1 OZ","No","Yes","0","0.273438",""
-"20922","240","HERSHEY SQUEEZE BOTTLE","Dry Goods","","Food","1 UNIT","No","Yes","0","2.98",""
-"20923","241","HOISIN SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","13.42",""
-"20924","242","HONEY","Dry Goods","","Food","1 UNIT","No","Yes","0","41.33",""
-"20925","243","HONEY - BLK MANGROVE","Dry Goods","","Food","1 UNIT","No","Yes","0","14.93",""
-"20926","244","HORSERADISH","Dry Goods","","Food","1 UNIT","No","Yes","0","6.03",""
-"20927","245","HOT SAUCE SMALL","Dry Goods","","Food","1 OZ","No","Yes","0","3.5",""
-"20928","246","HUSH PUPPY","Dry Goods","","Food","1 LB","No","Yes","0","1.15",""
-"20929","247","ICED TEA","Dry Goods","","Food","1 OZ","No","Yes","0","47.63",""
-"20930","248","ICING - CHOCOLATE FUDGE","Dry Goods","","Food","1 UNIT","No","Yes","0","32.57",""
-"20931","249","ICING - VANILLA","Dry Goods","","Food","1 UNIT","No","Yes","0","32.42",""
-"20932","250","ICING SHORTNING","Dry Goods","","Food","1 LB","No","Yes","0","1.79",""
-"20933","251","IDAHOAN","Dry Goods","","Food","1 UNIT","No","Yes","0","5.33",""
-"20934","252","JELLY - MINT","Dry Goods","","Food","1 UNIT","No","Yes","0","6.88",""
-"20935","253","JUICE - KEY LIME","Dry Goods","","Food","1 UNIT","No","Yes","0","3.375",""
-"20936","254","JUICE - LEMON","Dry Goods","","Food","1 UNIT","No","Yes","0","12.17",""
-"20937","255","JUICE - PINEAPPLE","Dry Goods","","Food","1 UNIT","No","Yes","0","0.5788",""
-"20938","256","JUNIPER BERRY","Dry Goods","","Food","1 LB","No","Yes","0","6.37",""
-"20939","257","KETCHUP BOTTLES","Dry Goods","","Food","1 UNIT","No","Yes","0","7.69",""
-"20941","258","KITCHEN BOUQUET","Dry Goods","","Food","1 UNIT","No","Yes","0","0.83",""
-"20942","259","KNOX GELATINE","Dry Goods","","Food","1 UNIT","No","Yes","0","10.41",""
-"20943","260","LAHVOSH","Dry Goods","","Food","1 UNIT","No","Yes","0","37.4",""
-"20944","261","LEA &amp; PEARNS","Dry Goods","","Food","1 UNIT","No","Yes","0","1.67",""
-"22168","262","Lemon Pepper","Dry Goods","","","1 LB","No","Yes","0","17.6",""
-"20945","263","LENTALS","Dry Goods","","Food","1 LB","No","Yes","0","29.08",""
-"20946","264","LOBSTER BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","18.72",""
-"20947","265","MACAROON ANGEL BAKE","Dry Goods","","Food","1 UNIT","No","Yes","0","85.5",""
-"20948","266","MALT POWDER","Dry Goods","","Food","1 LB","No","Yes","0","10.35",""
-"20949","267","MALT VINEGAR POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","15.85",""
-"20950","268","MALT VINIGAR","Dry Goods","","Food","1 UNIT","No","Yes","0","2.99",""
-"20951","269","MALTODEXTRIN","Dry Goods","","Food","1 LB","No","Yes","0","29.99",""
-"20952","270","MANDARINE ORANGES","Dry Goods","","Food","1 UNIT","No","Yes","0","13.21",""
-"20953","271","MARASCHINO CHERRIES (D+C)","Dry Goods","","Food","1 UNIT","No","Yes","0","5.6525",""
-"20954","272","MARINARA SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","8.22",""
-"20955","273","MARJORAM","Dry Goods","","Food","1 OZ","No","Yes","0","10.22",""
-"20956","274","MAYONNAISE","Dry Goods","","Food","1 GAL","No","Yes","0","26.0475",""
-"20957","275","MILKY WAY","Dry Goods","","Food","1 UNIT","No","Yes","0","42.1",""
-"20958","276","MINT PASTE","Dry Goods","","Food","1 UNIT","No","Yes","0","39",""
-"20959","277","MIRIN","Dry Goods","","Food","1 UNIT","No","Yes","0","8.62",""
-"20960","278","MIXED VEG","Dry Goods","","Food","1 UNIT","No","Yes","0","23.54",""
-"20961","279","MOZZARELLA STICKS","Dry Goods","","Food","1 UNIT","No","Yes","0","7.36",""
-"20963","280","MUSTARD - DIJON","Dry Goods","","Food","1 UNIT","No","Yes","0","22.12",""
-"20962","281","MUSTARD - GROUND","Dry Goods","","Food","1 OZ","No","Yes","0","12.31",""
-"20964","282","MUSTARD SEED","Dry Goods","","Food","1 UNIT","No","Yes","0","7.45",""
-"20965","283","Noodles, Lo Mein","Dry Goods","","Food","1 UNIT","No","Yes","0","36.15",""
-"20966","284","NORI SHEETS","Dry Goods","","Food","1 UNIT","No","Yes","0","3.79",""
-"20967","285","NUT ROLL","Dry Goods","","Food","1 UNIT","No","Yes","0","21.5",""
-"20968","286","NUTMEG","Dry Goods","","Food","1 LB","No","Yes","0","19.95",""
-"20969","287","NUTS - ALMONDS - WHOLE","Dry Goods","","Food","1 LB","No","Yes","0","10.63",""
-"20970","288","NUTS - CASHEWS","Dry Goods","","Food","1 LB","No","Yes","0","10.89",""
-"20971","289","NUTS - MIXED","Dry Goods","","Food","1 LB","No","Yes","0","16.33",""
-"20972","290","NUTS - PINE","Dry Goods","","Food","1 LB","No","Yes","0","25.44",""
-"20973","291","OIL - FRYING","Dry Goods","","Food","1 LB","No","Yes","0","2.066857",""
-"20974","292","OIL - OLIVE OIL - EVO","Dry Goods","","Food","1 UNIT","No","Yes","0","30.265",""
-"28567","293","OLD BAY SEASONING","Dry Goods","","Food","1 LB","No","Yes","0","7.0213",""
-"20975","294","OLIVES - BLACK SLICED","Dry Goods","","Food","1 UNIT","No","Yes","0","25.24",""
-"22129","295","OLIVES - KALAMATA","Dry Goods","","shelf 1","2 KG","No","Yes","0","37.71",""
-"20976","296","OLIVES - QUEEN","Dry Goods","","Food","1 GAL","No","Yes","0","15.86",""
-"20977","297","ONION POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","12.04",""
-"20978","298","ORANGE MARMALADE","Dry Goods","","Food","1 UNIT","No","Yes","0","13.9",""
-"20979","299","OREGANO","Dry Goods","","Food","1 UNIT","No","Yes","0","20.21",""
-"20980","300","OREO WAIFER COOKIES","Dry Goods","","Food","1 UNIT","No","Yes","0","12.4775",""
-"20981","301","PAN CAKE-WAFFEL MIX","Dry Goods","","Food","1 UNIT","No","Yes","0","5.66",""
-"20982","302","PAN SPRAY","Dry Goods","","Food","1 UNIT","No","Yes","0","5.356667",""
-"20983","303","PANCAKE SYRUP","Dry Goods","","Food","1 UNIT","No","Yes","0","13.52",""
-"20984","304","PANKO BREAD CRUMBS","Dry Goods","","Food","1 LB","No","Yes","0","1.55",""
-"20985","305","PAPRIKA","Dry Goods","","Food","1 LB","No","Yes","0","12.29",""
-"20986","306","PAPRIKA - SMOKED","Dry Goods","","Food","1 LB","No","Yes","0","19.08",""
-"20987","307","PARSLEY","Dry Goods","","Food","1 LB","No","Yes","0","17.77",""
-"20988","308","PASTA - ANGEL HAIR","Dry Goods","","Food","1 UNIT","No","Yes","0","1.47",""
-"20989","309","PASTA - BOWTIE","Dry Goods","","Food","1 LB","No","Yes","0","1.25",""
-"20990","310","PASTA - CAVATAPPI","Dry Goods","","Food","1 LB","No","Yes","0","1.6075",""
-"20991","311","PASTA - EGG NOODLES","Dry Goods","","Food","1 LB","No","Yes","0","1.19",""
-"20992","312","PASTA - FETTUCCINI","Dry Goods","","Food","1 LB","No","Yes","0","1.3",""
-"20993","313","PASTA - PENNE","Dry Goods","","Food","1 LB","No","Yes","0","0.99",""
-"20994","314","PASTRY GLAZE - NEUTRAL","Dry Goods","","Food","1 UNIT","No","Yes","0","75.32",""
-"20995","315","PC JELLY - GLASS","Dry Goods","","Food","1 UNIT","No","Yes","0","28.97",""
-"20996","316","PC KETCHUP","Dry Goods","","Food","1 UNIT","No","Yes","0","0.04727",""
-"20997","317","PC MAYO","Dry Goods","","Food","1 UNIT","No","Yes","0","40.16",""
-"20998","318","PC MUSTARD","Dry Goods","","Food","1 UNIT","No","Yes","0","12.77",""
-"20999","319","PC SPICY BROWN MUSTARD","Dry Goods","","Food","1 UNIT","No","Yes","0","34.83",""
-"21000","320","PC SPLENDA","Dry Goods","","Food","1 UNIT","No","Yes","0","42.28",""
-"21001","321","PC SUGAR raw","Dry Goods","","Food","1 UNIT","No","Yes","0","19.97",""
-"21002","322","PEANUT BUTTER","Dry Goods","","Food","1 UNIT","No","Yes","0","9.96",""
-"21003","323","PEANUTS - BAG","Dry Goods","","Food","1 UNIT","No","Yes","0","0.3464",""
-"21004","324","PECTIN","Dry Goods","","Food","1 UNIT","No","Yes","0","16.53",""
-"21005","325","PEPPER - ANCHO","Dry Goods","","Food","1 LB","No","Yes","0","9.09",""
-"21006","326","PEPPER - BANANA","Dry Goods","","Food","1 UNIT","No","Yes","0","13.56",""
-"22128","327","PEPPER - WHOLE ROASTED","Dry Goods","","","28oz Can","No","Yes","0","3.7675",""
-"21007","328","PEPPER RED CRUSHED","Dry Goods","","Food","1 LB","No","Yes","0","6.95",""
-"21008","329","PEPPER-GRINDER","Dry Goods","","Food","1 UNIT","No","Yes","0","2.05",""
-"22169","330","Peppercorn Blk","Dry Goods","","","1 LB","No","Yes","0","69.31",""
-"21009","331","PEPPERS - CHIPOTLE","Dry Goods","","Food","1 UNIT","No","Yes","0","1.61",""
-"21010","332","PEPPERS - ROASTED RED","Dry Goods","","Food","1 UNIT","No","Yes","0","4.51",""
-"21011","333","PICKLED GINGER","Dry Goods","","Food","1 UNIT","No","Yes","0","13.95",""
-"21013","334","PICKLES - GHERKIN","Dry Goods","","Food","1 UNIT","No","Yes","0","19.94",""
-"21012","335","PICKLES - SPEARS","Dry Goods","","Food","1 UNIT","No","Yes","0","44.56",""
-"21014","336","PICKLING SPICE","Dry Goods","","Food","1 LB","No","Yes","0","11.58",""
-"21015","337","PIE FILLING - APPLE SLICED","Dry Goods","","Food","1 UNIT","No","Yes","0","8.19",""
-"21016","338","PINK LEMONADE Min Maid - BIB","Dry Goods","","Food","1 UNIT","No","Yes","0","53.09",""
-"21017","339","PINK PEPPER CORN","Dry Goods","","Food","1 LB","No","Yes","0","23.94",""
-"21018","340","POLENTA","Dry Goods","","Food","1 LB","No","Yes","0","1.56",""
-"21019","341","POPPY SEED","Dry Goods","","Food","1 LB","No","Yes","0","14.4",""
-"21020","342","PORCINI POWDER","Dry Goods","","Food","1 LB","No","Yes","0","30.1",""
-"21021","343","POTATO GNOCHI","Dry Goods","","Food","1 UNIT","No","Yes","0","31.88",""
-"21022","344","POTATO SKINS","Dry Goods","","Food","1 UNIT","No","Yes","0","10.7783",""
-"21023","345","POTATOES - DICED","Dry Goods","","Food","1 UNIT","No","Yes","0","12.325",""
-"21024","346","QUINOA","Dry Goods","","Food","1 LB","No","Yes","0","6.76",""
-"21025","347","RASPBERRY POWDER","Dry Goods","","Food","1 GAL","No","Yes","0","15.85",""
-"21026","348","red hot","Dry Goods","","Food","1 GAL","No","Yes","0","22.6",""
-"21027","349","RED WINE TAYLOR","Dry Goods","","Food","1 UNIT","No","Yes","0","9",""
-"21028","350","REFRIED BEANS","Dry Goods","","Food","1 UNIT","No","Yes","0","10.14",""
-"21029","351","RELISH","Dry Goods","","Food","1 UNIT","No","Yes","0","16.71",""
-"21030","352","RICE - ABORIO","Dry Goods","","Food","1 LB","No","Yes","0","2.48",""
-"21031","353","RICE - BLACK","Dry Goods","","Food","1 LB","No","Yes","0","3.6",""
-"28571","354","RICE - CONVERTED","Dry Goods","","","1 LB","No","Yes","0","1.2648",""
-"21032","355","RICE - JASMINE","Dry Goods","","Food","1 LB","No","Yes","0","1.37",""
-"21033","356","RICE - PAR BOILED","Dry Goods","","Food","1 LB","No","Yes","0","1.08",""
-"21034","357","RITZ CRACKER CRUMBS","Dry Goods","","Food","1 UNIT","No","Yes","0","4.99",""
-"21035","358","ROASTED GARLIN BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","9.95",""
-"21036","359","SAGE - RUBBED","Dry Goods","","Food","1 LB","No","Yes","0","8.6",""
-"21037","360","SALAD OIL","Dry Goods","","Food","1 UNIT","No","Yes","0","20.33",""
-"21038","361","SALSA","Dry Goods","","Food","1 UNIT","No","Yes","0","15.39",""
-"21039","362","SALT - KOSHER","Dry Goods","","Food","1 UNIT","No","Yes","0","3.88",""
-"21040","363","SALT - ROCK","Dry Goods","","Food","1 UNIT","No","Yes","0","2.66",""
-"21041","364","SALT-GRINDER","Dry Goods","","Food","1 UNIT","No","Yes","0","1.68",""
-"28573","365","SAUCE - HOT RED CAYENNE","Dry Goods","","Food","1 GAL","No","Yes","0","14.84",""
-"21042","366","SAUCE ENCHILADA","Dry Goods","","Food","1 OZ","No","Yes","0","7.86",""
-"21043","367","SAUERKRAUT","Dry Goods","","Food","1 UNIT","No","Yes","0","42.38",""
-"21044","368","SCHRIBER DEMI BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","12.46",""
-"21045","369","SEA SALT","Dry Goods","","Food","1 LB","No","Yes","0","0.75",""
-"21046","370","SEASONING SAZON","Dry Goods","","Food","1 LB","No","Yes","0","5.99",""
-"21047","371","SEEDS - SUNFLOWER","Dry Goods","","Food","1 LB","No","Yes","0","19.21",""
-"21048","372","SESAME OIL","Dry Goods","","Food","1 UNIT","No","Yes","0","24.82",""
-"21049","373","SESAME-BLACK","Dry Goods","","Food","1 LB","No","Yes","0","36.11",""
-"21050","374","smoking chips","Dry Goods","","Food","1 UNIT","No","Yes","0","8.19",""
-"21051","375","SODIUM ALGINATE","Dry Goods","","Food","1 UNIT","No","Yes","0","34.99",""
-"21052","376","SOY SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","12.12",""
-"21053","377","SPLIT PEAS","Dry Goods","","Food","1 LB","No","Yes","0","1.22",""
-"21054","378","SPRING ROLL WRAPPERS","Dry Goods","","Food","1 UNIT","No","Yes","0","1.67",""
-"21055","379","SPRINKLES","Dry Goods","","Food","1 LB","No","Yes","0","3.43",""
-"21056","380","SRIRACHA","Dry Goods","","Food","1 UNIT","No","Yes","0","7.64",""
-"21057","381","STEAK RUB","Dry Goods","","Food","1 LB","No","Yes","0","32.95",""
-"21058","382","STEAK SAUCE-57","Dry Goods","","Food","1 UNIT","No","Yes","0","2.69",""
-"21059","383","STRAWBERRY PASTE","Dry Goods","","Food","1 UNIT","No","Yes","0","49.41",""
-"21060","384","STRAWBERRY TOPPING","Dry Goods","","Food","1 UNIT","No","Yes","0","23.13",""
-"21061","385","SUGAR - BROWN","Dry Goods","","Food","1 LB","No","Yes","0","1.5783",""
-"21062","386","SUGAR - BULK","Dry Goods","","Food","1 LB","No","Yes","0","0.89",""
-"21063","387","SUGAR - COTTON CANDY","Dry Goods","","Food","1 UNIT","No","Yes","0","19.99",""
-"21064","388","SUGAR - POWDERED","Dry Goods","","Food","1 LB","No","Yes","0","1.24",""
-"23880","389","Sugar sub - Equal Blue","Dry Goods","","Food","1 UNIT","No","Yes","0","30.07",""
-"23881","390","Sugar sub - Sweet N Low","Dry Goods","","Food","1 UNIT","No","Yes","0","22.06",""
-"21065","391","SWEET HOME SOUTHERN RUB","Dry Goods","","Food","1 LB","No","Yes","0","11.95",""
-"21066","392","TABASCO","Dry Goods","","Food","1 UNIT","No","Yes","0","1.37",""
-"21067","393","TACO SHELLS","Dry Goods","","Food","1 UNIT","No","Yes","0","3.7",""
-"21068","394","TAHINI","Dry Goods","","Food","1 UNIT","No","Yes","0","5.08",""
-"21069","395","TANDORI SPICE","Dry Goods","","Food","1 UNIT","No","Yes","0","13.65",""
-"21070","396","TARTAR SAUCE","Dry Goods","","Food","1 UNIT","No","Yes","0","17.02",""
-"21071","397","TARTARIC ACID","Dry Goods","","Food","1 UNIT","No","Yes","0","24.99",""
-"22170","398","Teriyaki Sauce","Dry Goods","","","1 LB","No","Yes","0","10.99",""
-"21072","399","TEXTURED VEG PROTEN","Dry Goods","","Food","1 LB","No","Yes","0","8.37",""
-"21073","400","THYME","Dry Goods","","Food","1 LB","No","Yes","0","13.3",""
-"21074","401","TOMATO - PASTE","Dry Goods","","Food","1 UNIT","No","Yes","0","11.65",""
-"21075","402","TOMATO JUICE","Dry Goods","","Food","1 UNIT","No","Yes","0","3.23",""
-"28565","403","TOMATO SUNDRIED","Dry Goods","","Food","2.5","No","Yes","0","10.935",""
-"21076","404","TOMATOES - PLUM","Dry Goods","","Food","1 UNIT","No","Yes","0","29.99",""
-"21077","405","TORTILLAS 4&quot;","Dry Goods","","Food","1 UNIT","No","Yes","0","3.958333",""
-"21078","406","TORTILLAS REG FLOUR 12&quot;","Dry Goods","","Food","1 UNIT","No","Yes","0","34.56",""
-"21079","407","TORTILLAS SD TOMATO Basil","Dry Goods","","Food","1 UNIT","No","Yes","0","26.62",""
-"21080","408","TORTILLAS WHOLE WHEAT","Dry Goods","","Food","1 UNIT","No","Yes","0","0.339861",""
-"21081","409","TRUFFEL OIL","Dry Goods","","Food","1 UNIT","No","Yes","0","38.55",""
-"21082","410","TURKEY BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","9.65",""
-"21083","411","TURMERIC - GROUND","Dry Goods","","Food","1 LB","No","Yes","0","6.9",""
-"21084","412","VANILLA PUDDING MIX","Dry Goods","","Food","1 UNIT","No","Yes","0","2.89",""
-"21085","413","VEGETABLE BASE","Dry Goods","","Food","1 UNIT","No","Yes","0","10.85",""
-"21086","414","VINEGAR - APPLE CIDER","Dry Goods","","Food","1 UNIT","No","Yes","0","4.11",""
-"21087","415","VINEGAR - BALSAMIC","Dry Goods","","Food","1 UNIT","No","Yes","0","24.43",""
-"21088","416","VINEGAR - RED","Dry Goods","","Food","1 UNIT","No","Yes","0","26.16",""
-"21089","417","VINEGAR - RICE WINE","Dry Goods","","Food","1 UNIT","No","Yes","0","17.46",""
-"21090","418","VINEGAR - SHERRY","Dry Goods","","Food","1 UNIT","No","Yes","0","10.86",""
-"21091","419","VINEGAR - WHITE","Dry Goods","","Food","1 GAL","No","Yes","0","5.97",""
-"21092","420","VINEGAR - WHITE BALSAMIC","Dry Goods","","Food","1 UNIT","No","Yes","0","14.72",""
-"21093","421","WASABI POWDER","Dry Goods","","Food","1 UNIT","No","Yes","0","13.06",""
-"22172","422","Waterchestnut","Dry Goods","","","1 UNIT","No","Yes","0","13.81",""
-"22171","423","White Cheddar Popcorn","Dry Goods","","","1 LB","No","Yes","0","41.2",""
-"21094","424","WHITE PEPPER","Dry Goods","","Food","1 LB","No","Yes","0","12.09",""
-"21095","425","WON TON WRAPPERS","Dry Goods","","Food","1 UNIT","No","Yes","0","39.17",""
-"28563","426","WORCESTERSHIRE SAUCE","Dry Goods","","Food","1 GAL","No","Yes","0","21.48",""
-"21096","427","wrap lemon","Dry Goods","","Food","1 UNIT","No","Yes","0","96.55",""
-"21097","428","yam","Dry Goods","","Food","1 UNIT","No","Yes","0","8.26",""
-"21098","429","churro","Frozen","","Food","1 OZ","No","Yes","0","76.98",""
-"21099","430","french fry","Frozen","","Food","1 LB","No","Yes","0","1.816",""
-"22161","431","GUACAMOLE","Frozen","","shelf 1","1 LB","No","Yes","0","5.139167",""
-"21100","432","JALAPENO POPPERS","Frozen","","Food","1 UNIT","No","Yes","0","61.37",""
-"21101","433","MUSHROOMS FRIED","Frozen","","Food","1 UNIT","No","Yes","0","29.4",""
-"21102","434","ONION RINGS","Frozen","","Food","1 UNIT","No","Yes","0","36.72",""
-"21103","435","POT STICKERS","Frozen","","Food","1 UNIT","No","Yes","0","53.48",""
-"21104","436","Potato, chips frozen","Frozen","","Food","1 UNIT","No","Yes","0","39.24",""
-"22918","437","SALAD COLESLAW","Frozen","","Food","1 LB","No","Yes","0","2.953",""
-"21105","438","Sausage, biscuit with egg","Frozen","","Food","1 UNIT","No","Yes","0","20.97",""
-"21106","439","sweet potato fry","Frozen","","Food","1 LB","No","Yes","0","3.086667",""
-"25325","440","APRON - POLY WHITE","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","17.23",""
-"24257","441","Cleaner Griddle","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","1.3775",""
-"24258","442","CONT H/L PLAS 1 COMP","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","77.3",""
-"28554","443","Dawn Soap Liquid","KITCHEN SUPPLIES","","Food","5 GAL","No","Yes","0","114.61",""
-"22916","444","Degreaser Heavy Duty","KITCHEN SUPPLIES","","Food","1 GAL","No","Yes","0","10.1875",""
-"28562","445","DETERGENT DISHWMACHINE","KITCHEN SUPPLIES","","Food","1 LB","No","Yes","0","5.141111",""
-"22152","446","Floor squeegee","KITCHEN SUPPLIES","","shelf 1","1 UNIT","No","Yes","0","12.27",""
-"24259","447","Fuel Butane","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","27.445",""
-"22148","448","Handle Threaded Metal","KITCHEN SUPPLIES","","shelf 1","1 UNIT","No","Yes","0","0.1068",""
-"22917","449","Liner, Trash bag 23 GAL","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","0.26335",""
-"24260","450","Liner, Trash bag 55 GAL","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","75.22",""
-"28568","451","PASTRY BRUSH","KITCHEN SUPPLIES","","Food","1 EACH","No","Yes","0","10.66",""
-"28570","452","PICK BAMBOO","KITCHEN SUPPLIES","","Food","1 UNIT","No","Yes","0","3.974",""
-"22153","453","Alum foil","Paper","","shelf 1|Shelf 1","1 UNIT","No","Yes","0","52.75",""
-"22149","454","CONT 1 COMP FOAM LARGE WHITE","Paper","","shelf 1","1 UNIT","No","Yes","0","33.68",""
-"22156","455","CONT DELI PLAS CLEAR 32 OZ","Paper","","shelf 1","1 UNIT","No","Yes","0","86.94",""
-"22157","456","CUP, PAPER HOT 12OZ","Paper","","","1 UNIT","No","Yes","0","88.18",""
-"25326","457","CUP, PAPER HOT 16 Oz","Paper","","Food","CS","No","Yes","0","78.78",""
-"23879","458","Cup, Plastic Clear 16oz","Paper","","shelf 1","1 UNIT","No","Yes","0","4.9925",""
-"22150","459","Cutlery Kit","Paper","","","1 UNIT","No","Yes","0","0.27532",""
-"22136","460","Film Wrap","Paper","","","1 UNIT","No","Yes","0","24.56",""
-"25330","461","GLOVES NITRILE BLACK LARGE","Paper","","Food","1 UNIT","No","Yes","0","6.844",""
-"22132","462","Kelly Green Printed","Paper","","","2000 UNIT","No","Yes","0","184.97",""
-"25327","463","LID PLAS TRANS STRAW SLOT","Paper","","Food","CS","No","Yes","0","39.7",""
-"22158","464","LID WHITE DOME 10-20OZ","Paper","","shelf 1","1 UNIT","No","Yes","0","59.82",""
-"22133","465","Misc Supplies","Paper","","Food","1 UNIT","No","Yes","0","19.18",""
-"22134","466","Souffle Cup Plastic 2oz","Paper","","Food","250 CT","No","Yes","0","8.595",""
-"25337","467","STIRRER UNWRAPPED","Paper","","Food","CS","No","Yes","0","4.46",""
-"25332","468","STRAW WRAP 7.75""","Paper","","Food","CS","No","Yes","0","2.9233",""
-"22151","469","Towelettes, wet nap","Paper","","shelf 1","1 UNIT","No","Yes","0","16.84",""
-"21107","470","apple butter","Produce","","Food","1 UNIT","No","Yes","0","14.78",""
-"21108","471","APPLES - RED DELICIOUS","Produce","","Food","1 UNIT","No","Yes","0","38.64",""
-"22165","472","Artichoke","Produce","","Food","1 LB","No","Yes","0","41.89",""
-"22924","473","ASPARAGUS JUMBO","Produce","","Food","1 LB","No","Yes","0","3.174545",""
-"21109","474","avocado fresh","Produce","","Food","1 UNIT","No","Yes","0","1.09",""
-"25335","475","BANANAS","Produce","","Food","1 LB","No","Yes","0","1.18",""
-"21110","476","BASIL","Produce","","Food","1 LB","No","Yes","0","8.83",""
-"21111","477","BEETS CANDY CANE FRESH","Produce","","Food","1 UNIT","No","Yes","0","37.65",""
-"21112","478","BEETS GOLD FRESH","Produce","","Food","1 LB","No","Yes","0","1.36",""
-"28561","479","BEETS RED","Produce","","Food","1 LB","No","Yes","0","1.1844",""
-"21113","480","BLACKBERRIES","Produce","","Food","1 UNIT","No","Yes","0","3.89",""
-"21114","481","BLUEBERRIES","Produce","","Food","1 UNIT","No","Yes","0","3.67",""
-"21115","482","BROCCOLI FLORETS","Produce","","Food","1 LB","No","Yes","0","2.3743",""
-"21116","483","CANTALOUPE 3 CT","Produce","","Food","1 UNIT","No","Yes","0","12.03",""
-"21117","484","CARROTS","Produce","","Food","1 LB","No","Yes","0","0.525",""
-"21118","485","CARROTS - BABY","Produce","","Food","1 LB","No","Yes","0","1.9005",""
-"21119","486","CELERY","Produce","","Food","1 UNIT","No","Yes","0","1.911667",""
-"21120","487","CUCUMBERS","Produce","","Food","1 UNIT","No","Yes","0","1.6425",""
-"21121","488","FC MANGO","Produce","","Food","1 UNIT","No","Yes","0","1.201",""
-"21122","489","GARLIC","Produce","","Food","1 LB","No","Yes","0","6.722",""
-"21123","490","GINGER - WHOLE","Produce","","Food","1 LB","No","Yes","0","10.09",""
-"24509","491","GREEN COLLARD","Produce","","Food","1 LB","No","Yes","0","23.17",""
-"22127","492","HERB - CILANTRO","Produce","","shelf 1","1 LB","No","Yes","0","10.23",""
-"21124","493","HONEYDEW MELON","Produce","","Food","1 UNIT","No","Yes","0","26.66",""
-"21125","494","LEAF LETTUCE","Produce","","Food","1 UNIT","No","Yes","0","67.98",""
-"21126","495","LEMONS","Produce","","Food","1 UNIT","No","Yes","0","52.19",""
-"22160","496","LEMONS FRESH","Produce","","shelf 1","1 LB","No","Yes","0","1.896",""
-"21127","497","LETTUCE - BIBB","Produce","","Food","1 UNIT","No","Yes","0","25.5",""
-"21128","498","LETTUCE - ICEBURG","Produce","","Food","1 UNIT","No","Yes","0","28.35",""
-"21129","499","LETTUCE - LEAF","Produce","","Food","1 UNIT","No","Yes","0","0.411667",""
-"21130","500","LETTUCE - ROMAINE","Produce","","Food","1 UNIT","No","Yes","0","0.964167",""
-"21131","501","LETTUCE - SPRING","Produce","","Food","1 LB","No","Yes","0","3.853333",""
-"21132","502","LIMES","Produce","","Food","1 LB","No","Yes","0","2.564",""
-"21133","503","MICRO MINT","Produce","","Food","1 UNIT","No","Yes","0","10.89",""
-"21134","504","MINI SWEET PEPPERS","Produce","","Food","1 LB","No","Yes","0","7.0167",""
-"24507","505","Mushroom Buttons","Produce","","Food","1 LB","No","Yes","0","2.94",""
-"22159","506","Mushroom Portobello","Produce","","shelf 1","3 LB","No","Yes","0","21.65",""
-"21135","507","MUSHROOM SLICED","Produce","","Food","1 LB","No","Yes","0","2.94",""
-"21136","508","ONIONS - GREEN","Produce","","Food","1 LB","No","Yes","0","7.28",""
-"21137","509","ONIONS - RED","Produce","","Food","1 LB","No","Yes","0","1.1464",""
-"21138","510","ONIONS - YELLOW","Produce","","Food","1 LB","No","Yes","0","0.6646",""
-"25334","511","ONIONS LEEK","Produce","","Food","1 LB","No","Yes","0","10.06",""
-"21139","512","ORANGES","Produce","","Food","1 UNIT","No","Yes","0","0.9",""
-"21140","513","PAPAYA - GREEN","Produce","","Food","1 UNIT","No","Yes","0","23.05",""
-"21141","514","PARSLEY - CURLEY","Produce","","Food","1 UNIT","No","Yes","0","10.25",""
-"21142","515","PARSNIPS","Produce","","Food","1 LB","No","Yes","0","57.13",""
-"21143","516","PEPPERS - GREEN","Produce","","Food","1 UNIT","No","Yes","0","24.22",""
-"21144","517","PEPPERS - RED","Produce","","Food","1 LB","No","Yes","0","63",""
-"21145","518","PINEAPPLE","Produce","","Food","1 UNIT","No","Yes","0","3.99",""
-"21146","519","PINEAPPLE FRESH","Produce","","Food","1 UNIT","No","Yes","0","19.32",""
-"21147","520","POTATOES - BAKERS","Produce","","Food","1 UNIT","No","Yes","0","52.95",""
-"22919","521","POTATOES - IDAHO","Produce","","Food","1 LB","No","Yes","0","1.0604",""
-"21148","522","POTATOES - RED","Produce","","Food","1 LB","No","Yes","0","0.894",""
-"21149","523","RADISH - DIKON","Produce","","Food","1 UNIT","No","Yes","0","0.65",""
-"21150","524","RASPBERRIES","Produce","","Food","1 UNIT","No","Yes","0","4.33",""
-"21151","525","ROSEMARY FRESH","Produce","","Food","1 LB","No","Yes","0","4.69",""
-"21152","526","SHALLOTS","Produce","","Food","1 UNIT","No","Yes","0","21.78",""
-"21153","527","SLAW MIX","Produce","","Food","1 UNIT","No","Yes","0","21.73",""
-"21154","528","squash zuchini","Produce","","Food","1 UNIT","No","Yes","0","27.89",""
-"21155","529","STRAWBERRIES","Produce","","Food","1 UNIT","No","Yes","0","26.66",""
-"21156","530","TAMARIND PODS","Produce","","Food","1 UNIT","No","Yes","0","14.79",""
-"21157","531","TOMATOES","Produce","","Food","1 LB","No","Yes","0","2.6",""
-"21158","532","TOMATOES - GRAPE","Produce","","Food","1 UNIT","No","Yes","0","1.58",""
-"28564","533","TOMATOES ROMA","Produce","","Food","1 LB","No","Yes","0","2.84",""
-"21159","534","WATERMELON","Produce","","Food","1 UNIT","No","Yes","0","9.35",""
-"21160","535","8 - OZ FRESH BURGER PATTYS","Protein","","Food|Dry Storage","1 LB","No","Yes","0","3.62",""
-"21161","536","BACON","Protein","","Food","1 UNIT","No","Yes","0","0.1881",""
-"21162","537","BACON - CANADIAN","Protein","","Food","1 UNIT","No","Yes","0","4.59",""
-"21163","538","BEEF BRISKET -CORN","Protein","","Food","1 LB","No","Yes","0","5.25",""
-"21164","539","BEEF BRISKET SMOKED","Protein","","Food","1 LB","No","Yes","0","7.34",""
-"22922","540","BEEF STRIPLOIN","Protein","","Food","1 LB","No","Yes","0","0.454448",""
-"22923","541","BEEF TENDERLOIN","Protein","","Food","1 LB","No","Yes","0","0.9809",""
-"21165","542","BOLOGNE","Protein","","Food","1 LB","No","Yes","0","38.78",""
-"21166","543","BRATWURST","Protein","","Food","1 LB","No","Yes","0","4.39",""
-"21167","544","CHICKEN - 8 WAY","Protein","","Food","1 LB","No","Yes","0","0.031617",""
-"21168","545","CHICKEN - BREASTS 6OZ","Protein","","Food","1 UNIT","No","Yes","0","2.97",""
-"21169","546","CHICKEN - THIGHS","Protein","","Food","1 LB","No","Yes","0","2.78",""
-"21170","547","CHICKEN BREAST 7OZ","Protein","","Food","1 LB","No","Yes","0","0.0853",""
-"21171","548","CHICKEN FINGERS","Protein","","Food","1 UNIT","No","Yes","0","41.8",""
-"21172","549","CHICKEN WINGS - PURDUE","Protein","","Food","1 LB","No","Yes","0","1.72",""
-"25328","550","CHICKEN WOG","Protein","","Food","1 LB","No","Yes","0","0.0312",""
-"21173","551","CHORISO","Protein","","Food","1 LB","No","Yes","0","5.08",""
-"21174","552","COBIA FISH FILET","Protein","","Food","1 LB","No","Yes","0","7.6",""
-"21175","553","CORN BEEF","Protein","","Food","1 LB","No","Yes","0","5.65",""
-"21176","554","FLOUNDER","Protein","","Food","1 LB","No","Yes","0","15.85",""
-"21177","555","GROUND BEEF","Protein","","Food","1 LB","No","Yes","0","3.63024",""
-"21178","556","GROUND TURKEY","Protein","","Food","1 LB","No","Yes","0","3.6",""
-"21179","557","HAM - BLK FOREST","Protein","","Food","1 LB","No","Yes","0","4.39",""
-"21180","558","HAM - CARVER","Protein","","Food","1 LB","No","Yes","0","3.02",""
-"21181","559","HOT DOGS KOSHER4-1","Protein","","Food","1 LB","No","Yes","0","4.79",""
-"21182","560","keilbasa","Protein","","Food","1 LB","No","Yes","0","3.73",""
-"21183","561","MAHI MAHI","Protein","","Food","1 LB","No","Yes","0","17.25",""
-"21184","562","NY STRIP - 120Z","Protein","","Food","1 UNIT","No","Yes","0","12.46",""
-"21185","563","panchetta","Protein","","Food","1 LB","No","Yes","0","3.5",""
-"21186","564","PASTRAMI","Protein","","Food","1 LB","No","Yes","0","6.76",""
-"21187","565","PEPPERONI","Protein","","Food","1 LB","No","Yes","0","3.78",""
-"21188","566","PIZZA SAUCE","Protein","","Food","1 UNIT","No","Yes","0","6",""
-"21189","567","PORK - BELLY","Protein","","Food","1 LB","No","Yes","0","5.86",""
-"21190","568","PORK - CHOPS","Protein","","Food","1 LB","No","Yes","0","8.06",""
-"21191","569","PORK - CHOPS - DOUBLE BONE","Protein","","Food","1 LB","No","Yes","0","6.85",""
-"23882","570","PORK - LOIN","Protein","","Food","1 LB","No","Yes","0","0.1083",""
-"21192","571","PORK - PULLED","Protein","","Food","1 LB","No","Yes","0","6.024",""
-"22920","572","PORK - RIBS ST LOUISE","Protein","","","1 LB","No","Yes","0","0.112583",""
-"22162","573","PORK, BUTT","Protein","","shelf 1","1 LB","No","Yes","0","1.02515",""
-"21193","574","Pork, capicola","Protein","","Food","1 LB","No","Yes","0","5.83",""
-"21194","575","POT ROAST","Protein","","Food","1 LB","No","Yes","0","7.1",""
-"21195","576","PRIME BONE IN RIBEYE","Protein","","Food","1 LB","No","Yes","0","17.5",""
-"21196","577","PRIME RIB SCRAPES","Protein","","Food","1 LB","No","Yes","0","11.62",""
-"21197","578","PROCUITTO","Protein","","Food","1 LB","No","Yes","0","8.17",""
-"21198","579","SALAMI","Protein","","Food","1 LB","No","Yes","0","7.49",""
-"21199","580","SAUSAGE - Chorizo","Protein","","Food","1 LB","No","Yes","0","3.93",""
-"28558","581","SAUSAGE - FRANK BEEF SKNLS","Protein","","Food","1 LB","No","Yes","0","6.055",""
-"21200","582","SAUSAGE - PATTIES","Protein","","Food","1 UNIT","No","Yes","0","4.18",""
-"21201","583","SKIRT STEAK/FLANK","Protein","","Food","1 LB","No","Yes","0","13.65",""
-"21202","584","ST LOUIS SPARE RIBS","Protein","","Food","1 LB","No","Yes","0","4.49",""
-"21203","585","TENDERLOIN - 6oz FILET","Protein","","Food","1 LB","No","Yes","0","45",""
-"21204","586","TENDERLOIN - WHOLE","Protein","","Food","1 LB","No","Yes","0","1.788141",""
-"21205","587","TURKEY","Protein","","Food","1 LB","No","Yes","0","132.24",""
-"21206","588","TURKEY - BREAST","Protein","","Food","1 LB","No","Yes","0","0.356522",""
-"21207","589","TURKEY - BURGER","Protein","","Food","1 UNIT","No","Yes","0","1.58",""
-"21208","590","VEAL CUTLETS","Protein","","Food","1 UNIT","No","Yes","0","205.23",""
-"21209","591","VEAL LIVER","Protein","","Food","1 LB","No","Yes","0","27.35",""
-"21210","592","CLAMS - FRESH","Seafood","","Food","1 LB","No","Yes","0","12.95",""
-"21211","593","COD - BEER BATTERED","Seafood","","Food","1 LB","No","Yes","0","8.42",""
-"21212","594","CRAB - BLUE LUMP HP","Seafood","","Food","case","No","Yes","0","30.75",""
-"21213","595","GROUPER","Seafood","","Food","1 LB","No","Yes","0","20.7",""
-"21214","596","GROUPER - BLACK","Seafood","","Food","1 LB","No","Yes","0","27.13",""
-"21215","597","GROUPER - PIECES","Seafood","","Food","1 LB","No","Yes","0","19.99",""
-"21216","598","HADDOCK","Seafood","","Food","1 LB","No","Yes","0","13.15",""
-"21217","599","MUSSELS","Seafood","","Food","1 UNIT","No","Yes","0","2.44",""
-"21218","600","OYSTERS - HELMANS","Seafood","","Food","1 UNIT","No","Yes","0","116.86",""
-"21219","601","POMPANO","Seafood","","Food","1 LB","No","Yes","0","10.9",""
-"22173","602","Red Snapper","Seafood","","","1 LB","No","Yes","0","9.46",""
-"21220","603","SALMON","Seafood","","Food","1 LB","No","Yes","0","17.09",""
-"21221","604","SALMON - SCRAPS","Seafood","","Food","1 LB","No","Yes","0","6.99",""
-"21222","605","SALMON - SMOKED","Seafood","","Food","1 LB","No","Yes","0","12.95",""
-"21223","606","SCALLOPS - BACON WRAP","Seafood","","Food","1 UNIT","No","Yes","0","92.36",""
-"21224","607","SCALLOPS - BAY","Seafood","","Food","1 LB","No","Yes","0","5.15",""
-"22141","608","SHRIMP - 16/20","Seafood","","shelf 1","1 LB","No","Yes","0","0.937",""
-"21226","609","SHRIMP 21/25","Seafood","","Food","1 LB","No","Yes","0","13.21",""
-"21225","610","SHRIMP Breaded","Seafood","","Food","1 LB","No","Yes","0","9.01",""
-"22142","611","SHRIMP BREADED - 16/20","Seafood","","","1 LB","No","Yes","0","98.75",""
-"22155","612","SNAPPER","Seafood","","shelf 1","1 LB","No","Yes","0","11.67",""
-"21227","613","SWORD FISH","Seafood","","Food","1 LB","No","Yes","0","20.21",""
-"21228","614","TRIPLE TAIL","Seafood","","Food","1 LB","No","Yes","0","17.65",""
-"21229","615","WHITE FISH","Seafood","","Food","1 LB","No","Yes","0","4.65",""
-"21230","616","10TH TEE BARS","Snacks","","Food|Shelf 1|Dry Storage","1 UNIT","No","Yes","0","1.71",""
-"21231","617","1ST TEE BARS","Snacks","","Food|Dry Storage","1 UNIT","No","Yes","0","1.79",""
-"21232","618","BAGELS","Snacks","","Food","1 UNIT","No","Yes","0","0.54",""
-"21233","619","BOTTLED WATER-STORAGE","Snacks","","Food","1 UNIT","No","Yes","0","0.374167",""
-"21234","620","BREAKFAST SANDWICHES","Snacks","","Food","1 UNIT","No","Yes","0","2.328333",""
-"21235","621","CHICKEN SALAD","Snacks","","Food","1 LB","No","Yes","0","5.37",""
-"21236","622","CHIPS - VARIETY","Snacks","","Food","1 UNIT","No","Yes","0","0.6692",""
-"21237","623","COFFEE DECAF 128 CASE","Snacks","","Food","1 UNIT","No","Yes","0","0.77",""
-"21238","624","COFFEE REGULAR 128 CASE","Snacks","","Food","1 UNIT","No","Yes","0","0.77",""
-"25341","625","COOKIES - OATMEAL","Snacks","","Food","CS","No","Yes","0","29.72",""
-"21239","626","GATORADE","Snacks","","Food","1 UNIT","No","Yes","0","1.33",""
-"21240","627","HAM 4 OZ PORTIONS","Snacks","","Food","1 UNIT","No","Yes","0","0.71",""
-"21241","628","HERSHEY CHOCOLATE SYR","Snacks","","Food","1 UNIT","No","Yes","0","2.52",""
-"21242","629","HOT CHOCOLATE LG BAG","Snacks","","Food","1 UNIT","No","Yes","0","5.67",""
-"21243","630","HOT DOGS","Snacks","","Food","1 UNIT","No","Yes","0","4.75",""
-"20940","631","KIND BAR - ALMOND & COCONUT","Snacks","","Food","1 UNIT","No","Yes","0","1.91",""
-"25338","632","KIND BAR - PEANUT BUTTER CHOCOLATE","Snacks","","Food","1 UNIT","No","Yes","0","1.918333",""
-"21244","633","KIND BARS","Snacks","","Food","1 UNIT","No","Yes","0","1.79",""
-"21245","634","LANCE PEANUT CRACKERS","Snacks","","Food","1 UNIT","No","Yes","0","29.27",""
-"21246","635","LAYS CHIPS","Snacks","","Food","1 UNIT","No","Yes","0","40.82",""
-"21247","636","M&amp;M PEANUT","Snacks","","Food","1 UNIT","No","Yes","0","7.56",""
-"21248","637","M&amp;M PLAIN","Snacks","","Food","1 UNIT","No","Yes","0","0.93",""
-"21249","638","MUFFINS","Snacks","","Food","1 UNIT","No","Yes","0","1.01",""
-"21250","639","MUNCH CRACKERS","Snacks","","Food","1 UNIT","No","Yes","0","0.26",""
-"21251","640","MUSTARD BOTTLES","Snacks","","Food","1 UNIT","No","Yes","0","1.04",""
-"21252","641","NATURES VALLEY","Snacks","","Food","1 UNIT","No","Yes","0","0.64",""
-"21253","642","NUT ROLLS","Snacks","","Food","1 UNIT","No","Yes","0","0.65",""
-"21254","643","ONION","Snacks","","Food","1 UNIT","No","Yes","0","0.5",""
-"28559","644","PC POPCORN","Snacks","","Food","1 UNIT","No","Yes","0","37.51",""
-"21256","645","PLANTERS FRUIT &amp; NUTS","Snacks","","Food","1 UNIT","No","Yes","0","0.65",""
-"21257","646","PRETZEL BAGS","Snacks","","Food","1 UNIT","No","Yes","0","0.25",""
-"21258","647","PRINGLES ASST","Snacks","","Food","1 UNIT","No","Yes","0","0.75",""
-"21259","648","RED BULL","Snacks","","Food","1 UNIT","No","Yes","0","1.86",""
-"21260","649","RYE BREAD","Snacks","","Food","1 UNIT","No","Yes","0","4.1",""
-"21261","650","SNAPPLE","Snacks","","Food","1 UNIT","No","Yes","0","0.9",""
-"21262","651","SNICKERS","Snacks","","Food","1 UNIT","No","Yes","0","56.42",""
-"21263","652","SODA CANS","Snacks","","Food","1 UNIT","No","Yes","0","0.76",""
-"21264","653","SOUP","Snacks","","Food","1 UNIT","No","Yes","0","19.6",""
-"21265","654","TEA BAGS","Snacks","","Food","1 UNIT","No","Yes","0","7.88",""
-"21266","655","Tee Time Chocolate","Snacks","","Food","1 UNIT","No","Yes","0","1.76",""
-"21267","656","TUNA","Snacks","","Food","1 LB","No","Yes","0","11.64",""
-"21268","657","TURKEY 4 OZ PORTIONS","Snacks","","Food","1 UNIT","No","Yes","0","1.06",""
-"21269","658","TWIX","Snacks","","Food","1 UNIT","No","Yes","0","42.3",""
-"21270","659","V-8 JUICE","Snacks","","Food","1 UNIT","No","Yes","0","0.98",""
-"21271","660","WHEAT BREAD","Snacks","","Food","1 UNIT","No","Yes","0","4.1",""
-"21272","661","WHITE BREAD","Snacks","","Food","1 UNIT","No","Yes","0","4.1",""
-"21273","662","WRAP","Snacks","","Food","1 UNIT","No","Yes","0","2.27",""
-"21274","663","BACON FAT","Soups","","Food","1 LB","No","Yes","0","3.37",""
-"21275","664","CHILI","Soups","","Food","1 UNIT","No","Yes","0","24.2",""
-"21276","665","DUCK FAT","Soups","","Food","1 UNIT","No","Yes","0","39.05",""
-"21294","666","FUEL CHARGE","Soups","","","1 UNIT","No","Yes","0","7.35",""
-"21277","667","LARD","Soups","","Food","1 LB","No","Yes","0","1.07",""
-"29226","668","SALAD, POTATO","Frozen","","","1 LB","No","Yes","0","2.431",""
-"29227","669","Croissant","bread","","Food","1 UNIT","No","Yes","0","0.322986",""
-"29228","670","DRESSING - CAESAR","Dry Goods","","Food","1 GAL","No","Yes","0","22.0275",""
-"29229","671","HERB - MINT","Produce","","Food","1 LB","No","Yes","0","11.13",""
-"29230","672","BREAKFAST BURRITO","Frozen","","Food","1 UNIT","No","Yes","0","1.484167",""
-"29231","673","BAGEL - SAUSAGE EGG","Frozen","","Food","1 UNIT","No","Yes","0","2.585833",""
-"29232","674","FIG SPREAD","Dry Goods","","Food","3.53 oz","No","Yes","0","17.9",""
-"29233","675","NUTS - ALMOND SLICE","Dry Goods","","Food","1 LB","No","Yes","0","11.84",""
+Position,Product Name,Primary Category,Secondary Category,Standard Unit of Measure,Taxable,Comparable,Par Level,Price,Custom Unit of Measure
+1,softener salt pellets,Chemicals,,,No,Yes,,,bag
+2,"Cheese Blend, Mexican, Cheddar & Monterey Jack, Fine Shredded",Dairy,,LB,No,Yes,,,
+3,Cheese marscapone,Dairy,,,No,Yes,,,CS
+4,"Cheese, blue crumbles",Dairy,,LB,No,Yes,,,
+5,"Cheese, boursin",Dairy,,,No,Yes,,,CS
+6,"Cheese, brie ",Dairy,,LB,No,Yes,,,
+7,"Cheese, Cream",Dairy,,LB,No,Yes,,,
+8,"Cheese, feta ",Dairy,,LB,No,Yes,,,
+9,"Cheese, gouda",Dairy,,LB,No,Yes,,,
+10,"Cheese, Gouda, Naturally Smoked, Loaf",Dairy,,LB,No,Yes,,,
+11,"Cheese, mozzarella balls",Dairy,,LB,No,Yes,,,
+12,"Cheese, ricotta",Dairy,,,No,Yes,,,CS
+13,"Cheese, shredded asiago",Dairy,,LB,No,Yes,,,
+14,"Cheese, shredded cheddar",Dairy,,LB,No,Yes,,,
+15,"Cheese, shredded white cheddar",Dairy,,,No,Yes,,,CS
+16,"Cheese, sour cream",Dairy,,LB,No,Yes,,,
+17,eggs,Dairy,,,No,Yes,,,DZ
+18,margarine solids,Dairy,,LB,No,Yes,,,
+19,assorted danish,Dessert,,,No,Yes,,,CS
+20,brownie mix,Dessert,,LB,No,Yes,,,
+21,canned pumpkin,Dessert,,,No,Yes,,,EA
+22,chocolate cake,Dessert,,,No,Yes,,,EA
+23,"Chocolate Chips, Milk, Baking",Dessert,,,No,Yes,,,bag
+24,danish,Dessert,,,No,Yes,,,EA
+25,"filling, apple pie",Dessert,,,No,Yes,,,EA
+26,"filling, lemon pie",Dessert,,,No,Yes,,,EA
+27,frozen donuts,Dessert,,,No,Yes,,,CS
+28,marshmallow,Dessert,,,No,Yes,,,CS
+29,nutella,Dessert,,,No,Yes,,,CS
+30,peanutbutter cookies,Dessert,,,No,Yes,,,CS
+31,pie dough,Dessert,,LB,No,Yes,,,
+32,pillsbury scones,Dessert,,LB,No,Yes,,,
+33,pound cake,Dessert,,,No,Yes,,,EA
+34,puff pastry,Dessert,,,No,Yes,,,CS
+35,"syrup, chocolate",Dessert,,,No,Yes,,,EA
+36,"syrup, raspberry",Dessert,,,No,Yes,,,EA
+37,"topping, caramel",Dessert,,,No,Yes,,,EA
+38,vanilla extract,Dessert,,,No,Yes,,,jar
+39,whipped topping,Dessert,,,No,Yes,,,EA
+40," noodles, bowtie ",Dry,,LB,No,Yes,,,
+41," noodles, cavatappi",Dry,,LB,No,Yes,,,
+42,"avocado, mashed",Dry,,LB,No,Yes,,,
+43,bacon pieces,Dry,,LB,No,Yes,,,
+44,bagels,Dry,,,No,Yes,,,EA
+45,bagette,Dry,,,No,Yes,,,CS
+46,bao bao buns,Dry,,,No,Yes,,,EA
+47,basil pesto,Dry,,,No,Yes,,,EA
+48,beef base,Dry,,,No,Yes,,,CS
+49,"Bread Crumbs, Panko",Dry,,,No,Yes,,,bag
+50,bread sticks,Dry,,LB,No,Yes,,,
+51,"Bread, 100% Whole Wheat, Sliced",Dry,,,No,Yes,,,EA
+52,breakfast gravy,Dry,,,No,Yes,,,#10 can
+53,canned black bean,Dry,,,No,Yes,,,EA
+54,canned cheese sauce,Dry,,,No,Yes,,,EA
+55,canned green beans,Dry,,,No,Yes,,,CS
+56,"chicken, base",Dry,,,No,Yes,,,CS
+57,chili powder,Dry,,,No,Yes,,,EA
+58,"chili, sweet asian ",Dry,,GAL,No,Yes,,,
+59,"Chips, Potato, Barbecue",Dry,,,No,Yes,,,CS
+60,"Chips, Potato, Regular",Dry,,,No,Yes,,,CS
+61,"Chips, Potato, Sour Cream & Onion",Dry,,,No,Yes,,,CS
+62,"Chips, Tortilla, Cool Ranch",Dry,,,No,Yes,,,CS
+63,"Chips, Tortilla, Nacho Cheese",Dry,,,No,Yes,,,CS
+64,"Chips, Tortilla, White Corn, Round",Dry,,,No,Yes,,,CS
+65,"chips, tri color tortilla",Dry,,,No,Yes,,,CS
+66,"Cooking Wine, Marsala",Dry,,GAL,No,Yes,,,
+67,corn bread,Dry,,,No,Yes,,,CS
+68,corn starch,Dry,,LB,No,Yes,,,
+69,corriander,Dry,,,No,Yes,,,tub
+70,"Crackers, Entertainment Assortment",Dry,,,No,Yes,,,CS
+71,"Crackers, Variety Medley",Dry,,,No,Yes,,,CS
+72,craisins,Dry,,LB,No,Yes,,,
+73,cream of mushroom,Dry,,,No,Yes,,,#5 can
+74,croutons,Dry,,LB,No,Yes,,,
+75,"Croutons, Seasoned, Large, No Trans Fat",Dry,,,No,Yes,,,CS
+76,cumin,Dry,,,No,Yes,,,tub
+77,demi glaze base,Dry,,,No,Yes,,,EA
+78,diced tomatoes,Dry,,,No,Yes,,,EA
+79,"Dip, French Onion",Dry,,,No,Yes,,,CS
+80,"Dough, Puff Pastry, 10 x 15 Inch, Sheeted",Dry,,,No,Yes,,,CS
+81,"dressing, 1000 island ",Dry,,GAL,No,Yes,,,
+82,"dressing, asain sesame",Dry,,GAL,No,Yes,,,
+83,"Dressing, Balsamic Vinaigrette",Dry,,GAL,No,Yes,,,
+84,"Dressing, Bleu Cheese",Dry,,GAL,No,Yes,,,
+85,"Dressing, Buttermilk Ranch",Dry,,GAL,No,Yes,,,
+86,"dressing, caesar",Dry,,GAL,No,Yes,,,
+87,"Dressing, Caesar, Tableside",Dry,,GAL,No,Yes,,,
+88,"Dressing, French, Mild",Dry,,GAL,No,Yes,,,
+89,"Dressing, Golden Italian",Dry,,GAL,No,Yes,,,
+90,"Dressing, Greek",Dry,,GAL,No,Yes,,,
+91,"Dressing, Honey Mustard",Dry,,GAL,No,Yes,,,
+92,"Dressing, Italian, Creamy",Dry,,GAL,No,Yes,,,
+93,"Dressing, Poppyseed",Dry,,GAL,No,Yes,,,
+95,"Dressing, Ranch, Chipotle",Dry,,GAL,No,Yes,,,
+96,"Dressings, honey mustard ",Dry,,GAL,No,Yes,,,
+97,"Dressings, italian",Dry,,GAL,No,Yes,,,
+98,"Dressings, ranch",Dry,,GAL,No,Yes,,,
+99,dry basil,Dry,,,No,Yes,,,tub
+100,enchilada sauce,Dry,,,No,Yes,,,CS
+101,fig spread,Dry,,,No,Yes,,,CS
+102,figs,Dry,,LB,No,Yes,,,
+103,"Flatbread, Naan 8 inch, 4 Oz",Dry,,,No,Yes,,,CS
+104,"Flour, All-Purpose, Self-Rising",Dry,,,No,Yes,,,bag
+105,garbanzo beans,Dry,,,No,Yes,,,EA
+106,garlic powder,Dry,,,No,Yes,,,tub
+107,"Glaze, Balsamic, Original",Dry,,,No,Yes,,,CS
+108,"Glaze, Teriyaki",Dry,,,No,Yes,,,CS
+109,granulated garlic,Dry,,GAL,No,Yes,,,
+110,gravy mix,Dry,,,No,Yes,,,EA
+111,"Gravy Mix, Brown",Dry,,,No,Yes,,,CS
+112,"Gravy Mix, Turkey",Dry,,,No,Yes,,,CS
+113,"Grits, Quick",Dry,,LB,No,Yes,,,
+114,homestyle biscuits,Dry,,,No,Yes,,,EA
+115,Honey,Dry,,,No,Yes,,,3 pack
+116,Horseradish,Dry,,,No,Yes,,,CS
+117,hot dog buns,Dry,,,No,Yes,,,EA
+118,hummus,Dry,,,No,Yes,,,CS
+119,"Hummus, Roasted Red Pepper",Dry,,,No,Yes,,,CS
+120,"Ketchup, #10",Dry,,,No,Yes,,,#10 can
+121,liquid smoke,Dry,,,No,Yes,,,jug
+122,macadamia nuts,Dry,,LB,No,Yes,,,
+123,marachino cherries,Dry,,GAL,No,Yes,,,
+124,"Mayonnaise, Heavy-Duty",Dry,,,No,Yes,,,CS
+125,mini brioche,Dry,,,No,Yes,,,CS
+126,montreal steak seasoning,Dry,,,No,Yes,,,tub
+127,mustard ground,Dry,,,No,Yes,,,tub
+128,"Mustard, Classic, Yellow",Dry,,,No,Yes,,,CS
+129,"Mustard, Packets",Dry,,,No,Yes,,,CS
+130,"Oil, Frying, Liquid",Dry,,,No,Yes,,,35 lb
+131,"oil, sesamae",Dry,,GAL,No,Yes,,,
+132,"Olive Oil, Canola & Extra Virgin Blend, 75/25",Dry,,GAL,No,Yes,,,
+133,onion powder,Dry,,,No,Yes,,,tub
+134,"Onions, French Fried, Crispy",Dry,,,No,Yes,,,CS
+135,orzo,Dry,,LB,No,Yes,,,
+136,pancake waffle,Dry,,LB,No,Yes,,,
+137,paprika,Dry,,,No,Yes,,,tub
+138,"Pasta, Elbow Macaroni",Dry,,LB,No,Yes,,,
+139,"Pasta, Spaghetti, 10 Inch",Dry,,LB,No,Yes,,,
+140,peanut butter,Dry,,,No,Yes,,,EA
+141,pecan pieces,Dry,,LB,No,Yes,,,
+142,penne pasta,Dry,,LB,No,Yes,,,
+143,"pepper, black",Dry,,,No,Yes,,,tub
+144,"Peppers, Jalapeno, Sliced",Dry,,,No,Yes,,,0.5 gal
+145,"peppers, roasted red",Dry,,,No,Yes,,,CS
+146,pickle chips,Dry,,GAL,No,Yes,,,
+147,"pineapple, canned",Dry,,,No,Yes,,,EA
+148,pork belly,Dry,,LB,No,Yes,,,
+149,quinoa,Dry,,LB,No,Yes,,,
+150,red pesto,Dry,,,No,Yes,,,CS
+151,"Rice, arborio",Dry,,LB,No,Yes,,,
+152,"Rice, par boiled",Dry,,LB,No,Yes,,,
+153,"Roll, Dinner",Dry,,,No,Yes,,,CS
+154,"Rolls, Hoagie, 8 Inch, Unsliced",Dry,,,No,Yes,,,CS
+155,rosemary garlic,Dry,,,No,Yes,,,tub
+156,sage dry,Dry,,,No,Yes,,,tub
+157,"Salsa, chunky",Dry,,,No,Yes,,,EA
+158,"salt, kosher",Dry,,LB,No,Yes,,,
+159,sauce and cheese ,Dry,,,No,Yes,,,EA
+160,"Sauce Mix, Alfredo",Dry,,,No,Yes,,,CS
+161,"Sauce Mix, Cheese",Dry,,,No,Yes,,,CS
+162,"Sauce, A1 steak house",Dry,,,No,Yes,,,EA
+163,"Sauce, Cheese, Deluxe Nacho, #10",Dry,,,No,Yes,,,#10 can
+164,"Sauce, Cheese, White Queso",Dry,,,No,Yes,,,#10 can
+165,"Sauce, franks red hot",Dry,,GAL,No,Yes,,,
+166,"Sauce, hoisin",Dry,,GAL,No,Yes,,,
+167,"Sauce, horseradish",Dry,,,No,Yes,,,CS
+168,"Sauce, Marinara, Fully Prepared, #10",Dry,,,No,Yes,,,#10 can
+169,"Sauce, sirachi chili",Dry,,,No,Yes,,,EA
+170,"Sauce, Soy",Dry,,,No,Yes,,,CS
+171,"sauce, taco",Dry,,,No,Yes,,,EA
+172,"Sauce, Teryiaki",Dry,,,No,Yes,,,EA
+173,"Sauce, Wing, Buffalo",Dry,,,No,Yes,,,CS
+174,"Sauce, Worcestershire",Dry,,,No,Yes,,,CS
+175,"Sauerkraut, Shredded, #10",Dry,,,No,Yes,,,#10 can
+176,"sesame, black",Dry,,,No,Yes,,,tub
+177,"sesame, white",Dry,,,No,Yes,,,tub
+178,sliced brioche buns,Dry,,,No,Yes,,,EA
+179,sliced homestyle biscuits,Dry,,,No,Yes,,,EA
+180,slider burgers,Dry,,,No,Yes,,,CS
+181,strawberry pieces,Dry,,LB,No,Yes,,,
+182,"Sugar, Brown",Dry,,LB,No,Yes,,,
+183,"sugar, powder",Dry,,LB,No,Yes,,,
+184,"Syrup, Pancake, Maple-Flavored",Dry,,,No,Yes,,,CS
+185,thyme,Dry,,,No,Yes,,,tub
+186,tumeric,Dry,,,No,Yes,,,tub
+187,vegetable base,Dry,,,No,Yes,,,CS
+188,"vinagrette, apple cider",Dry,,,No,Yes,,,CS
+189,"Vinegar, Apple Cider",Dry,,,No,Yes,,,CS
+190,"vinegar, white balsamic",Dry,,GAL,No,Yes,,,
+191,"Walnuts, Unsalted, Halves & Pieces",Dry,,,No,Yes,,,bag
+192,white queso dip,Dry,,,No,Yes,,,EA
+193,augratin potatoes,Frozen,,,No,Yes,,,CS
+194,bacon wrapped dates stuffed with goat cheese,Frozen,,,No,Yes,,,EA
+195,bavarian pretzels,Frozen,,,No,Yes,,,CS
+196,berry blend,Frozen,,LB,No,Yes,,,
+197,"Cole Slaw, Classic",Frozen,,LB,No,Yes,,,
+198,"Corn, Sweet, Roasted, with Peppers & Onions",Frozen,,,No,Yes,,,CS
+199,cubed breakfast potatoes,Frozen,,LB,No,Yes,,,
+200,fresh shredded coleslaw mix,Frozen,,,No,Yes,,,bag
+201,frozen chocolate chip cookies,Frozen,,,No,Yes,,,EA
+202,frozen spinach,Frozen,,LB,No,Yes,,,
+203,frozen whole kernel corn,Frozen,,,No,Yes,,,bag
+204,hashbrown patties,Frozen,,LB,No,Yes,,,
+205,mashed potatoes,Frozen,,LB,No,Yes,,,
+206,meat lasagna,Frozen,,,No,Yes,,,CS
+207,mini beef wellington ,Frozen,,,No,Yes,,,EA
+208,mini crab cakes,Frozen,,,No,Yes,,,CS
+209,"Muffins, Corn, Fully Baked, 2.25 Oz",Frozen,,,No,Yes,,,CS
+210,pancakes frozen,Frozen,,LB,No,Yes,,,
+211,pretzel bites,Frozen,,,No,Yes,,,CS
+212,"ravioli, butternut",Frozen,,,No,Yes,,,CS
+213,roasted red pepper and onions,Frozen,,LB,No,Yes,,,
+214,shoestring fries,Frozen,,LB,No,Yes,,,
+215,"shrimp, cocunut",Frozen,,,No,Yes,,,CS
+216,sweet potatoe fries,Frozen,,LB,No,Yes,,,
+217,tater tots,Frozen,,LB,No,Yes,,,
+218,vegetable lasagna,Frozen,,,No,Yes,,,CS
+219,wonton skins,Frozen,,,No,Yes,,,CS
+220,aluminum foil,Paper,,,No,Yes,,,CS
+221,"Bowl, 10 Inch, Plastic, Clear",Paper,,,No,Yes,,,CS
+222,"Boxes, Take-Out,  #4 7.75 x 5.5 x 3.5, Paper, Kraft",Paper,,,No,Yes,,,CS
+223,container 16/32 oz,Paper,,,No,Yes,,,CS
+224,"Dry-Waxed Paper Wraps, Sandwich, 15 x 16",Paper,,,No,Yes,,,CS
+225,"Pans, Steam Table, Third-Size, Foil, 3.3",Paper,,,No,Yes,,,CS
+226,"Picks, Knot, 4 Inch, Bamboo",Paper,,,No,Yes,,,CS
+227,"Apples, Red Delicious, 88 Ct",Produce,,,No,Yes,,,CS
+228,asparagus,Produce,,LB,No,Yes,,,
+229,california blend,Produce,,LB,No,Yes,,,
+230,cantalope,Produce,,,No,Yes,,,EA
+231,"carrots, baby",Produce,,LB,No,Yes,,,
+232,Cauliflower Floret,Produce,,,No,Yes,,,EA
+233,celery,Produce,,,No,Yes,,,EA
+234,"Celery, Jumbo",Produce,,,No,Yes,,,EA
+235,chopped garlic in water,Produce,,,No,Yes,,,CS
+236,Cucumbers,Produce,,,No,Yes,,,CS
+237,eggplant,Produce,,,No,Yes,,,EA
+238,grape tomatoes,Produce,,LB,No,Yes,,,
+239,"Grapes, Red Seedless",Produce,,LB,No,Yes,,,
+240,honeydew melons,Produce,,,No,Yes,,,EA
+241,lemons,Produce,,,No,Yes,,,bag
+242,lettuce leaf,Produce,,,No,Yes,,,CS
+243,"lettuce, arcadia",Produce,,,No,Yes,,,EA
+244,"Lettuce, Iceberg, 1 Inch Chopped",Produce,,,No,Yes,,,bag
+245,"Lettuce, Romaine, Chopped",Produce,,,No,Yes,,,bag
+246,"Limes, 12 Ct",Produce,,,No,Yes,,,CS
+247,"Mushrooms, Medium",Produce,,LB,No,Yes,,,
+248,"Mushrooms, Portabello Cap",Produce,,LB,No,Yes,,,
+249,"Onions, Green",Produce,,,No,Yes,,,bag
+250,"Onions, Red",Produce,,,No,Yes,,,CS
+251,"Onions, Yellow",Produce,,,No,Yes,,,CS
+252,pears,Produce,,,No,Yes,,,EA
+253,"Peppers, Red",Produce,,,No,Yes,,,CS
+254,"Peppers, Yellow",Produce,,,No,Yes,,,CS
+255,pinneapples whole,Produce,,,No,Yes,,,CS
+256,"potatoes, red ",Produce,,LB,No,Yes,,,
+257,"Potatoes, Red, Size A",Produce,,,No,Yes,,,CS
+258,"Potatoes, Russet, 100 Ct",Produce,,,No,Yes,,,CS
+259,"Salad Blend, Heritage, with Petite Green Leaf & Red Leaf",Produce,,,No,Yes,,,CS
+260,snap peas,Produce,,LB,No,Yes,,,
+261,"Spinach, Baby, Cleaned",Produce,,,No,Yes,,,bag
+262,"Spring Mix, Heritage",Produce,,,No,Yes,,,bag
+263,squash,Produce,,LB,No,Yes,,,
+264,"Squash, Yellow, Medium",Produce,,,No,Yes,,,CS
+265,Strawberries,Produce,,,No,Yes,,,flat
+266,Sweet Potatoes,Produce,,,No,Yes,,,CS
+267,tomatoes heirloom mix grape,Produce,,LB,No,Yes,,,
+268,"Tomatoes, 6 x 6",Produce,,,No,Yes,,,10 lb
+269,"Tomatoes, Diced, with Green Chilies",Produce,,,No,Yes,,,28 oz
+270,"Watermelon, Seedless",Produce,,,No,Yes,,,flat
+271,Zucchini,Produce,,,No,Yes,,,flat
+272,"Zucchini, Medium",Produce,,,No,Yes,,,flat
+273,100% Beef Meatballs,Protein,,,No,Yes,,,5 lb
+274,baby back ribs,Protein,,LB,No,Yes,,,
+275,"Bacon, Laid-Out, Hickory-Smoked, 18-22",Protein,,LB,No,Yes,,,
+276,"Beef Inside Top Round, Boneless, Jaccarded",Protein,,LB,No,Yes,,,
+277,"Beef Inside Top Rounds, Boneless, 1 Inch Trim",Protein,,LB,No,Yes,,,
+278,beef slider patties,Protein,,LB,No,Yes,,,
+279,"Beef Tenderloins, Boneless, Peeled Side-Muscle On",Protein,,LB,No,Yes,,,
+280,"Beef, Sausage, Pieces",Protein,,LB,No,Yes,,,
+281,bratwurst,Protein,,LB,No,Yes,,,
+282,breakfast sausage links,Protein,,LB,No,Yes,,,
+283,Brisket,Protein,,LB,No,Yes,,,
+284,Buffet Ham,Protein,,LB,No,Yes,,,
+285,"Chicken Tenderloins, Clipped, Jumbo",Protein,,LB,No,Yes,,,
+286,"Chicken Thighs, Boneless Skinless, Jumbo, Random",Protein,,LB,No,Yes,,,
+287,"Chicken Wings, Bone-In, Breaded, Cooked",Protein,,LB,No,Yes,,,
+288,"Chicken Wings, Bone-In, Split, Jumbo Random",Protein,,LB,No,Yes,,,
+289,"Chicken Wings, Boneless, Breaded, Cooked",Protein,,LB,No,Yes,,,
+290,"chicken, airline ",Protein,,LB,No,Yes,,,
+291,"Chicken, Shredded, White Meat, Cooked, IQF",Protein,,LB,No,Yes,,,
+292,Cow Tenderloin Whole,Protein,,LB,No,Yes,,,
+293,filet,Protein,,LB,No,Yes,,,
+294,Ground Beef,Protein,,LB,No,Yes,,,
+295,Hamburger Patties,Protein,,LB,No,Yes,,,
+296,hot dogs,Protein,,LB,No,Yes,,,
+297,Meatballs,Protein,,,No,Yes,,,5 lb
+298,"Meatballs, Pure Beef, 1 OZ, Cooked",Protein,,,No,Yes,,,5 lb
+299,"Pepperoni, Sliced, 18-20 ",Protein,,LB,No,Yes,,,
+300,pork butt,Protein,,LB,No,Yes,,,
+301,pork chops,Protein,,LB,No,Yes,,,
+302,Pork tenderloin,Protein,,LB,No,Yes,,,
+303,"Salami, Hard, 0.25 Oz Slices",Protein,,LB,No,Yes,,,
+304,"Turkey Breasts, Sliced, Honey Roasted, Refrigerated",Protein,,LB,No,Yes,,,
+305,"Cod Fillet Portions, Alaskan, Beer Battered, Wild-Caught, 2.5 Oz IQF",Seafood,,LB,No,Yes,,,
+306,"Crab Cakes, Maryland-Style, 38% Blend, 3 Oz, IQF",Seafood,,LB,No,Yes,,,
+307,"Crab Legs, Brown King, 20 & Up, Cooked",Seafood,,LB,No,Yes,,,
+308,"Crab Meat, Claw, Portunus Pelagicus, Pasteurized, Cooked",Seafood,,LB,No,Yes,,,
+309,"Crab Meat, Special, Portunus Pelagicus, Pasteurized, Cooked",Seafood,,LB,No,Yes,,,
+310,halibut,Seafood,,LB,No,Yes,,,
+311,"Lobster Tails, North Atlantic, 3-4 Oz, Raw",Seafood,,LB,No,Yes,,,
+312,"Mahi-Mahi Portions, Wild-Caught, 8 Oz, IQF",Seafood,,LB,No,Yes,,,
+313,Salmon,Seafood,,LB,No,Yes,,,
+314,"shrimp, 16-20 ct ",Seafood,,LB,No,Yes,,,
+315,"shrimp, 21-25 ct ",Seafood,,LB,No,Yes,,,
+316,tilapia filets,Seafood,,LB,No,Yes,,,

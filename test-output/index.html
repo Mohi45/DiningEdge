@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-1357483120\testng-customsuite.xml</span>
+                    <span>C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-713513281\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="InventoryRegression.InventoryOnHandEdit" class="method navigator-link" hash-for-method="Test01_BasicFlowLogin">Test01_BasicFlowLogin</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.diningedge.Regression.CreateCompany_UploadProductList" class="method navigator-link" hash-for-method="loginInToAdminPage">loginInToAdminPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,84 +119,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">InventoryRegression.InventoryOnHandEdit</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.diningedge.Regression.CreateCompany_UploadProductList</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test01_BasicFlowLogin">
-                  </a> <!-- Test01_BasicFlowLogin -->
-                  <span class="method-name">Test01_BasicFlowLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//th[text()=&apos;Milk&apos;]/..//th)[11]//button&quot;}
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d2ffdedb5736f0d6d9057ffe8afc2ee, findElement {using=xpath, value=(//th[text()=&apos;Milk&apos;]/..//th)[11]//button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65303}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65303/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d2ffdedb5736f0d6d9057ffe8afc2ee
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.diningedge.PageActions.DiningEdge.InventoryPage.dynamicElements(InventoryPage.java:55)
-	at com.diningedge.PageActions.DiningEdge.InventoryPage.EditProductItem(InventoryPage.java:198)
-	at InventoryRegression.InventoryOnHandEdit.editOnHandInventory(InventoryOnHandEdit.java:64)
-	at InventoryRegression.InventoryOnHandEdit.Test01_BasicFlowLogin(InventoryOnHandEdit.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="loginInToAdminPage">
+                  </a> <!-- loginInToAdminPage -->
+                  <span class="method-name">loginInToAdminPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-1357483120\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Jyoti Singh\AppData\Local\Temp\testng-eclipse-713513281\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -205,7 +146,7 @@ Session ID: 2d2ffdedb5736f0d6d9057ffe8afc2ee
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;InventoryRegression.InventoryOnHandEdit&quot;/&gt;
+      &lt;class name=&quot;com.diningedge.Regression.CreateCompany_UploadProductList&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -247,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test01_BasicFlowLogin')
-data.setCell(0, 2, 'InventoryRegression.InventoryOnHandEdit')
-data.setCell(0, 3, 30967);
+data.setCell(0, 1, 'loginInToAdminPage')
+data.setCell(0, 2, 'com.diningedge.Regression.CreateCompany_UploadProductList')
+data.setCell(0, 3, 87869);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,20 +207,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Test01_BasicFlowLogin</span>
+              <span class="reporter-method-name">loginInToAdminPage</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2023-05-03] [19:39:04:051] User enters Name = testauto123</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:04:161] User enters Password =12345678</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:04:227] User clicks on the Login Button !!!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:11:916] Assertion Passed: DiningEdge is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:11:965] Assertion Passed: Dashboard is present on the HomePage</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:12:285] User clicks on Order Edge Button !!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:12:395] User clicks on select Location dropDown !!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:12:478] User clicks on select Location loc10 from dropDown !!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:17:625] User clicks on the Inventory button !!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:18:329] User clicks on the Create invetory Button !!</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:18:460] User selects the Reports From the list</span>
-                <span class="reporter-method-output">[2023-05-03] [19:39:18:708] User selects the Inventory Onhand From the list</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:40:889] User enters Name = vandy</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:40:983] User enters Password = NC$33433$</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:49:058] User clicks on the Login Button !!!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:49:964] User clicks on the Add Companies Button!!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:50:185] USer enters the Company Name = Automation Testing Comapny7542</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:50:295] User select Home office and Order unengaged items allowed check boxes !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:51:946] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:52:077] User clicks on companies Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:56:054] User clicks on Locations Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:56:750] User clicks on Add Locations Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:56:931] USer enters the Location Name = Automation Street7528</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:57:382] User selects the Company = Automation Testing Comapny7542</span>
+                <span class="reporter-method-output">[2023-06-14] [17:19:57:506] User select clicks on the base location checkbox !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:01:038] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:04:979] User clicks on the title </span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:05:068] User clicks on Products</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:06:598] User clicks on ProductList</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:08:907] User clicks on add product button</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:09:036] User enters the product name = Automation US_Food</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:15:632] User clicks on Add Users Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:16:185] User selects the Company = Automation Testing Comapny7542</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:17:100] User clicks on save continue Button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:18:905] User clicks on the title </span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:19:090] User enter the Automation Testing Company</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:21:378] User clicks on the search button !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:40:098] User clicks on the USer Icon company !!</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:46:470] User selects the Manage Items From the list</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:46:806] User selects the Products List From the list</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:47:787] File Uploaded successfully</span>
+                <span class="reporter-method-output">[2023-06-14] [17:20:50:943] User clicks on Upload btn</span>
+                <span class="reporter-method-output">[2023-06-14] [17:21:08:462] Product list imported successfully !!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -297,32 +257,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">InventoryRegression.InventoryOnHandEdit</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.diningedge.Regression.CreateCompany_UploadProductList</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">testMethodName(public void InventoryRegression.InventoryOnHandEdit.Test01_BasicFlowLogin())</span>
-                <span class="method-start">3284 ms</span>
+                <span class="method-name">testMethodName(public void com.diningedge.Regression.CreateCompany_UploadProductList.loginInToAdminPage())</span>
+                <span class="method-start">5151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3286 ms</span>
+                <span class="method-start">5155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Test01_BasicFlowLogin</span>
-                <span class="method-start">140829 ms</span>
+                <span class="method-name">loginInToAdminPage</span>
+                <span class="method-start">11622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">take_screenshot_on_failure([TestResult name=Test01_BasicFlowLogin status=FAILURE method=InventoryOnHandEdit.Test01_BasicFlowLog...)</span>
-                <span class="method-start">171807 ms</span>
+                <span class="method-name">take_screenshot_on_failure([TestResult name=loginInToAdminPage status=SUCCESS method=CreateCompany_UploadProductList.loginInToA...)</span>
+                <span class="method-start">99493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">174688 ms</span>
+                <span class="method-start">99501 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

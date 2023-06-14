@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.diningedge.Utilities.CustomFunctions;
 import com.diningedge.resources.BaseUi;
@@ -73,6 +74,12 @@ public class ManageItemsPage extends BaseUi {
 
 	@FindBy(xpath = "//span[text()='Export']/..")
 	private WebElement export;
+
+	@FindBy(xpath = "//span//p")
+	private WebElement snakbar;
+	
+	@FindBy(xpath = "//tr/th[text()='1']")
+	private WebElement validate;
 
 	private String addCategory = "//li//p[text()='$']";
 
@@ -189,11 +196,24 @@ public class ManageItemsPage extends BaseUi {
 	public String getTheValues(String invoice, String index) {
 		return dynamicElements(getValues, invoice, index).getText();
 	}
-
 	public void clickOnExportBtn() {
 		waitForElementToClickable(export);
 		export.click();
 		logMessage("User clicks on the export Button !!");
 	}
+
+	public void validateSuccessMessage() {
+		CustomFunctions.hardWaitForScript();
+		CustomFunctions.hardWaitForScript();
+		CustomFunctions.hardWaitForScript();
+		String actual = snakbar.getText();
+		Assert.assertEquals(actual, "Product List has been successfully imported.", "Success message not found !!");
+		logMessage("Product list imported successfully !!");
+	}
+	
+	public void ValidateProductList() {
+		Assert.assertTrue(validate.isDisplayed());
+	}
+	
 
 }

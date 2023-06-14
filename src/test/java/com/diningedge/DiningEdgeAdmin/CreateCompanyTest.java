@@ -73,12 +73,6 @@ public class CreateCompanyTest extends BaseTest {
 		dashboardPage.createProductList(companyName, productName);
 		enterUserDetails();
 		clickOnUserIconToLogin();
-		ManangeProducts();
-		createNewProduct();
-		createVendors();
-		createNewVendorItem();
-		addComparabls();
-		//addUnitsAndSendOG(logExtent);
 	}
 
 	public void enterCompanyDetails() {
