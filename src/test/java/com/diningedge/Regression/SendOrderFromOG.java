@@ -141,7 +141,7 @@ public class SendOrderFromOG extends BaseTest {
 	public void sendEmailReport() {
 
 		if (status) {
-			SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed ❌", vendorName);
+			//SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed ❌", vendorName);
 		} else {
 			System.out.println("----------------------------");
 		}

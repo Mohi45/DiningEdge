@@ -227,7 +227,7 @@ public class E2E_Flow extends BaseTest {
 	public void sendEmailReport() {
 		if (status) {
 			System.out.println("Failing due to not send mail");
-			SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed !!", vendorName);
+			//SendEmailUtility.sendReport("Automation Testing :: Order Submission Failed !!", vendorName);
 		} else {
 			System.out.println("---------------------------------");
 		}
