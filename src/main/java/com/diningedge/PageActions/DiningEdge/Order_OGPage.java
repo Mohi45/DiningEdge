@@ -49,9 +49,9 @@ public class Order_OGPage extends BaseUi {
 	}
 
 	/*---------------------DiningEdge Locators-------------------*/
-	private String editPack = "//table//tr//td//p[text()='$']/../following-sibling::td[2]//div//button";
-	private String editPrice = "//table//tr//td//p[text()='$']/../following-sibling::td[3]//div//button";
-	private String selectQyt = "//table//tr//td//p[text()='$']/../following-sibling::td[4]//div//div//input";
+	private String editPack = "//table//tr//td//p[text()='$']/../../following-sibling::td[2]//div//button";
+	private String editPrice = "//table//tr//td//p[text()='$']/../../following-sibling::td[3]//div//button";
+	private String selectQyt = "//table//tr//td//p[text()='$']/../../following-sibling::td[4]//div//div//input";
 	private String pack_size = "//div//label[text()='$']/..//div//input";
 	private String selectUnitType = "//div//ul//li[text()='$']//span/..";
 	private String assignVendor ="//div[text()='Add new Product']/..//div[text()='$']";

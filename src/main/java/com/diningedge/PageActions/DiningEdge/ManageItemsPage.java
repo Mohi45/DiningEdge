@@ -57,7 +57,7 @@ public class ManageItemsPage extends BaseUi {
 	@FindBy(xpath = "//th//button[@title='Delete']")
 	private WebElement deleteIcon;
 
-	@FindBy(xpath = "//div//h2[text()='Manage Units']/../..//button")
+	@FindBy(xpath = "(//div//h2[text()='Manage Units']/../..//button)[2]")
 	private WebElement cross;
 
 	@FindBy(xpath = "//div//span[text()='Add product']/..")

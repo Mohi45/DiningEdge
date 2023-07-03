@@ -129,21 +129,21 @@ public class CustomFunctions extends BaseUi {
 
 	public static int generateRandomNumber() {
 		Random random = new Random();
-		return random.nextInt(9999)+1;
+		return random.nextInt(9999) + 1;
 	}
+
 	public static int generateRandomUnitSize() {
 		Random random = new Random();
-		return random.nextInt(3)+1;
+		return random.nextInt(3) + 1;
 	}
-	
+
 	public static String getProductName() {
-		final String[] sheets = { "Automation_Cheney_1", "Automation_US_Food_1", "Automation_Sysco_1", "Automation_PFG_1" };
+		final String[] sheets = { "Automation_Cheney_2", "Automation_US_Food_2", "Automation_Sysco_2",
+				"Automation_PFG_2" };
 		Random random = new Random();
 		int index = random.nextInt(sheets.length);
 		System.out.println("Product_Name= " + sheets[index]);
 		return sheets[index];
 	}
-	
-	
 
 }

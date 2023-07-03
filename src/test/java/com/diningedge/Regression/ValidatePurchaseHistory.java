@@ -108,7 +108,7 @@ public class ValidatePurchaseHistory extends BaseTest {
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
-		totalAmountFromUI = StringUtils.chop(totalAmountFromUI);
+		//totalAmountFromUI = StringUtils.chop(totalAmountFromUI);
 		System.out.println("----------------------------From UI--------------------------------------");
 		System.out.println(
 				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);

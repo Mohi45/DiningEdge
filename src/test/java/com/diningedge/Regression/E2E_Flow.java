@@ -96,7 +96,7 @@ public class E2E_Flow extends BaseTest {
 		dashboard.clickOnTheOrderEdge("Order Edge", logExtent);
 		createNewProduct();
 		addComparabls(vendor, id);
-		addUnitsAndSendOG(vendor, productName, "Automation002", logExtent);
+		addUnitsAndSendOG(vendor, productName, unitType, logExtent);
 		verifyOrderFromEmail(vendor);
 	}
 
@@ -134,7 +134,7 @@ public class E2E_Flow extends BaseTest {
 		orderEdge.selcetValueFromDropDown("Storage", orderEdge.getStorageType());
 		orderEdge.enterDetailsOnCreateProduct("Position", "1");
 		orderEdge.clickOnSaveAndCancel("Save");
-		settingsPage.clickOnSnackBarCloseButton();
+		settingsPage.clickOnSnackBarCloseButton();	
 	}
 
 	public void addComparabls(String vendor, String id) {
@@ -170,7 +170,7 @@ public class E2E_Flow extends BaseTest {
 		orderDateFromUI = checkoutPage.getOrderDetails("Order Date:").split(" ")[0];
 		orderNumberFromUI = checkoutPage.getOrderDetails("Order Name/PO Number:").split("/")[3].trim();
 		totalAmountFromUI = checkoutPage.getTotalAmount(vendor);
-		totalAmountFromUI= StringUtils.chop(totalAmountFromUI);
+	//	totalAmountFromUI= StringUtils.chop(totalAmountFromUI);
 		System.out.println("----------------------------From UI--------------------------------------");
 		System.out.println(
 				locationFromUI + " :: " + orderDateFromUI + " :: " + orderNumberFromUI + " :: " + totalAmountFromUI);

@@ -274,7 +274,7 @@ public class OrderEdgePage extends BaseUi {
 	}
 
 	public String getStorageType() {
-		final String[] units = { "Solid", "Liquid", "Freeze", "Bread", "Food", "Soft" };
+		final String[] units = { "solid", "Liquid", "Freeze", "Bread", "Food", "Soft" };
 		Random random = new Random();
 		int index = random.nextInt(units.length);
 		return units[index];
