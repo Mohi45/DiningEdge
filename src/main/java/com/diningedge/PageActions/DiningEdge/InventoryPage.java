@@ -185,7 +185,7 @@ public class InventoryPage extends BaseUi {
 
 	public List<String> getVendorNames() {
 		List<String> list = new ArrayList<>();
-		final String[] name = { "Milk", "Tomatoes", "Chicken", "Ice Cream", "Juice Orange" };
+		final String[] name = { "Milk", "Tomatoes", "Chicken" };
 		for (int i = 0; i < name.length; i++) {
 			list.add(name[i]);
 		}

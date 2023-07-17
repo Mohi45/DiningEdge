@@ -59,6 +59,12 @@ public class DashboardPage extends BaseUi {
 
 	@FindBy(xpath = "//div//a[contains(text(),'Add Users')]")
 	private WebElement addUser;
+	
+	@FindBy(xpath = "//span[text()='Vendors']/..")
+	private WebElement vendorsBtn;
+	
+	@FindBy(xpath = "//span[text()='Order Guides']/..")
+	private WebElement orderGuideBtn;
 
 	@FindBy(id = "companies_name")
 	private WebElement companyName;
@@ -163,6 +169,8 @@ public class DashboardPage extends BaseUi {
 	private WebElement searchCompany;
 
 	private String selectCompanyFromList="//span//ul//li[contains(.,'$')]";
+	
+	
 	
 	/*---------------------------DiningEdgeAdmin Methods-------------------------------------------*/
 	public WebElement dynamicElements(String locator, String value) {
@@ -342,4 +350,14 @@ public class DashboardPage extends BaseUi {
 		save.click(); 
 		
 	}
+	
+	public void clickOnVendorBtn() {
+		wait.until(ExpectedConditions.visibilityOf(vendorsBtn));
+		vendorsBtn.click();
+		logMessage("USer click on the vendors button !!");
+		wait.until(ExpectedConditions.visibilityOf(orderGuideBtn));
+		orderGuideBtn.click();
+		logMessage("USer click on the orderGuide button !!");
+	}
+	
 }

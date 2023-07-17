@@ -1,163 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[2023-07-03] [17:03:34:775] Connecting to gmail...]]>
+      <![CDATA[[2023-07-17] [15:20:35:138] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:03:37:245] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+      <![CDATA[[2023-07-17] [15:20:37:878] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:03:37:679] Moved email in successfully Done!!]]>
-    </line>
-    <line>
-      <![CDATA[ ]]>
-    </line>
-    <line>
-      <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
+      <![CDATA[[2023-07-17] [15:20:38:295] Moved email in successfully Done!!]]>
     </line>
     <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:27:265] User enters Name = testauto123]]>
+      <![CDATA[***** STARTING TEST STEP:- sendOrderFromOG *****]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:27:402] User enters Password =12345678]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:27:497] User clicks on the Login Button !!!]]>
+      <![CDATA[[2023-07-17] [15:22:25:258] User enters Name = testauto123]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:32:743] Assertion Passed: DiningEdge is present on the HomePage]]>
+      <![CDATA[[2023-07-17] [15:22:25:421] User enters Password =12345678]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:32:817] Assertion Passed: Dashboard is present on the HomePage]]>
+      <![CDATA[[2023-07-17] [15:22:25:528] User clicks on the Login Button !!!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:33:353] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2023-07-17] [15:22:33:505] Assertion Passed: DiningEdge is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:33:535] User clicks on select Location dropDown !!]]>
+      <![CDATA[[2023-07-17] [15:22:33:565] Assertion Passed: Dashboard is present on the HomePage]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:33:675] User clicks on select Location loc10 from dropDown !!]]>
+      <![CDATA[[2023-07-17] [15:22:34:229] User clicks on Order from OG Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:34:056] User clicks on the setting Icon button !!]]>
+      <![CDATA[[2023-07-17] [15:22:34:421] User clicks on the Search Icon on Product List Page]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:37:238] User enters US Foods search bar !!]]>
+      <![CDATA[[2023-07-17] [15:22:34:631] User enters the PFG Milk To be searched]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:37:450] User clicks on the US Foods List item !!]]>
+      <![CDATA[[2023-07-17] [15:22:37:209] User clicks on the Update pack pancil button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:39:743] User clicks on the EDI Settings Setting item !!]]>
+      <![CDATA[[2023-07-17] [15:22:37:537] USer enters the value 2 for Pack]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:39:873] User Select on the Send Order Setting options !!]]>
+      <![CDATA[[2023-07-17] [15:22:37:837] USer enters the value 2 for Size]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:40:096] User clicks the select Type DropDown]]>
+      <![CDATA[[2023-07-17] [15:22:41:040] User click on the Save button]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:40:278] User clicks the Email DropDown]]>
+      <![CDATA[[2023-07-17] [15:22:43:134] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:41:095] User enter the following email ::diningedgetest@gmail.com]]>
+      <![CDATA[[2023-07-17] [15:22:43:230] User clicks on the Update price pancil button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:41:318] User clicks on the Save button !!]]>
+      <![CDATA[[2023-07-17] [15:22:43:606] USer enters the value 2 for Price]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:44:890] User clicks on the Snack Bar cross button !!]]>
+      <![CDATA[[2023-07-17] [15:22:46:886] User click on the Save button]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:45:351] User clicks on Order Edge Button !!]]>
+      <![CDATA[[2023-07-17] [15:22:46:929] User clicks on the Update price pancil button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:49:721] User clicks on the add Product Button !!]]>
+      <![CDATA[[2023-07-17] [15:22:48:058] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:49:807] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-07-17] [15:22:48:347] USer enters the value 2 for PFG Milk]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:49:910] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-07-17] [15:22:50:794] User clicks on the Add Cart Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:50:697] User enters the value Automation_Cheney_1 in Name]]>
+      <![CDATA[[2023-07-17] [15:22:53:081] User clicks on the Checkout Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:50:811] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-07-17] [15:22:54:774] User clicks on the Submit All Button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:50:988] User enters the value 1 in Size]]>
+      <![CDATA[[2023-07-17] [15:22:57:506] User clicks on the Snack Bar cross button !!]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:51:179] User enters the value Unit * Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:22:59:279] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:54:402] User selects the value DOZ From the Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:23:01:329] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:54:894] User enters the value Primary Category * Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:23:21:750] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:58:152] User selects the value bread From the Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:23:23:787] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:04:58:654] User enters the value Storage Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:23:24:484] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:05:01:843] User selects the value Soft From the Dropdown !!]]>
+      <![CDATA[[2023-07-17] [15:23:24:487] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:05:01:898] Assertion Passed: Create product is present on the popup]]>
+      <![CDATA[[2023-07-17] [15:23:26:828] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:05:02:068] User enters the value 1 in Position]]>
+      <![CDATA[[2023-07-17] [15:23:27:652] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:05:05:401] User click on the Save button]]>
+      <![CDATA[[2023-07-17] [15:23:27:654] Connecting to gmail...]]>
     </line>
     <line>
-      <![CDATA[[2023-07-03] [17:05:07:185] User clicks on the Snack Bar cross button !!]]>
+      <![CDATA[[2023-07-17] [15:23:29:695] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
     </line>
     <line>
-      <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\E2E_Flow\2023_07_03_05_05_08_58\screenshot.png]]>
+      <![CDATA[[2023-07-17] [15:23:30:520] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
     </line>
     <line>
-      <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\E2E_Flow\2023_07_03_05_05_10_510\screenshot.png]]>
+      <![CDATA[[2023-07-17] [15:23:31:756] orderId #: 6]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:31:758] Order Date : 07/17/2023]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:31:760] Resturant Name : DiningEdgeAutomation]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:31:761] Total Order Amount : $4.00]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:32:256] New order : DiningEdgeAutomation (loc10) :: email deleted successfully !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:32:258] Connecting to gmail...]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:34:302] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:35:123] Moved email in successfully Done!!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:36:218] User clicks on Purchases Button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:37:851] User clicks on the PO Number = 6]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:40:251] User enters the invoice number Invoice4627]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:43:493] User selects the current date]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:49:737] User click on the OK button]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:23:54:858] User clicks on the Snack Bar cross button !!]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:01:708] User click on the Approve button]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:02:036] User selects the Manage Items From the list]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:03:146] User selects the Products List From the list]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:04:767] User clicks on the Search Icon on Product List Page]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:04:940] User enters the Milk To be searched]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:05:554] User select the Milk]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:11:820] User clicks on the History Btn]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:12:204] Connecting to the Gmail ...]]>
+    </line>
+    <line>
+      <![CDATA[[2023-07-17] [15:24:16:696] Message send success]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-03T17:03:34 IST" name="Default suite" finished-at="2023-07-03T17:05:11 IST" duration-ms="97241">
+  <suite started-at="2023-07-17T15:20:34 IST" name="Default suite" finished-at="2023-07-17T15:24:12 IST" duration-ms="217304">
     <groups>
     </groups>
-    <test started-at="2023-07-03T17:03:34 IST" name="Default test" finished-at="2023-07-03T17:05:11 IST" duration-ms="97241">
-      <class name="com.diningedge.Regression.E2E_Flow">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:03:34 IST" name="setExtent" finished-at="2023-07-03T17:03:38 IST" duration-ms="3881" status="PASS">
+    <test started-at="2023-07-17T15:20:34 IST" name="Default test" finished-at="2023-07-17T15:24:12 IST" duration-ms="217304">
+      <class name="com.diningedge.Regression.ValidatePurchaseHistory">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:20:34 IST" name="setExtent" finished-at="2023-07-17T15:20:38 IST" duration-ms="4115" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-07-03] [17:03:34:775] Connecting to gmail...]]>
+              <![CDATA[[2023-07-17] [15:20:35:138] Connecting to gmail...]]>
             </line>
             <line>
-              <![CDATA[[2023-07-03] [17:03:37:245] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+              <![CDATA[[2023-07-17] [15:20:37:878] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
             </line>
             <line>
-              <![CDATA[[2023-07-03] [17:03:37:679] Moved email in successfully Done!!]]>
+              <![CDATA[[2023-07-17] [15:20:38:295] Moved email in successfully Done!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="dataSetUp()[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:03:38 IST" name="dataSetUp" finished-at="2023-07-03T17:03:39 IST" depends-on-methods="com.diningedge.resources.BaseTest.setExtent" duration-ms="768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataSetUp -->
-        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:03:39 IST" name="testMethodName" finished-at="2023-07-03T17:03:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodName(java.lang.reflect.Method)[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:20:39 IST" name="testMethodName" finished-at="2023-07-17T15:20:39 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.diningedge.Regression.E2E_Flow.Test01_BasicFlowLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.diningedge.Regression.ValidatePurchaseHistory.sendOrderFromOG() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -166,244 +222,216 @@
               <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[***** STARTING TEST STEP:- Test01_BasicFlowLogin *****]]>
+              <![CDATA[***** STARTING TEST STEP:- sendOrderFromOG *****]]>
             </line>
             <line>
               <![CDATA[ ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodName -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:03:39 IST" name="setup" finished-at="2023-07-03T17:04:26 IST" duration-ms="47782" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:20:39 IST" name="setup" finished-at="2023-07-17T15:22:24 IST" duration-ms="105861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Test01_BasicFlowLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:04:26 IST" name="Test01_BasicFlowLogin" data-provider="testData" finished-at="2023-07-03T17:05:08 IST" duration-ms="41431" status="FAIL">
+        <test-method signature="sendOrderFromOG()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:22:24 IST" name="sendOrderFromOG" finished-at="2023-07-17T15:24:11 IST" duration-ms="106981" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:25:258] User enters Name = testauto123]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:25:421] User enters Password =12345678]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:25:528] User clicks on the Login Button !!!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:33:505] Assertion Passed: DiningEdge is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:33:565] Assertion Passed: Dashboard is present on the HomePage]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:34:229] User clicks on Order from OG Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:34:421] User clicks on the Search Icon on Product List Page]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:34:631] User enters the PFG Milk To be searched]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:37:209] User clicks on the Update pack pancil button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:37:537] USer enters the value 2 for Pack]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:37:837] USer enters the value 2 for Size]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:41:040] User click on the Save button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:43:134] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:43:230] User clicks on the Update price pancil button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:43:606] USer enters the value 2 for Price]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:46:886] User click on the Save button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:46:929] User clicks on the Update price pancil button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:48:058] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:48:347] USer enters the value 2 for PFG Milk]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:50:794] User clicks on the Add Cart Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:53:081] User clicks on the Checkout Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:54:774] User clicks on the Submit All Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:57:506] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:22:59:279] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:01:329] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:21:750] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:23:787] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:24:484] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:24:487] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:26:828] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:27:652] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:27:654] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:29:695] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:30:520] Subject is :-New order : DiningEdgeAutomation (loc10)]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:31:756] orderId #: 6]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:31:758] Order Date : 07/17/2023]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:31:760] Resturant Name : DiningEdgeAutomation]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:31:761] Total Order Amount : $4.00]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:32:256] New order : DiningEdgeAutomation (loc10) :: email deleted successfully !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:32:258] Connecting to gmail...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:34:302] Connected to - imaps://diningedgetest%40gmail.com@imap.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:35:123] Moved email in successfully Done!!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:36:218] User clicks on Purchases Button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:37:851] User clicks on the PO Number = 6]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:40:251] User enters the invoice number Invoice4627]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:43:493] User selects the current date]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:49:737] User click on the OK button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:23:54:858] User clicks on the Snack Bar cross button !!]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:01:708] User click on the Approve button]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:02:036] User selects the Manage Items From the list]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:03:146] User selects the Products List From the list]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:04:767] User clicks on the Search Icon on Product List Page]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:04:940] User enters the Milk To be searched]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:05:554] User select the Milk]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:11:820] User clicks on the History Btn]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendOrderFromOG -->
+        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:24:11 IST" name="take_screenshot_on_failure" finished-at="2023-07-17T15:24:11 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[US Foods]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Milk]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[US Food Milk]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[020]]>
+                <![CDATA[[TestResult name=sendOrderFromOG status=SUCCESS method=ValidatePurchaseHistory.sendOrderFromOG()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934] output=[2023-07-17] [15:22:25:258] User enters Name = testauto123]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <svg class="jss415" focusable="false" viewBox="0 0 15.676 15.676" aria-hidden="true" role="presentation" style="stroke: rgb(226, 226, 226); font-size: 18px;">...</svg> is not clickable at point (83, 217). Other element would receive the click: <div class="jss986 jss984" role="document" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [64e49367e6248f9d4c7711d06f8cf1d5, clickElement {id=37F39B67B69006F85CC7F09C8C78A357_element_99}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54333/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (64e49367e6248f9d4c7711d06f8cf1d5)] -> xpath: //div//h3[contains(.,'Automation_Cheney_1')]/../..//a//button//span//*[local-name()='svg' and @role='presentation']]
-Session ID: 64e49367e6248f9d4c7711d06f8cf1d5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg class="jss415" focusable="false" viewBox="0 0 15.676 15.676" aria-hidden="true" role="presentation" style="stroke: rgb(226, 226, 226); font-size: 18px;">...</svg> is not clickable at point (83, 217). Other element would receive the click: <div class="jss986 jss984" role="document" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [64e49367e6248f9d4c7711d06f8cf1d5, clickElement {id=37F39B67B69006F85CC7F09C8C78A357_element_99}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\JYOTIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54333/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (64e49367e6248f9d4c7711d06f8cf1d5)] -> xpath: //div//h3[contains(.,'Automation_Cheney_1')]/../..//a//button//span//*[local-name()='svg' and @role='presentation']]
-Session ID: 64e49367e6248f9d4c7711d06f8cf1d5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at com.diningedge.PageActions.DiningEdge.OrderEdgePage.clickOnComparabls(OrderEdgePage.java:231)
-at com.diningedge.Regression.E2E_Flow.addComparabls(E2E_Flow.java:141)
-at com.diningedge.Regression.E2E_Flow.Test01_BasicFlowLogin(E2E_Flow.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:27:265] User enters Name = testauto123]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:27:402] User enters Password =12345678]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:27:497] User clicks on the Login Button !!!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:32:743] Assertion Passed: DiningEdge is present on the HomePage]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:32:817] Assertion Passed: Dashboard is present on the HomePage]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:33:353] User clicks on Order Edge Button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:33:535] User clicks on select Location dropDown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:33:675] User clicks on select Location loc10 from dropDown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:34:056] User clicks on the setting Icon button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:37:238] User enters US Foods search bar !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:37:450] User clicks on the US Foods List item !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:39:743] User clicks on the EDI Settings Setting item !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:39:873] User Select on the Send Order Setting options !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:40:096] User clicks the select Type DropDown]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:40:278] User clicks the Email DropDown]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:41:095] User enter the following email ::diningedgetest@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:41:318] User clicks on the Save button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:44:890] User clicks on the Snack Bar cross button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:45:351] User clicks on Order Edge Button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:49:721] User clicks on the add Product Button !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:49:807] Assertion Passed: Create product is present on the popup]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:49:910] Assertion Passed: Create product is present on the popup]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:50:697] User enters the value Automation_Cheney_1 in Name]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:50:811] Assertion Passed: Create product is present on the popup]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:50:988] User enters the value 1 in Size]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:51:179] User enters the value Unit * Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:54:402] User selects the value DOZ From the Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:54:894] User enters the value Primary Category * Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:58:152] User selects the value bread From the Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:04:58:654] User enters the value Storage Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:05:01:843] User selects the value Soft From the Dropdown !!]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:05:01:898] Assertion Passed: Create product is present on the popup]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:05:02:068] User enters the value 1 in Position]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:05:05:401] User click on the Save button]]>
-            </line>
-            <line>
-              <![CDATA[[2023-07-03] [17:05:07:185] User clicks on the Snack Bar cross button !!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Test01_BasicFlowLogin -->
-        <test-method is-config="true" signature="sendEmailReport()[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:05:08 IST" name="sendEmailReport" finished-at="2023-07-03T17:05:08 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- take_screenshot_on_failure -->
+        <test-method is-config="true" signature="sendEmailReport()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:24:11 IST" name="sendEmailReport" finished-at="2023-07-17T15:24:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmailReport -->
-        <test-method is-config="true" signature="take_screenshot_on_failure(org.testng.ITestResult)[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:05:08 IST" name="take_screenshot_on_failure" finished-at="2023-07-03T17:05:11 IST" duration-ms="3022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Test01_BasicFlowLogin status=FAILURE method=E2E_Flow.Test01_BasicFlowLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a] output=[2023-07-03] [17:04:27:265] User enters Name = testauto123]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\E2E_Flow\2023_07_03_05_05_08_58\screenshot.png]]>
-            </line>
-            <line>
-              <![CDATA[Save Image File Path : C:\Users\Jyoti Singh\Desktop\DiningEdgeByM\DiningEdge\./target/screenshots/\E2E_Flow\2023_07_03_05_05_10_510\screenshot.png]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- take_screenshot_on_failure -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.E2E_Flow@663c9e7a]" started-at="2023-07-03T17:05:11 IST" name="endReport" finished-at="2023-07-03T17:05:11 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:24:11 IST" name="endReport" finished-at="2023-07-17T15:24:12 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.diningedge.Regression.E2E_Flow -->
+        <test-method is-config="true" signature="mailTriggerInCaseOfUI()[pri:0, instance:com.diningedge.Regression.ValidatePurchaseHistory@11392934]" started-at="2023-07-17T15:24:12 IST" name="mailTriggerInCaseOfUI" finished-at="2023-07-17T15:24:16 IST" duration-ms="4499" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:12:204] Connecting to the Gmail ...]]>
+            </line>
+            <line>
+              <![CDATA[[2023-07-17] [15:24:16:696] Message send success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mailTriggerInCaseOfUI -->
+      </class> <!-- com.diningedge.Regression.ValidatePurchaseHistory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

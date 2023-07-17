@@ -147,7 +147,7 @@ public class SendOrderFromOG extends BaseTest {
 		}
 	}
 
-	//@AfterSuite
+	@AfterSuite
 	public void mailTriggerInCaseOfUI() {
 		sendReport(vendorName, location,"OrderFromOG");
 	}
